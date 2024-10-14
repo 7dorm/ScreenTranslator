@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/15_10.jpg</imageName>
+      <address>2001 Pan American Plaza San Diego CA 92101-1636</address>
+      <lex>SAN,DIEGO,AIR,SPACE,MUSEUM,SR71,AUTOMOTIVE,STARLIGHT,THEATRE,MARIE,HITCHCOCK,PUPPET,HALL,CHAMPIONS,MUNICIPAL,GYM,IATSE,LOCAL,122,INTERNATIONAL,SPORTS,COUNCIL,COMMISSION,UNITED,STATES,RUGBY,FOOTBALL,CIVIC,DANCE,ASSOCIATION,NATIONS,TIME,OUT,CAFE,WORLD,BEAT,BALBOA,PARK,EDDY,WILLIAM,LCSW,MAN,SQUARE,GIFT,SHOP,HOUSE,IRAN</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="45" width="82" x="317" y="374">
+            <tag>AIR</tag>
+         </taggedRectangle>
+         <taggedRectangle height="54" width="229" x="631" y="346">
+            <tag>MUSEUM</tag>
+         </taggedRectangle>
+         <taggedRectangle height="50" width="158" x="442" y="361">
+            <tag>SPACE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

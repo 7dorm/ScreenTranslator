@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/06_04.jpg</imageName>
+      <address>1804 McMillan Avenue Dallas TX</address>
+      <lex>LOUIE,BARCADIA,LLC,PEARL,CUP,LLC,THE,CAFE,SAN,MIGUEL,BLUE,COLLAR,BAR,SAVE,WAY,GROCERY,STORE,NEW,FLOWER,MARKET,SPUTNIK,ARE,1976,INC,ALFREDO,ITALIAN,CUISINE,AND,SEAFOOD,RELOCATING,COUTURE,CONFECTIONS,POLE,DANCE,WORKOUTS,FITNESS,CLASSES,VERT,WELLNESS,CENTER,SANDY,JOHN,KENNEDY,LEARNING,TAQUERIA,LUPITA,AGAIN,DESIGN,STUDIO,GARZA,CHIROPRACTIC,CHILDREN,ORAL,HEALTH</lex>
+      <Resolution x="1680" y="1050" />
+      <taggedRectangles>
+         <taggedRectangle height="68" width="188" x="569" y="409">
+            <tag>SAVE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="62" width="142" x="792" y="409">
+            <tag>WAY</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

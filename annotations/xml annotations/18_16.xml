@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/18_16.jpg</imageName>
+      <address>94 Stewart St Seattle WA</address>
+      <lex>STEWART,RESTAURANT,KELLS,IRISH,PUB,PENSIONE,NICHOLS,ZEBRA,CLUB,THE,PINK,DOOR,STARBUCKS,PICHET,TASTING,ROOM,POST,SONYA,BAR,GRILL,STEELHEAD,DINER,WHITE,HORSE,TRADING,CAFE,CAMPAGNE,PIROSHKY,PANIER,VERY,FRENCH,BAKERY,PERENNIAL,TEA,PIKE,WESTERN,WINE,MERCHANTS,EMMETT,WATSON,OYSTER,NORDSTROM,RACK,DOWNTOWN,SEATTLE,BEECHERS,HANDMADE,CHEESE</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="80" width="417" x="625" y="346">
+            <tag>RESTAURANT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="89" width="318" x="304" y="335">
+            <tag>STEWART</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

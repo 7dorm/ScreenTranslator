@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/03_12.jpg</imageName>
+      <address>940 Pearl Street Boulder CO</address>
+      <lex>TRIDENT,BOOKSELLERS,AND,CAFE,WEST,END,TAVERN,JAX,FISH,HOUSE,CENTRO,LATIN,KITCHEN,REFRESHMENT,PALACE,SUSHI,TORA,BRASSERIE,TEN,CARO,VENETIAN,TAVERNA,ATTIC,BAR,BISTRO,PASTA,JAY,URBAN,OUTFITTERS,THE,CHIPOTLE,MEXICAN,GRILL,MEDITERRANEAN,RESTAURANT,SAXY,UNIVERSITY,BICYCLES,CHELSEA,RITZ,BARTS,CELLAR,RIO,GRANDE,JUANITA,FOOD</lex>
+      <Resolution x="1918" y="898" />
+      <taggedRectangles>
+         <taggedRectangle height="79" width="469" x="670" y="402">
+            <tag>TRIDENT</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

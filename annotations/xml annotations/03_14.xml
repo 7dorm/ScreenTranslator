@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/03_14.jpg</imageName>
+      <address>2010 14th Street Boulder CO</address>
+      <lex>BOULDER,THEATER,HIMALAYAS,RESTAURANT,CHEESECAKE,FACTORY,ILLEGAL,PETES,LAZY,DOG,ARTS,CRAFTS,GALLERY,PEDESTRIAN,SHOPS,ASSOCIATES,TRATTORIA,PEARL,STREET,MALL,COUNTY,COURTHOUSE,14TH,BAR,GRILL,INTO,THE,WIND,KITE,STORE,LUCILE,HOTEL,BOULDERADO,STARBUCKS,MOUNTAIN,SUN,PUB,BREWERY,SIDE,LOUNGE,COLO</lex>
+      <Resolution x="1918" y="906" />
+      <taggedRectangles>
+         <taggedRectangle height="86" width="472" x="703" y="299">
+            <tag>HIMALAYAS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="46" width="334" x="770" y="377">
+            <tag>RESTAURANT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="33" width="121" x="1639" y="364">
+            <tag>STREET</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

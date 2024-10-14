@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/08_16.jpg</imageName>
+      <address>1117 Prairie Street Houston TX</address>
+      <lex>ALDEN,HOUSTON,HUBCAB,GRILL,MAGNOLIA,HOTEL,ABC,BONDING,CHRIST,CHURCH,CATHEDRAL,LIVE,SPORTS,CAFE,TREEBEARD,RESTAURANT,TOMATO,LADY,KITCHEN,QUISINE,RONNIE,HARRISON,MOLLY,PUB,MERCURY,ROOM,THE,HOLLYWOOD,SANDWICH,SPECIALTY,RACHEL,SHOP,LITTLE,NAPOLI,ITALIAN,RESTURANT,LAURA,MAFRIGE,ENTERPRISES,CAVA,BISTRO,AMERICAN,COMPASS,INC,GMS,DENTAL,BAKER,CHRISTOPHER,DDS</lex>
+      <Resolution x="1280" y="882" />
+      <taggedRectangles>
+         <taggedRectangle height="41" width="145" x="823" y="371">
+            <tag>ALDEN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

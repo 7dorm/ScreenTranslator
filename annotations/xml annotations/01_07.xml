@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/01_07.jpg</imageName>
+      <address>? 646 Evans Street Southwest Atlanta GA?</address>
+      <lex>CHANTERELLE,CAFE,CATERING,SOUL,VEGETARIAN,RESTAURANT,KRISPY,KREME,DOUGHNUTS,SMOOTH,TICKETS,WEST,END,MEDICAL,CENTER,INC,FLOUNOY,PROPERTIES,OGLETHORPE,CANNON,LINDA,GUT,BUSTERS,CHEESE,STEAKS,KIDAZZLE,CHILD,CARE,INFANT,JACOBS,THERESA,MAYWEATHER,ENTERPRISE,LIBERTY,TAX,SERVICES,AFRIKAN,DELI,YORK,AVE,EVANS,STEVEN,GARMON,ENVIOUS,HAIR,SALON,AFROBOOKS,SADLER,CYNTHIA,USED,TIRE,KIM,FASHION</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="83" width="444" x="425" y="338">
+            <tag>CHANTERELLE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

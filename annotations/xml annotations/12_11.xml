@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/12_11.jpg</imageName>
+      <address>752 South 10th Street Philadelphia PA 19147</address>
+      <lex>PHILADELPHIA,BELLA,VISTA,BED,BREAKFAST,AND,MOTELS,HOTELS,HOSTELS,TOURIST,ATTRACTIONS,DANTE,LUIGIS,MORNING,GLORY,ISGRO,PASTRIES,RALPH,ITALIAN,RESTAURANT,SABRINA,CAFE,BEER,DISTRIBUTORS,INC,SARCONE,DELI,HIRSCH,CHARLENE,DMD,PAUL,CATHOLIC,CHURCH,PALUMBOS,CONESTOGA,BANK,MEW,GALLERY,LLC,MAGIC,GARDENS,SON,PALUMBO,RECREATION,CENTER,MNB,ARCHITECTURE,HAWTHORNES,LORENZO,PIZZA,ACADEMY</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="66" width="184" x="308" y="417">
+            <tag>BELLA</tag>
+         </taggedRectangle>
+         <taggedRectangle height="55" width="148" x="504" y="437">
+            <tag>VISTA</tag>
+         </taggedRectangle>
+         <taggedRectangle height="51" width="77" x="667" y="449">
+            <tag>INC</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

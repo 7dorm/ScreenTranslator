@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/15_04.jpg</imageName>
+      <address>1500 El Prado San Diego CA 92101</address>
+      <lex>TIMKEN,MUSEUM,ART,THE,SAN,DIEGO,PRADO,BALBOA,PARK,SPECIAL,EVENTS,BOTANICAL,BUILDING,AND,LILY,POND,MINGEI,INTERNATIONAL,RESTAURANT,INSTITUTE,MODEL,RAILROAD,HOUSE,HOSPITALITY,MAN,OLD,GLOBE,PASSPORT,TREE,CARE,JAPANESE,FRIENDSHIP,GARDEN,PHOTOGRAPHIC,ARTS,PROMOTIONS,CULTURAL,PARTNERSHIP,PLAZA,PANAMA,SDMA,CAFE,WATERS</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="41" width="63" x="689" y="497">
+            <tag>ART</tag>
+         </taggedRectangle>
+         <taggedRectangle height="36" width="47" x="712" y="839">
+            <tag>ART</tag>
+         </taggedRectangle>
+         <taggedRectangle height="33" width="64" x="370" y="822">
+            <tag>ART</tag>
+         </taggedRectangle>
+         <taggedRectangle height="44" width="133" x="523" y="500">
+            <tag>MUSEUM</tag>
+         </taggedRectangle>
+         <taggedRectangle height="33" width="83" x="261" y="825">
+            <tag>MUSEUM</tag>
+         </taggedRectangle>
+         <taggedRectangle height="36" width="123" x="628" y="464">
+            <tag>TIMKEN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="28" width="77" x="187" y="831">
+            <tag>TIMKEN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

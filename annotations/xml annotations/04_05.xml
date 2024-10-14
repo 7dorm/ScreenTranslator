@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/04_05.jpg</imageName>
+      <address>700 North Glenoaks Boulevard Burbank CA 91502</address>
+      <lex>BURBANK,FIRST,UNITED,METHODIST,CHURCH,NURSERY,SCHOOL,PET,HAVEN,IKEA,ELEVEN,YOUNG,LIFE,HIGH,PACIFIC,MANOR,HOUSE,REALTY,EMMANUEL,EVANGELICAL,HARVARD,HACIENDA,ESTATES,CHASE,EPHRAIM,SYRIAN,ORTHODOX,COLONY,THEATRE,DATA,LINE,MORITZ,SECURITY,SERVICES,WMG,DIRECT,INC,TRADING,LANTIERI,VIVALDI,FLORIST,GIFTS,OFFICE,DEPOT</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="31" width="141" x="590" y="522">
+            <tag>CHURCH</tag>
+         </taggedRectangle>
+         <taggedRectangle height="30" width="116" x="600" y="414">
+            <tag>FIRST</tag>
+         </taggedRectangle>
+         <taggedRectangle height="39" width="195" x="562" y="477">
+            <tag>METHODIST</tag>
+         </taggedRectangle>
+         <taggedRectangle height="31" width="147" x="584" y="447">
+            <tag>UNITED</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

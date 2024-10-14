@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/18_12.jpg</imageName>
+      <address>222 Yale Avenue North Seattle WA</address>
+      <lex>REI,SEATTLE,FLAGSHIP,ALLEY,APARTMENTS,ESPRESSO,VIVACE,WORLD,WRAPPS,VELOCITY,ART,AND,DESIGN,SNOWBOARD,CONNECTION,CORAZON,SPA,BLIX,TOTTINI,COLE,WEBER,UNITED,WUNDERMAN,FEATHERED,FRIENDS,NBBJ,URBAN,BEAST,FOREST,SERVICE,OUTDOOR,SOUTHLAKE,GRILL,PLAY,AGAIN,SPORTS,SIGHTLIFE,PUJARI,CENTER</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="67" width="144" x="548" y="352">
+            <tag>REI</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/14_19.jpg</imageName>
+      <address>915 Southeast Hawthorne Boulevard Portland</address>
+      <lex>LUCKY,LABRADOR,BREW,PUB,IORIO,RESTAURANT,VANITY,JUNKIE,CLEVER,CYCLES,HOWLIDAY,INN,DOGGIE,HOTEL,KUSH,HAND,KNOTTED,CARPETS,RUGS,MADISON,GRILL,ROOTS,BREWING,CHELSEA,BALLROOM,LLC,CRAVE,CATERING,PLAN,STARFISH,STUDIOS,NEW,DEAL,DISTILLERY,AND,TASTING,ROOM,ANTIQUE,FURNITURE,WAREHOUSE,COLUMBIA,PRINTING,GRAPHICS,NEWSPACE,DARKROOM,STUDIO,STREET,YOGA,FREE,GEEK,LIFESTYLES,PHYSICAL,THERAPY,11TH,AVENUE,LIQUOR</lex>
+      <Resolution x="1280" y="880" />
+      <taggedRectangles>
+         <taggedRectangle height="50" width="214" x="876" y="314">
+            <tag>BREW</tag>
+         </taggedRectangle>
+         <taggedRectangle height="68" width="344" x="503" y="313">
+            <tag>LABRADOR</tag>
+         </taggedRectangle>
+         <taggedRectangle height="50" width="209" x="271" y="317">
+            <tag>LUCKY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="79" width="158" x="1101" y="299">
+            <tag>PUB</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

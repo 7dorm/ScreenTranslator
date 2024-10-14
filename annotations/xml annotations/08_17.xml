@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/08_17.jpg</imageName>
+      <address>901 Commerce Street Houston TX</address>
+      <lex>SPAGHETTI,WAREHOUSE,MERCHANTS,AND,MANUFACTURERS,BUILDING,TOC,BAR,UNIVERSITY,HOUSTON,DOWNTOWN,COPA,CABANA,HOTEL,ICON,COMEDY,GUYS,DEFENSIVE,DRIVING,THE,COTTON,EXCHANGE,LOUNGE,SHADOW,BAYOU,LOFTS,CONDOMINIUMS,INC,CARAFE,FRANKLIN,STREET,COFFEEHOUSE,HONG,KONG,DINER,ABRAHAM,WATKINS,NICHOLS,SORRELS,FRIEND,PERSONAL,INJURY,ATTORNEYS,RED,CAT,JAZZ,CAFE,CLUB,ULTRA,SPEAKEASY,LES,GIVRAL,UHD,BOOKSTORE,HOUSTON,DIVORCE,LAWYERS,BERTOLINO,LLP</lex>
+      <Resolution x="1280" y="878" />
+      <taggedRectangles>
+         <taggedRectangle height="44" width="278" x="509" y="207">
+            <tag>SPAGHETTI</tag>
+         </taggedRectangle>
+         <taggedRectangle height="55" width="315" x="805" y="210">
+            <tag>WAREHOUSE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

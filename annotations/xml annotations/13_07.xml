@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/13_07.jpg</imageName>
+      <address>419 East Roosevelt Street Phoenix AZ</address>
+      <lex>MODIFIED,ARTS,EYE,LOUNGE,FATE,905,LLC,LOST,LEAF,GALLERY,NINE,MODERN,ASIAN,MADE,ART,BOUTIQUE,FETHIERE,WILLIAM,DRAPERIES,MURIEL,INC,PRAVUS,THE,ROOSEVELT,HAYDEN,DESIGN,STUDIO,SPOKEN,ACTORS,THEATRE,PHOENIX,TAMMIE,COE,CAKES,BREAD,CONSPIRE,CRAFTS,COFFEE,SHOP,FASHION,NILE,CAFE,TUMBLEWEED,DROP,CENTER,PERIHELLON,HOODRIDE,ALLEY,CARLY,BISTRO</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="36" width="73" x="479" y="321">
+            <tag>EYE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="40" width="139" x="555" y="312">
+            <tag>LOUNGE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

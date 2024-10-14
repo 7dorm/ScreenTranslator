@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/00_14.jpg</imageName>
+      <address>1418 East Lincoln Avenue Anaheim CA 92805-2213</address>
+      <lex>ORIGINAL,PANCAKE,HOUSE,ABRAHAM,LINCOLN,ELEMENTARY,PHARMACY,MOORE,UPHOLSTERER,REINBOLD,GALLERY,PHOTOGRAPHY,GRUPO,RECUPERACION,ALCOHOLICOS,ANTHONY,ROSS,STUDIO,ALICIA,TRAVEL,CHA,HEARING,AID,CENTER,ORANGE,COUNTY,FIRE,SERVICES,ASSOCIATION,MAMMA,MINI,MART,MARI,HAIR,DESIGN,PARKVIEW,HEALTHCARE,PRO,TAX,SUPER,VIDEO,UNITED,OPTICAL,LEMON,TREE,HOTEL,KITCHEN,SUITES,DONES,FAMILY,DENTISTRY,DIAZ,PROFESIONALES,HISPANA,HOMES</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="80" width="163" x="571" y="397">
+            <tag>HOUSE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="69" width="151" x="567" y="328">
+            <tag>ORIGINAL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="87" width="245" x="318" y="374">
+            <tag>PANCAKE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

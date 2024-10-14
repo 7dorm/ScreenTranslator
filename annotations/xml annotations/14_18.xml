@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/14_18.jpg</imageName>
+      <address>1401 SW Naito Parkway Portland OR</address>
+      <lex>PORTLAND,MARRIOTT,DOWNTOWN,WATERFRONT,CHAMPION,SPORTS,BAR,RIVERPLACE,HOTEL,BENJAMIN,FRANKLIN,PLAZA,MANDARIN,COVE,CHINESE,RESTAURANT,ALLIE,AMERICAN,GRILLE,STARBUCKS,MORTON,THE,STEAKHOUSE,AUGUST,MOON,KOIN,YATES,MATTHEWS,EATON,KELLER,AUDITORIUM,VERITABLE,QUANDARY,UMPQUA,BANK,OREGON,ZOO,2008,THREE,DEGREES,CROWN,CAFE,MILE,HIGH,VALET,SERVICES,EXOTIC,AUTO,LEASE,AXA,ADVISORS</lex>
+      <Resolution x="1280" y="880" />
+      <taggedRectangles>
+         <taggedRectangle height="68" width="256" x="536" y="332">
+            <tag>MARRIOTT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="60" width="182" x="173" y="803">
+            <tag>MARRIOTT</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

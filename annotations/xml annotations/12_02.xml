@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/12_02.jpg</imageName>
+      <address>123 South Broad Street Philadelphia PA 19109-1094</address>
+      <lex>WACHOVIA,BANK,BOHLIN,CYWINSKI,JACKSON,MONTGOMERY,CRACKEN,WALKER,AVENUE,THE,ARTS,INC,LEVIN,AND,ZEIGER,LLP,PHILADELPHIA,CRIMINAL,ATTORNEY,HOSPITALITY,WOMEN,WAY,MANN,CENTER,FOR,PERFORMING,BOX,OFFICE,BIG,BROTHERS,SISTERS,SOUTHEASTERN,MICHAEL,LUBER,LEADERSHIP,FRAZIER,JOHN,EDELSTEIN,MARTIN,NELSON,BOYLE,ASSOCIATES,MENTAL,HEALTH,EXPERT,EVENTS,NETWORKS,FOR,TRAINING,DEVELOPMENT,KING,SALLY,ACKERMAN,YWCA,CITY,REPORTING</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="79" width="206" x="705" y="333">
+            <tag>BANK</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

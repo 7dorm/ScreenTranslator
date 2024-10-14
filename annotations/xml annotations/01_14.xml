@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/01_14.jpg</imageName>
+      <address>? 437 Memorial Dr SE Atlanta GA</address>
+      <lex>SIX,FEET,UNDER,RIA,BLUEBIRD,LUX,THE,SALON,GRANT,PARK,TONY,BREWER,JANE,CONDOMINIUM,ASSOCIATION,INC,OAKLAND,CEMETERY,TIN,LIZZYS,CLAXTON,PRINTING,FIRESTATION,439,DESIGN,STUDIO,CHEROKEE,AVE,WOODWARD,ONLY,YOU,TATTOO,BCI,PERFORMANCE,WAREHOUSE,BARNETT,EXPRESS,CLEANERS,MEMORIAL,WOOD,IMAGE,MARKETING,IMDELIVERS,COM,STORE,ATLANTA,HABITAT,SATIC,HOME,BUSINESS,OPPORTUNITY</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="64" width="197" x="450" y="324">
+            <tag>FEET</tag>
+         </taggedRectangle>
+         <taggedRectangle height="63" width="144" x="295" y="327">
+            <tag>SIX</tag>
+         </taggedRectangle>
+         <taggedRectangle height="63" width="300" x="673" y="319">
+            <tag>UNDER</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/03_13.jpg</imageName>
+      <address>2319 Arapahoe Avenue Boulder CO</address>
+      <lex>DOLAN,RESTAURANT,SIAMESE,PLATE,RINCON,DEL,SOL,VILLAGE,COFFEE,SHOP,SUMIDA,SUSHI,BAR,TASTEFULLY,TOASTED,GREAT,HARVEST,BREAD,SUBWAY,TIFFANY,NAILS,SPA,LLC,BRIAR,ROSE,BED,AND,BREAKFAST,NAROPA,UNIVERSITY,BOULDER,SKI,DEALS,BLOCKBUSTER,VIDEO,DATA,DOCTORS,GUCKIN,HARDWARE,INC,ARAPAHOE,AVE,23RD,PERFORMANCE,BICYCLE,WATCH,GALAXY,ZOLO,GRILL,PAUL,LEV,ARY,ASSOCIATES</lex>
+      <Resolution x="1920" y="906" />
+      <taggedRectangles>
+         <taggedRectangle height="78" width="200" x="640" y="343">
+            <tag>DOLAN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="70" width="217" x="984" y="335">
+            <tag>DOLAN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/01_04.jpg</imageName>
+      <address>? 160 John Wesley Dobbs Avenue Northeast Atlanta GA?</address>
+      <lex>CROWELL,ANGELA,SHERATON,ATLANTA,HOTEL,PLANNED,PARENTHOOD,CITIZENS,TRUST,BANK,DOWNTOWN,SHELL,CARE,GEEKS,ATLANTA,COMPUTER,REPAIR,UNIVERSITY,HOUSING,FIRST,CONGREGATIONAL,CHURCH,PATRICIA,HAYNES,WYNDHAM,GARDEN,BAYMONT,INN,SUITES,DIALYSIS,CLINIC,INC,PUBLIC,STORAGE,SELF,DARDEN,TRUDDIE,FEMME,CARE,FRANKLIN,CHERYL,GEORGIA,STATE,STUDNT,KENLEY,CATERING,RESTAURANT,MOREHOUSE,MEDICAL,ASSOCIATES,BLAKE,VICTOR,ANDERSON,DAVID</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="111" width="378" x="473" y="338">
+            <tag>SHELL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

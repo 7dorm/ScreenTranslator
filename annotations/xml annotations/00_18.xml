@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/00_18.jpg</imageName>
+      <address>1111 South Harbor Boulevard Anaheim CA 92805</address>
+      <lex>DAYS,INN,CALIFORNIA,RAMADA,MAINGATE,NORTH,CUSTOM,JOHN,ANAHEIM,HARBOR,PARK,THOMAS,JEFFERSON,ELEMENTARY,FRONTIER,MOTEL,ORANGE,GROVE,SCHOOL,BIGS,PIZZA,MORE,CARROWS,RESTAURANT,LUCERA,APARTMENTS,PACKAGING,ASSOCIATES,VILLAGE,ECONO,LODGE,HOTEL,MENAGE,ESMERALDA,BEAUTY,SALON,VAN,LIQUOR,MARKET,CLINICA,MEDICA,CENTRAL,TROPIC,DISENOS,ENOE,BEST,VALUE,ASTORIA,AND,SUITES</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="31" width="80" x="427" y="332">
+            <tag>DAYS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="33" width="62" x="504" y="330">
+            <tag>INN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/00_16.jpg</imageName>
+      <address>970 South Anaheim Boulevard Anaheim CA 92805-8507</address>
+      <lex>SUB,KOMFORT,TRAVEL,TOURS,SANDIGO,MULTI,SERVICES,MEDICANN,INC,WESTERN,MEDICAL,CENTER,ANAHEIM,LESLIE,BEAUTY,SALON,HARRY,LAL,ASSOCIATES,UNIVERSAL,ASHER,FAMILY,CARE,CAMINO,DENTAL,WIJESINGHE,NANDI,TRUCKING,THOMAS,EDWARDS,LAW,OFFICES,VICTOR,GIONGCO,OFFICE,ORANGE,SURGERY,NGUYEN,MAI,DDS,CHET,DESAI,CENTRAL,OCCUPATIONAL,MEDICINE,OCEAN,WHITE,HOUSE</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="130" width="210" x="306" y="287">
+            <tag>SUB</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

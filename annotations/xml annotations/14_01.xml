@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/14_01.jpg</imageName>
+      <address>1239 Southwest Broadway Portland OR</address>
+      <lex>HIGGINS,RESTAURANT,OREGON,HISTORICAL,SOCIETY,PORTLAND,ART,MUSEUM,LADD,CARRIAGE,HOUSE,GIGI,SPA,SALON,GIFFORD,FLOWERS,THE,HEATHMAN,HOTEL,SCHNITZER,CONCERT,HALL,CENTER,PERFORMING,WINNINGSTAD,THEATRE,FIRST,CONGREGATIONAL,PACWEST,OREGONIAN,UNITUS,COMMUNITY,CREDIT,UNION,PUBLISHING,GARY,SWANK,JEWELERS,INN,CITY,REGENCY,APARTMENTS,ROSE,FRIEND</lex>
+      <Resolution x="1280" y="882" />
+      <taggedRectangles>
+         <taggedRectangle height="94" width="382" x="337" y="348">
+            <tag>HIGGINS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

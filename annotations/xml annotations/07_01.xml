@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/07_01.jpg</imageName>
+      <address>423 East 17th Avenue Denver CO</address>
+      <lex>AVENUE,THEATER,BUMP,GRIND,INC,WRANGLER,CHICKEN,LIPS,WILLIAMS,TAVERN,REALM,REALTY,MANAGEMENT,LLC,CAVEAU,WINE,BAR,WARWICK,DENVER,HOTEL,MASTEN,FINE,ART,FRAMING,UPTOWN,HENRY,SALON,STEUBEN,VILLAGE,YUM,YUMS,17TH,CLEANERS,ENTERTAINMENT,GROSVENOR,ARMS,HDR,ENGINEERING,THE,GRILL,CATHEDRAL,IMMACULATE,CNCPTN</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="50" width="150" x="739" y="419">
+            <tag>TAVERN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="50" width="75" x="189" y="431">
+            <tag>TAVERN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="55" width="205" x="536" y="422">
+            <tag>WILLIAMS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

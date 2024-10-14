@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/13_15.jpg</imageName>
+      <address>50 East Adams Street Phoenix AZ</address>
+      <lex>WYNDHAM,PHOENIX,HOTEL,HYATT,REGENCY,HANNY,TWO,RENAISSANCE,SQUARE,SECURITY,STARBUCKS,CHASE,BANK,AND,ATM,FIRST,WATCH,MARSTON,CAFE,MONROE,ICON,SAN,CARLOS,DUCK,DECANTAR,DOWNTOWN,DELI,BAJA,FRESH,MEXICAN,GRILL,SILVER,SPOON,SEAMUS,MCCAFFFREY,IRISH,PUB,RESTAURANT,MATADOR,DAILY,GRIND,THAI,ELEPHANT</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="87" width="300" x="583" y="279">
+            <tag>HOTEL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="94" width="509" x="27" y="274">
+            <tag>WYNDHAM</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/05_01.jpg</imageName>
+      <address>216 West Cermak Road Chicago IL</address>
+      <lex>CHINATOWN,MARKET,PHOENIX,RESTAURANT,SAINT,ALP,TEAHOUSE,PUI,TAK,CENTER,MOON,PALACE,HOTEL,SRO,DOUBLE,THREE,HAPPINESS,PENANG,MALAYSIAN,CUISINE,CHAMBER,COMMERCE,NEW,CHINA,TOWN,CHOP,SUEY,CHINESE,TON,SHEN,HEALTH,CHICAGO,ACUPUNCTURE,CANTONESIA,RED,MANDARIN,KITCHEN,INC,TRIPLE,CROWN,HAPPY,CHEF,DIM,SUM,HOUSE,SHUI,WAH,WON,KOW</lex>
+      <Resolution x="1280" y="882" />
+      <taggedRectangles>
+         <taggedRectangle height="68" width="191" x="317" y="393">
+            <tag>MOON</tag>
+         </taggedRectangle>
+         <taggedRectangle height="68" width="229" x="517" y="385">
+            <tag>PALACE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

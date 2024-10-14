@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/11_02.jpg</imageName>
+      <address>24 East Washington Street Orlando FL</address>
+      <lex>SUSHI,HATSU,JAPANESE,RESTAURANT,THE,SOCIAL,TABU,NIGHTCLUB,ORANGE,COUNTY,REGIONAL,HISTORY,CENTER,SEASON,HARVEST,CAFE,CATERING,LODGE,WALL,STREET,ENTERPRISES,EYE,SPY,BAR,GLOBE,ANNIE,SKY,WASHINGTON,LLC,LIZZY,CORMACK,IRISH,PUB,MONKEY,FINN,HENRY,GRIFFIN,LINDER,RINGER,BUCKLEY,SEACORD,JAX,RUSSELL,GRILL,SKYSIXTY</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="117" width="161" x="653" y="325">
+            <tag>HATSU</tag>
+         </taggedRectangle>
+         <taggedRectangle height="99" width="150" x="506" y="352">
+            <tag>SUSHI</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

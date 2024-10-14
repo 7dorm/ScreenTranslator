@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/09_16.jpg</imageName>
+      <address>1610 West Washington Street Indianapolis IN</address>
+      <lex>INDUSTRIAL,ANODIZING,INC,INDIANA,PUBLIC,TRANSPORTATION,MELAUN,INDUSTRIES,CARTER,LEE,LUMBER,INDYGO,BERGERS,HALF,PRICE,TABLE,PAD,AMALGAMATED,TRANSIT,UNION,ZIMMER,WELDING,WESTSIDE,PENTECOSTAL,CHURCH,MESSER,CONSTRUCTION,CMR,ROOFING,LLC,BUS,STOP,NANNYS,PLACE,CARPENTER,LOCAL,758,RESTORE,PENTECOST,PRIGRIM,CHAPEL,HOLINESS,KNOX,SEPTIC,SERVICES,SUBWAY,SOLOTKEN</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="31" width="114" x="694" y="407">
+            <tag>ANODIZING</tag>
+         </taggedRectangle>
+         <taggedRectangle height="31" width="142" x="550" y="404">
+            <tag>INDUSTRIAL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

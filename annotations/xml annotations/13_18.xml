@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/13_18.jpg</imageName>
+      <address>105 West Portland Street Phoenix AZ</address>
+      <lex>PORTLAND,RESTAURANT,WINE,BAR,POST,ROOSEVELT,SQUARE,IRISH,CULTURAL,CENTER,FAIR,TRADE,CAFE,KPNX,TRINITY,EPISCOPAL,CATHEDRAL,MARGARET,HANCE,PARK,YOGA,HEART,STATE,FARM,INSURANCE,PARTNERS,METRO,WEST,KPFF,CONSULTING,ENGINEERS,STOP,FORECLOSURE,LOAN,MODIFICATION,NEGOTIATORS,PAYING,CASH,FOR,HOUSES,CAMBRIDGE,WEALTH,MANAGEMENT,ATTORNEY,BACKED,LOAN,MODIFICATION,COMPANY,PTE,REAL,ESTATE,GROUP,LLC,CARLY,BISTRO,ADVIXEN,ROBERT,KORLJAN,LTD</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="36" width="191" x="156" y="285">
+            <tag>PORTLAND</tag>
+         </taggedRectangle>
+         <taggedRectangle height="27" width="213" x="578" y="290">
+            <tag>RESTAURANT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="35" width="64" x="830" y="282">
+            <tag>BAR</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

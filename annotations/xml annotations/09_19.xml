@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/09_19.jpg</imageName>
+      <address>225 West Washington Street Indianapolis IN</address>
+      <lex>HYATT,REGENCY,INDIANAPOLIS,SIMON,PROPERTY,GROUP,STATE,HOUSE,PATACHOU,THE,PARK,INDIANA,REPERTORY,THEATRE,EAGLE,NEST,RESTAURANT,ALCOHOL,TOBACCO,COMMISSION,COURTYARD,MARRIOTT,THE,WESTIN,LOUGHMILLER,PUB,EATERY,SHULA,STEAK,EMBASSY,SUITES,DOWNTOWN,HARRISON,ATTORNEY,GENERAL,LEVEL,ONE,STARBUCKS,HILTON,ARTS,GARDEN,WEBER,GRILL</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="50" width="158" x="606" y="394">
+            <tag>SIMON</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

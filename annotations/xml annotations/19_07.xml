@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/19_07.jpg</imageName>
+      <address>1427 G Street Northwest Washington DC 20005-2009</address>
+      <lex>OLD,EBBITT,GRILL,CEIBA,TREASURY,BUILDING,WASHINGTON,GARFINCKEL,WILLIAM,FOX,COBBLER,CLEANERS,KOCH,FOUNDATION,BUTTERFIELD,RESTAURANT,AAA,INTERCONTINENTAL,HOTEL,THE,WILLARD,STARBUCKS,KIRKLAND,ELLIS,LLP,BORDERS,BOOKSTORE,BOOKS,MUSIC,MOVIES,EXPRESS,FILENE,BASEMENT,FOR,TRAFFIC,SKADDEN,ARPS,SLATE,MEAGHER,CRISMAN,CHARLES,SHOPS,NATIONAL,PLACE,PRESS,CLUB</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="36" width="73" x="605" y="439">
+            <tag>FOX</tag>
+         </taggedRectangle>
+         <taggedRectangle height="30" width="111" x="82" y="434">
+            <tag>CLEANERS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

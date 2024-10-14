@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/09_11.jpg</imageName>
+      <address>111 Monument Circle Indianapolis IN</address>
+      <lex>COLUMBIA,CLUB,CHRIST,CHURCH,CATHEDRAL,INDIANAPOLIS,DOWNTOWN,INC,HILTON,GARDEN,INN,SOLDIERS,SAILORS,MONUMENT,CIRCLE,CHASE,SHERATON,CITY,CENTER,HOTEL,PARADISE,BAKERY,CAFE,FLETCHER,TRUST,BUILDING,GIORGIO,PIZZA,BANK,AND,ATM,STARBUCKS,COMICS,OROFINO,JEWELERS,HNTB,CORPORATION,STUDIO,2000,SALON,DAY,SPA,CHAMBER,COMMERCE,NICKY,BLAINE</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="28" width="108" x="964" y="385">
+            <tag>CHASE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="22" width="64" x="606" y="380">
+            <tag>CHASE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

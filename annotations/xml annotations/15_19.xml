@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/15_19.jpg</imageName>
+      <address>1617 1st Avenue San Diego CA 92101</address>
+      <lex>HOLIDAY,INN,HOTEL,SAN,DIEGO,DOWNTOWN,MOTEL,SUNSETS,AMERICAN,BAR,GRILL,CALIFORNIA,WESTERN,SCHOOL,LAW,DOUBLETREE,RADISSON,HARBOR,VIEW,GERSON,INSTITUTE,WINGS,THINGS,CANCER,CURING,SOCIETY,JOSEPH,CATHEDRAL,BEEJAY,DELI,MARKET,SPEEDO,TACH,INC,CITY,TREE,CHRISTIAN,FIRST,STREET,EXXON,CENTRE,APARTMENTS,PLAZA,COAST,AUTO,SERVICES,CURRENT,ARTIFICIAL,GRASS,OMEGA,TURF,OCCIDENTAL,LLC</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="104" width="194" x="516" y="426">
+            <tag>HOLIDAY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="26" width="43" x="641" y="600">
+            <tag>HOTEL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="53" width="105" x="567" y="505">
+            <tag>INN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

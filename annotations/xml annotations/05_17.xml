@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/05_17.jpg</imageName>
+      <address>1531 West Taylor Street Chicago IL</address>
+      <lex>POMPEI,ROSEBUD,MEDICAL,DISTRICT,CITY,APARTMENTS,HAWKEYE,BAR,GRILL,INC,JUBRANO,PASADA,TAJ,MAHAL,FAST,FOODS,LEMON,GRASS,CLASSIC,THAI,CUISINE,GOLDEN,CONTE,SAVOIA,EUROPEAN,PATIO,RESTAURANT,ELEVEN,CIRCLE,PARK,BRIAN,KALEEL,ALLSTATE,INSURANCE,QUOTES,CHICAGO,CAMPUS,VIDEO,ELECTRONICS,POTBELLY,SANDWICH,WORKS,KOENIG,STREY,COUSCOUS,ALTIER,TEAM,UNIVERSITY,VILLAGE,ASSOCIATION</lex>
+      <Resolution x="1276" y="878" />
+      <taggedRectangles>
+         <taggedRectangle height="64" width="282" x="392" y="296">
+            <tag>POMPEI</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

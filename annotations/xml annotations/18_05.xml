@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/18_05.jpg</imageName>
+      <address>? 1001 East Pike Street Seattle WA</address>
+      <lex>QUINN,PUB,NEUMOS,CAFFE,VITA,COMET,TAVERN,BIMBOS,CANTINA,HAVANA,VIA,TRIBUNALI,PIKE,STREET,FISH,FRY,SATELLITE,LOUNGE,SOLE,REPAIR,SHOP,ATLAS,CLOTHING,SWEAT,BOX,YOGA,WILD,ROSE,MOE,BAR,BASIC,PLUMBING,PLATINUM,RECORDS,LIGHTS,SOUND,BARCA,ODD,FELLOWS,CAFE,EVERYDAY,MUSIC,HOTHOUSE,SPA,SAUNA</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="77" width="184" x="484" y="386">
+            <tag>QUINN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/13_04.jpg</imageName>
+      <address>1 North Central Avenue Phoenix AZ</address>
+      <lex>DUCK,DECANTAR,DAILY,GRIND,WYNDHAM,PHOENIX,HOTEL,TWO,RENAISSANCE,SQUARE,SECURITY,FREEPORT,MCMORAN,COPPER,GOLD,PHELPS,DODGE,TOWER,HANNY,RYAN,INC,HYATT,REGENCY,TOM,RESTAURANT,TAVERN,RENAUD,COOK,DRURY,MESAROS,CYPRUS,AMAX,MINERALS,STARBUCKS,PARKER,AND,SON,BAJA,FRESH,MEXICAN,GRILL,MARICOPA,COUNTY,GOVERNMENT,ASSESSOR,OFFICE,MOBILE,HOMES,BARBERSHOP,CLIMAX,MOLYBDENUM,RYLEY,CARLOCK,APPLEWHITE,FLOWERS</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="33" width="103" x="332" y="337">
+            <tag>DODGE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="25" width="112" x="221" y="340">
+            <tag>PHELPS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="27" width="106" x="431" y="343">
+            <tag>TOWER</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/07_09.jpg</imageName>
+      <address>300 East 17th Avenue Denver CO</address>
+      <lex>UPTOWN,VILLAGE,WARWICK,DENVER,HOTEL,AVENUE,THEATER,WELLS,FARGO,BANK,MAXX,PROPERTIES,WRANGLER,BUMP,GRIND,INC,FEDEX,OFFICE,SHIP,CENTER,CLEANERS,LAUNDRY,CENTRAL,PRESBYTERIAN,CHURCH,THE,UNIVERSITY,CLUB,1770,SHERMAN,STREET,EVENT,PAHL,ARCHITECTURE,212,SALAD,SANDWICH,NATIONAL,CORPORATE,HOUSING,HDR,ENGINEERING,AR7,ARCHITECTS,WILLOUGHBY,LAW,FIRM,BAKER,HOSTETLER,LLP,FINANCIAL,DESIGNS,LTD</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="33" width="156" x="267" y="278">
+            <tag>UPTOWN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="28" width="133" x="423" y="283">
+            <tag>VILLAGE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

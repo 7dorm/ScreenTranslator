@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/09_14.jpg</imageName>
+      <address>640 North Capitol Avenue Indianapolis IN</address>
+      <lex>CLUB,INDIANAPOLIS,ZOLL,BROTHERS,ZESCO,PRODUCTS,TENDER,LOVING,PETS,DOGGY,ECONOMY,PLUMBING,SUPPLY,SIGN,RAMA,DEERING,CLEANERS,DOWNTOWN,ALL,AMERICAN,WINES,INDIANA,HOMESTYLE,KITCHEN,BATH,SIGNARAMA,RESS,MOTORWORKS,DIMENSION,FOUR,CORPORATION,SUNSHINE,MAINTENANCE,SERVICES,INC,32ND,DEGREE,MASONIC,LEARNING,UNIVERSITY,SCHOOL,MEDICINE,NTC,ELECTRONICS,ENVIROFORENSICS,MERIDIAN,ASSET,DEVELOPMENT,LANDES,COSTUMES,RACHEL,JOE,COFFEE,HOUSE,LFR</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="27" width="71" x="576" y="444">
+            <tag>BROTHERS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="19" width="83" x="650" y="444">
+            <tag>PRODUCTS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="32" width="87" x="645" y="417">
+            <tag>ZESCO</tag>
+         </taggedRectangle>
+         <taggedRectangle height="25" width="64" x="578" y="427">
+            <tag>ZOLL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

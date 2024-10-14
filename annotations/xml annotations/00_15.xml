@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/00_15.jpg</imageName>
+      <address>512 South State College Boulevard Anaheim CA 92806-4221</address>
+      <lex>ANAHEIM,BAND,INSTRUMENTS,SUSHI,SHOGUN,WIN,LOSE,DRAW,SPORTSWEAR,ACE,SHOE,REPAIR,ANGELO,HAMBURGERS,BICYCLE,ANA,AUTO,LUBE,TUNE,INC,COLLEGE,DRIVE,DAIRY,MARISCOS,LOS,MOCHIS,MISTRY,MANHAR,DDS,LITTLE,CAESARS,PIZZA,HERMANDAD,MEXICANA,NACIONAL,WESTPORT,APARTMENTS,SIZZLER,DENTAL,SHERRY,MENDOZA,BOOKKEEPING,ALEXANDER,PREMIERE,SALON,HONG,KONG,EXPRESS,RESTAURANT,HAPPY,LIQUOR,CALIFORNIA,BUDGET,FINANCE</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="73" width="80" x="854" y="324">
+            <tag>SHOGUN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="68" width="213" x="369" y="317">
+            <tag>SHOGUN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="59" width="120" x="245" y="317">
+            <tag>SUSHI</tag>
+         </taggedRectangle>
+         <taggedRectangle height="75" width="73" x="785" y="315">
+            <tag>SUSHI</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

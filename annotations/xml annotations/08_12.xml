@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/08_12.jpg</imageName>
+      <address>804 Main Street Houston TX</address>
+      <lex>CLUB,QUARTERS,FLYING,SAUCER,VENUE,MAINPLACE,DOMINO,PIZZA,ZULA,RESTAURANT,ESPERSON,BUILDINGS,LLC,YATRA,BRASSERIE,ANGELO,CHASE,BANK,AND,ATM,PUBLIC,SAFETY,SERVICES,INC,DOWNTOWN,FITNESS,CENTER,818,LOUNGE,JIMMY,JOHN,RAGIN,CAJUN,MANTRA,TABLE,GRILL,MORTON,THE,STEAKHOUSE,THE,VAULT,NIGHT,SALATA,PENNZOIL,PLACE</lex>
+      <Resolution x="1280" y="880" />
+      <taggedRectangles>
+         <taggedRectangle height="45" width="146" x="514" y="381">
+            <tag>DOMINO</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

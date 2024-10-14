@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/04_01.jpg</imageName>
+      <address>406 South Glenoaks Boulevard Burbank CA</address>
+      <lex>KOTAYK,KABOB,DELI,RICO,PIZZA,GEVORKYAN,HAKOP,RIVERA,ROBERT,GIULIO,CHIROPRACTIC,CLINIC,GARNY,GROCERY,ADVANCE,HEALTH,MEDICAL,GROUP,TERZIAN,GARO,HAMOUI,MOBIL,MART,GERRO,MARSHA,FORREST,REALTY,BLOCKBUSTER,VIDEO,MAN,GLENOAKS,PHARMACY,AND,SUPPLY,CAR,WASH,MOMOTARO,RESTAURANT,LAW,OFFICES,RAY,FOUNTAIN,CRIMINAL,DEFENSE,ATTORNEY,LAWYER,QUALITY,WINDOW,BLINDS,AYUNA,PANOSSIAN,BEST,ADVANCED,AUTO,CARE,CENTER</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="51" width="303" x="514" y="450">
+            <tag>CHIROPRACTIC</tag>
+         </taggedRectangle>
+         <taggedRectangle height="42" width="142" x="625" y="409">
+            <tag>GIULIO</tag>
+         </taggedRectangle>
+         <taggedRectangle height="34" width="59" x="325" y="407">
+            <tag>DELI</tag>
+         </taggedRectangle>
+         <taggedRectangle height="22" width="44" x="313" y="566">
+            <tag>DELI</tag>
+         </taggedRectangle>
+         <taggedRectangle height="27" width="66" x="161" y="408">
+            <tag>GARNY</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

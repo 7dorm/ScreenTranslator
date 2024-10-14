@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/13_03.jpg</imageName>
+      <address>101 N Central Ave Phoenix AZ</address>
+      <lex>TWO,RENAISSANCE,SQUARE,SECURITY,STARBUCKS,WYNDHAM,PHOENIX,HOTEL,BAJA,FRESH,MEXICAN,GRILL,CHASE,BANK,AND,ATM,THAI,ELEPHANT,DOWNTOWN,DELI,MONROE,SAN,CARLOS,YASDA,BENTO,CONEY,ISLAND,PITA,SUBS,SALADS,QUIZNOS,SEAMUS,MCCAFFFREY,IRISH,PUB,RESTAURANT,HYATT,REGENCY,HANNY,MESA,PIT,BBQ,SMOKEHOUSE,JACQUEE,ESPRESSO,DUCK,DECANTAR,ACADEMY,CINEMA,TELEVISION</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="33" width="113" x="236" y="370">
+            <tag>QUIZNOS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="18" width="70" x="813" y="341">
+            <tag>SALADS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="22" width="52" x="913" y="337">
+            <tag>SUBS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

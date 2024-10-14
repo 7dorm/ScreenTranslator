@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/18_11.jpg</imageName>
+      <address>400 Spring Street Seattle WA</address>
+      <lex>EXECUTIVE,HOTEL,PACIFIC,SEATTLE,EARTH,OCEAN,MONACO,SAZERAC,SEATTLES,BEST,COFFEE,VINTAGE,PARK,THE,FAIRMONT,OLYMPIC,JASMINE,BAR,BELLE,EPICUREAN,CROWNE,PLAZA,SKINNER,BUILDING,TULIO,COMMUNITY,GROCERY,BERNARD,SENECA,STARBUCKS,BENIHANA,REVIEWS,PURPLE,CAFE,AND,WINE,1001,FOURTH,AVENUE</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="69" width="354" x="200" y="305">
+            <tag>EXECUTIVE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="61" width="204" x="565" y="305">
+            <tag>HOTEL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="69" width="236" x="781" y="296">
+            <tag>PACIFIC</tag>
+         </taggedRectangle>
+         <taggedRectangle height="41" width="75" x="190" y="274">
+            <tag>THE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

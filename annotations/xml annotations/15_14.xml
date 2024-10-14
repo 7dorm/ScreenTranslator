@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/15_14.jpg</imageName>
+      <address>660 G Street San Diego CA 92101</address>
+      <lex>COMFORT,INN,GASLAMP,CONVENTION,CENTER,BUCA,BEPPO,SAN,DIEGO,ZANZIBAR,CAFE,PANNIKIN,COFFEE,TEA,NEIGHBORHOOD,CHOPAHN,AUTHENTIC,AFGHAN,CSN,EXY,CLOSED,GHIRARDELLI,CHOCOLATE,BORDERS,BOOKSTORE,BOOKS,MUSIC,MOVIES,ARLINGTON,APARTMENT,HOTEL,MAX,REAL,ESTATE,CONSULTANTS,USA,HOSTELS,GREYSTONE,THE,STEAKHOUSE,RAMADA,HOSTELLING,INTERNATIONAL,VILLAGER,LODGE,QUARTER,KITCHEN,KIYO,JAPANESE,RESTAURANT,ASSOCIATION,ASTI,RISTORANTE,FINE,DINING</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="106" width="279" x="823" y="85">
+            <tag>COMFORT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="55" width="163" x="826" y="734">
+            <tag>GASLAMP</tag>
+         </taggedRectangle>
+         <taggedRectangle height="76" width="146" x="1107" y="122">
+            <tag>INN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="50" width="94" x="937" y="681">
+            <tag>INN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="47" width="157" x="778" y="683">
+            <tag>COMFORT</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

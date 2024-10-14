@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/02_02.jpg</imageName>
+      <address>11 South Eutaw Street Baltimore MD</address>
+      <lex>REDWOOD,LLP,BROMO,SELTZER,ARTS,TOWER,ROMBRO,BUILDING,CAMDEN,COURT,FIRST,MARINER,ARENA,HIPPODROME,THEATRE,HOLIDAY,INN,HOTEL,BALTIMORE,INNER,HARBOR,DOWNTOWN,JOHNSTON,MARYLAND,APARTMENT,FAUST,BROTHERS,MARLBORO,CLASSIC,APARTMENTS,TRANSPORTATION,DEPARTMENT,HOWARD,STREET,TUNNEL,FIRE,DANAS,PARKING,UPPER,DECK,BAR,GRILL,FRANK,SON,LOFT,HISTORIC,DISTRICT,NORTH,STARBUCKS,COFFEE,MARRIOTT,YARDS,DELL,SIMMONS</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="58" width="323" x="533" y="439">
+            <tag>REDWOOD</tag>
+         </taggedRectangle>
+         <taggedRectangle height="72" width="195" x="959" y="736">
+            <tag>REDWOOD</tag>
+         </taggedRectangle>
+         <taggedRectangle height="26" width="134" x="663" y="501">
+            <tag>APARTMENTS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

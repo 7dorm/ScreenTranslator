@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/01_13.jpg</imageName>
+      <address>? 700 Lake Avenue Northeast Atlanta GA</address>
+      <lex>KEVIN,RATHBUN,STEAK,LLC,JAKE,ICE,CREAM,KROG,BAR,IRWIN,STREET,MARKET,SERPAS,RESTAURANT,THE,ICEBOX,SWEET,POCKETS,CUPCAKES,THINK,MONSTER,NOON,TIME,HUIE,DESIGN,URBAN,OASIS,BED,BREAKFAST,TIMES,STUDIOPLEX,SUPERGROUP,SQUARE,FEET,STUDIO,INC,ATLANTA,INTOWN,PAPER,DELECTABLES,BARBIZON,LIGHTING,COMPANY,XORBIA,TICKETS</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="153" width="500" x="409" y="291">
+            <tag>ICEBOX</tag>
+         </taggedRectangle>
+         <taggedRectangle height="39" width="62" x="517" y="271">
+            <tag>THE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

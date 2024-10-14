@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/13_14.jpg</imageName>
+      <address>800 N Central Ave. Phoenix AZ</address>
+      <lex>AMSTERDAM,CAFE,MIAMI,NIGHT,CLUB,MATT,BIG,BREAKFAST,CIRCLES,RECORDS,TAPES,CLASSICAL,DOWNTOWN,WESTWARD,HOUSING,ATHENIAN,EXPRESS,PASTA,BAR,PALAZZO,SENS,800,FLOODED,PHOENIX,PUBLIC,MARKET,BREADFRUIT,AUTHENTIC,JAMAICAN,TURF,ACCOUNTANT,KZON,101,PANORAMA,WIGS,HKS,SKIN,FRENZY,GROUP,WYATT,WILLIAMS,CASTING,STEIN,COX,THE</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="33" width="93" x="171" y="361">
+            <tag>CIRCLES</tag>
+         </taggedRectangle>
+         <taggedRectangle height="41" width="68" x="340" y="360">
+            <tag>TAPES</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

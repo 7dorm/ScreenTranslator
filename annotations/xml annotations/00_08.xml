@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/00_08.jpg</imageName>
+      <address>900 East Vermont Ave. Anaheim CA 92805-5615</address>
+      <lex>MARBLE,YARD,ANAHEIM,GRANITE,ORION,TILE,INC,ORANGE,COUNTY,TOWING,SERVICES,COVERKING,INTERSTATE,ELECTRONICS,DELTA,WYE,ELECTRIC,CDR,CONCRETE,STONE,PRODUCT,VFS,FIRE,PROTECTION,VIKING,SUPPRESSION,SYSTEM,JIM,WELDING,SOUTH,COAST,SURFACES,SUPERIOR,GASKET,SEAL,MICHAELANGELO,FAB,FOTO,CABINA,ACTION,SOUTHLAND,CITY,ELEM,SCHOOL,DISTRICT,LUCHETTI,IMAGINATION,LIGHTING</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="49" width="162" x="429" y="265">
+            <tag>MARBLE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="40" width="118" x="598" y="274">
+            <tag>YARD</tag>
+         </taggedRectangle>
+         <taggedRectangle height="51" width="183" x="422" y="338">
+            <tag>ORION</tag>
+         </taggedRectangle>
+         <taggedRectangle height="53" width="107" x="612" y="339">
+            <tag>TILE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

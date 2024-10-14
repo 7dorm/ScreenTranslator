@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/04_06.jpg</imageName>
+      <address>218 East Olive Avenue Burbank CA 91502-1231</address>
+      <lex>BURBANK,BAR,GRILLE,GRANVILLE,CAFE,BACKSIDE,RECORDS,WOKCANO,TOMO,SUSHI,GORDON,BIERSCH,BREWING,RESTAURANT,KNIGHT,RESTUARANT,GREEK,DELIVERY,ORGANIC,SPA,NYPD,PIZZA,ROMANCING,THE,BEAN,ALAMBRES,FRESH,MEXICAN,GRILL,FLORIST,GIFTS,SEOUL,KOREAN,BBQ,OLIVIA,MEDITERRANEAN,CUISINE,COMPUTER,NETWORKS,REPAIR,SERVICE,NETWORKING,THIRD,OLIVE,FEDEX,OFFICE,PRINT,SHIP,CENTER,LEON,CHECK,CASHING,HOLIDAY,INN,HOTEL,MEDIA,GIO,BROOKLYN,BOXING,CLUB</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="36" width="142" x="586" y="478">
+            <tag>BURBANK</tag>
+         </taggedRectangle>
+         <taggedRectangle height="36" width="89" x="670" y="689">
+            <tag>BURBANK</tag>
+         </taggedRectangle>
+         <taggedRectangle height="50" width="178" x="495" y="508">
+            <tag>FLORIST</tag>
+         </taggedRectangle>
+         <taggedRectangle height="39" width="129" x="702" y="506">
+            <tag>GIFTS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="57" width="159" x="964" y="503">
+            <tag>CHECK</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

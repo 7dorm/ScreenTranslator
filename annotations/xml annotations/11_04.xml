@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/11_04.jpg</imageName>
+      <address>633 North Orange Avenue Orlando FL?</address>
+      <lex>NEW,YORK,FRESH,DELI,CAMDEN,ORANGE,COURT,EXCLUSIVELY,TOPPS,BLACK,CHAPEL,TATTOO,AND,BODY,PIERCING,STUDIO,ORLANDO,SENTINEL,MAMA,GIANT,SUBS,COURTYARD,DOWNTOWN,ENTERPRISE,RENT,CAR,PLATINUM,GROUP,ALPHA,REALTY,ASSOCIATES,INC,CLUB,FIRESTONE,CURBING,EDGE,OPTICS,AMERINATIONAL,MANAGEMENT,SERVICES,4U2WATCH,WEB,VIDEO,PRODUCTION,KIM,THANH,JEWELERS,RICE,DAVID,INK,SPOT</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="66" width="202" x="467" y="322">
+            <tag>ORLANDO</tag>
+         </taggedRectangle>
+         <taggedRectangle height="59" width="214" x="673" y="321">
+            <tag>SENTINEL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

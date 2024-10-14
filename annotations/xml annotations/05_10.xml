@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/05_10.jpg</imageName>
+      <address>600 West 35th Street Chicago IL</address>
+      <lex>GRANDSTAND,LIMITED,CHINATOWN,CLASSIC,AUTO,REPAIR,CLELLAN,ELEMENTARY,SCHOOL,PARTS,INC,MORRIE,MALLEY,HOT,DOGS,VICTORY,DISCOUNT,TIRE,CITY,CHICAGO,SPORTFISHING,ASSOCIATION,STYLE,SHADE,BUTLER,STREET,FOUNDRY,35TH,RED,JIM,DILDINE,JAVA,SKETCHES,MAGIC,TOUCH,REALTY,MANAGEMENT,RAMOVA,GRILL,CHILLY,PERFECT,SPA,BURROUGHS,UNION,NAIL,BEAUTY,MIX,BOYS,CLUB</lex>
+      <Resolution x="1280" y="878" />
+      <taggedRectangles>
+         <taggedRectangle height="29" width="177" x="539" y="408">
+            <tag>GRANDSTAND</tag>
+         </taggedRectangle>
+         <taggedRectangle height="75" width="300" x="289" y="305">
+            <tag>GRANDSTAND</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

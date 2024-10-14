@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/17_15.jpg</imageName>
+      <address>1080 North 7th Street San Jose CA</address>
+      <lex>GOODWILL,INSTITUTE,FOR,CAREER,DEVELOPMENT,DRYWALL,INC,RAY,SCHEIDTS,ELECTRIC,EVERGREEN,GROUP,ALLEN,SPECIALTIES,MMM,INVESTMENT,UNLIMITED,KWW,KITCHEN,CABINETS,BATH,NORTHWEST,LANDSCAPE,MAINTENANCE,GENERAL,TRANSPORTATION,CHARTERS,DERMOTT,TREE,SERVICES,ELVIS,TOURS,COMPRESSOR,RAMOS,FURNITURE,COMMERCIAL,INTERIORS,FLAGSHIP,FACILITY,TITAN,PME,EQUIPMENT,SALES,CERTIFIED,FIRE,SAFETY,LLC,INNVISION,INN,ALBUMS</lex>
+      <Resolution x="1278" y="880" />
+      <taggedRectangles>
+         <taggedRectangle height="43" width="229" x="614" y="241">
+            <tag>GOODWILL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

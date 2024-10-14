@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/11_14.jpg</imageName>
+      <address>333 North Orange Avenue Orlando FL?</address>
+      <lex>DETROIT,JOES,ORIGINAL,CONEY,MANUEL,THE,28TH,DIXIE,CAFE,EMPIRE,SZECHUAN,BELLE,FURS,OUTERWEAR,BILLY,JACKSON,LAW,OFFICE,250,NORTH,ORANGE,AVE,LLC,MARYBETH,MCDONALD,OFCS,BANK,AMERICA,MINI,MART,JAVA,LAVA,COFFEE,SHOP,DIOCESE,ORLANDO,CATHOLIC,MAGICTECH,COMPUTERS,DAKOTA,MICROFILM,SERVICES,FEDEX,PRINT,SHIP,CENTER,CLUB,LIMELITE,SIR,SPEEDY,PRINTING,NYPD,SERGIO,FRANK,EIDSON</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="83" width="415" x="306" y="313">
+            <tag>DETROIT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="92" width="267" x="731" y="299">
+            <tag>JOES</tag>
+         </taggedRectangle>
+         <taggedRectangle height="47" width="168" x="312" y="405">
+            <tag>ORIGINAL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="41" width="124" x="492" y="406">
+            <tag>CONEY</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

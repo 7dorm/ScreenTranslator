@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/01_10.jpg</imageName>
+      <address>? 55 Peachtree Street Southwest Atlanta GA?</address>
+      <lex>PAYLESS,SHOE,SOURCE,UNDERGROUND,ATLANTA,WACHOVIA,BANK,FIVE,POINTS,STATION,UNIVERSITY,PLACE,LITTLE,ITALY,PIZZA,JOHNNY,ROCKETS,RAINBOW,KIDS,IMMACULATE,CONCEPTION,EASTER,SEALS,KANDLESTIX,ATL,CUSTOMS,CITY,NAILS,MICK,GEORGIA,STATE,SWEET,CORNER,DUPSIE,AFRICAN,CLOTHING,CHINA,SUB,AIR,COMM</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="136" width="497" x="270" y="207">
+            <tag>PAYLESS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="126" width="338" x="267" y="352">
+            <tag>SHOE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="128" width="467" x="600" y="349">
+            <tag>SOURCE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

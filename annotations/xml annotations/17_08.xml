@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/17_08.jpg</imageName>
+      <address>409 South 2nd Street San Jose CA 95113-2710</address>
+      <lex>RAMADA,LIMITED,SAN,JOSE,SOUTH,FIRST,BILLIARDS,CLUB,AND,LOUNGE,AGENDA,RESTAURANT,BAR,WET,NIGHTCLUB,DAI,THANH,SUPERMARKET,ANNO,DOMINI,TOWN,EULIPIA,MOTIF,WHIPSAW,INC,DAKAO,SANDWICH,SPY,ANGELS,GLO,MUSEUM,QUILTS,TEXTILES,SAINTE,CLAIRE,HOTEL,STAGE,COMPANY,HIVE,ORIGINAL,JOE,DOWNTOWN,YOGA,SHALA</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="86" width="278" x="467" y="417">
+            <tag>TOWN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

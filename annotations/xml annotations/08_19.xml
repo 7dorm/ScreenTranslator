@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/08_19.jpg</imageName>
+      <address>1110 Main Street Houston TX</address>
+      <lex>MACYS,RELIANT,ENERGY,PLAZA,COURTYARD,HOUSTON,DOWNTOWN,CONVENTION,CENTER,RESIDENCE,INN,HUMBLE,TOWER,APARTMENTS,STARBUCKS,FOLEY,DEPARTMENT,STORE,ACADEMY,FOREVER,BOOKS,MILLION,MCCORMICK,SCHMICK,PASO,PRODUCTION,POLICE,SUNGLASS,HUT,THE,TIPPING,POINT,CHUTNEYS,INDIAN,RESTAURANT,CORNER,BAKERY,CAFE,JAMES,CONEY,ISLAND,CAMILLE,SIDEWALK,POPEYE,CHICKEN,BISCUITS</lex>
+      <Resolution x="1278" y="876" />
+      <taggedRectangles>
+         <taggedRectangle height="84" width="267" x="289" y="192">
+            <tag>MACYS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

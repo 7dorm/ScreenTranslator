@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/07_00.jpg</imageName>
+      <address>300 East Colfax Avenue Denver CO</address>
+      <lex>COLORADO,STATE,CAPITOL,SHISH,KABOB,GRILL,HILL,BOOKS,CATHEDRAL,IMMACULATE,CNCPTN,RED,ROOM,RESTAURANT,AND,BAR,CITY,GRILLE,WOLFE,BARBEQUE,JERRY,RECORD,EXCHANGE,TAKI,DENVER,PRIVATE,INVESTIGATOR,MILE,HIGH,INVESTIGATIONS,SATELLITE,GOVERNMENT,LEGISLATURE,LEGISLATIVE,LEGAL,SERVICES,WALNUT,CAFE,JOEY,PIZZA,ARGONAUT,APARTMENTS,NEWHOUSE,HOTEL,EDUCATION,ASSOCIATION,EMILIO,THE,CAMBRIDGE,BROUSSARD,CREOLE</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="51" width="247" x="503" y="368">
+            <tag>BOOKS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="50" width="194" x="484" y="322">
+            <tag>CAPITOL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="50" width="101" x="675" y="319">
+            <tag>HILL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

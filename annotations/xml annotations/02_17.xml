@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/02_17.jpg</imageName>
+      <address>111 West Centre Street Baltimore MD 21201-4533</address>
+      <lex>GALLERY,TOWERS,FIVE,GUYS,BURGERS,FRIES,CONTEMPORARY,MUSEUM,WALTERS,ART,THE,CLARION,COLLECTION,PEABODY,COURT,VERNON,HOTEL,SIX,ELEVEN,PARK,AVE,APARTMENTS,SOUTHERN,MANAGEMENT,CORPORATION,FRANKLIN,STREET,PRESBYTERIAN,CHURCH,AND,PARSONAGE,BASILICA,THE,ASSUMPTION,MARYLAND,HISTORICAL,SOCIETY,ENOCH,PRATT,FREE,LIBRARY,CATONS,PLUMBING,HEATING,CLNG,WASHINGTON,MONUMENT,CAR,ONE,HUMANITIES,COUNCIL,CONCORD,ASSOCIATES,INC,STANDARD,PARKING,SHANEYBROOK,HARRY,ABTIN,KHOSRAVI</lex>
+      <Resolution x="1366" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="53" width="234" x="163" y="326">
+            <tag>GALLERY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="61" width="255" x="739" y="36">
+            <tag>STREET</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

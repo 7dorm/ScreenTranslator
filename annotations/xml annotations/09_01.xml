@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/09_01.jpg</imageName>
+      <address>1043 Virginia Avenue Indianapolis IN</address>
+      <lex>MURPHY,ART,CENTER,BUILDING,NAISA,CAFE,DOLPHIN,PAPERS,RENEW,YOGA,FITNESS,STUDIO,FOUNTAIN,SQUARE,LIBRARY,PEPPY,GRILL,GUSTO,INDIANAPOLIS,LUXOR,RESTAURANT,LLC,ALCHEMY,SALON,INC,SIAM,THAI,CUISINE,HOOKA,BAR,DOWNTOWN,ANTIQUE,ANTIQUES,THE,COFFEES,JOE,REUZAR,DELI,SONYA,TREASURES,INDY,GOURMET,TOPCAT,MOTORS</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="50" width="480" x="350" y="363">
+            <tag>MURPHY</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

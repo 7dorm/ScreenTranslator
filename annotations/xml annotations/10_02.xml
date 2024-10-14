@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/10_02.jpg</imageName>
+      <address>130 Church Street New York NY 10007-2226</address>
+      <lex>BONBON,CHICKEN,KULA,YOGA,PROJECT,BRICK,SOPHIE,CUBAN,CUISINE,SUBWAY,DUNKIN,DONUTS,ESPRESSO,LOUNGE,FOUNTAIN,PEN,HOSPITAL,CARY,BUILDING,NEW,YORK,CITY,CARL,STEAKS,VINTNERS,DUANE,STREET,HOTEL,SMYTH,THOMPSON,JERRY,CAFE,COSMOPOLITAN,SUN,THE,HOT,DOG,MUDVILLE,SALOON,BLUE,SPOON,COFFEE,LLC,BRIAN,DORSEY,STUDIOS</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="43" width="173" x="496" y="374">
+            <tag>DONUTS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="49" width="168" x="308" y="379">
+            <tag>DUNKIN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="49" width="127" x="471" y="427">
+            <tag>COFFEE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

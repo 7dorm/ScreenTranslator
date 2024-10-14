@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/07_02.jpg</imageName>
+      <address>1620 Grant Street Denver CO</address>
+      <lex>GROSVENOR,ARMS,PAUL,LUTHERAN,CHURCH,CATHEDRAL,IMMACULATE,CNCPTN,CURIOUS,COFFEE,WINBRO,APTS,CITY,GRILLE,AVENUE,THEATER,UPTOWN,VILLAGE,COLORADO,STATE,CAPITOL,BUMP,GRIND,INC,FOWLER,SCHIMBERG,FLANAGAN,1620,GRANT,LLC,THE,CAMBRIDGE,APARTMENTS,WRANGLER,CENTRAL,PRESBYTERIAN,WARWICK,DENVER,HOTEL,CAVEAU,WINE,BAR,ANDREW,MCLETCHIE,RICHARDSON,REPORTING,SERVICES</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="67" width="341" x="395" y="286">
+            <tag>WINBRO</tag>
+         </taggedRectangle>
+         <taggedRectangle height="44" width="132" x="523" y="359">
+            <tag>GRANT</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

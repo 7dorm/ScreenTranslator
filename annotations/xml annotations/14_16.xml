@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/14_16.jpg</imageName>
+      <address>1313 West Burnside Street Portland OR</address>
+      <lex>MCMENAMINS,PUBS,CRYSTAL,BALLROOM,RINGLERS,PUB,EVERYDAY,MUSIC,CACAO,MASU,CASSIDY,RESTAURANT,JAKE,FAMOUS,CRAWFISH,HENRY,12TH,STREET,TAVERN,ANNEX,ODESSA,EAGLE,PORTLAND,SCOOTER,QUADES,MENAMINS,HISTORIC,PROPERTIES,WHOLE,FOODS,MARKET,PEARL,HOOD,SKIBOWL,WINTER,RESORT,SILVERADO,DUST,DIAMONDS,DETAIL,ANTHROPOLOGIE,ART,THE,INSTITUTE,CONTEMPORARY</lex>
+      <Resolution x="1278" y="884" />
+      <taggedRectangles>
+         <taggedRectangle height="68" width="371" x="519" y="242">
+            <tag>EVERYDAY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="65" width="161" x="911" y="264">
+            <tag>MUSIC</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

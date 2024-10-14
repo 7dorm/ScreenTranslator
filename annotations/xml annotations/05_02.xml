@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/05_02.jpg</imageName>
+      <address>2140 South Wabash Avenue Chicago IL</address>
+      <lex>WHITE,CASTLE,TOMMY,GUN,GARAGE,REGGIE,MUSIC,JOINT,REGGIES,ROCK,CLUB,VELVET,LOUNGE,VIA,VENTUNO,CUATRO,BLUES,HEAVEN,FOUNDATION,CLOSED,CHICAGO,ILLUMINATING,SHRINE,CHEF,LUCIANO,HAROLD,CHICKEN,SHACKS,BRANDI,CATERING,ITALIAN,FOOD,GOURMET,FISH,BIG,DADDY,PIZZERIA,MARMON,GRAND,POST,OFFICE,2101,MICHIGAN,AVE,BUILDING,UIC,NATIONAL,TEACHER,ACADEMY,HEAL</lex>
+      <Resolution x="1278" y="880" />
+      <taggedRectangles>
+         <taggedRectangle height="58" width="158" x="544" y="270">
+            <tag>CASTLE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="52" width="130" x="394" y="287">
+            <tag>WHITE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

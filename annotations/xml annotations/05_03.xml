@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/05_03.jpg</imageName>
+      <address>1112 S Canal St Chicago IL</address>
+      <lex>WHOLE,FOODS,MARKET,WHITE,PALACE,GRILLS,MICHAEL,ARTS,CRAFTS,DSW,SHOE,WAREHOUSE,CHICAGO,PANERA,BREAD,STARBUCKS,COST,PLUS,WORLD,STAPLES,NEW,MAXWELL,STREET,GAMESTOP,SOUTHGATE,PETSMART,OFFICE,DEPOT,FITNESS,STANDARD,PARKING,BANFIELD,THE,PET,HOSPITAL,MANNY,COFFEE,SHOP,DELI,HIRSCH,SHELDON,BEST,BUY,SOUTH,LOOP</lex>
+      <Resolution x="1280" y="876" />
+      <taggedRectangles>
+         <taggedRectangle height="61" width="164" x="745" y="234">
+            <tag>FOODS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="32" width="252" x="604" y="282">
+            <tag>MARKET</tag>
+         </taggedRectangle>
+         <taggedRectangle height="73" width="201" x="543" y="219">
+            <tag>WHOLE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

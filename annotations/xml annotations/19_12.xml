@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/19_12.jpg</imageName>
+      <address>1725 F Street Northwest Washington DC 20006-5203</address>
+      <lex>EXECUTIVE,OFFICE,PRESIDENT,AMERICAN,INSTITUTE,ARCHITECTS,RENWICK,GALLERY,CORCORAN,ART,OCTAGON,MUSEUM,MET,CAFE,HOTEL,HOLIDAY,INN,ARLINGTON,THE,EXCHANGE,FDIC,LIBRARY,SWING,INC,BLAIR,HOUSE,FEDERAL,DEPOSIT,INSURANCE,CORPORATION,WHITE,CONFERENCE,CENTER,FIRST,DIVISION,MONUMENT,1701,PENNSYLVANIA,AVENUE,MANAGEMENT,MAXIM,COSI,ONE,FARRAGUT,SQUARE,MAX,WASHINGTON,NATIONAL,SECURITY,COUNCIL</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="67" width="127" x="658" y="419">
+            <tag>CAFE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="58" width="102" x="556" y="422">
+            <tag>MET</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

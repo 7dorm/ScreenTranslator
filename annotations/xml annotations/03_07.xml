@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/03_07.jpg</imageName>
+      <address>1123 Walnut Street Boulder CO</address>
+      <lex>WALNUT,BREWERY,RIO,GRANDE,MEXICAN,RESTAURANT,FOUNDRY,BILLARDS,CLUB,JAPANGO,SUNDOWN,SALOON,PIZZA,GRILL,THE,SCOTCH,CORNER,PUB,WALRUS,MEDITERRANEAN,KITCHEN,HAPA,SUSHI,SAKE,BAR,PEARL,STREET,CELLAR,OLD,CHICAGO,AMANTE,COFFEE,BOULDER,COLO,BRASSERIE,TEN,BOOK,STORE,BOMBAY,BISTRO,MILE,HIGH,PIPES,TOBACCO,DOWNTOWN,BUSINESS</lex>
+      <Resolution x="1914" y="898" />
+      <taggedRectangles>
+         <taggedRectangle height="67" width="399" x="528" y="332">
+            <tag>BREWERY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="91" width="357" x="133" y="323">
+            <tag>WALNUT</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/17_14.jpg</imageName>
+      <address>520 South 1st Street San Jose CA 95113-2806</address>
+      <lex>SAN,JOSE,MUSEUM,QUILTS,TEXTILES,EMILE,RESTAURANT,MACLA,MARKET,GATEWAY,APARTMENTS,RAMADA,LIMITED,INSTITUTE,CONTEMPORARY,ART,SLG,PUBLISHING,BOUTIKI,AND,COMIC,GALLERY,STAGE,COMPANY,NOTRE,DAME,HIGH,SCHOOL,METRO,NEWSPAPERS,CITY,LIGHTS,THEATRE,CENTER,FOR,LATINO,ARTS,TOWNHOUSE,MOTEL,ENTERPRISE,RENT,CAR,SOUTH,FIRST,BILLIARDS,CLUB,LOUNGE,PARQUE,LOS,POBLADORES,GUERREROS,MERCADO,HARDING,FOREIGN,AUTO,REPAIR,AGENDA,BAR</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="25" width="30" x="396" y="366">
+            <tag>JOSE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="18" width="64" x="423" y="370">
+            <tag>MUSEUM</tag>
+         </taggedRectangle>
+         <taggedRectangle height="42" width="106" x="362" y="386">
+            <tag>QUILTS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="25" width="33" x="365" y="368">
+            <tag>SAN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="38" width="140" x="505" y="386">
+            <tag>TEXTILES</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

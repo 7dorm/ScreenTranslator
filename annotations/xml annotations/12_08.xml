@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/12_08.jpg</imageName>
+      <address>North 17th Street &amp; Race St Philadelphia PA 19103</address>
+      <lex>SHERATON,PHILADELPHIA,CITY,CENTER,HOTEL,CATHEDRAL,PETER,PAUL,OFFICE,WYNDHAM,FRANKLIN,WINDSOR,SUITES,EMBASSY,SHULA,STEAK,HOUSE,MEXICAN,POST,FRIENDS,SELECT,SCHOOL,ARCHDIOCESE,MACE,CROSSING,TGI,FRIDAY,MARRIOTT,EXECUSTAY,PARKWAY,CAFE,ALBANIAN,ORTHODOX,CHURCH,SAINT,JOHN,CHRYSOSTOM,BELL,ATLANTIC,FOUNTAIN,RESTAURANT,FOUR,SEASONS,ACADEMY,NATURAL,SCIENCES,VIDEO,LINK,STRAYER,UNIVERSITY</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="55" width="302" x="374" y="179">
+            <tag>SHERATON</tag>
+         </taggedRectangle>
+         <taggedRectangle height="39" width="238" x="492" y="492">
+            <tag>RESTAURANT</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

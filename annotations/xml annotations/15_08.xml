@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/15_08.jpg</imageName>
+      <address>2501 Kettner Boulevard San Diego CA 92101-1217</address>
+      <lex>CASBAH,BOOMERANG,FOR,MODERN,SAN,DIEGO,URBAN,RETREATS,ALADDIN,AIRPORT,PARKING,AMBER,GIMBEL,STILE,SALON,AND,BOUTIQUE,ARCHITECTURAL,SALVAGE,ANTHONY,FAMILY,MOVING,ALLSTATE,INSURANCE,ECLUB,USA,THRIFTY,CAR,RENTAL,NATIONAL,UNIVERSITY,FOX,RENT,SEOHAUS,LOUNGE,DOLLAR,MOTEL,HARBOR,RESORTS,MARKETING,ORIENTAL,ACUPRESSURE,AMI,SPA,AMBITIOUS,CREATIVE,BREAK,AWAY,TOURS</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="235" width="411" x="473" y="333">
+            <tag>CASBAH</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

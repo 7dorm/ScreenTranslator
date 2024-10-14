@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/19_11.jpg</imageName>
+      <address>1216 18th Street Northwest Washington DC 20036-2541</address>
+      <lex>PUBLIC,BAR,FIVE,SESTO,SENSO,ITALIAN,RESTAURANT,BERTUCCI,BRICK,OVEN,DAILY,GRILL,NANDO,FLY,LOUNGE,OZIO,MALAYSIA,KOPITIAM,LUCKY,ANDALU,PALM,FUDDRUCKERS,CAMELOT,SHOW,JULIA,EMPANADAS,CARPETS,CARE,WASHINGTON,CALIFORNIA,PIZZA,KITCHEN,MIDTOWN,SIGN,THE,WHALE,KID,CLOSET</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="78" width="235" x="545" y="489">
+            <tag>FUDDRUCKERS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="53" width="99" x="133" y="329">
+            <tag>THE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

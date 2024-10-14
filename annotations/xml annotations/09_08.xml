@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/09_08.jpg</imageName>
+      <address>1250 East Market Street Indianapolis IN</address>
+      <lex>WASHINGTON,IRVING,ELEMENTARY,ANGIE,LIST,HOLT,FOUNDATION,MID,AMERICA,ELEVATOR,ARMS,APARTMENTS,DOVE,RECOVERY,HOUSE,FOR,WOMAN,HAIR,BODY,SALON,VMC,AFFILIATE,MIDSTATES,MARKETING,INC,RELIABLE,INSURANCE,HOLY,CROSS,CHURCH,ALL,RISK,HORIZON,SNYDER,DIANA,BYRNE,COURT,SECOND,HELPINGS,SAFETY,AUTO,GLASS,TAXI,LOGISTICS,CENTRAL,SCHOOL,THOMAS,INUI</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="25" width="69" x="726" y="402">
+            <tag>IRVING</tag>
+         </taggedRectangle>
+         <taggedRectangle height="30" width="141" x="584" y="402">
+            <tag>WASHINGTON</tag>
+         </taggedRectangle>
+         <taggedRectangle height="22" width="66" x="648" y="429">
+            <tag>SCHOOL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

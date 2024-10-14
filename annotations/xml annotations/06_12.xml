@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/06_12.jpg</imageName>
+      <address>4025 Gaston Avenue Dallas TX</address>
+      <lex>STARBUCKS,ELEVEN,CRISWELL,COLLEGE,DALLAS,THEOLOGICAL,SEMINARY,MYBAG,TACO,JOINT,CORINTHIAN,BED,BREAKFAST,MUSEUM,AMERICAN,RAILROAD,BEAUTY,SALON,SERVI,PLEX,INSURANCE,LENNY,SUN,SHOP,631,DIVINO,PIZZARIA,CAPITAL,ONE,BANK,AMERICA,GRACE,UNITED,METHODIST,CHURCH,ODDS,ENDS,MOBILE,WALLACE,LIBRARY,CARTER,BLOODCARE,SMOKEY,JOHN,BAR,QUE,CATERING</lex>
+      <Resolution x="1680" y="1050" />
+      <taggedRectangles>
+         <taggedRectangle height="66" width="366" x="555" y="299">
+            <tag>STARBUCKS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

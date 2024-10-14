@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/14_09.jpg</imageName>
+      <address>616 Northwest 21st Avenue Portland OR</address>
+      <lex>CINEMA,MUU,LUCY,TABLE,GYPSY,RESTAURANT,VELVET,LNG,NORTH,PUB,COFFEE,TIME,THE,BRAZEN,BEAN,21ST,AVENUE,QUICK,STOP,BEAU,THAI,BLUE,MOON,TAVERN,GRILL,VIRGO,PISCES,VOICEBOX,KARAOKE,SANSAI,PORTLAND,NAILS,TWENTY,FIRST,BAR,URBAN,FONDUE,BARTINI,TRADER,JOE,CITY,MARKET,CAFFE,MINGO</lex>
+      <Resolution x="1280" y="882" />
+      <taggedRectangles>
+         <taggedRectangle height="147" width="503" x="289" y="187">
+            <tag>CINEMA</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

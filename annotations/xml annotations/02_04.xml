@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/02_04.jpg</imageName>
+      <address>647 West Pratt Street Baltimore MD</address>
+      <lex>BABE,RUTH,BIRTHPLACE,AND,MUSEUM,CAMDEN,PUB,PENN,CARRY,OUT,RESTAURANT,PEACE,CUP,JOE,INC,UNIVERSITY,MARYLAND,MEDICAL,CENTER,HAMPTON,INN,BALTIMORE,DOWNTOWN,CONVENTION,HOTEL,INSTITUTE,EMERGENCY,RIDGELYS,DELIGHT,HISTORIC,DISTRICT,SAIL,CLOTH,FACTORY,CHIEF,EXAMINER,OFFICE,SERVICES,PICKLES,NATIONAL,DENTISTRY,UNIV,MED,SYSTEM,RICHARDSON,DENISE,CYSCOM,ROBERT,BASS,ISLAND,CUISINE,AMBULANCE,LICENSING,GREENE,HOUSE,APARTMENTS,LLC</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="52" width="139" x="484" y="425">
+            <tag>CAMDEN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="44" width="67" x="634" y="431">
+            <tag>PUB</tag>
+         </taggedRectangle>
+         <taggedRectangle height="61" width="122" x="50" y="339">
+            <tag>PUB</tag>
+         </taggedRectangle>
+         <taggedRectangle height="65" width="143" x="949" y="353">
+            <tag>CAMDEN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="41" width="71" x="546" y="664">
+            <tag>CAMDEN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

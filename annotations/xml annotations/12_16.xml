@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/12_16.jpg</imageName>
+      <address>151 North Independence Mall E Philadelphia PA 19106</address>
+      <lex>UNITED,STATES,MINT,PHILADELPHIA,NATIONAL,CONSTITUTION,CENTER,HOLIDAY,INN,HOTEL,HISTORIC,DISTRICT,FCU,FRIENDS,ARCH,STREET,MEETING,HOUSE,BETSY,ROSS,KISSO,SUISHI,BAR,NARDO,FAMOUS,CRABS,GEORGE,METHODIST,CHURCH,AUGUSTINE,OLD,CITY,CIVIC,ASSOCIATE,BRUGES,HOME,TRIUNE,CHIROPRACTIC,WELLNESS,SUGARCUBE,INC,SNYDERMAN,WORKS,GALLERIES,VISITORS,LOCANDA,DEL,GHIOTTONE,RESTAURANT,CAFE,OLE,FEDERAL,RESERVE,BANK,PHILA</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="55" width="151" x="841" y="163">
+            <tag>MINT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="64" width="226" x="589" y="139">
+            <tag>STATES</tag>
+         </taggedRectangle>
+         <taggedRectangle height="75" width="266" x="278" y="110">
+            <tag>UNITED</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

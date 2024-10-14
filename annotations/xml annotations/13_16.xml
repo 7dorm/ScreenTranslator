@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/13_16.jpg</imageName>
+      <address>407 East Rooosevelt Street Phoenix AZ</address>
+      <lex>MODIFIED,ARTS,LOST,LEAF,GALLERY,EYE,LOUNGE,FATE,905,LLC,MADE,ART,BOUTIQUE,NINE,MODERN,ASIAN,FETHIERE,WILLIAM,PRAVUS,HAYDEN,DESIGN,STUDIO,DRAPERIES,MURIEL,INC,CONSPIRE,CRAFTS,COFFEE,SHOP,FASHION,SPOKEN,TAMMIE,COE,CAKES,BREAD,ACTORS,THEATRE,PHOENIX,NILE,CAFE,THE,ROOSEVELT,TUMBLEWEED,DROP,CENTER,PERIHELLON,HOODRIDE,ALLEY,OUTREACH</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="44" width="82" x="558" y="279">
+            <tag>ARTS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="38" width="193" x="356" y="277">
+            <tag>MODIFIED</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

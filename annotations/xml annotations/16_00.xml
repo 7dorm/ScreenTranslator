@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/16_00.jpg</imageName>
+      <address>345 Stockton Street San Francisco CA?</address>
+      <lex>GRAND,HYATT,SAN,FRANCISCO,LEVI,STORE,UNION,SQUARE,GRANDVIEWS,THE,VESSEL,CAMPTON,PLACE,HOTEL,SIR,FRANCIS,DRAKE,NIKE,TIFFANY,FOLK,ART,INTERNATIONAL,SUTTER,STOCKTON,GARAGE,450,BUILDING,SCALA,BISTRO,WILLIAMS,SONOMA,POST,STREET,HARRY,DENTON,STARLIGHT,ROOM,MARRIOTT,ZARA,KARIKTER,LASSEN,TOUR,TRAVEL,INC,UGG,AUSTRALIA,GREEN,DENTISTRY</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="73" width="389" x="549" y="446">
+            <tag>FRANCISCO</tag>
+         </taggedRectangle>
+         <taggedRectangle height="75" width="375" x="486" y="213">
+            <tag>GRAND</tag>
+         </taggedRectangle>
+         <taggedRectangle height="189" width="683" x="325" y="263">
+            <tag>HYATT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="41" width="130" x="403" y="444">
+            <tag>SAN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

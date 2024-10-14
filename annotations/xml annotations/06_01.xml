@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/06_01.jpg</imageName>
+      <address>5310 Junius Street Dallas TX</address>
+      <lex>GARDEN,CAFE,DALLAS,LAWYER,LITTLE,BEAN,IRENE,COREY,DESIGN,ASSOCIATES,QUAINT,HOME,GALLERY,WOOTTON,DALE,AAAA,PIANO,LOGISTICS,BLUE,DIAMOND,LIMOUSINES,PRODIGY,RENOVATIONS,MANDALAY,APARTMENTS,SOLARES,GEORGE,BEAUMONDE,GAWEL,DRUE,ROOF,RAISERS,HIGHER,GROUND,CONSULTANTS,MILLS,III,CPA,GONZALES,ANDY,HAMILTON,PHOTOGRAPHY,JAS,WALKER,ATTORNEY,SIGERCON</lex>
+      <Resolution x="1680" y="1050" />
+      <taggedRectangles>
+         <taggedRectangle height="104" width="202" x="1111" y="340">
+            <tag>CAFE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="117" width="317" x="766" y="320">
+            <tag>GARDEN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

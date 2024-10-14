@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/14_14.jpg</imageName>
+      <address>125 Northwest 6th Avenue Portland OR</address>
+      <lex>SATYRICON,LLC,GROUND,KONTROL,CLASSIC,ARCADE,EMBERS,BACKSPACE,MUSEUM,CONTEMPORARY,CRAFT,ROSELAND,THEATER,THE,SOMEDAY,LOUNGE,SISTERS,THE,ROAD,CAFE,DAVIS,STREET,TAVERN,SUSHI,ICHIBAN,CASEY,CHEZ,JOLY,BLUE,SKY,GALLERY,AND,NINE,COMPOUND,PENDLETON,HOME,STORE,BUTTERS,LTD,DOLLAR,PORTLAND,CAR,RENTAL,GILT,CLUB,CAL,SKATE,SKATEBOARDS,THREE,LIONS,BAKERY,WHOLESALE</lex>
+      <Resolution x="1276" y="878" />
+      <taggedRectangles>
+         <taggedRectangle height="58" width="230" x="438" y="372">
+            <tag>SATYRICON</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/07_13.jpg</imageName>
+      <address>1275 Grant Street Denver CO</address>
+      <lex>BUFFALO,EXCHANGE,CITY,BENDERS,TAVERN,WATERCOURSE,BAKERY,COREPOWER,YOGA,GRANT,MOXIE,HAIR,PANDORA,JEWELRY,LUCKY,FORTUNE,CHINESE,RESTAURANT,QUIZNOS,DOMINO,PIZZA,CAPITOL,CUSTOM,TAILORS,CAMELLIA,HOUSE,COLORADO,HISTORY,MUSEUM,TOKYO,JOE,HEIGHTS,APARTMENTS,ART,INSTITUTE,DENVER,PUBLIC,LIBRARY,MOLLY,BROWN,CHURCH,SUPREME,COURT</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="45" width="135" x="392" y="433">
+            <tag>QUIZNOS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="44" width="147" x="876" y="439">
+            <tag>QUIZNOS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

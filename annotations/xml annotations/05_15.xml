@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/05_15.jpg</imageName>
+      <address>1517 West Taylor Street Chicago IL</address>
+      <lex>ROSEBUD,POMPEI,PASADA,HAWKEYE,BAR,GRILL,INC,JUBRANO,GOLDEN,THAI,PATIO,RESTAURANT,CONTE,SAVOIA,EUROPEAN,TAJ,MAHAL,FAST,FOODS,MEDICAL,DISTRICT,CITY,APARTMENTS,POTBELLY,SANDWICH,WORKS,CIRCLE,PARK,COUSCOUS,UNIVERSITY,VILLAGE,ASSOCIATION,LEONA,LITTLE,ITALY,LEMON,GRASS,CLASSIC,CUISINE,BRIAN,KALEEL,ALLSTATE,INSURANCE,QUOTES,CHICAGO,DENTAL,OFFICE,CAMPUS,VIDEO,ELECTRONICS,DRUM,MONKEY</lex>
+      <Resolution x="1278" y="880" />
+      <taggedRectangles>
+         <taggedRectangle height="56" width="238" x="570" y="257">
+            <tag>PASADA</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

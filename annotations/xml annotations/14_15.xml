@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/14_15.jpg</imageName>
+      <address>1101 Southeast Division Street Portland OR</address>
+      <lex>GENIES,FOXFIRE,TEAS,TROPICAL,SALVAGE,MOTOKITTY,MODIFIED,TAOIST,TAI,CHI,SOCIETY,USA,MAKOOL,PORTLAND,HEALTH,WELLNESS,DAN,PALMER,FINE,JEWELERS,PONYTAIL,PHOTOGRAPHY,ARTEMIS,FOODS,CATERING,AND,CAFE,DOGTOWN,PET,SUPPLY,FANCY,SALON,FIORI,ARAKAWA,HANGING,SYSTEMS,SOLSTICE,VIDEO,PRODUCTIONS,MON,AMOUR,DUCHESS,CLOTHIER,BLITZ,LADD,COLLEEN,CAHILL,PHOTOGRAPHER,MUSE,MODEL,MANAGEMENT</lex>
+      <Resolution x="1280" y="876" />
+      <taggedRectangles>
+         <taggedRectangle height="61" width="284" x="750" y="340">
+            <tag>GENIES</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/06_10.jpg</imageName>
+      <address>4815 Columbia Avenue Dallas TX</address>
+      <lex>PUFF,STUFF,SMOKE,SHOP,AND,EASTSIDE,TATTOO,PIERCING,STUDIO,ASM,GOODS,APPLE,DRUGS,CLINICA,MEDICA,DALLAS,ELVA,MONTOYA,WESTMORELAND,DENTAL,ORTHODONTICS,CLEANERS,BENIGNO,BUENTIPO,MICHAEL,OPPEDISANO,DMD,SAN,JUANITA,BEAUTY,SALON,COLUMBIA,TIRE,CENTER,INC,SCOTTIE,NGUYEN,DDS,JUAN,QUIROZ,SAVE,MART,BEER,DRIVE,THRU,BARN,WINE,DAIQUIRI,MARGARITA,STORE,GREEN,HABITAT,HYDROPONICS,SUPPLIES,YAMANNA,CHITRA,DREAMS,STAR,REHABILITATION</lex>
+      <Resolution x="1680" y="1050" />
+      <taggedRectangles>
+         <taggedRectangle height="186" width="368" x="274" y="212">
+            <tag>PUFF</tag>
+         </taggedRectangle>
+         <taggedRectangle height="197" width="477" x="829" y="201">
+            <tag>STUFF</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/05_16.jpg</imageName>
+      <address>1154 South Clark Street Chicago IL</address>
+      <lex>TARGET,KERASOTES,SHOWPLACE,ICON,STARBUCKS,SOUTH,LOOP,SCHOOL,CHASE,ATM,ROOSEVELT,PARK,COLLECTION,CENTREM,PROPERTIES,AMLI,900,BONGO,ROOM,WALGREENS,PHARMACIES,ELEVEN,CITY,DINER,STATE,TEA,THE,LOFTS,JEWEL,OSCO,FFC,MAID,BRIGADE,ZIZI,CAMARDA,MAKEUP,ARTIST,BURNHAM,ANIMAL,HOSPITAL,GIOCO</lex>
+      <Resolution x="1280" y="878" />
+      <taggedRectangles>
+         <taggedRectangle height="56" width="214" x="845" y="446">
+            <tag>TARGET</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

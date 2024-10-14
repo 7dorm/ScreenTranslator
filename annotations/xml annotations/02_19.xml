@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/02_19.jpg</imageName>
+      <address>326 North Charles Street Baltimore MD 21202</address>
+      <lex>BROWN,ARCADE,MICK,SHEA,IRISH,PUB,CAZBAR,THE,PARK,HOTEL,LUMBINI,RESTAURANT,OLD,PAUL,CHURCH,SHOGUN,INC,BASILICA,THE,ASSUMPTION,SOTTO,SOPRA,BALTIMORE,MILTON,GRILLE,BANTHAI,HOSTEL,MAISY,COPRA,SUPER,FRESH,DIE,MUSIK,COMFORT,INN,SUITES,FOR,EYES,OPTICAL</lex>
+      <Resolution x="1366" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="58" width="240" x="516" y="398">
+            <tag>ARCADE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="62" width="216" x="506" y="338">
+            <tag>BROWN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

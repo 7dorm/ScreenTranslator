@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/00_11.jpg</imageName>
+      <address>1600 West Lincoln Avenue Anaheim CA 92801</address>
+      <lex>MILLS,FORD,DEALER,ORANGE,COUNTY,CARS,AND,TRUCKS,ADVANTAGE,RENT,CAR,CALIFORNIA,WOODWORKING,MACHRY,CHAIN,REACTION,BODY,SHOP,ANAHEIM,ARGO,MOTOR,SPORTS,AUDIO,ACCESSORIES,SERVICES,STATION,EQUIPMENT,AUTO,REPAIR,ARCE,MUFFLERS,LINCOLN,SMOG,CHECK,DAVID,LOARA,SUPREME,LEGENDS,USA,ONESOLUTION,LIGHT,CONTROL,HEANEY,BRIAN,REGIO,ONE,DAY,SIGNS,INC,MARATHON,TRIAD,CARPET,NSI,ARCHITECTURAL,CATHODE</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="101" width="233" x="394" y="346">
+            <tag>FORD</tag>
+         </taggedRectangle>
+         <taggedRectangle height="124" width="447" x="289" y="219">
+            <tag>MILLS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

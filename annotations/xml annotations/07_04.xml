@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/07_04.jpg</imageName>
+      <address>1280 Grant Street Denver CO</address>
+      <lex>BENDERS,TAVERN,COREPOWER,YOGA,GRANT,BUFFALO,EXCHANGE,CITY,LUCKY,FORTUNE,CHINESE,RESTAURANT,DOMINO,PIZZA,WATERCOURSE,BAKERY,PANDORA,JEWELRY,MOXIE,HAIR,CAPITOL,HEIGHTS,APARTMENTS,TOKYO,JOE,MOLLY,BROWN,HOUSE,MUSEUM,CAMELLIA,CUSTOM,TAILORS,QUIZNOS,IYER,LAW,OFFICE,LLC,CRIMINAL,ATTORNEY,COLORADO,HISTORY,SPA,TUNE,DENVER,HILL,PUBLIC,LIBRARY</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="36" width="147" x="556" y="297">
+            <tag>FORTUNE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="33" width="116" x="431" y="300">
+            <tag>LUCKY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="22" width="136" x="506" y="332">
+            <tag>RESTAURANT</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

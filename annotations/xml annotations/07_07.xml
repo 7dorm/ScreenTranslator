@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/07_07.jpg</imageName>
+      <address>326 East Colfax Avenue Denver CO</address>
+      <lex>CATHEDRAL,IMMACULATE,CNCPTN,WOLFE,BARBEQUE,RED,ROOM,RESTAURANT,AND,BAR,TAKI,COLORADO,STATE,CAPITOL,DENVER,PRIVATE,INVESTIGATOR,MILE,HIGH,INVESTIGATIONS,WALNUT,CAFE,JOEY,PIZZA,EMILIO,JERRY,RECORD,EXCHANGE,HILL,BOOKS,CITY,GRILLE,GREAT,WALL,CHINESE,SHISH,KABOB,GRILL,ALEX,SANDRA,REAL,ITALIAN,CHEEKY,MONK,BELGIAN,BEER,SATELLITE,HOLLYWOOD,POSTERS,ARCHDIOCESE,EDUCATION,ASSOCIATION</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="53" width="187" x="364" y="406">
+            <tag>HOLLYWOOD</tag>
+         </taggedRectangle>
+         <taggedRectangle height="52" width="144" x="548" y="400">
+            <tag>POSTERS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

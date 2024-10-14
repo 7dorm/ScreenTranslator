@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/14_05.jpg</imageName>
+      <address>1520 Southeast 7th Avenue Portland OR</address>
+      <lex>ROOTS,BREWING,DUFF,GARAGE,BAR,GRILL,HOLLYWOOD,COSTUMERS,AFFORDABLE,TIRE,BRAKE,PIP,PRINTING,LUCKY,LABRADOR,BREW,PUB,ELEPHANTS,DELICATESSEN,IORIO,RESTAURANT,OBP,DIGITAL,PLAN,OREGON,BLUE,PRINT,ANTIQUE,FURNITURE,WAREHOUSE,AUTOMATIC,TRANSMISSION,SERVICES,NEW,CASCADIA,TRADITIONAL,BELOW,COST,FRAMING,VIPER,ROOM,MULTNOMAH,COUNTY,PERSONNEL,ORGANICS,YOU,PORTLAND,OFFICE,FURNITURE,BRIDGE,CITY,COUNSELING,OFFICES</lex>
+      <Resolution x="1280" y="884" />
+      <taggedRectangles>
+         <taggedRectangle height="72" width="156" x="670" y="347">
+            <tag>ROOTS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

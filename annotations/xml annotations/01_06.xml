@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/01_06.jpg</imageName>
+      <address>143 Courtland Street Northeast Atlanta GA?</address>
+      <lex>SHERATON,ATLANTA,HOTEL,AVIS,RENT,CAR,DOWNTOWN,FIRST,CONGREGATIONAL,CHURCH,BUDGET,SAFE,HOUSE,OUTREACH,CARE,UPS,STORE,FLOOD,WATER,DAMAGE,AND,RESTORATION,MARRIOTT,MARQUIS,CROWELL,ANGELA,GOT,CARPETS,LLC,UPTOWN,RESTAURANT,LOUNGE,MYSTERY,DINNER,THEATER,AGATHA,HOLIDAY,INN,WORLD,CONGRESS,CTR,FANDANGLES,TOP,SHELF,BARTENDERS,ROB,LITVAK,WYNDHAM,GARDEN,BAYMONT,SUITES,THE,RITZ,CARLTON</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="222" width="428" x="439" y="313">
+            <tag>AVIS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

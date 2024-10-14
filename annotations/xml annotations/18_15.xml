@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/18_15.jpg</imageName>
+      <address>2000 6th Avenue Seattle WA?</address>
+      <lex>SIXTH,AVENUE,INN,FARESTART,JAZZ,ALLEY,BAROLO,RISTORANTE,PALACE,BALLROOM,THE,WESTIN,SEATTLE,METROPOLITAN,TOWER,UPTOWN,ESPRESSO,HOTEL,MAX,BOUTIQUE,ROBERT,LEONARD,SALON,DAY,SPA,BAR,GRILL,AMC,THEATRES,CINERAMA,KINGS,ICON,MISTRAL,KITCHEN,CONSULATE,GENERAL,RUSSIA,BUILDING,GARAGE,ART,NOT,TERMINAL,GALLERY,5TH,AVE,BARBER,TOP,POT,DOUGHNUTS</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="110" width="277" x="517" y="297">
+            <tag>AVENUE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="111" width="226" x="286" y="297">
+            <tag>SIXTH</tag>
+         </taggedRectangle>
+         <taggedRectangle height="68" width="123" x="370" y="406">
+            <tag>BAR</tag>
+         </taggedRectangle>
+         <taggedRectangle height="67" width="208" x="569" y="408">
+            <tag>GRILL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="62" width="76" x="876" y="441">
+            <tag>SIXTH</tag>
+         </taggedRectangle>
+         <taggedRectangle height="50" width="42" x="1058" y="423">
+            <tag>GRILL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="61" width="67" x="950" y="437">
+            <tag>AVENUE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="53" width="34" x="1015" y="432">
+            <tag>BAR</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

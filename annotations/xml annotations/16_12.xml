@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/16_12.jpg</imageName>
+      <address>101 Cyril Magnin Street San Francisco CA</address>
+      <lex>FIRST,CRUSH,RESTAURANT,BAR,HOTEL,FUSION,HANA,ZEN,NEW,DELHI,INDIAN,PUCCINI,PINETTI,THE,POWELL,NIKKO,SAN,FRANCISCO,TIAN,SING,CHINESE,INC,HILTON,UNION,SQUARE,PARC,ANZU,INFUSION,LOUNGE,HERBERT,JOHNNY,FOLEY,IRISH,HOUSE,LLC,URBAN,OUTFITTERS,AYH,AMERICAN,YOUTH,HOSTELS,ABRI,LORI,DINER</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="50" width="172" x="586" y="332">
+            <tag>CRUSH</tag>
+         </taggedRectangle>
+         <taggedRectangle height="55" width="155" x="420" y="330">
+            <tag>FIRST</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

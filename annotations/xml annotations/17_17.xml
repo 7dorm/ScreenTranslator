@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/17_17.jpg</imageName>
+      <address>99 East San Fernando Street San Jose CA</address>
+      <lex>101,SAN,FERNANDO,FAHRENHEIT,RESTAURANT,LOUNGE,AZUCAR,LATIN,BISTRO,VIVA,CHANG,CHINA,JOSE,PUBLIC,LIBRARY,SOUTH,THIRD,STREET,APARTMENTS,CINEBAR,IMPROV,COMEDY,CLUB,CHIC,CHATEAU,GORDON,BIERSCH,BREWERY,LOFT,BAR,DOWNTOWN,HISTORIC,DISTRICT,CALIFORNIA,BLOCKBUSTER,VIDEO,LOVES,CUPCAKES,TRES,GRINGOS,BAJA,CANTINA,GRILL,TONY,SOPRANO,PIZZERIA,MARRIOTT,EXECUSTAY,THE,LION,DEN,SILK,ROAD</lex>
+      <Resolution x="1280" y="880" />
+      <taggedRectangles>
+         <taggedRectangle height="84" width="367" x="392" y="411">
+            <tag>FAHRENHEIT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="27" width="199" x="559" y="489">
+            <tag>LOUNGE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

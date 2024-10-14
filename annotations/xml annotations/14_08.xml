@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/14_08.jpg</imageName>
+      <address>1035 700 Southwest 5th Avenue Portland OR</address>
+      <lex>APPLE,STORE,PIONEER,PLACE,MADE,OREGON,MALL,SOUTHWEST,4TH,AVENUE,AND,5TH,THE,NINES,COURTHOUSE,VICTORIA,SECRET,LOUIS,VUITTON,INC,CREW,GYMBOREE,TWIST,SAKS,FIFTH,PARADISE,BAKERY,CAFE,MEIER,FRANK,DEPARTURE,RESTAURANT,LOUNGE,URBAN,FARMER,PORTLAND,SQUARE,STARBUCKS,BATH,BODY,WORKS,TOY,BLISS,WALKING</lex>
+      <Resolution x="1278" y="880" />
+      <taggedRectangles>
+         <taggedRectangle height="33" width="161" x="633" y="331">
+            <tag>PIONEER</tag>
+         </taggedRectangle>
+         <taggedRectangle height="41" width="107" x="808" y="326">
+            <tag>PLACE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="25" width="63" x="657" y="380">
+            <tag>SAKS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="27" width="70" x="724" y="376">
+            <tag>FIFTH</tag>
+         </taggedRectangle>
+         <taggedRectangle height="26" width="99" x="798" y="375">
+            <tag>AVENUE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

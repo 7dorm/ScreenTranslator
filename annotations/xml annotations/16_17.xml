@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/16_17.jpg</imageName>
+      <address>401 Geary Street San Francisco CA?</address>
+      <lex>PINE,CREST,DINER,AMERICAN,CONSERVATORY,THEATER,GRAND,CAFE,KATANA,RESTAURANT,HILTON,SAN,FRANCISCO,UNION,SQUARE,HOTEL,FRANK,PLAZA,CLIFT,LORI,AYH,YOUTH,HOSTELS,COLIBRI,MEXICAN,BISTRO,KING,GEORGE,THAI,NOODLE,DIVA,HANDLERY,SLIDE,LOUNGE,STARBUCKS,MAX,THE,SUSHI,BOAT,NIKKO</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="106" width="227" x="608" y="233">
+            <tag>CREST</tag>
+         </taggedRectangle>
+         <taggedRectangle height="69" width="177" x="435" y="260">
+            <tag>PINE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="52" width="330" x="469" y="362">
+            <tag>RESTAURANT</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

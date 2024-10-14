@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/04_18.jpg</imageName>
+      <address>349 South Glenoaks Boulevard Burbank CA 91502-1320</address>
+      <lex>HAMOUI,MOBIL,MART,GERRO,MARSHA,GLENOAKS,PHARMACY,AND,MEDICAL,SUPPLY,RICO,PIZZA,MAN,LAW,OFFICES,RAY,FOUNTAIN,CRIMINAL,DEFENSE,ATTORNEY,LAWYER,RAMIREZ,LYNN,BLOCKBUSTER,VIDEO,TER,POGHOSYAN,ZARINE,KNOX,TIMOTHY,DDS,LILLY,CAFE,COLOMBIA,JAS,GIFTS,GEVORKYAN,HAKOP,RIVERA,ROBERT,KOTAYK,KABOB,DELI,ADVANCE,HEALTH,GROUP,TERZIAN,GARO,CLEANERS,PARK,HOME,THEATER,SHIRVAN,REALTY</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="30" width="53" x="681" y="950">
+            <tag>MART</tag>
+         </taggedRectangle>
+         <taggedRectangle height="93" width="272" x="534" y="445">
+            <tag>MOBIL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="26" width="51" x="635" y="952">
+            <tag>MOBIL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

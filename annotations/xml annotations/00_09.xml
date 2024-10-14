@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/00_09.jpg</imageName>
+      <address>122 South Euclid Street Anaheim CA 92802-1012</address>
+      <lex>GOODWILL,CHAIN,REACTION,DENNY,RADIO,SHACK,DAYTONA,CAR,WASH,TARGET,JUGO,DESIGNS,INC,COUPLES,MEGA,OUTLET,ACCURATE,BOOKKEEPING,NOTARY,INCOME,TAX,PAYROLL,YMCA,VENTURE,GROUP,LEED,MATTRESS,STORES,LOS,OLIVOS,BOX,PAMPAS,APARTMENTS,ARBY,MULTIMEDIA,ANAHEIM,CHEVROLET,GEO,LOARA,ELEMENTARY,SCHOOL,ABC,LIQUIDATORS</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="80" width="356" x="251" y="332">
+            <tag>GOODWILL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="25" width="68" x="160" y="376">
+            <tag>GOODWILL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

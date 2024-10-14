@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/05_08.jpg</imageName>
+      <address>214 West 22nd Place Chicago IL</address>
+      <lex>CHINATOWN,HOTEL,SRO,PUI,TAK,CENTER,THREE,HAPPINESS,RESTAURANT,WON,KOW,PENANG,MALAYSIAN,CUISINE,MOON,PALACE,NEW,CHINA,TOWN,CHOP,SUEY,EMPEROR,CHOICE,TRIPLE,CROWN,PHOENIX,GIFTLAND,INC,MARKET,SAINT,ALP,TEAHOUSE,CHAMBER,COMMERCE,DOUBLE,CHINESE,RED,WOKS,THINGS,KAM,FUNG,FEIDA,BAKERY</lex>
+      <Resolution x="1276" y="878" />
+      <taggedRectangles>
+         <taggedRectangle height="26" width="110" x="584" y="380">
+            <tag>CHINATOWN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="16" width="82" x="597" y="400">
+            <tag>HOTEL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

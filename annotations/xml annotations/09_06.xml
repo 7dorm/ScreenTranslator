@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/09_06.jpg</imageName>
+      <address>934 North Pennsylvania Street Indianapolis IN</address>
+      <lex>LIVING,ROOM,LOUNGE,URBAN,ELEMENT,INDIANAPOLIS,RUBBER,STAMP,DATSA,PIZZA,IDN,HOFFMAN,INC,LUCILLE,RAINES,RESIDENCE,APPEL,JOHN,MARION,COUNTY,PUBLIC,LIBRARY,CROSSROADS,BAPTIST,ASSOCIATION,ABBEY,COFFEE,HOUSE,VOLUNTEERS,AMERICA,METROPOLITAN,CENTER,ARTIFICIAL,LIMB,CORPORATION,CASTLETON,INN,RADIO,ONE,LOCKERBIE,COURT,APARTMENTS,ARVEY,PAPER,OFFICE,PRODUCTS,PPG,PORTER,PAINTS,HVAF,INDIANA,BUCKINGHAM,COMPANIES</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="41" width="119" x="481" y="353">
+            <tag>LIVING</tag>
+         </taggedRectangle>
+         <taggedRectangle height="33" width="131" x="706" y="352">
+            <tag>LOUNGE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="34" width="103" x="600" y="351">
+            <tag>ROOM</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

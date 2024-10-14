@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/10_03.jpg</imageName>
+      <address>Pak Tea House</address>
+      <lex>DUANE,STREET,HOTEL,PAK,TEA,HOUSE,ESPRESSO,LOUNGE,TRIBECA,TREATS,LLC,BLAUE,GANS,RESTAURANT,CITY,HALL,BELL,BATES,FRESH,NAM,COSMOPOLITAN,CARY,BUILDING,NEW,YORK,SUBWAY,GOTHAM,BIKES,INC,WARD,BRIAN,DORSEY,STUDIOS,MEGU,SMYTH,THOMPSON,ROSANJIN,THE,SODA,SHOP,PARK,CAFE</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="65" width="146" x="624" y="137">
+            <tag>HOUSE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="64" width="90" x="536" y="142">
+            <tag>TEA</tag>
+         </taggedRectangle>
+         <taggedRectangle height="60" width="86" x="327" y="151">
+            <tag>PAK</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

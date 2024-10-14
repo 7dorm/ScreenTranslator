@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/01_19.jpg</imageName>
+      <address>? 202 Courtland Street Northeast Atlanta GA?</address>
+      <lex>HERTZ,LOCAL,EDITION,COURTLAND,STREET,ATLANTA,MARRIOTT,MARQUIS,DOWNTOWN,HOTEL,UPTOWN,RESTAURANT,LOUNGE,HOLIDAY,INN,WORLD,CONGRESS,CTR,SHERATON,TRADER,VIC,PEACHTREE,CENTER,ATHLETIC,CLUB,HILTON,NIKOLAI,ROOF,COCA,COLA,STEAK,AND,ALE,SOL,LIQUOR,HARD,ROCK,CAFE,165,GIBNEYS,PUB,SEAR,HYATT,REGENCY,MYSTERY,DINNER,THEATER,AGATHA,AZIO,ELEGANT,AFFAIRS</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="133" width="357" x="507" y="357">
+            <tag>HERTZ</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

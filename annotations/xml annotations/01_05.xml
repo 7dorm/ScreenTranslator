@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/01_05.jpg</imageName>
+      <address>303 Courtland Street Northeast Atlanta GA?</address>
+      <lex>WORLD,COCA,COLA,MOTEL,ENTERPRISE,RENT,CAR,HILTON,ATLANTA,HOTEL,TRADER,VIC,NIKOLAI,ROOF,PACIFIC,RIM,BISTRO,MUSEUM,DESIGN,SUN,TRUST,BANKS,INC,MARRIOTT,MARQUIS,DOWNTOWN,FLETCHER,MARTIN,GOOSEBUMPS,LANIER,PARKING,SYSTEM,TRAVELODGE,GEORGIA,PARENT,TEACHER,ASSOCIATION,PETIT,HYATT,REGENCY,JOHN,PORTMAN,ASSOCIATES,SUNTRUST</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="44" width="74" x="844" y="423">
+            <tag>CAR</tag>
+         </taggedRectangle>
+         <taggedRectangle height="75" width="381" x="525" y="352">
+            <tag>ENTERPRISE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="86" width="131" x="272" y="358">
+            <tag>ENTERPRISE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="34" width="87" x="732" y="429">
+            <tag>RENT</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

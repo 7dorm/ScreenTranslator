@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/14_11.jpg</imageName>
+      <address>219 Southwest Broadway Portland OR</address>
+      <lex>OUTDOOR,STORE,BAILEY,TAPROOM,TUG,BOAT,BREWING,BENSON,HOTEL,SAUCEBOX,CAFE,BAR,MARY,CLUB,LONDON,GRILL,GAUCHO,360,VINYL,LUCIA,DOWNTOWN,PORTLAND,SILVER,DOLLAR,PIZZA,GRILLO,VINTAGE,PLAZA,THA,ARCHITECTURE,PAUL,MITCHELL,THE,SCHOOL,UNION,BANK,INCOME,PROPERTY,MANAGEMENT,BLUE,SKY,GALLERY,AND,NINE,ESCAPE</lex>
+      <Resolution x="1280" y="876" />
+      <taggedRectangles>
+         <taggedRectangle height="75" width="286" x="197" y="182">
+            <tag>OUTDOOR</tag>
+         </taggedRectangle>
+         <taggedRectangle height="70" width="201" x="903" y="231">
+            <tag>OUTDOOR</tag>
+         </taggedRectangle>
+         <taggedRectangle height="64" width="170" x="497" y="204">
+            <tag>STORE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="58" width="122" x="1109" y="257">
+            <tag>STORE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

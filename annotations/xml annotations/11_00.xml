@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/11_00.jpg</imageName>
+      <address>325 South Orange Avenue Orlando FL</address>
+      <lex>GRAND,BOHEMIAN,HOTEL,DOWNTOWN,ORLANDO,HOTELS,LAWYER,BOHEME,RESTAURANT,BOSENDORFER,LOUNGE,SEAWORLD,TDD,JOBLINE,STARBUCKS,GALLERY,KENNEDY,SPACE,CENTER,VISITOR,IMAX,HARD,ROCK,UNIVERSAL,RESORT,CITRUS,CLUB,GETTER,MARKETING,PROMOTIONAL,PRODUCTS,CUSTOM,ADVERTISING,CITY,HALL,MILANO,CLOTHIER,TLC,ENGINEERING,ARCHITECTURE,CAR,STORE,THE,TIMBERWOLF,ORGANICS,INC,FOREVER,SMOKEFREE,STOP,SMOKING,HYPNOSIS,SWALSTEAD,JEWELERS,LIMO,SERVICE,BLACK,DIAMOND,LIMOUSINE,RUMBERGER,KIRK,CALDWELL</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="39" width="166" x="556" y="332">
+            <tag>BOHEMIAN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="49" width="112" x="441" y="328">
+            <tag>GRAND</tag>
+         </taggedRectangle>
+         <taggedRectangle height="33" width="103" x="737" y="332">
+            <tag>HOTEL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/06_18.jpg</imageName>
+      <address>3909 Swiss Avenue Dallas TX?</address>
+      <lex>DALLAS,THEOLOGICAL,SEMINARY,MUSEUM,AMERICAN,RAILROAD,TURPIN,LIBRARY,ATM,ONLINE,KOINE,CHURCH,BAYLOR,UNIVERSITY,MEDICAL,CENTER,CHRISTINE,BROWN,LAUREN,LARSEN,PHOTOGRAPHY,VANDERPOOL,WESTMORELAND,CRISWELL,COLLEGE,FOUNDATION,SHEPHERD,SCHOOL,BRIEN,JOHN,STEPHEN,LANDERS,WHITE,ROBERT,GRAND,HARRELL,STARBUCKS,SMOKEY,BAR,QUE,CATERING,LOU,GOSSIP,USED,FURNITURE,EUREST,DINING,SERVICES</lex>
+      <Resolution x="1111" y="700" />
+      <taggedRectangles>
+         <taggedRectangle height="48" width="111" x="415" y="268">
+            <tag>DALLAS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="45" width="132" x="497" y="306">
+            <tag>SEMINARY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="41" width="169" x="528" y="263">
+            <tag>THEOLOGICAL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

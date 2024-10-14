@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/13_19.jpg</imageName>
+      <address>1326 N Central Ave. Phoenix AZ</address>
+      <lex>CHEUVRONT,RESTAURANT,AND,WINE,BAR,OLD,SPAGHETTI,FACTORY,PHOENIX,PUBLIC,LIBRARY,CITY,GOVERNMENT,BURTON,BARR,CENTRAL,BLUE,FIN,ACKCO,INC,CARL,WELLISH,COMCARE,COMMUNITY,PARTNERSHIP,FOR,BEHAVIORAL,HEALTH,CARE,INTENSIVE,TREATMENT,CLINIC,WADE,LARRY,MAGELLAN,SERVICES,ELLER,KENT,CHARLE,ARIZONA,HUMANITIES,COUNCIL,SUNS,DIAMONDBACKS,ACADEMY,ESTEVES,JOAO,GLORIA,MANLEY,BUGZ,PEST,CONTROL,ARTISAN,HOMES,MISSION,CARPET,FURNITURE,CLEANING,VALLEYWIDE,HJMORALES,LLC,BASICEXPOSURE,PARTNERS,RECOVERY</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="31" width="202" x="267" y="370">
+            <tag>CHEUVRONT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="35" width="162" x="638" y="432">
+            <tag>CHEUVRONT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="31" width="171" x="825" y="432">
+            <tag>RESTAURANT</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

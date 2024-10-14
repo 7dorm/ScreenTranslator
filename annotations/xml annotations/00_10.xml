@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/00_10.jpg</imageName>
+      <address>511 South State College Boulevard Anaheim CA 92806-4222</address>
+      <lex>ANGELO,HAMBURGERS,ANAHEIM,BAND,INSTRUMENTS,LITTLE,CAESARS,PIZZA,SUSHI,SHOGUN,HAPPY,LIQUOR,ANA,AUTO,LUBE,TUNE,INC,HONG,KONG,EXPRESS,RESTAURANT,PURE,DRINKING,WATER,CREATIVE,CONCEPTS,CONSTRUCTION,ACE,SHOE,REPAIR,MARTIE,HAIR,FASHIONS,CASH,CHECKS,GALA,BEAUTY,SALON,SANTIVANEZ,SANDRA,DOMINO,WIN,LOSE,DRAW,SPORTSWEAR,BOY,FURNITURE,GALLERIES,SHERRY,MENDOZA,BOOKKEEPING,COLLEGE,DRIVE,DAIRY,BICYCLE</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="73" width="171" x="478" y="143">
+            <tag>ANGELO</tag>
+         </taggedRectangle>
+         <taggedRectangle height="131" width="462" x="325" y="466">
+            <tag>HAMBURGERS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

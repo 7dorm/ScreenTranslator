@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/19_03.jpg</imageName>
+      <address>6 Dupont Circle Northwest Washington DC 20036</address>
+      <lex>DUPONT,CIRCLE,JAMES,HOBAN,IRISH,RESTAURANT,CVS,PHARMACY,SECOND,STORY,BOOKS,ANTIQUES,PIZZERIA,PARADISO,ASPEN,INSTITUTE,PESCE,ALTIRAMISU,ITALIAN,FRONT,PAGE,GRILLE,BRISTOL,HOUSE,APARTMENTS,KRAMERBOOKS,AFTERWORDS,BOOKSTORE,AND,CAFE,DUPONT,STATION,CLOUD,DINING,LOUNGE,SENTO,ALBERTO,PISA,BANK,AMERICA,FEDEX,OFFICE,SHIP,CENTER,HEURICH,FOUNDATION,BANGKOK,THAI,DINING,RESTUARANT,BUFFALO,BILLIARDS,OBELISK</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="99" width="180" x="353" y="442">
+            <tag>CVS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="34" width="54" x="1053" y="571">
+            <tag>CVS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="31" width="36" x="550" y="578">
+            <tag>CVS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="25" width="32" x="196" y="587">
+            <tag>CVS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="95" width="372" x="570" y="433">
+            <tag>PHARMACY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="25" width="45" x="381" y="634">
+            <tag>CVS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="37" width="60" x="693" y="631">
+            <tag>CVS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

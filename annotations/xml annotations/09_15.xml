@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/09_15.jpg</imageName>
+      <address>31 West Ohio Street Indianapolis IN</address>
+      <lex>SHERATON,INDIANAPOLIS,CITY,CENTER,HOTEL,CHASE,CHRIST,CHURCH,CATHEDRAL,STARBUCKS,DOWNTOWN,WELLPOINT,INC,HILTON,FEDEX,OFFICE,PRINT,SHIP,CAPITAL,SOUTH,TOWER,COLUMBIA,CLUB,ILLINOIS,BUILDING,SECURITY,MONUMENT,CIRCLE,FIFTH,THIRD,BANK,CVS,PHARMACY,SKYLINE,CORMICK,SCHMICK,SOLDIERS,SAILORS,220</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="59" width="225" x="541" y="363">
+            <tag>SHERATON</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

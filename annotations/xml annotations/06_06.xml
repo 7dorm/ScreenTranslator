@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/06_06.jpg</imageName>
+      <address>2711 North Haskell Avenue Dallas TX?</address>
+      <lex>CITYPLACE,CENTER,CHG,CITY,PLACE,HUDSON,ADVISORS,SCHMIDT,STACY,CONSULTING,HELLMUTH,OBATA,KASSABAUM,STATION,JIM,ADLER,AND,ASSOCIATES,AON,RISK,SERVICES,INC,FINANCIAL,NETWORK,INVESTMENT,ROSEWOOD,CORPORATION,GLINCHEY,STAFFORD,HUB,INTERNATIONAL,PERSONAL,INSURANCE,EDUCATION,FREEDOM,GRAU,KOHEN,TOWER,ATHLETIC,CLUB,SPA,ZIX,SUBWAY,ORRICK,HARRINGTON,SUTCLIFFE,SERVICELANE,COM,WYNNWOOD,HOSPITALITY</lex>
+      <Resolution x="1114" y="700" />
+      <taggedRectangles>
+         <taggedRectangle height="31" width="53" x="552" y="324">
+            <tag>CENTER</tag>
+         </taggedRectangle>
+         <taggedRectangle height="29" width="75" x="479" y="326">
+            <tag>CITYPLACE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

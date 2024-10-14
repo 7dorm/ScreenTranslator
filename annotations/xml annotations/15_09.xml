@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/15_09.jpg</imageName>
+      <address>555 West Ash Street San Diego CA 92101-3414</address>
+      <lex>BEST,WESTERN,BAYSIDE,ANTHOLOGY,ENOTECA,STYLE,INTRAX,INTERNATIONAL,INSTITUTE,TIC,INN,LLC,ALLEGRO,TOWERS,RAINWATER,KETTNER,PETRINI,RESTAURANT,WAVE,IMAGING,CORPORATION,SAN,DIEGO,FABRISONS,ESET,PRACTICE,GROUP,SPA,VELIA,ISAAC,BLUMBERG,LAW,OFFICE,EXTRAORDINARY,DESSERTS,JOHN,LEMON,OFFICES,MEXICAN,FIESTA,LIPKA,COM,INC,DGA</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="75" width="248" x="372" y="311">
+            <tag>BAYSIDE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="53" width="83" x="245" y="355">
+            <tag>BEST</tag>
+         </taggedRectangle>
+         <taggedRectangle height="39" width="120" x="227" y="397">
+            <tag>WESTERN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="72" width="114" x="439" y="393">
+            <tag>INN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

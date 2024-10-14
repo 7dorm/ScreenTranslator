@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/10_18.jpg</imageName>
+      <address>66 West Broadway New York NY USA</address>
+      <lex>BABESTA,MANGEZ,AVEC,MOI,KORIN,JAPANESE,TRADING,CORPORATION,SMYTH,THOMPSON,HOTEL,WARREN,MYSTERIOUS,BOOKSHOP,GIGLIO,LILLY,BRIENS,RESTAURANT,KITCHENETTE,NICOLENAS,AMISH,MARKET,RACOON,LODGE,COSMOPOLITAN,THE,BIGGER,PLACE,WHOLE,FOODS,PAIN,QUOTIDIEN,MUDVILLE,SALOON,FRANKLY,WINES,CHAMBERS,STREET,KAFFE,1668</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="117" width="290" x="271" y="397">
+            <tag>FRANKLY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="88" width="251" x="535" y="402">
+            <tag>WINES</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

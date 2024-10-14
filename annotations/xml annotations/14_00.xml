@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/14_00.jpg</imageName>
+      <address>1844 Southwest Morrison Street Portland OR</address>
+      <lex>PGE,PARK,THE,AGENCY,ULTRA,SPORT,LOUNGE,PORTLAND,STATE,UNIVERSITY,CONTINUING,EDUCATION,MULTNOMAH,ATHLETIC,CLUB,MATADOR,END,KINGSTON,BAR,GRILL,MORRISON,APARTMENTS,PLAINFIELD,RESTAURANT,CHEERFUL,BULLPEN,BITTER,END,PUB,LLC,COFFEE,HOUSE,NORTHWEST,STADIUM,STATION,KINGS,HILL,SOUTHWEST,SALMON,GERMAN,RADIO,EAT,PIZZA,HOTLIPS,CIVIC,TOWERS,MAZATLAN,MEXICAN,STARBUCKS,MAX</lex>
+      <Resolution x="1280" y="876" />
+      <taggedRectangles>
+         <taggedRectangle height="142" width="228" x="345" y="95">
+            <tag>PGE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="53" width="80" x="489" y="662">
+            <tag>PGE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="154" width="368" x="584" y="54">
+            <tag>PARK</tag>
+         </taggedRectangle>
+         <taggedRectangle height="51" width="120" x="574" y="666">
+            <tag>PARK</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

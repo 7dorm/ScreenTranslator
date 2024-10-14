@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/17_16.jpg</imageName>
+      <address>455 South 2nd Street San Jose CA</address>
+      <lex>RAMADA,LIMITED,SAN,JOSE,SOUTH,FIRST,BILLIARDS,CLUB,AND,LOUNGE,MUSEUM,QUILTS,TEXTILES,STAGE,COMPANY,AGENDA,RESTAURANT,BAR,TOWNHOUSE,MOTEL,WHIPSAW,INC,DAI,THANH,SUPERMARKET,WET,NIGHTCLUB,DOWNTOWN,YOGA,SHALA,MACLA,WORKS,ANNO,DOMINI,EMILE,BACH,BAKERY,CAROLIS,DESIGN,MARKETING,EULIPIA,MOTIF,DAKAO,SANDWICH,MARKET,GATEWAY,APARTMENTS</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="127" width="462" x="298" y="377">
+            <tag>RAMADA</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/03_08.jpg</imageName>
+      <address>2015 Pearl Street Boulder CO</address>
+      <lex>TEN,TIMBERLINE,FINE,FURNITURE,DISH,COLOR,MINE,MATEO,BOULDER,COOPERATIVE,MARKET,PEERLESS,TYRE,COLORADO,BUSINESS,BANK,FOUR,STAR,REALTY,AND,PROPERTY,MANAGEMENT,INC,BARTLETT,INTERIORS,PLANETARY,SOLUTIONS,METRO,HOME,STORE,BARRETT,STUDIO,ARCHITECTS,VECCHIO,BICICLETTERIA,ESPRESSORIA,GARTH,BRAUN,ASSOCIATES,WHITTIER,ELEMENTARY,SCHOOL,COCONA,EVELYN,BASSOFF,PHD</lex>
+      <Resolution x="1918" y="904" />
+      <taggedRectangles>
+         <taggedRectangle height="83" width="462" x="633" y="318">
+            <tag>TIMBERLINE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

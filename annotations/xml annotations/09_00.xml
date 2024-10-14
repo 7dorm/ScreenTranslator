@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/09_00.jpg</imageName>
+      <address>49 West Maryland Street Indianapolis IN</address>
+      <lex>CIRCLE,CENTRE,MALL,CHANG,CHINA,BISTRO,ALCATRAZ,BREWING,REGAL,BERTOLINI,AUTHENTIC,TRATTORIA,BANANA,REPUBLIC,JOHNNY,ROCKETS,PALOMINO,RESTAURANT,ROTISSERIA,BAR,SUBWAY,GAMEWORKS,FINISH,LINE,NEW,YORK,INDIANAPOLIS,COLTS,PRO,SHOP,CINNABON,VICTORIA,SECRET,LIMITED,TOO,VILLA,PIZZA,FRULLATI,CAFE,AUNTIE,ANNE,PRETZELS,FOREVER</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="33" width="131" x="659" y="380">
+            <tag>CENTRE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="34" width="118" x="543" y="378">
+            <tag>CIRCLE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

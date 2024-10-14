@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/09_17.jpg</imageName>
+      <address>123 West Louisiana Street Indianapolis IN</address>
+      <lex>CROWNE,PLAZA,HISTORIC,UNION,STATION,INDIANAPOLIS,AMTRAK,STATION,PULLMAN,RESTAURANT,BAR,GREYHOUND,LINES,SLIPPERY,NOODLE,INN,STOP,OMNI,SEVERIN,HOTEL,WHOLESALE,DISTRICT,RCA,DOME,UGLY,MONKEY,PAN,AMERICAN,ARENA,LUCAS,OIL,STADIUM,POST,OFFICE,CLADDAGH,IRISH,PUB,PACKAGE,XPRESS,CLURE,COMMERCIAL,INDUSTRIAL,RED,EYE,CAFE,TEACHER,PET,TRAVEL,INC</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="50" width="273" x="400" y="405">
+            <tag>CROWNE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="62" width="196" x="700" y="391">
+            <tag>PLAZA</tag>
+         </taggedRectangle>
+         <taggedRectangle height="35" width="136" x="452" y="473">
+            <tag>HOTEL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

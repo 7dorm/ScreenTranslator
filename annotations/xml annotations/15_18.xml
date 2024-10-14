@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/15_18.jpg</imageName>
+      <address>750 B Street San Diego CA 92101-8114</address>
+      <lex>SAN,DIEGO,SYMPHONY,ORCHESTRA,UNIVERSITY,CLUB,ATOP,TOWERS,SHERATON,SUITES,HALL,MARTINEZ,CUTRI,ARCHITECTS,SELTZER,CAPLAN,MAHON,VITEK,LAW,OFFICES,SHANA,BLACK,PRICEWATERHOUSE,COOPERS,YOGA,ONE,CITY,PIZZERIA,SENATOR,DIANNE,FEINSTEIN,KENNA,LONG,ALDRIDGE,COCCHIA,ROBERT,WACHOVIA,BANK,NOT,BRANCH,DOUGLAS,GEYMAN,KPMG,CAKE,CHATEAU,MURCHISON,CUMMING,LLP,WOLF,HALDENSTEIN,ADLER,FREEMAN,EMBASSY,OLD,GALLERY,COFFEE,HOUSE</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="48" width="147" x="420" y="447">
+            <tag>SYMPHONY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="40" width="74" x="577" y="443">
+            <tag>HALL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

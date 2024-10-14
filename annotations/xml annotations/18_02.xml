@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/18_02.jpg</imageName>
+      <address>2600 1st Avenue Seattle WA</address>
+      <lex>BLACK,BOTTLE,GAUCHO,EXOFFICIO,RETAIL,OUTLET,STORE,RESTAURANT,THE,LOCAL,VINE,SEATTLE,WINE,BAR,BIG,PICTURE,CEDARS,APARTMENTS,ARBOR,PLACE,MANAGERS,OFFICE,CHARTREUSE,INTERNATIONAL,MCGUIRE,ACE,HOTEL,CASUELITA,CYCLOPS,HOME,MARCO,SUPPER,CLUB,VIA,SOLFERINO,SALON,NEW,PACIFIC,LLC,TANDOORI,HUT,BRONZE,CELLARS</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="64" width="136" x="456" y="282">
+            <tag>BLACK</tag>
+         </taggedRectangle>
+         <taggedRectangle height="61" width="141" x="592" y="294">
+            <tag>BOTTLE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="34" width="53" x="335" y="508">
+            <tag>VINE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

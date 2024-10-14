@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/17_11.jpg</imageName>
+      <address>566 North 6th Street San Jose CA</address>
+      <lex>MIRAIDO,VILLAGE,APARTMENTS,NIJIYA,MARKET,KAZOO,RESTAURANT,HUKILAU,JAPANTOWN,BUSINESS,ASSOCIATION,SUSHI,MARU,SHUEI,MANJU,SHOP,BANANA,CREPE,TSUGARU,JAPANESE,DOBASHI,MKT,INCORPORATED,MINATO,CUISINE,OKAYAMA,KAITA,KUBOTA,KUMAKO,GOMBEI,BLOCKBUSTER,VIDEO,NISHIME,ROBERT,SAN,JOSE</lex>
+      <Resolution x="1278" y="880" />
+      <taggedRectangles>
+         <taggedRectangle height="100" width="311" x="472" y="357">
+            <tag>MIRAIDO</tag>
+         </taggedRectangle>
+         <taggedRectangle height="80" width="255" x="797" y="370">
+            <tag>VILLAGE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

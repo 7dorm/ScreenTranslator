@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/05_11.jpg</imageName>
+      <address>2056 West 22nd Place Chicago IL</address>
+      <lex>MARTIN,CORNER,MICHOACANA,MGR,DEVELOPMENT,CORPORATION,PAUL,CATHOLIC,CHURCH,OUR,LADY,VILNA,SCHOOL,PISA,PIZZA,CHICAGO,PARK,DISTRICT,BARRETT,PLAYGROUND,PEPE,MEXICAN,RESTAURANTS,BLOCK,INCOME,TAX,PREPARATION,SERVICES,CENTRAL,BAKERY,CLARA,BEAUTY,SALON,DELGADO,TRAVEL,JUNIORS,SPORTS,BAR,UNIVERSAL,WIRELESS,LINCOLN,METHODIST,LZPRODUCTS,DBA,TEXTILE,DISCOUNT,OUTLET,MUJERES,LATINAS,ACCION,INC,BURDEEN,SHOES,PILSEN,WELLNESS,CENTER,LITTLE,VILLAGE,COMMUNIT</lex>
+      <Resolution x="1278" y="880" />
+      <taggedRectangles>
+         <taggedRectangle height="36" width="79" x="706" y="353">
+            <tag>CORNER</tag>
+         </taggedRectangle>
+         <taggedRectangle height="36" width="72" x="622" y="353">
+            <tag>MARTIN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="21" width="51" x="628" y="386">
+            <tag>BAR</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

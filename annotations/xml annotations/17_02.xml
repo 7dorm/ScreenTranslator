@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/17_02.jpg</imageName>
+      <address>389 South 1st Street San Jose CA 95113-2804</address>
+      <lex>AGENDA,RESTAURANT,BAR,LOUNGE,MOTIF,EULIPIA,SOUTH,FIRST,BILLIARDS,CLUB,AND,ANNO,DOMINI,WET,NIGHTCLUB,SAINTE,CLAIRE,HOTEL,HOOKAHNITES,ORIGINAL,JOE,RAMADA,LIMITED,SAN,JOSE,HUNTERS,VIDEO,MARRIOTT,HIVE,CONVENTION,CENTER,FONG,GALLERIES,CAFE,MATISSE,GLO,ZOE,FORNAIO,THE,WINE,GALLERIA</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="72" width="256" x="398" y="445">
+            <tag>MOTIF</tag>
+         </taggedRectangle>
+         <taggedRectangle height="24" width="127" x="412" y="549">
+            <tag>RESTAURANT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="23" width="56" x="590" y="550">
+            <tag>CLUB</tag>
+         </taggedRectangle>
+         <taggedRectangle height="24" width="46" x="541" y="549">
+            <tag>AND</tag>
+         </taggedRectangle>
+         <taggedRectangle height="18" width="52" x="471" y="575">
+            <tag>SOUTH</tag>
+         </taggedRectangle>
+         <taggedRectangle height="19" width="41" x="521" y="574">
+            <tag>FIRST</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

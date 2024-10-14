@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/12_09.jpg</imageName>
+      <address>2121 Market Street Philadelphia PA 19103-1320</address>
+      <lex>TRADER,JOE,MUTTER,MUSEUM,SALVATION,ARMY,MURANO,CONDOMINIUM,PHILADELPHIA,MANAGEMENT,CORPORATION,WACHOVIA,BANK,FIRST,UNITARIAN,CHURCH,DAROFF,DESIGN,INC,TWENTY,CIVIL,WAR,2204,LIBERTY,WOOD,INSTITUTE,COLLEGE,PHYSICIANS,PHILADEL,MARATHON,GRILL,FORUM,THEATRE,TAF,FLANNERY,DELAWARE,INVESTMENTS,SCIENCE,LEADERSHIP,ACADEMY,BON,PAIN,MEDUSA,BREWSTER</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="125" width="278" x="617" y="270">
+            <tag>JOE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="121" width="552" x="22" y="277">
+            <tag>TRADER</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

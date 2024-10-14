@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/00_13.jpg</imageName>
+      <address>131 West Ball Road Anaheim CA 92805-6045</address>
+      <lex>KFC,SUBWAY,WESTERN,MEDICAL,CENTER,ANAHEIM,PIZZA,TIME,POLLO,LOCO,DONALD,BALL,LEMON,COIN,LAUNDRY,ANNA,HAIR,SALON,MARISCOS,NAYARIT,RESTAURANT,WATER,BOY,BUENA,PARK,HONDA,SUZUKI,DEE,BEST,BUILDING,MAINTENANCE,ELEVEN,ALCOHOL,AND,DRUG,ABUSE,TREATMENT,BURGER,KING,CONCORD,EQUIPMENT,COMPANY,SLEEP,HOT,LINE,SHOE,CITY,OUTLET,HUMAYON,KHAN</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="113" width="273" x="391" y="292">
+            <tag>KFC</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

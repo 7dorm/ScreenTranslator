@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/08_18.jpg</imageName>
+      <address>705 Main Street Houston TX</address>
+      <lex>FLYING,SAUCER,ZULA,RESTAURANT,YATRA,BRASSERIE,CLUB,QUARTERS,CHASE,BANK,AND,ATM,VENUE,ANGELO,JPMORGAN,BUILDING,HOUSTON,TEXAS,RICE,LOFTS,MANTRA,KATY,BRISCOE,INC,VOLUNTEER,LAWYERS,TIMPANO,ITALIAN,CHOPHOUSE,SAMBUCA,STARBUCKS,CAFE,EXPRESS,LLC,PUBLIC,SAFETY,SERVICES,COMMERCE,LIONBERGER,ASSOCIATES,ATTORNEYS</lex>
+      <Resolution x="1278" y="880" />
+      <taggedRectangles>
+         <taggedRectangle height="48" width="49" x="627" y="342">
+            <tag>ZULA</tag>
+         </taggedRectangle>
+         <taggedRectangle height="109" width="60" x="123" y="278">
+            <tag>ZULA</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

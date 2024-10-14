@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/08_04.jpg</imageName>
+      <address>500 Dallas Street Houston TX</address>
+      <lex>HYATT,HOTELS,RESORTS,REGENCY,HOUSTON,DEVON,ENERGY,CORPORATION,KINDER,MORGAN,INC,HESS,DOUBLETREE,HOTEL,DOWNTOWN,OTTO,BAR,QUE,HAMBURGERS,DON,PATRON,GRILL,ALLEN,CENTER,CULLEN,MURPHY,DELI,HERITAGE,PLAZA,TACO,CABANA,MASSA,RESTAURANT,CONSTELLATION,PARTNERS,STARBUCKS,PAUL,COMPANY,CANDY,SHOP,BERKELEY,EYE,GUTHIKONDA,PRASANTI,DMD,SHOE,HOSPITAL,SUPERCUTS</lex>
+      <Resolution x="1280" y="902" />
+      <taggedRectangles>
+         <taggedRectangle height="71" width="172" x="341" y="344">
+            <tag>ALLEN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="59" width="178" x="457" y="158">
+            <tag>HESS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="72" width="232" x="512" y="348">
+            <tag>CENTER</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

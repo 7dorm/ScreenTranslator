@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/12_10.jpg</imageName>
+      <address>227 S 18th St Philadelphia PA 19103</address>
+      <lex>PARC,RESTAURANT,RITTENHOUSE,DEVON,SEAFOOD,GRILL,BARCLAY,PRIME,SQUARE,ROUGE,NINETY,EIGHT,INC,CURTIS,INSTITUTE,MUSIC,THE,RIB,1715,BOUTIQUE,HOTEL,PIETRO,COAL,OVEN,PIZZERIA,PHILADELPHIA,ART,ALLIANCE,BARNES,NOBLE,BOOKSELLERS,DOWNTOWN,BLEU,RADISSON,PLAZA,WARWICK,TAVERN,LITTLE,PETE,CLARIDGE,DENIM,LOUNGE,ANTHROPOLOGIE</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="80" width="249" x="387" y="241">
+            <tag>PARC</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

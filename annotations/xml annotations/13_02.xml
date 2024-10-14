@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/13_02.jpg</imageName>
+      <address>100 North 1st Street Phoenix AZ</address>
+      <lex>HYATT,REGENCY,PHOENIX,WYNDHAM,HOTEL,FIRST,WATCH,SILVER,SPOON,CAFE,HANNY,CHASE,BANK,AND,ATM,HOTELS,RESORTS,MONROE,MATADOR,MEXICAN,RESTAURANT,ADAMS,GRILL,BAR,COMPASS,ATOP,SAN,CARLOS,TWO,RENAISSANCE,SQUARE,SECURITY,SYMPHONY,STEVE,GREEN,HOUSE,BURGER,KING,STARBUCKS,HALL,PROFESSIONAL,BUILDING,ARIZONA,SEAMUS,MCCAFFFREY,IRISH,PUB</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="38" width="171" x="164" y="387">
+            <tag>STARBUCKS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

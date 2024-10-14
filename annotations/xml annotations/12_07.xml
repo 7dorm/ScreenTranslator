@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/12_07.jpg</imageName>
+      <address>1700 Benjamin Franklin Parkway Philadelphia PA</address>
+      <lex>WINDSOR,SUITES,PHILADELPHIA,FRIENDS,SELECT,SCHOOL,MARRIOTT,EXECUSTAY,MACE,CROSSING,EMBASSY,HOTEL,CATHEDRAL,PETER,PAUL,OFFICE,MEXICAN,POST,SHERATON,CITY,CENTER,BELL,ATLANTIC,SUBWAY,TGI,FRIDAY,ASIA,THE,PARKWAY,CON,MURPHY,KUJAKU,CAFE,MARABELLA,RESTAURANT,BANK,NEW,YORK,MELLON,TIR,NOG,BAR,GRILL,CENTRAL,PARKING,SYSTEMS,DESILVERIO,ROBERT</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="55" width="242" x="267" y="321">
+            <tag>WINDSOR</tag>
+         </taggedRectangle>
+         <taggedRectangle height="55" width="100" x="166" y="324">
+            <tag>THE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

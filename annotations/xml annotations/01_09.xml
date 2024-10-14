@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/01_09.jpg</imageName>
+      <address>? 240 Martin Luther King Junior Drive Southeast Atlanta GA</address>
+      <lex>DADDY,NICK,FOOD,EYEDRUM,COOK,ELEMENTARY,JOE,CATERING,INC,MATTRESS,FACTORY,LOFTS,MARTIN,LUTHER,KING,BOULEVARD,LOCKSMITH,GAS,WITH,INVIGORATE,MOVING,MED,CARE,CONKLIN,METAL,INDUSTRIES,LAMPLIGHTER,CAFE,ANDERSON,THURMAN,JUNK,CAR,RECYCLING,CROSS,FIT,ATLANTA,CROSSFIT,THE,MOVE,BLACK,CHERRY,HAIR,DESIGN,BLOOD,FIRE,MINISTRIES,TOWING,STANDARD,AUTO</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="138" width="286" x="497" y="288">
+            <tag>NICK</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

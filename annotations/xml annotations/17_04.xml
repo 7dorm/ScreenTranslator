@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/17_04.jpg</imageName>
+      <address>193 Jackson Street San Jose CA.</address>
+      <lex>GOMBEI,JAPANESE,RESTAURANT,SAN,JOSE,TOFU,KUBOTA,ROY,STATION,COFFEE,TEA,OMOGARI,KOREAN,SEVEN,BAMBOO,SHUEI,MANJU,SHOP,SHABU,NIJIYA,MARKET,HUKILAU,SAKURA,NAIL,BAR,KUMAKO,KAITA,TSUGARU,KAMIMOTO,STRING,INSTRUMENTS,KAZOO,MINATO,CUISINE,SHABURI,WING,CHINESE</lex>
+      <Resolution x="1280" y="880" />
+      <taggedRectangles>
+         <taggedRectangle height="44" width="153" x="726" y="359">
+            <tag>GOMBEI</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

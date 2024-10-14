@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/06_17.jpg</imageName>
+      <address>6324 Prospect Avenue Dallas TX</address>
+      <lex>TIMES,TEN,CELLARS,SCALINI,PIZZA,PASTA,LEGAL,GROUNDS,DIXIE,HOUSE,RESTAURANT,CANTINA,LAREDO,TETERS,FAUCET,PARTS,CENTER,RHODES,DALE,DDS,CURIOSITIES,ANTIQUES,BEBE,GRAND,CHICO,CONTINENTAL,APARTMENTS,LAKEWOOD,BAR,GRILL,ALLEGRO,REALTORS,INC,MORGAN,JOHN,PAPOU,PET,GROOMING,WHOLE,FOODS,MARKET,DALLAS,FAMILY,DENTAL,CARE,BEADLE,RICHARD,COCK,BULL,NEIGHBORHOOD,PUB</lex>
+      <Resolution x="1111" y="701" />
+      <taggedRectangles>
+         <taggedRectangle height="55" width="151" x="503" y="241">
+            <tag>CELLARS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="48" width="72" x="429" y="257">
+            <tag>TEN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="46" width="101" x="309" y="262">
+            <tag>TIMES</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

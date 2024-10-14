@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/09_10.jpg</imageName>
+      <address>809 North Delaware Street Indianapolis IN</address>
+      <lex>LEON,TAILORING,INC,UNIFORM,SUPPLY,ABBEY,COFFEE,HOUSE,STARFISH,INITIATIVE,URBAN,ELEMENT,TOD,MARTENS,PHOTOGRAPHY,INDIANAPOLIS,PUBLIC,SCHOOLS,APARTMENTS,RILEY,TOWERS,NEAR,IUPUI,RENAISSANCE,TOWER,SUPERIOR,GRAPHICS,PREPRESS,SERVICES,OFFICE,FURNITURE,MART,MARION,COUNTY,LIBRARY,DATSA,PIZZA,SHOW,HOMES,LAND,ECONOMICS,WIRELESS,WORK,PROMOTION,UNITY,CHURCH,CENTRAL,CHRISTIAN,BLUE,TRIANGLE,RESIDENCE,HALL</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="84" width="244" x="542" y="335">
+            <tag>LEON</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

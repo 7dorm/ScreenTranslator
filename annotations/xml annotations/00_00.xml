@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/00_00.jpg</imageName>
+      <address>107 South Adams Street Anaheim CA 92802-1001</address>
+      <lex>DOLL,HUT,ALL,ABOARD,MINI,STORAGE,IMPORT,AUTO,SUPPLY,ARAM,VENETIAN,MARBLE,CAL,TRANSMISSION,PEST,OPTIONS,INC,LANDSCAPE,MANAGEMENT,CENTER,BRAKE,TIRES,PSI,PIPE,SURGEON,ROOF,PREP,GOAR,PLUMBING,DIRECT,SALES,EARL,SCHEIB,PAINT,BODY,INTERSTATE,RECOVERY,SERVICES,PENN,CORPORATE,RELOCATION,SERV,PARK,WILSHIRE,APARTMENTS,PACIFIC,CHANNELS,SOUTHERN,TRANSPORTATION,ANAHEIM,FREIGHT,STATION,FAIRMONT,PRIVATE,SCHOOLS,12TH,GRADE,ROMAN,CONTRACTING</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="92" width="222" x="398" y="257">
+            <tag>DOLL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="95" width="233" x="400" y="350">
+            <tag>HUT</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

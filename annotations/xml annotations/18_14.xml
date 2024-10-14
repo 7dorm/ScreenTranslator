@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/18_14.jpg</imageName>
+      <address>2000 4th Avenue Seattle WA</address>
+      <lex>LOLA,HOTEL,ANDRA,DAHLIA,LOUNGE,CORPORATION,ASSAGGIO,RISTORANTE,SUB,POP,RECORDS,WARWICK,SEATTLE,BAKERY,ICON,GRILL,AMC,THEATRES,CINERAMA,SERIOUS,PIE,THE,VIRGINIAN,APARTMENTS,PALACE,BALLROOM,WESTIN,BUILDING,GARAGE,JAZZ,ALLEY,BRASSERIE,MARGAUX,RALPH,GROCERY,DELI,KINGS,INN,5TH,AVE,BARBER,SHERIDAN</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="69" width="117" x="539" y="320">
+            <tag>LOLA</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

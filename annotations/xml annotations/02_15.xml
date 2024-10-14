@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/02_15.jpg</imageName>
+      <address>330 North Charles Street Baltimore MD 21201-4304</address>
+      <lex>MICK,SHEA,IRISH,PUB,BROWN,ARCADE,THE,PARK,HOTEL,CAZBAR,SOTTO,SOPRA,MILTON,GRILLE,BASILICA,THE,ASSUMPTION,BANTHAI,RESTAURANT,BALTIMORE,LUMBINI,OLD,PAUL,CHURCH,HOSTEL,SHOGUN,INC,DIE,MUSIK,COMFORT,INN,SUITES,MAISY,FOR,EYES,OPTICAL,ENOCH,PRATT,FREE,LIBRARY,DOGWOOD,CAFE,COPRA</lex>
+      <Resolution x="1366" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="38" width="101" x="673" y="317">
+            <tag>EYES</tag>
+         </taggedRectangle>
+         <taggedRectangle height="43" width="83" x="584" y="317">
+            <tag>FOR</tag>
+         </taggedRectangle>
+         <taggedRectangle height="42" width="105" x="23" y="357">
+            <tag>SHEA</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/04_12.jpg</imageName>
+      <address>900 South San Fernando Boulevard Burbank CA 91502-1535</address>
+      <lex>THE,BLUE,ROOM,BAR,BURBANK,PHIL,IMPORTS,TRADER,JOE,GEFER,FARMS,MARKET,TAPATIO,RESTAURANT,DON,DIEGO,MEXICAN,EAGLE,MEDICAL,SUPPLIES,CORNER,RAZZBERRIEZ,ARMEN,AMBARCHYAN,DDS,UNITED,PLUMBING,SERVICES,INC,SHAOLIN,TAEKWONDO,RALPHS,DESIGN,GROUP,ACCOUNTANCY,TAX,PACIFIC,PROCESS,EQUIPMENT,STARBUCKS,TUFF,CARPET,CALIFORNIA,BURBANKGLENDALE,COM,DRIVING,SCHOOL,TRAINING</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="53" width="178" x="591" y="511">
+            <tag>IMPORTS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="55" width="100" x="459" y="508">
+            <tag>PHIL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

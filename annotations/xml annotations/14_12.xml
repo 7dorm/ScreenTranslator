@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/14_12.jpg</imageName>
+      <address>208 Southwest Ankeny Street Portland OR</address>
+      <lex>SHANGHAI,TUNNEL,VOODOO,DOUGHNUT,PORTLAND,SATURDAY,MARKET,ADMINISTRATIVE,OFFICE,DAN,LOUIS,OYSTER,BAR,THIRSTY,LION,PUB,VALENTINE,OREGON,MARITIME,MUSEUM,SKIDMORE,FOUNTAIN,BERBATI,PAN,ASH,STREET,SALOON,220,SALON,INC,DANTE,KELLS,IRISH,RESTAURANT,ESAN,THAI,STUMPTOWN,COFFEE,ROASTERS,CAPTAIN,ANKENY,WELL,PARIS,THEATRE,ALEXIS</lex>
+      <Resolution x="1278" y="878" />
+      <taggedRectangles>
+         <taggedRectangle height="55" width="63" x="774" y="399">
+            <tag>BAR</tag>
+         </taggedRectangle>
+         <taggedRectangle height="73" width="117" x="161" y="353">
+            <tag>DAN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="84" width="170" x="352" y="347">
+            <tag>LOUIS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="100" width="100" x="758" y="305">
+            <tag>OYSTER</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

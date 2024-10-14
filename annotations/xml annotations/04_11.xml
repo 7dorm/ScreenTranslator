@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/04_11.jpg</imageName>
+      <address>549 South San Fernando Boulevard Burbank CA 91502-1441</address>
+      <lex>SPEED,ZONE,APARTMENT,MAILBOXES,BURBANK,AUTO,MALL,LUCKY,PLANTS,911,BRAKES,ELECTRIC,SAM,SALES,ALPHA,TRANSIT,LOCKSMITH,SUPPLY,MATTRESS,CONNECTION,BODY,ROWLETT,TOWING,PAINT,INC,DELTA,TRANSPORT,SCENTOILS,COM,CLASSIC,HAND,CAR,WASH,HERNANDEZ,REPAIR,WARRANTY,CARBURETOR,SHOP,JOSEFF,PRECISION,METAL,PRODUCTS,TUTTO,BELLA,OCEAN,STUDIOS</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="67" width="164" x="539" y="486">
+            <tag>SPEED</tag>
+         </taggedRectangle>
+         <taggedRectangle height="61" width="106" x="698" y="494">
+            <tag>ZONE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="54" width="71" x="822" y="509">
+            <tag>AUTO</tag>
+         </taggedRectangle>
+         <taggedRectangle height="50" width="156" x="225" y="481">
+            <tag>SUPPLY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="45" width="170" x="48" y="493">
+            <tag>LOCKSMITH</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

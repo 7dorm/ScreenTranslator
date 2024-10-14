@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/02_13.jpg</imageName>
+      <address>405 North Charles Street Baltimore MD</address>
+      <lex>SOTTO,SOPRA,DIE,MUSIK,JOSS,CAFE,SUSHI,BAR,THE,PARK,HOTEL,COMFORT,INN,SUITES,BASILICA,THE,ASSUMPTION,FIRST,UNITARIAN,CHURCH,BALTIMORE,TIO,PEPE,RESTAURANTE,MICK,SHEA,IRISH,PUB,STANDARD,BUILDING,KAWASAKI,JAPANESE,SEAFOOD,RESTAURANT,BANTHAI,VERNON,ENOCH,PRATT,FREE,LIBRARY,BENSON,BROWN,ARCADE,IXIA,HOSTEL,KOFFEE,THERAPY</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="139" width="283" x="728" y="375">
+            <tag>SOPRA</tag>
+         </taggedRectangle>
+         <taggedRectangle height="124" width="241" x="383" y="368">
+            <tag>SOTTO</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/11_06.jpg</imageName>
+      <address>20 North Summerlin Avenue Orlando FL</address>
+      <lex>HUE,RESTAURANT,STARBUCKS,SHARI,WILDSIDE,BBQ,THORNTON,PARK,CENTRAL,GELATONE,TIJUANA,FLATS,106,LLC,URBAN,THINK,BOOKSTORE,ANTHONY,PIZZA,CAFE,ZOU,CHIC,BOUTIQUE,SPA,VERANDA,BED,BREAKFAST,CITYFISH,AROMA,COFFEE,WINE,BAR,STANDARD,PARKING,DEXTERS,BODY,HOLISTIC,WELLNESS,CONSULTING,ELEVEN,CITY,MARKET</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="41" width="191" x="559" y="405">
+            <tag>STARBUCKS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="39" width="79" x="1043" y="496">
+            <tag>STARBUCKS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="33" width="129" x="758" y="406">
+            <tag>COFFEE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="28" width="57" x="1053" y="550">
+            <tag>COFFEE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

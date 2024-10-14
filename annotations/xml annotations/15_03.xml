@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/15_03.jpg</imageName>
+      <address>1050 North Harbor Drive San Diego CA 92101-3316</address>
+      <lex>SAN,DIEGO,HARBOR,EXCURSION,STAR,INDIA,SHIP,HORNBLOWER,CRUISES,EVENTS,YACHT,AMERICA,USS,MIDWAY,MUSEUM,INDEPENDANCE,BOAT,PARTY,CRESCENT,NAVY,SUPPLY,CENTER,FAILSAFE,LOCKSMITH,BROADWAY,PIER,RUTH,CHRIS,STEAK,HOUSE,CHARTERS,NAVAL,MILITARY,SEALIFT,DEPARTMENT,ELEPHANT,CASTLE,JAYNES,CORPORATION,HOLIDAY,INN,THE,BAY,SCOTT,CURTICE,DMD,USS,GIFT,SHOP</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="36" width="58" x="598" y="433">
+            <tag>DIEGO</tag>
+         </taggedRectangle>
+         <taggedRectangle height="45" width="115" x="741" y="433">
+            <tag>EXCURSION</tag>
+         </taggedRectangle>
+         <taggedRectangle height="34" width="84" x="657" y="440">
+            <tag>HARBOR</tag>
+         </taggedRectangle>
+         <taggedRectangle height="31" width="41" x="557" y="440">
+            <tag>SAN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

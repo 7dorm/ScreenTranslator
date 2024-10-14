@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/00_17.jpg</imageName>
+      <address>871 South Harbor Boulevard Anaheim CA 92805</address>
+      <lex>ECONO,LODGE,MAINGATE,HARBOR,VILLA,CARE,CENTER,RAMADA,NORTH,VET,SUPERIOR,LAUNDRY,BROADWAY,PIZZA,ANAHEIM,MONTANEZ,GARDENING,ACCESSIBLE,FAMILY,MEDICAL,GROUP,CANCHOLA,GERARDO,ACUPUNCTURE,NATURAL,HERBS,PALM,PSYCHIC,TROPIC,MOTEL,UNITED,STATES,GOVERNMENT,VETERANS,OUTREACH,RENT,CAR,DAYS,INN,CALIFORNIA,BENGO,GLORIA,DDS,DAY,NIGHT,MARKET,LUCERA,APARTMENTS,DISENOS,ALMA,TCWRC,MOVING</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="51" width="84" x="485" y="326">
+            <tag>ECONO</tag>
+         </taggedRectangle>
+         <taggedRectangle height="42" width="79" x="566" y="343">
+            <tag>LODGE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

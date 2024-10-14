@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/09_02.jpg</imageName>
+      <address>401 East Washington Street Indianapolis IN</address>
+      <lex>DAYS,INN,INDIANAPOLIS,BAA,LLC,RED,ROOF,INNS,NORTH,AEROFINITY,INC,HELICOPTERS,HELIPORT,UNITED,STATES,GOVERNMENT,GENERAL,SERVICES,ADMINISTRATION,FEDERAL,BUILDINGS,OPERATION,AND,LEASING,GOODMAN,JEWELERS,SQUARED,COMMUNICATIONS,WTTS,MAVRIS,ARTS,EVENT,CENTER,KUNZ,RESTORATIONS,CRITICAL,CARE,TRANSPORT,MARKET,SQUARE,ARENA,STUDENT,ATLAS,HOTEL,JOHN,OBERLIES,CONSULTING,ENGINEERS,KEVIN,JONES,CHEM,DRY,SENTINEL,OFFENDER,WEIR,ASSOCIATES</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="47" width="62" x="634" y="371">
+            <tag>INN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="82" width="123" x="481" y="54">
+            <tag>DAYS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="45" width="90" x="542" y="368">
+            <tag>DAYS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="60" width="67" x="619" y="110">
+            <tag>INN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

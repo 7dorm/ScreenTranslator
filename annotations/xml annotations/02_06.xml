@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/02_06.jpg</imageName>
+      <address>410 West Lombard Street Baltimore MD</address>
+      <lex>BROMO,SELTZER,ARTS,TOWER,MARLBORO,CLASSIC,REDWOOD,SQUARE,BALTIMORE,MARRIOTT,INNER,HARBOR,CAMDEN,YARDS,NATIONAL,MUSEUM,DENTISTRY,TURNER,WHITE,CASKET,BUILDING,APARTMENTS,HEISER,ROSENFELD,AND,STRAUSS,BUILDINGS,HILTON,HOTEL,LOFT,UPPER,DECK,BAR,GRILL,HISTORIC,DISTRICT,NORTH,COLLEGE,MEDICINE,MARYLAND,SONNEBORN,HIPPODROME,THEATRE,HOLIDAY,INN,DOWNTOWN,UNIVERSITY,MEDICAL,CENTER,GODDESS,COURT,CONVENIENCE,DELI,PMS,PARKING</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="103" width="584" x="372" y="319">
+            <tag>MARLBORO</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

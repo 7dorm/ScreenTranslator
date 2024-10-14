@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/01_18.jpg</imageName>
+      <address>89 Luckie Street Northwest Atlanta GA?</address>
+      <lex>QUALITY,INN,DOWNTOWN,ATLANTA,MARK,ULTRA,LOUNGE,SUPER,DNTN,WORLD,CONGRESS,THE,WESTIN,PEACHTREE,PLAZA,RESIDENCE,SIDEBAR,RIALTO,CENTER,FOR,THE,ARTS,WOODRUFF,PARK,THEATRICAL,OUTFIT,AMERICAN,ENGLISH,SCHOOL,SLICE,HAMPTON,SUITES,FEDEX,OFFICE,PRINT,SHIP,LANDMARK,DINER,FULTON,PUBLIC,LIBRARY,HEALEY,BUILDING,ELLIS,HOTEL,COUNTY,GOVERNMENT,DEFENDER,DUNKIN,DONUTS,STARBUCKS</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="117" width="323" x="436" y="274">
+            <tag>QUALITY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="87" width="212" x="765" y="314">
+            <tag>HOTEL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/02_03.jpg</imageName>
+      <address>1400 Orleans Street Baltimore MD</address>
+      <lex>PAUL,LAURENCE,DUNBAR,HIGH,SCHOOL,SOJOURNER,DOUGLASS,COLLEGE,ORLEANS,PUBLIC,LIBRARY,MIDDLE,JOHNS,HOPKINS,BAY,VIEW,MEDICAL,CENTER,PRATT,FOR,TECH,OUTPATIENT,EASTERN,FEMALE,INNER,HARBOR,EAST,ACADEMY,BALTIMORE,HUMAN,SERVICES,DIVISION,HOSPITAL,BURGER,KING,MEGAN,CITY,FOODS,WORKFORCE,TRANSPORTATION,WALTER,CARTER,SAJONA,DOUGLAS,MCELDERRY,GARAGE,HOUSING,EMPOWERMENT,ZONE,WORK,FORCE,DAVITA,JHHS,NORTH,BOND</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="36" width="153" x="801" y="392">
+            <tag>DUNBAR</tag>
+         </taggedRectangle>
+         <taggedRectangle height="36" width="89" x="706" y="428">
+            <tag>HIGH</tag>
+         </taggedRectangle>
+         <taggedRectangle height="40" width="203" x="584" y="390">
+            <tag>LAURENCE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="39" width="97" x="473" y="394">
+            <tag>PAUL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="39" width="166" x="812" y="425">
+            <tag>SCHOOL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="26" width="119" x="662" y="785">
+            <tag>ORLEANS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

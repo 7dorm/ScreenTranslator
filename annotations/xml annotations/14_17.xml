@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/14_17.jpg</imageName>
+      <address>1600 Southwest Salmon Street Portland OR</address>
+      <lex>LINCOLN,HIGH,SCHOOL,LEAKY,ROOF,PUB,GRILL,HOTEL,DELUXE,DOWNTOWN,PORTLAND,CONSTRUCTION,GRACIE,RESTAURANT,KINK,REAL,ESTATE,SERVICES,AGAPE,CHURCH,CHRIST,ELLIOTT,POWELL,BADEN,BAKER,INC,INSURANCE,CELLAR,DOOR,PGE,PARK,GRANDVIEW,APARTMENTS,RAIDERS,STAHANCYK,KENT,JOHNSON,HOOK,LEARNING,COM,WESTSIDE,MARKET,THE,CHEERFUL,BULLPEN,SCOTTISH,RITE,CENTER,BRAZIL,OUTSIDE</lex>
+      <Resolution x="1278" y="884" />
+      <taggedRectangles>
+         <taggedRectangle height="50" width="117" x="738" y="233">
+            <tag>HIGH</tag>
+         </taggedRectangle>
+         <taggedRectangle height="44" width="218" x="486" y="228">
+            <tag>LINCOLN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="50" width="186" x="883" y="236">
+            <tag>SCHOOL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/12_19.jpg</imageName>
+      <address>1714 Delancey Street Philadelphia PA 19103-6715</address>
+      <lex>PLAYS,PLAYERS,TENTH,PRESBYTERIAN,CHURCH,SATALOFF,ROBERT,BRANZINO,RESTAURANT,FONTANA,DELLA,CITTA,BED,BREAKFAST,CENTER,CITY,RITTENHOUSE,CLEANERS,TAILORS,GREAT,SCOT,SUPERMARKET,HEMAN,ACKAH,YOLANDA,1715,BOUTIQUE,HOTEL,MAXWELL,REALTY,INC,PHILADELPHIA,ART,ALLIANCE,MONKS,BELGIAN,CAFE,BLACK,SHEEP,PUB,ALAN,SCHWARTZ,ESQUIRE,THOMAS,ANAPOL,ACADEMY,MIRIAM,BENTON,BARISH,MARK,LEWINTER,BAIA,BISTRO</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="48" width="200" x="396" y="312">
+            <tag>PLAYERS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="36" width="116" x="189" y="317">
+            <tag>PLAYS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

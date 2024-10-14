@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/03_00.jpg</imageName>
+      <address>1535 Pearl Street Boulder CO</address>
+      <lex>MOUNTAIN,SUN,PUB,BREWERY,THE,CUP,ESPRESSO,CAFE,LEAF,VEGETARIAN,RESTAURANT,BOULDER,ARMY,STORE,AJI,FOOLISH,CRAIG,BRADLEY,INN,URBAN,PEARL,SALON,SPA,STREET,MALL,CRYSTAL,DRAGON,ASSOCIATES,THEATER,ILLEGAL,PETES,WILLOW,ARTISAN,MARKET,GONDOLIER,MOON,GATE,SYNERGY,MORTGAGE,LENDING,REAL,BABY,LAUGHING,GOAT,COFFEE,HOUSE,TDA,ADVERTISING,DESIGN,INC</lex>
+      <Resolution x="1918" y="898" />
+      <taggedRectangles>
+         <taggedRectangle height="45" width="129" x="887" y="394">
+            <tag>BREWERY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="40" width="58" x="813" y="397">
+            <tag>PUB</tag>
+         </taggedRectangle>
+         <taggedRectangle height="79" width="126" x="1004" y="327">
+            <tag>SUN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="60" width="289" x="702" y="345">
+            <tag>MOUNTAIN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

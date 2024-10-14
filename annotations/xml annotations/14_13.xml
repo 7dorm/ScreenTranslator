@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/14_13.jpg</imageName>
+      <address>1624 Northwest Glisan Street Portland OR</address>
+      <lex>MISSION,THEATRE,PUB,CUPCAKE,MENAMINS,PUBS,STUDIO,BLUE,PILATES,DIVINE,DESIGNS,PEARL,ACE,HARDWARE,WORLD,CUP,COFFEE,SWEET,BASIL,THAI,CUISINE,NORTHWEST,PORTLAND,INTERNATIONAL,HOSTEL,GUESTHOUSE,CALLALOO,VITIS,NANCY,KITCHEN,URBAN,WINEWORKS,REHABILITATIVE,MASSAGE,LLC,ESTE,MEN,CLOTHING,STORE,SYLVIE,DAY,SPA,SALON,CHOWN,SONY,ONLY,TOUCHE,RESTAURANT,BAR,AND,BILLIARDS</lex>
+      <Resolution x="1280" y="880" />
+      <taggedRectangles>
+         <taggedRectangle height="83" width="395" x="141" y="242">
+            <tag>MISSION</tag>
+         </taggedRectangle>
+         <taggedRectangle height="86" width="180" x="995" y="261">
+            <tag>PUB</tag>
+         </taggedRectangle>
+         <taggedRectangle height="89" width="354" x="548" y="247">
+            <tag>THEATRE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

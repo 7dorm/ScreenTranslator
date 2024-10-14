@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/11_10.jpg</imageName>
+      <address>Church of Scientology Orlando 1830 East Colonial Drive Orlando FL</address>
+      <lex>CHURCH,SCIENTOLOGY,ORLANDO,SHIN,JUNG,KOREAN,RESTAURANT,CHAN,CHINESE,CUISINE,BIKKURI,SUSHI,MODERN,BRIDAL,SHOP,WORLD,IMPORT,HALF,PRICE,FURN,EAST,COAST,MARTIAL,ART,SUPPLIES,CORPORATE,EXPRESS,INSTYLE,DESIGN,PICCADILLY,CAFETERIA,VEGA,CAFE,FREESIA,BEAUTY,SPA,BARNEY,STEAK,SEAFOOD,TEA,HERBAL,GARDEN,PASSION,HAIR,32803,SERENDIPITY,DAY,SIGN,DEPOT,DOLLAR,TREE,MAI,PHARMACY</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="49" width="192" x="545" y="345">
+            <tag>SCIENTOLOGY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="27" width="66" x="591" y="327">
+            <tag>CHURCH</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

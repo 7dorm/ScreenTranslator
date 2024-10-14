@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/02_11.jpg</imageName>
+      <address>804 North Charles Street Baltimore MD</address>
+      <lex>HELMAND,VERNON,SUPER,MART,DONNA,THAIRISH,INC,AKBAR,RESTAURANT,INDIGMA,THAI,WASHINGTON,MONUMENT,MUSEUM,BLU,VINTAGE,SAFFRON,PLACE,UNITED,CAFE,VIET,EAST,MADISON,INN,FEAST,PATRON,ZONE,PEABODY,INSTITUTE,THE,JOHNS,HOPKINS,UNIVERSITY,RED,EMMA,BOOKSTORE,COFFEE,STABLE,SALOON,NEVER,SUNDAY</lex>
+      <Resolution x="1366" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="76" width="216" x="587" y="365">
+            <tag>THAIRISH</tag>
+         </taggedRectangle>
+         <taggedRectangle height="35" width="62" x="611" y="441">
+            <tag>THAI</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

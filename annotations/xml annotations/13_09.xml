@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/13_09.jpg</imageName>
+      <address>18 West Adams Street Phoenix AZ</address>
+      <lex>TWO,RENAISSANCE,SQUARE,SECURITY,STARBUCKS,THAI,ELEPHANT,BAJA,FRESH,MEXICAN,GRILL,YASDA,BENTO,BANK,WYNDHAM,PHOENIX,HOTEL,CONEY,ISLAND,PITA,SUBS,SALADS,CHASE,AND,ATM,DOWNTOWN,DELI,SAN,CARLOS,MONROE,SEAMUS,MCCAFFFREY,IRISH,PUB,RESTAURANT,QUIZNOS,HYATT,REGENCY,MESA,PIT,BBQ,SMOKEHOUSE,JACQUEE,ESPRESSO,HANNY,YOSHI,ZOE,KITCHEN</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="67" width="158" x="474" y="530">
+            <tag>BENTO</tag>
+         </taggedRectangle>
+         <taggedRectangle height="75" width="160" x="302" y="530">
+            <tag>YASDA</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

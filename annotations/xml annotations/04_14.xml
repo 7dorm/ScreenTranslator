@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/04_14.jpg</imageName>
+      <address>922 South San Fernando Boulevard Burbank CA 91502-1535</address>
+      <lex>THE,BLUE,ROOM,BAR,BURBANK,TRADER,JOE,TAPATIO,RESTAURANT,DON,DIEGO,MEXICAN,CORNER,SHAOLIN,TAEKWONDO,ARMEN,AMBARCHYAN,DDS,RAZZBERRIEZ,ACCOUNTANCY,TAX,PHIL,IMPORTS,STARBUCKS,LOCKSMITH,SERVICE,RALPHS,MAGIC,MIRROR,PRODUCTIONS,GEFER,FARMS,MARKET,WALGREENS,PHARMACIES,EAGLE,MEDICAL,SUPPLIES,DESIGN,GROUP,BELLA,CORPORATION,GLENDALE,DENTAL</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="127" width="650" x="514" y="406">
+            <tag>ACCOUNTANCY</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

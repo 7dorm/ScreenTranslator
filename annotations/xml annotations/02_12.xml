@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/02_12.jpg</imageName>
+      <address>615 The Fallsway Baltimore MD 21202</address>
+      <lex>SCORES,BALTIMORE,MERRITT,ATHLETIC,CLUBS,DOG,HOUSE,OUR,DAILY,BREAD,EMPLOYMENT,CENTER,ROY,KIRBY,SONS,STAGE,BAYSIDE,LANDING,RESTAURANT,MARYLAND,CORRECTIONAL,ADJ,WATERLOO,PLACE,CENTERSTAGE,SUN,CONSTELLATION,ENERGY,GROUP,PEABODY,INSTITUTE,THE,JOHNS,HOPKINS,UNIVERSITY,STANDARD,BUILDING,FALLSWAY,PARK,RIDE,TIME,FLIGHT,AVIATION,SERVICES,COBURNS,CAFE,HIGHWAY,MAINTENANCE,APARTMENTS,WASHINGTON,MONUMENT,MUSEUM</lex>
+      <Resolution x="1366" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="28" width="64" x="220" y="511">
+            <tag>BALTIMORE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="48" width="133" x="523" y="267">
+            <tag>SCORES</tag>
+         </taggedRectangle>
+         <taggedRectangle height="56" width="117" x="196" y="483">
+            <tag>SCORES</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

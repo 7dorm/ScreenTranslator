@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/16_10.jpg</imageName>
+      <address>? 2 Harrison Street San Francisco CA?</address>
+      <lex>PALOMINO,GORDON,BIERSCH,BREWERY,RESTAURANT,GOOGLE,SAN,FRANCISCO,CRUNCH,GYM,HILLS,PLAZA,SPORTS,AND,SPINE,BRIDGE,HOUSING,CORPORATION,BABCOCK,BROWN,TAG,AVIATION,TAKESHI,SAEKI,STARBUCKS,EPIC,ROASTHOUSE,LOOMIS,GROUP,BITE,COMMUNICATIONS,BUR,EAT,GENSLER,ARCHITECTS,WIDEORBIT,INC,GAP,OUTLET,HEADQUARTERS,SECRET,SERVICE,MARIN,DAY,SCHOOLS,EDGAR,DUNN,INFINITY,SALES,OFFICE,DOT,PRINTER,THE</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="115" width="219" x="578" y="353">
+            <tag>BIERSCH</tag>
+         </taggedRectangle>
+         <taggedRectangle height="50" width="253" x="561" y="502">
+            <tag>BREWERY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="108" width="205" x="584" y="255">
+            <tag>GORDON</tag>
+         </taggedRectangle>
+         <taggedRectangle height="45" width="236" x="569" y="544">
+            <tag>RESTAURANT</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

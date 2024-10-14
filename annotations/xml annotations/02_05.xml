@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/02_05.jpg</imageName>
+      <address>1001 Cathedral Street Baltimore MD</address>
+      <lex>CITY,CAFE,INC,CHASE,BREXTON,CLINIC,BALTIMORE,HAPPY,HOUR,EDEN,LOUNGE,BRASS,ELEPHANT,PLAZA,ARTIST,MATERIALS,RED,MAPLE,GENTEI,EDDIE,IGA,EAGER,STREET,CATHERINE,MASLEN,CAROLE,SMARTH,HIPPO,PACINO,BELVEDERE,HOTEL,DUKEM,ETHOPIAN,RESTAURANT,HENRY,AUGUST,ROWLAND,HOUSE,ZENA,DAY,SPA,MUGHAL,GARDEN,PRETENTIOUS,POOCH,PET,BOUTIQUE,GRAND,CENTRAL,CLUB,HEALTH,SERVICES,RAO,NEUTHAN</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="63" width="202" x="680" y="393">
+            <tag>BREXTON</tag>
+         </taggedRectangle>
+         <taggedRectangle height="61" width="161" x="511" y="392">
+            <tag>CHASE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="36" width="110" x="527" y="447">
+            <tag>HEALTH</tag>
+         </taggedRectangle>
+         <taggedRectangle height="37" width="143" x="641" y="450">
+            <tag>SERVICES</tag>
+         </taggedRectangle>
+         <taggedRectangle height="32" width="60" x="796" y="451">
+            <tag>INC</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/11_17.jpg</imageName>
+      <address>46 North Orange Avenue Orlando FL</address>
+      <lex>TABU,NIGHTCLUB,INDEPENDENT,BAR,WALL,STREET,ENTERPRISES,EYE,SPY,SKY,GLOBE,FINN,HENRY,LODGE,LIZZY,CORMACK,IRISH,PUB,ORANGE,COUNTY,REGIONAL,HISTORY,CENTER,SUSHI,HATSU,JAPANESE,RESTAURANT,EMBER,ROOM,NINE,SKYSIXTY,SUBWAY,ELEANOR,HARRIS,WACHOVIA,BANK,ICHIBAN,DOWNTOWN,ORLANDO,MONKEY</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="247" width="316" x="509" y="285">
+            <tag>TABU</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

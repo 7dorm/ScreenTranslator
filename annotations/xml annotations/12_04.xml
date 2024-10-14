@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/12_04.jpg</imageName>
+      <address>1776 Benjamin Franklin Parkway Philadelphia PA</address>
+      <lex>EMBASSY,SUITES,HOTEL,CATHEDRAL,PETER,PAUL,OFFICE,TGI,FRIDAY,FOUNTAIN,RESTAURANT,FOUR,SEASONS,PHILADELPHIA,WINDSOR,MACE,CROSSING,SHERATON,CITY,CENTER,BELL,ATLANTIC,ACADEMY,NATURAL,SCIENCES,FRIENDS,SELECT,SCHOOL,PUBLIC,HOUSE,LOGAN,SQUARE,NETWORK,PARKING,ONE,ASIA,THE,PARKWAY,VOLUNTEER,CENTERS,MARRIOTT,EXECUSTAY,MEXICAN,POST,WYNDHAM,FRANKLIN,MISSION,GRILL</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="31" width="121" x="302" y="290">
+            <tag>EMBASSY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="22" width="86" x="425" y="296">
+            <tag>SUITES</tag>
+         </taggedRectangle>
+         <taggedRectangle height="39" width="292" x="315" y="318">
+            <tag>PARKING</tag>
+         </taggedRectangle>
+         <taggedRectangle height="23" width="70" x="521" y="296">
+            <tag>CENTER</tag>
+         </taggedRectangle>
+         <taggedRectangle height="24" width="46" x="592" y="298">
+            <tag>CITY</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

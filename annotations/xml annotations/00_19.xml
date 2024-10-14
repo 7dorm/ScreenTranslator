@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/00_19.jpg</imageName>
+      <address>1251 North Harbor Boulevard Anaheim CA 92801</address>
+      <lex>COMFORT,INN,CHEZ,GRAND,MERE,PRESCHOOL,ANAHEIM,PARK,HOTEL,VERIZON,WIRELESS,HOUSE,AUTOS,INVESTLINC,BROW,MANTRA,SIT,SLEEP,MODCENTER,COM,PET,CITY,CASUAL,MALE,RANCHO,AUTO,SALES,CARS,101,PACIFICA,REPAIR,COCKTAIL,LOUNGE,CARL,RODRIGUEZ,MOBILE,MECHANICS,WHEELS,HERTZ,LOCAL,EDITION,FULLERTON,SHIRT,WAREHOUSE</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="69" width="227" x="382" y="332">
+            <tag>COMFORT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="40" width="91" x="445" y="390">
+            <tag>INN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

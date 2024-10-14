@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/13_05.jpg</imageName>
+      <address>117 West Grant Street Phoenix AZ</address>
+      <lex>PORTAL,RESTAURANT,GRANT,PARK,AMERICAN,LEGION,FRIENDLY,HOUSE,HOME,CARE,RUBY,ROOM,POOL,PROZ,ASU,DORMS,ATM,SERVICE,REPAIR,EEG,PRINTING,SERVICES,PROPERTY,LLP,ANTHONY,CATHOLIC,CHURCH,QUEEN,LIQUORS,COMMERCIAL,STAFFING,WELLS,FARGO,BANK,MIRANDA,CUSTOMS,PHOENIX,PRODUCE,ARTISTIC,FORGE,METAL,DESIGNS,AWEBCHROME,NET,CHICANOS,POR,CAUSA,FEDERAL,PIANO,TUNING,SPECIALIST,THE,MAN</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="27" width="102" x="469" y="294">
+            <tag>PORTAL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

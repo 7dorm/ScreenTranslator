@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/14_06.jpg</imageName>
+      <address>420 Northeast Holladay Street Portland OR</address>
+      <lex>RED,LION,HOTEL,PORTLAND,CONVENTION,CENTER,MAX,STATION,INN,THE,STATION,CAFE,OREGON,LLOYD,DISTRICT,CONDOMINIUMS,MOTEL,DOWNTOWN,BURGERVILLE,USA,STARBUCKS,DENNY,ROBIN,GOURMET,BURGERS,QUINTA,MERRICK,APARTMENTS,ANZEN,HIROSHI,INC,LIBERTY,CENTRE,ACTION,SPORTS,CABLE,NETWORK,KAISER,PERMANENTE</lex>
+      <Resolution x="1278" y="880" />
+      <taggedRectangles>
+         <taggedRectangle height="55" width="191" x="816" y="376">
+            <tag>CENTER</tag>
+         </taggedRectangle>
+         <taggedRectangle height="63" width="311" x="500" y="370">
+            <tag>CONVENTION</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

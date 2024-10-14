@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/11_08.jpg</imageName>
+      <address>400 North Primrose Drive Orlando FL?</address>
+      <lex>COLONIAL,LANES,RESTAURANT,BAR,LIGHTNING,STRIKES,PRO,SHOP,WINTER,PARK,PINES,ORLANDO,SKATE,ACTION,ALLIANCE,BERZIN,BOB,PLAZA,THEATER,FLORIDA,SAFETY,COUNCIL,BARNIES,TOTAL,WINE,MORE,PUBLICIS,MEETINGS,USA,LEE,FOODS,INC,DRUNKEN,MONKEY,COFFEE,COVERT,GMB,ENGINEERS,PLANNERS,KYLE,BIKE,BEEFY,KING,FESTIVAL,ETOILE,BOUTIQUE,BETA,ELEVEN</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="61" width="238" x="556" y="338">
+            <tag>COLONIAL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="39" width="239" x="453" y="402">
+            <tag>RESTAURANT</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/18_03.jpg</imageName>
+      <address>620 Stewart Street Seattle WA</address>
+      <lex>HOTEL,MAX,BOUTIQUE,SEATTLE,RED,FIN,SUSHI,RESTAURANT,BAR,METROPOLITAN,TOWER,BAROLO,RISTORANTE,DOWNTOWN,ASSOCIATION,MARKETING,FARESTART,THE,WESTIN,ZUM,OCEANAIRE,SEAFOOD,ROOM,RUE,NORDSTROM,STARBUCKS,RAMUTA,SHOE,REPAIR,DISTRICT,COURT,SPEX,UPTOWN,ESPRESSO,PAMELA,FINE,FOODS,INDUSTRY,SIXTH,AVENUE,INN</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="94" width="358" x="419" y="338">
+            <tag>HOTEL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="64" width="214" x="789" y="371">
+            <tag>MAX</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

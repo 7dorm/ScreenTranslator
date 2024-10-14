@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/10_04.jpg</imageName>
+      <address>542 5th Avenue New York NY 10036</address>
+      <lex>HOLIDAY,INN,EXPRESS,HOTEL,NEW,YORK,CITY,FIFTH,AVENUE,MICHAEL,FINA,CINEMA,CAFE,45TH,STARBUCKS,BINDER,DAVID,DDS,MANHATTAN,DENTIST,BARNES,NOBLE,BOOKSELLERS,AVE,ART,BROWN,INTERNATIONAL,PEN,SHOP,MORTON,THE,STEAKHOUSE,DISHES,BUILD,BEAR,WORKSHOP,HARVARD,CLUB,CORNELL,PACE,UNIVERSITY,LENSCRAFTERS,SETTE,FOSSIL,STORE,5TH,JEWEL,INDIA,RESTAURANT,KELLARI,TAVERNA,YACHT</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="75" width="462" x="233" y="317">
+            <tag>LENSCRAFTERS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="41" width="93" x="541" y="269">
+            <tag>FIFTH</tag>
+         </taggedRectangle>
+         <taggedRectangle height="41" width="83" x="633" y="270">
+            <tag>AVE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

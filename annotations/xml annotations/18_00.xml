@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/18_00.jpg</imageName>
+      <address>913 East Pike Street Seattle WA</address>
+      <lex>VIA,TRIBUNALI,NEUMOS,COMET,TAVERN,QUINN,PUB,PIKE,STREET,FISH,FRY,CAFFE,VITA,PLATINUM,RECORDS,LIGHTS,SOUND,SQUARE,ROOM,NEIGHBOURS,BASIC,PLUMBING,BIMBOS,CANTINA,ODD,FELLOWS,CAFE,HAVANA,EVERYDAY,MUSIC,RETAIL,THERAPY,BAM,CUSTOM,SHIRTS,AND,PROMOTIONAL,PRODUCTS,ATLAS,CLOTHING,GARY,MANUEL,AVEDA,INSTITUTE,SWEAT,BOX,YOGA,HOMECARE,ASSOCIATES</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="73" width="333" x="484" y="257">
+            <tag>TRIBUNALI</tag>
+         </taggedRectangle>
+         <taggedRectangle height="65" width="122" x="351" y="254">
+            <tag>VIA</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

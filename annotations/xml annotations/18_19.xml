@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/18_19.jpg</imageName>
+      <address>925 East Pike Street Seattle WA?</address>
+      <lex>NEUMOS,COMET,TAVERN,QUINN,PUB,VIA,TRIBUNALI,PIKE,STREET,FISH,FRY,CAFFE,VITA,BIMBOS,CANTINA,HAVANA,BASIC,PLUMBING,PLATINUM,RECORDS,LIGHTS,SOUND,SATELLITE,LOUNGE,ATLAS,CLOTHING,ODD,FELLOWS,CAFE,SWEAT,BOX,YOGA,SOLE,REPAIR,SHOP,EVERYDAY,MUSIC,SQUARE,ROOM,MOE,BAR,GARY,MANUEL,AVEDA,INSTITUTE,NEIGHBOURS</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="169" width="703" x="272" y="349">
+            <tag>NEUMOS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="33" width="124" x="856" y="640">
+            <tag>NEUMOS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

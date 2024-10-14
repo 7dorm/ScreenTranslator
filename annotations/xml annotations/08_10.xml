@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/08_10.jpg</imageName>
+      <address>1001 McKinney Street Houston TX</address>
+      <lex>MORTON,THE,STEAKHOUSE,RELIANT,ENERGY,PLAZA,MAINSTREET,DEPOT,CORNER,BAKERY,CAFE,CVS,PHARMACY,MCKINNEY,CONSTRUCTION,INC,FIRST,CITY,TOWER,RAGIN,CAJUN,RESTAURANT,DOWNTOWN,DISTRICT,FRANKLIN,CARDWELL,JONES,CURVES,IBC,BANK,AMERICA,SHEINESS,SCOTT,COHN,MAINPLACE,CDX,GAS,PAYLESS,SHOE,SOURCE,FEDERAL,EXECUTIVE,BOARD,HIRE,SYNERGY,MILLER</lex>
+      <Resolution x="1278" y="878" />
+      <taggedRectangles>
+         <taggedRectangle height="59" width="380" x="566" y="289">
+            <tag>MCKINNEY</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

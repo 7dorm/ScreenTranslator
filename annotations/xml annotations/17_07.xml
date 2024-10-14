@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/17_07.jpg</imageName>
+      <address>303 Almaden Blvd # 1000 San Jose CA 95110-2723</address>
+      <lex>CROWNE,PLAZA,HOTEL,SAN,JOSE,DOWNTOWN,CENTER,FOR,THE,PERFORMING,ARTS,ERNST,YOUNG,CAFE,PRIMO,CONVENTION,THE,TECH,MUSEUM,WELLS,FARGO,ADVISORS,FLORES,CERUL,GLORIA,MARK,FOSTER,LAW,OFFICES,CITY,BAR,GRILL,ADOBE,SYSTEMS,INC,HWAY,LING,HSU,WACHOVIA,SECURITIES,ELIZABETH,LEAR,CAROLINE,MCINTYRE,GRAND,PRIX,JOHN,FOWLER,SOLID,STATE,EQUIPMENT,CORPORATION</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="53" width="125" x="370" y="394">
+            <tag>ERNST</tag>
+         </taggedRectangle>
+         <taggedRectangle height="49" width="158" x="525" y="388">
+            <tag>YOUNG</tag>
+         </taggedRectangle>
+         <taggedRectangle height="24" width="22" x="326" y="480">
+            <tag>SAN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

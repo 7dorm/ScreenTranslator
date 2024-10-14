@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/14_02.jpg</imageName>
+      <address>520 Southwest Broadway Portland OR</address>
+      <lex>PORTLAND,MARRIOTT,CITY,CENTER,HOTEL,VINTAGE,PLAZA,PAZZO,RISTORANTE,OREGON,WINES,BROADWAY,PEET,COFFEE,TEA,THE,WESTIN,PITTOCK,BLOCK,LUCIA,DOWNTOWN,BENSON,JANE,VANITY,TYPHOON,MOONSTRUCK,CHOCOLATE,CAFE,HUNAN,RESTAURANT,COMMONWEALTH,BUILDING,PIONEER,COURTHOUSE,SQUARE,PIZZICATO,PIZZA,PLANT,STARBUCKS,RITE,AID</lex>
+      <Resolution x="1278" y="880" />
+      <taggedRectangles>
+         <taggedRectangle height="92" width="308" x="537" y="256">
+            <tag>MARRIOTT</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

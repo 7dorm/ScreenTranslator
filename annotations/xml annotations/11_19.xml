@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/11_19.jpg</imageName>
+      <address>409 North Magnolia Avenue Orlando FL?</address>
+      <lex>TRAVELODGE,ORLANDO,DOWNTOWN,CENTROPLEX,TRINITY,LUTHERAN,CHURCH,SCHOOL,LCMS,CHILD,CARE,ORANGE,COUNTY,CLERK,COURTS,CITY,DINER,VACATION,VENTURES,INC,DENISE,HERNANDEZ,LAW,OFFICES,CIRQUE,SOLEIL,SOUTHEAST,REAL,ESTATE,INVESTMENT,DECISION,TREE,FINANCIAL,PLLC,DOROUGH,CALZADA,SOTO,SUDBURY,EMERALD,SEAS,TITLE,LLC,DOUROUGH,HAMNER,PATRIOT,PRESS,MCI,METRO,CABIBBO,INSTEPAY,IMSTETAG,LAKE,EOLA,PARK,SKOMSKY,PAUL,DDS,THE,COURT</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="77" width="239" x="553" y="355">
+            <tag>TRAVELODGE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

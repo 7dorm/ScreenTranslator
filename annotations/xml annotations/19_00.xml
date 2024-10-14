@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/19_00.jpg</imageName>
+      <address>836 17th Street Northwest Washington DC 20036</address>
+      <lex>CLUB,QUARTERS,WASHINGTON,CAFE,SOLEIL,EQUINOX,RESTAURANT,EYE,BAR,OVAL,ROOM,CORPORATION,BOTTOM,LINE,SALOON,ASIA,BANK,AMERICA,TEAISM,ART,GALLERY,GRILL,ROBERT,KENNEDY,HOTEL,AKA,WHITE,HOUSE,CHIC,FURNISHED,APARTMENTS,EXTENDED,STAY,BOMBAY,ARMY,NAVY,DECATUR,MUSEUM,WASABI,SUSHI,CHEMONICS,INTERNATIONAL,THE,HAY,ADAMS,TABERNA,DEL,ALABARDERO,KALBIAN,HAGERTY,LLP</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="36" width="64" x="564" y="472">
+            <tag>CAFE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="22" width="65" x="623" y="481">
+            <tag>SOLEIL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="32" width="40" x="937" y="476">
+            <tag>BAR</tag>
+         </taggedRectangle>
+         <taggedRectangle height="33" width="113" x="249" y="473">
+            <tag>RESTAURANT</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/17_10.jpg</imageName>
+      <address>448 South Market Street San Jose CA 95113</address>
+      <lex>SOUTH,FIRST,BILLIARDS,CLUB,AND,LOUNGE,AGENDA,RESTAURANT,BAR,RAMADA,LIMITED,SAN,JOSE,WORKS,LIQUID,AGENCY,INC,MUSEUM,QUILTS,TEXTILES,TATE,FAMILY,COMPLETE,AUTO,CARE,HEROES,MARTIAL,ARTS,ZOE,NIGHTCLUB,STAGE,COMPANY,SCORES,SPORTS,GRILL,DOWNTOWN,YOGA,SHALA,CORE,DEVELOPMENT,SAINTE,CLAIRE,HOTEL,MIAMI,BEACH,CACTUS,MOTIF,WET,MACLA,EULIPIA</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="55" width="177" x="475" y="404">
+            <tag>AGENCY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="109" width="106" x="423" y="201">
+            <tag>LIQUID</tag>
+         </taggedRectangle>
+         <taggedRectangle height="51" width="134" x="335" y="426">
+            <tag>LIQUID</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

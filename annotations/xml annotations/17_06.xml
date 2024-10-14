@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/17_06.jpg</imageName>
+      <address>161 Patterson Street San Jose CA 95112-5818</address>
+      <lex>LINE,BODY,SHOP,INC,THE,WORKS,GARDNER,HEALTH,CENTER,DINH,MICHELLE,LOPEZ,RICARDO,KAPGAN,GALINA,ENGRID,BOSSEN,PROJECTO,PRIMAVERA,SANCHEZ,WIC,PROGRAM,SENIOR,ADULTS,LEGAL,ASSISTANCE,RESOURCE,PUBLICATIONS,DELIA,SAMBO,CENTRO,BIENESTAR,MENTAL,PROJECT,NINETY,CORPORATION,PLAZA,MARIA,APARTMENTS,MANOJ,WAIKAR,DOIN,RIGHT,LITURGICAL,CATECHESIS,NOTRE,DAME,HIGH,SCHOOL</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="17" width="45" x="549" y="410">
+            <tag>BODY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="16" width="43" x="547" y="423">
+            <tag>SHOP</tag>
+         </taggedRectangle>
+         <taggedRectangle height="32" width="62" x="487" y="406">
+            <tag>LINE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

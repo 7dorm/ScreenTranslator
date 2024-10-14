@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/13_13.jpg</imageName>
+      <address>636 East Pierce Street Phoenix AZ</address>
+      <lex>SPACE,HOLIDAY,INN,EXPRESS,HOTEL,SUITES,PHOENIX,DOWNTOWN,BALL,PARK,UNION,BIOSCIENCE,HIGH,SCHOOL,BUDGET,ELECTRIC,UNIVERSITY,PUBLIC,ACTION,BAILBONDS,TGEN,AVANT,GARDE,WILLIAM,DESIDERATE,THE,URBAN,ABODE,GALLERY,TONATIERRA,CONSPIRE,ART,CRAFTS,COFFEE,SHOP,FASHION,COMMUNITY,DEVELOPMENT,LOST,LEAF,FATE,905,LLC,TAMMIE,COE,CAKES,BREAD,MODIFIED,ARTS,CYNCO,SUPPLIES,METRO,TECH,IMAGINATION,PICTURES</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="35" width="104" x="761" y="528">
+            <tag>SPACE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

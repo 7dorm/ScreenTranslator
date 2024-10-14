@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/06_08.jpg</imageName>
+      <address>2004 Greenville Avenue Dallas TX</address>
+      <lex>LULA,ANTIQUE,MALL,ZUBAR,TEPPO,YAKITORI,SUSHI,BAR,GEZELLIG,WHISKY,GREENVILLE,AVENUE,PUBLIC,HOUSE,THE,GIRLS,ROOM,ZYMOLOGY,HOTEL,CAPRI,SERVICE,PIZZA,BILLIARD,SUEDE,ZEPHYRS,PATIO,LOUNGE,ELAN,MAKEUP,STUDIO,NANDINA,ASIAN,TAPAS,OLD,CROW,SLICE,SUGAR,CREEK,EIGHT</lex>
+      <Resolution x="1680" y="1050" />
+      <taggedRectangles>
+         <taggedRectangle height="64" width="171" x="756" y="410">
+            <tag>ANTIQUE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="54" width="113" x="591" y="416">
+            <tag>LULA</tag>
+         </taggedRectangle>
+         <taggedRectangle height="50" width="116" x="927" y="420">
+            <tag>MALL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="35" width="87" x="1000" y="551">
+            <tag>LULA</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

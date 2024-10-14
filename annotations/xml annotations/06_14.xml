@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/06_14.jpg</imageName>
+      <address>5618 Bell Avenue Dallas TX</address>
+      <lex>LABYRINTH,CONTEMPORARY,THEATRE,DALLAS,LIBERTINE,BAR,ZEPHYRS,PATIO,LOUNGE,TORCH,DODIE,NEW,ORLEANS,SEAFOOD,BIG,WONG,SIMPLY,FONDUE,ZUBAR,THAI,ORIENTAL,FOOD,STORE,WINEDALE,TAVERN,SHADE,BLARNEY,STONE,SHAKE,RAG,MUSIC,NANDINA,ASIAN,TAPAS,MILK,TEPPO,YAKITORI,SUSHI,DEATH,GLORY,LULA,ANTIQUE,MALL,GEZELLIG</lex>
+      <Resolution x="1680" y="1050" />
+      <taggedRectangles>
+         <taggedRectangle height="65" width="241" x="726" y="343">
+            <tag>LABYRINTH</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

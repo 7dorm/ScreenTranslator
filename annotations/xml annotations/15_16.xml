@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/15_16.jpg</imageName>
+      <address>1100 3rd Avenue San Diego CA 92101</address>
+      <lex>SAN,DIEGO,CIVIC,CENTER,WESTGATE,HOTEL,THE,GRANT,BRISTOL,4TH,AND,LOCAL,EATERY,OPERA,STATION,DOWNTOWN,JOHNNY,BROWN,YARD,HOUSE,FONTAINEBLEAU,RESTAURANT,SOFIA,KNSD,FOURTH,CONCERTS,SPECIAL,FONTAINBLEAU,SUSHI,DELI,BELO,NIGHTLIFE,BLUES,REI,GADO</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="30" width="89" x="734" y="536">
+            <tag>CENTER</tag>
+         </taggedRectangle>
+         <taggedRectangle height="31" width="78" x="511" y="529">
+            <tag>DIEGO</tag>
+         </taggedRectangle>
+         <taggedRectangle height="33" width="67" x="450" y="522">
+            <tag>SAN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

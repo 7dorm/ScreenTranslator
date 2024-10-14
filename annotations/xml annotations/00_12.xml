@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/00_12.jpg</imageName>
+      <address>135 West Ball Road Anaheim CA 92805-6023</address>
+      <lex>SUBWAY,KFC,PIZZA,TIME,BALL,LEMON,COIN,LAUNDRY,WESTERN,MEDICAL,CENTER,ANAHEIM,ANNA,HAIR,SALON,MARISCOS,NAYARIT,RESTAURANT,POLLO,LOCO,WATER,BOY,DONALD,ALCOHOL,AND,DRUG,ABUSE,TREATMENT,DEE,BEST,BUILDING,MAINTENANCE,HOT,LINE,BURGER,KING,ELEVEN,BUENA,PARK,HONDA,SUZUKI,CONCORD,EQUIPMENT,COMPANY,SHOE,CITY,OUTLET,SLEEP,HUMAYON,KHAN</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="159" width="673" x="176" y="292">
+            <tag>SUBWAY</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

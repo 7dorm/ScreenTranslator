@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/12_15.jpg</imageName>
+      <address>847 North 3rd Street Philadelphia PA 19123-2203</address>
+      <lex>ORTLIEB,JAZZHAUS,INC,NORTH,THIRD,RESTAURANT,HONEY,SIT,EAT,DOGGIE,WORLD,DAYCARE,INC,STANDARD,TAP,BOWL,ARBOL,CAFE,POOR,HENRY,BREWERY,SAMUEL,KRAVITZ,PARADISE,ISLAND,DAY,CARE,CENTER,ABBAYE,KAPLAN,NEW,MODEL,BAKERY,FOODERY,CANTINA,DOS,SEGUNDOS,PHILADELPHIA,GLASS,WORKS,RUSTICA,READING,RAINBOW,LEARNING,ARCADIA,BOUTIQUE,GALLERY,908,CANTUCCIO</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="80" width="180" x="416" y="230">
+            <tag>ORTLIEB</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/08_15.jpg</imageName>
+      <address>1300 Lamar Street Houston TX</address>
+      <lex>FOUR,SEASONS,HOUSTON,MASSA,SEAFOOD,GRILL,QUATTRO,HOUSE,BLUES,STRIP,STEAK,DOWNTOWN,CLUB,CENTER,JOSEPHINE,RISTORANTE,ONE,PARK,PLACE,SHOPS,GILBANE,BUILDERS,GREEN,MARKET,DISCOVERY,SUNDAYS,NOON,4PM,VILLE,RESTAURANT,AMERICAN,ARBITRATION,ASSOCIATION,TORCH,ENERGY,ADVISORS,INC,AEROS,HOCKEY,SULLIVAN,PETER,NINFAS,MEXICAN,CADDELL,CHAPMAN</lex>
+      <Resolution x="1278" y="878" />
+      <taggedRectangles>
+         <taggedRectangle height="50" width="248" x="554" y="241">
+            <tag>FOUR</tag>
+         </taggedRectangle>
+         <taggedRectangle height="58" width="409" x="477" y="280">
+            <tag>SEASONS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

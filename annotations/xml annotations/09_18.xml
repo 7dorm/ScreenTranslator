@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/09_18.jpg</imageName>
+      <address>211 South Meridian Street Indianapolis IN</address>
+      <lex>HOMEWOOD,SUITES,OLD,SPAGHETTI,FACTORY,HAVE,NICE,DAY,CAFE,TIKI,BOB,CLADDAGH,IRISH,PUB,STOP,SUSHI,THE,ROCKS,INDIANA,STATE,CHIROPRACTIC,ASSOCIATION,CONSECO,FIELDHOUSE,BOX,OFFICE,INFORMATION,JILLIANS,CRACKERS,COMEDY,CLUB,WHOLESALE,DISTRICT,INDIANAPOLIS,OMNI,SEVERIN,HOTEL,RED,EYE,HARNESS,LOFTS,ICE,LOUNGE,SMOKEY,BONES,BBQ,GRILL,HOWL,MOON,NORDSTROM,CIRCLE,CENTRE,IKE,JONESY,KILROYS,BAR</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="47" width="314" x="378" y="388">
+            <tag>HOMEWOOD</tag>
+         </taggedRectangle>
+         <taggedRectangle height="52" width="193" x="701" y="386">
+            <tag>SUITES</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

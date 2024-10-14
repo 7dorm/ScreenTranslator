@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/15_11.jpg</imageName>
+      <address>600 West Broadway San Diego CA 92101</address>
+      <lex>AMTRAK,SANTA,DEPOT,MUSEUM,CONTEMPORARY,ART,STARBUCKS,ONE,AMERICA,PLAZA,FIVE,STAR,TOURS,500,WEST,HOTEL,CRESCENT,HEIGHTS,CLOSED,SAN,DIEGO,GRAB,SUBS,DOWNTOWN,YMCA,SMOOTHIE,KING,TROLLEY,STATION,GRAND,CENTRAL,CAFE,THE,WESTIN,AAE,HOSTELS,CRUISE,SHIP,SHUTTLES,PARKING,ADMINISTRATIVE,OFFICES,MCCALL,CARPET,CLEANING,SILVER,STREETS</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="49" width="178" x="750" y="481">
+            <tag>PLAZA</tag>
+         </taggedRectangle>
+         <taggedRectangle height="43" width="243" x="468" y="489">
+            <tag>AMERICA</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

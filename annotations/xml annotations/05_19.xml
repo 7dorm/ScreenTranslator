@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/05_19.jpg</imageName>
+      <address>209 West Cermak Road Chicago IL</address>
+      <lex>PUI,TAK,CENTER,CHINATOWN,HOTEL,SRO,THREE,HAPPINESS,RESTAURANT,PENANG,MALAYSIAN,CUISINE,MOON,PALACE,NEW,CHINA,TOWN,CHOP,SUEY,WON,KOW,TRIPLE,CROWN,PHOENIX,MARKET,SAINT,ALP,TEAHOUSE,GIFTLAND,INC,CHINESE,RED,EMPEROR,CHOICE,DOUBLE,CHAMBER,COMMERCE,CANTONESIA,LOBSTER,KING,WOKS,THINGS</lex>
+      <Resolution x="1280" y="882" />
+      <taggedRectangles>
+         <taggedRectangle height="36" width="186" x="895" y="282">
+            <tag>HAPPINESS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="27" width="92" x="792" y="289">
+            <tag>THREE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="18" width="67" x="490" y="335">
+            <tag>CHINATOWN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/16_15.jpg</imageName>
+      <address>Canto DO Brazil 41 Franklin St San Francisco CA</address>
+      <lex>CANTO,BRAZIL,INTERNATIONAL,HIGH,SCHOOL,MANDARIN,VILLA,RESTAURANT,BISTRO,CLOVIS,CHINESE,AMERICAN,SAN,FRANCISCO,CONSERVATORY,MUSIC,ZUNI,CAFE,MARKET,STREET,RICKSHAW,STOP,WOODLEAF,EATING,DISORDER,TREATMENT,THE,SEVENTH,HEART,PAUL,SAUCE,HOTEL,BIRON,EDEN,CAV,WINE,BAR,EDWARDIAN,ESPETUS,CHURRASCARIA,BRAZILIAN,STEAK,HOUSE,DEPARTMENT,PUBLIC,HEALTH,CABLE,CARS</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="72" width="230" x="687" y="241">
+            <tag>BRAZIL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="78" width="232" x="306" y="237">
+            <tag>CANTO</tag>
+         </taggedRectangle>
+         <taggedRectangle height="54" width="403" x="408" y="310">
+            <tag>RESTAURANT</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

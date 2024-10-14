@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/11_01.jpg</imageName>
+      <address>56 East Pine Street Orlando FL?</address>
+      <lex>NAPASORN,THAI,RESTAURANT,LOUNGE,MATADOR,BREAKFAST,CLUB,ORLANDO,HARP,AND,CELT,IRISH,PUB,MAD,COW,THEATRE,CITYARTS,FACTORY,DOWNTOWN,SPORTS,BAR,AND,GRILL,THE,CLUBHOUSE,PLAZA,CINEMA,CAFE,BLACK,OLIVE,URBAN,FLATS,FLATBREAD,WINE,PINE,STREET,CROOKED,BAYOU,CASEY,CENTRAL,PROVINCE,ICHIBAN,SUSHI,SOLAIRE,SUITE,OLD,ORANGE,COUNTY,COURTHOUSE,FLORIDA,GALLERY,AVALON,ISLAND</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="83" width="339" x="423" y="358">
+            <tag>NAPASORN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

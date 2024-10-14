@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/05_09.jpg</imageName>
+      <address>1101 South Canal Street Chicago IL</address>
+      <lex>WHOLE,FOODS,MARKET,DSW,SHOE,WAREHOUSE,CHICAGO,PANERA,BREAD,STARBUCKS,WHITE,PALACE,GRILLS,MICHAEL,ARTS,CRAFTS,COST,PLUS,WORLD,GAMESTOP,SOUTHGATE,OFFICE,DEPOT,PETSMART,STANDARD,PARKING,BANFIELD,THE,PET,HOSPITAL,FITNESS,HIRSCH,SHELDON,NEW,MAXWELL,STREET,STAPLES,SOIFER,NEIL,NAJAFI,CHRISTOPHER</lex>
+      <Resolution x="1278" y="878" />
+      <taggedRectangles>
+         <taggedRectangle height="64" width="144" x="580" y="197">
+            <tag>MARKET</tag>
+         </taggedRectangle>
+         <taggedRectangle height="72" width="138" x="430" y="191">
+            <tag>WORLD</tag>
+         </taggedRectangle>
+         <taggedRectangle height="63" width="238" x="968" y="129">
+            <tag>MICHAEL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="20" width="38" x="983" y="190">
+            <tag>THE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="21" width="51" x="1019" y="191">
+            <tag>ARTS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="18" width="72" x="1083" y="191">
+            <tag>CRAFTS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="32" width="184" x="1044" y="2">
+            <tag>FITNESS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

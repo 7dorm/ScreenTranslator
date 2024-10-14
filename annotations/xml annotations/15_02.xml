@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/15_02.jpg</imageName>
+      <address>1023 4th Avenue San Diego CA 92101</address>
+      <lex>YARD,HOUSE,SAN,DIEGO,SUSHI,THE,GRANT,BELO,RESTAURANT,NIGHTLIFE,REI,GADO,BLUES,COURTYARD,DOWNTOWN,LOCAL,EATERY,CONFIDENTIAL,SUITE,TENDER,WESTGATE,HOTEL,STREET,ALLEY,DAKOTA,GRILL,SPIRITS,OSETRA,WATERGRILL,FORMERLY,THE,FISHHOUSE,ELIXIR,ESPRESSO,BAR,BROADWAY,EVENT,CENTER,RUBIO,SUBWAY,POOL,TIME,SWIMMING,REPAIR,TILING</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="157" width="372" x="504" y="355">
+            <tag>HOUSE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="140" width="269" x="227" y="348">
+            <tag>YARD</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

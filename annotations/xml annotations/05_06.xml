@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/05_06.jpg</imageName>
+      <address>2801 South Princeton Avenue Chicago IL</address>
+      <lex>JEROME,CATHOLIC,SCHOOL,CHURCH,NEW,FURAMA,RESTAURANT,JAMES,WARD,PUBLIC,LEGUM,NORMAN,INC,SHIELDS,APARTMENTS,NORTHWESTERN,UNIVERSITY,MED,REDDY,JANARDAN,CRS,ASSOCIATES,LLC,CHICAGO,HOUSING,AUTHORITY,OFFICE,RICOBENE,CITY,DRIVING,HEAT,CATERING,ALICE,BEAUTY,SALON,DELUXE,PRINTING,ELECTRONIC,PROJECT,VISION,SUPER,STAR,TOURS,EVEREST,GROUP,LLC,REALTY,PACIFIC,LTD</lex>
+      <Resolution x="1278" y="874" />
+      <taggedRectangles>
+         <taggedRectangle height="37" width="166" x="291" y="228">
+            <tag>JEROME</tag>
+         </taggedRectangle>
+         <taggedRectangle height="37" width="153" x="260" y="259">
+            <tag>SCHOOL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

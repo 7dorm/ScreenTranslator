@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/03_02.jpg</imageName>
+      <address>2539 Pearl Street Boulder CO</address>
+      <lex>ARES,THRIFT,SHOP,MIKE,CAMERA,INC,BEADS,SPORTIQUE,SCOOTERS,BARNSLEY,TIRE,SALON,SABIHA,LLC,GOOGLE,KBCO,KEY,BANK,SALVAGGIO,ITALIAN,DELI,HOSHI,MOTORS,IVAN,GERRITY,AGENCY,HAWLEY,BEAR,ALIGNMENT,SERVICE,BOULDER,LIGHT,BULB,PEARL,STREET,DENTAL,SPRUCE,INTERNAL,MEDICINE,ROCKY,MOUNTS,BROWNE,HILLARY,COUNTY,FOOT,ANKLE,FRESH,BAKED,DISPENSARY</lex>
+      <Resolution x="1916" y="898" />
+      <taggedRectangles>
+         <taggedRectangle height="77" width="136" x="711" y="421">
+            <tag>BEADS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="75" width="123" x="855" y="419">
+            <tag>BEADS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="69" width="115" x="987" y="428">
+            <tag>BEADS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

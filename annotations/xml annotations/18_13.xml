@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/18_13.jpg</imageName>
+      <address>2301 8th Avenue Seattle WA</address>
+      <lex>BEST,WESTERN,LOYAL,INN,HURRICANE,CAFE,SHILLA,RESTAURANT,DOWNTOWN,EIGHTH,AVENUE,QUINTA,SUITES,SEATTLE,ELEPHANT,CAR,WASH,DAYS,DENNY,PARK,LUTHERAN,CHURCH,KEXP,ANTIOCH,UNIVERSITY,HOLIDAY,HOTEL,RESTORATIONVIP,WATER,DAMAGE,RESTORATION,REGRADE,PARKS,RECREATION,ARAI,JACKSON,ELLISON,MURAKAMI,LLP,ARCHITECTS,EXPRESS,CITY,CENTER,TUTTA,BELLA,NEAPOLITAN,PIZZA,SUSAN,OKAMOTO,INC,DIGITAL,COUNTERPARTS</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="32" width="67" x="687" y="356">
+            <tag>INN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="41" width="106" x="667" y="319">
+            <tag>LOYAL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="28" width="72" x="566" y="354">
+            <tag>WESTERN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="25" width="43" x="581" y="339">
+            <tag>BEST</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

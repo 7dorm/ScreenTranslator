@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/16_03.jpg</imageName>
+      <address>982 Market Street San Francisco CA</address>
+      <lex>WARFIELD,CURRAN,THEATRE,CRAZY,HORSE,GENTLEMEN,CLUB,THEATER,DISTRICT,SAN,FRANCISCO,CALIFORNIA,TULAN,RESTAURANT,FARMERBROWN,SHOWDOGS,LUGGAGE,STORE,PEARL,ART,CRAFT,SUPPLIES,INC,SUITE,181,TAQUERIA,CANCUN,AUNT,CHARLIE,LOUNGE,TWENTY,ONE,TAYLOR,ORIGINAL,JOE,JOSSEY,BASS,WILEY,IMPRINT,HOTEL,METROPOLIS,UNDERGROUND,SMOKE,SHOP,ANU,BICYCLE,COALITION,NEW,GRAND,APARTMENTS</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="33" width="161" x="795" y="253">
+            <tag>WARFIELD</tag>
+         </taggedRectangle>
+         <taggedRectangle height="33" width="163" x="211" y="261">
+            <tag>WARFIELD</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

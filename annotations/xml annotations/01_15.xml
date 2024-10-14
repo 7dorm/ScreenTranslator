@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/01_15.jpg</imageName>
+      <address>? 111 Cone Street Northwest Atlanta GA</address>
+      <lex>SUPER,ATLANTA,DNTN,WORLD,CONGRESS,CENTENNIAL,INN,MARK,ULTRA,LOUNGE,QUALITY,DOWNTOWN,TED,MONTANA,GRILL,HAMPTON,SUITES,TABERNACLE,SIDEBAR,BERRY,WEDDING,PHOTOGRAPHY,PROFESSIONAL,PHOTO,PORTRAIT,PHOTOGRAPHER,SLICE,MARRIOTT,THE,WESTIN,PEACHTREE,PLAZA,HEALEY,BUILDING,DELI,RIALTO,CENTER,FOR,THE,ARTS,THEATRICAL,OUTFIT,AND,CONVENIENCE,STORE,RESIDENCE,URBAN,COLLAGE,WOODRUFF,PARK</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="89" width="204" x="447" y="316">
+            <tag>SUPER</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

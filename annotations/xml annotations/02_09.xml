@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/02_09.jpg</imageName>
+      <address>24 West Franklin Street Baltimore MD</address>
+      <lex>VERNON,HOTEL,BASILICA,THE,ASSUMPTION,ENOCH,PRATT,FREE,LIBRARY,FRANKLIN,STREET,PRESBYTERIAN,CHURCH,AND,PARSONAGE,WALTERS,ART,MUSEUM,THE,FIRST,UNITARIAN,BALTIMORE,IXIA,SOTTO,SOPRA,DIE,MUSIK,TIO,PEPE,RESTAURANTE,BAY,ATLANTIC,SEAFOOD,BEADAZZLED,SASCHA,527,PARIS,WEST,OPTICAL,BENSON,BUILDING,PEOPLE,UNITED,LLC,HOSTEL,JOSS,CAFE,SUSHI,BAR,UNION,MEMORIAL,HOSPITAL,LIFELINE</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="61" width="139" x="525" y="431">
+            <tag>HOTEL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="69" width="203" x="712" y="369">
+            <tag>VERNON</tag>
+         </taggedRectangle>
+         <taggedRectangle height="16" width="33" x="117" y="517">
+            <tag>FIRST</tag>
+         </taggedRectangle>
+         <taggedRectangle height="16" width="32" x="1174" y="532">
+            <tag>FIRST</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/13_08.jpg</imageName>
+      <address>1638 South 7th Street Phoenix AZ</address>
+      <lex>ENTERPRISE,RENT,CAR,MAGIC,AUTO,SALES,FIESTA,MOTORS,TOM,TACO,BELL,CAMACHO,COMPLETE,SERVICES,MOTEL,LOS,ARCOS,RESTAURANT,BAR,SAMYRA,LEBANESE,CUISINE,BEST,WESTERN,MOTOR,MANNY,DISCOUNT,REPAIR,LALO,CANTINA,AND,DANCING,PEREZ,TRIM,SHOP,KENZIE,ASSET,MANAGEMENT,1601,SOUTH,7TH,STREET,LLC,LLANTERA,FAMOSOS,DINER,DIAMOND,PLATE,BIG,TIGER,PUMP,THOMAS,PIPE,SUPPLY,DONALD</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="20" width="104" x="331" y="368">
+            <tag>ENTERPRISE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

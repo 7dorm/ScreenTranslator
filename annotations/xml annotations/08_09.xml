@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/08_09.jpg</imageName>
+      <address>1113 Commerce Street Houston TX</address>
+      <lex>QUIZNOS,HARRIS,COUNTY,CRIMINAL,COURT,DISPUTE,RESOLUTION,CENTER,AMPCO,SYSTEM,PARKING,HOTEL,ICON,SPAGHETTI,WAREHOUSE,HONORABLE,DONALD,JACKSON,ADMINISTRATIVE,CRT,BAIL,NOW,BONDING,HOUSTON,ELECTRICITY,PRICES,AND,RATES,COMMERCE,CONVENIENCE,LTD,MERCHANTS,MANUFACTURERS,BUILDING,COPA,CABANA,SHERIFF,DEPARTMENT,CIVIL,BUREAU,SITE,REHAB,ORTHOPEDIC,SPORTS,REHABILITATION,CAVA,BISTRO,AMERICAN,RESTAURANT,HUMAN,RESOURCES</lex>
+      <Resolution x="1278" y="882" />
+      <taggedRectangles>
+         <taggedRectangle height="41" width="146" x="386" y="155">
+            <tag>QUIZNOS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

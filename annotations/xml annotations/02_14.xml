@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/02_14.jpg</imageName>
+      <address>237 South High Street Baltimore MD</address>
+      <lex>SABATINO,ITALIAN,RESTAURANT,CHIAPPARELLI,AMICCIS,ALDO,CAPRICCIO,CIAO,BELLA,VACCARO,PASTRY,SHOP,CAESAR,DEN,MIMMO,TAVOLA,LEO,ROMAN,CATHOLIC,CHURCH,FISHERMAN,WHARF,INNER,ISABELLA,STAR,SPANGLED,BANNER,FLAG,HOUSE,GIA,CAFE,CRAB,PASTA,FACTORY,BALTIMORE,DELLA,NOTTE,RISTORANTE,INDIA,RASOI,SCALA,DALESIO,LITTLE,ITLY</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="50" width="296" x="493" y="472">
+            <tag>CHIAPPARELLI</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

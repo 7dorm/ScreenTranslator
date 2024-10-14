@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/00_02.jpg</imageName>
+      <address>201 East Broadway Anaheim CA 92805-3904</address>
+      <lex>HERITAGE,FORUM,ANAHEIM,PUBLIC,WORKS,DEPARTMENT,FAMILY,FELLOWSHIP,JLE,PROPERTY,MANAGEMENT,MAINTENANCE,MUZEO,CITY,ATTORNEY,HILGENFELD,MORTUARY,BUILDING,PERMIT,MAYOR,OFFICE,HALL,EAST,CAFE,CONTIGO,ACCENT,CHEM,DRY,KIDS,CARE,MEDICAL,GROUP,INC,RODRIGUEZ,EFREN,GARCI,CASA,DEL,ALFARERO,BUFFALO,MUSEUM,QUIZNOS,PARK,DIVISION,WEST,CALIFORNIA,SAMUEL,KRAEMER</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="78" width="234" x="580" y="292">
+            <tag>FORUM</tag>
+         </taggedRectangle>
+         <taggedRectangle height="83" width="169" x="149" y="108">
+            <tag>FORUM</tag>
+         </taggedRectangle>
+         <taggedRectangle height="71" width="302" x="269" y="292">
+            <tag>HERITAGE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="100" width="218" x="125" y="48">
+            <tag>HERITAGE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

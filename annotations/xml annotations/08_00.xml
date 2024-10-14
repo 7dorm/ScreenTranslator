@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/08_00.jpg</imageName>
+      <address>1160 Smith Street Houston TX</address>
+      <lex>HYATT,HOTELS,RESORTS,REGENCY,HOUSTON,MASSA,RESTAURANT,STARBUCKS,WELLS,FARGO,BANK,PAPPAS,BAR,TREEBEARD,DEVON,ENERGY,CORPORATION,CENTERPOINT,DEPO,DYNAMICS,SPINDLETOP,DOUBLETREE,HOTEL,DOWNTOWN,HERITAGE,PLAZA,KINDER,MORGAN,INC,ENTERPRISE,PRODUCTS,OPRTNG,LLC,HESS,KING,SPALDING,PASO,PRODUCTION,VITOL,PAGE,SOUTHERLAND,HARRIS,COUNTY,ASSOCIATION</lex>
+      <Resolution x="1276" y="884" />
+      <taggedRectangles>
+         <taggedRectangle height="61" width="155" x="313" y="389">
+            <tag>MASSA</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

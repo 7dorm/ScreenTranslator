@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/15_01.jpg</imageName>
+      <address>601 Pacific Highway San Diego CA 92101</address>
+      <lex>EMBASSY,SUITES,HOTEL,SAN,DIEGO,BAY,DOWNTOWN,PACIFIC,FISH,SEAPORT,VILLAGE,STARBUCKS,ARCHSTONE,HARBORVIEW,GREEK,ISLAND,CAFE,UPSTART,CROW,BOOKSTORE,COFFEE,STREET,DELI,BARNETT,GRAND,PIER,ASAGGIO,PIZZA,PASTA,PLUS,BEAUTY,SALON,RAZKALLAH,BARBER,SHOP,WATER,TAXI,APPLE,BOX,TOYS,BRICKYARD,TEA,SAFARI,ANIMAL,COLLECTION,MARION,MARKET,SHOPS,RESTAURANTS,THE,DINNER,DETECTIVE</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="36" width="134" x="411" y="250">
+            <tag>EMBASSY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="28" width="105" x="423" y="275">
+            <tag>SUITES</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

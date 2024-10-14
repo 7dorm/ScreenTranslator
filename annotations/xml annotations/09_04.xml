@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/09_04.jpg</imageName>
+      <address>101 West Maryland Street Indianapolis IN</address>
+      <lex>CIRCLE,CENTRE,MALL,PALOMINO,STEAK,SHAKE,HOULIHAN,CANTERBURY,HOTEL,ELMO,HOUSE,CHAMPPS,AMERICANA,RUTH,CHRIS,DOWNTOWN,INDIANAPOLIS,CHANG,CHINA,BISTRO,RAM,RESTAURANT,BREWERY,ALCATRAZ,BREWING,DENTIST,THE,MIKADO,JAPANESE,CONRAD,HOTEL,SOUTH,MERIDIAN,REGAL,HARRY,IZZY,WEST,BERTOLINI,AUTHENTIC,TRATTORIA</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="67" width="181" x="615" y="310">
+            <tag>SHAKE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="60" width="161" x="413" y="314">
+            <tag>STEAK</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/01_17.jpg</imageName>
+      <address>208 Carroll Street Southeast Atlanta GA</address>
+      <lex>CARROLL,STREET,CAFE,VILLAGE,PIZZA,MILLTOWN,ARMS,TAVERN,ATLANTA,MEMORIAL,TATTOO,FULTON,COTTON,MILL,LOFTS,CABBAGETOWN,DISTRICT,AGAVE,RESTAURANT,AESTHETICALLY,CORRECT,DESIGN,STACKS,COIFFEURS,TOP,QUALITY,CLEAN,INC,STELLA,NEIGHBORHOOD,TRATTORIA,MIBARRIO,MEXICAN,PROFILING,SOLUTIONS,180PLUS,PRODUCTIONS,EMERGING,ART,SCENE,ADERHOLD,PROPERTIES,OAKLAND,CEMETERY,HARGROVE,LAW,FIRM,OCTANE,INTERACTIVE</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="62" width="269" x="253" y="378">
+            <tag>CARROLL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="63" width="235" x="545" y="366">
+            <tag>STREET</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

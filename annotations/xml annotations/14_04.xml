@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/14_04.jpg</imageName>
+      <address>1100 Southwest 6th Avenue Portland OR</address>
+      <lex>PORTLANDIA,PORTLAND,BUILDING,AUDITORIUM,PACWEST,CENTER,SEATTLE,BEST,COFFEE,THE,MELTING,POT,CITY,BUREAU,RISK,MANAGEMENT,SCHNITZER,CONCERT,HALL,HEATHMAN,HOTEL,STANDARD,PLAZA,STEAMERS,ASIAN,STREET,BISTRO,EWEN,GISVOLD,GUS,SOLOMON,UNITED,STATES,COURTHOUSE,TREES,RESTAURANT,CATERING,CONGRESS,INTERNATIONAL,RELATIONS,TRANSPORTATION,DEPARTMENT,DUFFY,KEKEL,LLP,INSURANCE,TICHENOR,DZIUBA,LLP,CONKLING,FISKUM,MCCORMICK</lex>
+      <Resolution x="1276" y="884" />
+      <taggedRectangles>
+         <taggedRectangle height="64" width="366" x="571" y="344">
+            <tag>INSURANCE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="84" width="354" x="180" y="310">
+            <tag>STANDARD</tag>
+         </taggedRectangle>
+         <taggedRectangle height="64" width="229" x="973" y="359">
+            <tag>CENTER</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/01_11.jpg</imageName>
+      <address>888 Ralph David Abernathy Boulevard Atlanta GA?</address>
+      <lex>GOODWILL,SOUL,VEGETARIAN,RESTAURANT,CVS,PHARMACY,WACHOVIA,BANK,SHRINE,THE,BLACK,MADONNA,CHASE,AND,ATM,SEXYHAIRWEAVES,COM,ROYAL,CROWN,BARBER,SHOP,SALON,EIGHT,SEVEN,NEW,YORK,SANDWICH,NATIONWIDE,FURNITURE,INC,BEAUTY,DEPOT,ANTHONY,CATHOLIC,CHURCH,FULTON,COUNTY,WEST,END,PERFORMING,PRO,FECTION,ANGEL,PARADISE,HIGHER,LEARNING,AFROBOOKS</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="79" width="364" x="486" y="327">
+            <tag>GOODWILL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

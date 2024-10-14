@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/05_00.jpg</imageName>
+      <address>1159 South Canal Street Chicago IL</address>
+      <lex>WHITE,PALACE,GRILLS,WHOLE,FOODS,MARKET,NEW,MAXWELL,STREET,BANK,AMERICA,DSW,SHOE,WAREHOUSE,CHICAGO,MICHAEL,ARTS,CRAFTS,BASKIN,ROBBINS,DOMINO,PIZZA,PANERA,BREAD,BEST,BUY,SOUTH,LOOP,STAPLES,STARBUCKS,MIDAS,COST,PLUS,WORLD,SPRINT,STORE,BACK,BED,MATTRESS,HONG,KONG,DELIGHT,III,INC,GAMESTOP</lex>
+      <Resolution x="1278" y="872" />
+      <taggedRectangles>
+         <taggedRectangle height="51" width="131" x="611" y="279">
+            <tag>PALACE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="40" width="100" x="513" y="288">
+            <tag>WHITE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="64" width="101" x="1179" y="202">
+            <tag>WHITE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="51" width="137" x="505" y="113">
+            <tag>AMERICA</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

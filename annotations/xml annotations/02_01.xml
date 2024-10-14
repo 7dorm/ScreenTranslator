@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/02_01.jpg</imageName>
+      <address>1001 North Charles Street Baltimore MD 21201-5401</address>
+      <lex>GRAND,CENTRAL,CLUB,MINATO,SUSHI,BAR,BRASS,ELEPHANT,RED,MAPLE,BELVEDERE,HOTEL,MARYLAND,HIPPO,SQUARE,GIGI,JUST,DELICIOUS,ZENA,DAY,SPA,MUGHAL,GARDEN,CITY,CAFE,INC,KUMARI,RESTAURANT,OWL,EDDIE,IGA,EAGER,STREET,VERNON,SUPER,MART,BREWER,ART,EXTERIOR,REMODELERS,WILLIAM,WELCH,HOUSE,MONA,HAJJ,INTERIORS</lex>
+      <Resolution x="1366" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="71" width="489" x="567" y="317">
+            <tag>CENTRAL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="71" width="348" x="572" y="249">
+            <tag>GRAND</tag>
+         </taggedRectangle>
+         <taggedRectangle height="20" width="43" x="156" y="528">
+            <tag>EAGER</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

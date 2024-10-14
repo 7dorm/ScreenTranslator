@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/00_03.jpg</imageName>
+      <address>735 North Anaheim Boulevard Anaheim CA 92805-2652</address>
+      <lex>JUKE,JOINT,BAR,GRILL,TACO,BOY,NORTHGATE,MARKET,AMS,RECORDS,HABRA,LOCK,DOOR,HERMAN,EXPERT,AUTOMOTIVE,SERVICES,POLLO,FINO,ADY,BEAUTY,SALON,ANCHOR,MUFFLER,AUTO,BARRUETA,REPAIR,HOPE,HOUSE,TRIO,SALES,CLASSIC,ESTILO,ANAHEIM,AIR,GUERRERO,TRANS,GARY,LORGE,STATE,FARM,INSURANCE,AGENCY,TEC,PRINTING,RADIATOR,ALTENITAS,DRESSES,GALVEZ,PROFESSIONAL</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="40" width="89" x="387" y="394">
+            <tag>BAR</tag>
+         </taggedRectangle>
+         <taggedRectangle height="39" width="115" x="514" y="402">
+            <tag>GRILL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="86" width="225" x="496" y="310">
+            <tag>JOINT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="78" width="199" x="299" y="319">
+            <tag>JUKE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

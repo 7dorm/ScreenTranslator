@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/16_01.jpg</imageName>
+      <address>1231 Market Street San Francisco CA</address>
+      <lex>HOTEL,WHITCOMB,SOMA,STARBUCKS,RAMADA,PLAZA,INTERNATIONAL,MARKET,STREET,GRILL,ORPHEUM,THEATRE,SAM,DINER,MAIN,LIBRARY,AAA,SAN,FRANCISCO,BURGER,KING,ANANDA,FUARA,VEGETARIAN,HOLIDAY,INN,CIVIC,CENTER,GYRO,ASIAN,ART,MUSEUM,ENVIRONMENT,AIRPORT,CHASE,BANK,AND,ATM,SUBWAY,WASHINGTON,MUTUAL,INC,CHECK,WELLS,FARGO</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="63" width="158" x="406" y="319">
+            <tag>HOTEL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="83" width="275" x="564" y="299">
+            <tag>WHITCOMB</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

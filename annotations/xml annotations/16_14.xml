@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/16_14.jpg</imageName>
+      <address>1660 Stockton St San Francisco CA?</address>
+      <lex>WASHINGTON,SQUARE,INN,MAMA,LIGURIA,BAKERY,JOEY,EDDIE,ITALIAN,RESTAURANT,STS,PETER,AND,PAUL,ELEMENTARY,SCHOOL,MOOSE,CAFE,DIVINE,NIKITA,CLOTHING,USA,TONY,PIZZA,NAPOLETANA,JOE,DIMAGGIO,MANGAROSA,BAR,MARIO,BOHEMIAN,CIGAR,STORE,GOORIN,BROTHERS,HAT,SHOP,ROGUE,ALES,PUBLIC,HOUSE,GELATO,CLASSICO,NORTH,BEACH,RAIGON,FITS,POST,OFFICE,NIK</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="53" width="72" x="820" y="346">
+            <tag>INN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="55" width="158" x="659" y="349">
+            <tag>SQUARE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="55" width="272" x="378" y="346">
+            <tag>WASHINGTON</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

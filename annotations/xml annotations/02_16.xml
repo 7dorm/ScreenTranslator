@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/02_16.jpg</imageName>
+      <address>520 Washington Boulevard Baltimore MD</address>
+      <lex>PICKLES,PUB,HAMPTON,INN,BALTIMORE,DOWNTOWN,CONVENTION,CENTER,HOTEL,GREENE,HOUSE,APARTMENTS,LLC,SLIDERS,BAR,GRILL,LOFT,HISTORIC,DISTRICT,SOUTH,ERLANGER,BUILDINGS,BABE,RUTH,BIRTHPLACE,AND,MUSEUM,ORIOLE,PARK,CAMDEN,YARDS,THE,ZENITH,HILTON,SONNEBORN,BUILDING,FRANK,NIC,WEST,END,GRILLE,POT,BELLY,SANDWICH,WORKS,GINO,MARRIOTT,INNER,HARBOR,SPORTS,LEGENDS,NATIONAL,DENTISTRY,DIAMOND,TAVERN,EKLOF,UNIVERSITY,MARYLAND,MEDICAL</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="14" width="39" x="810" y="585">
+            <tag>PICKLES</tag>
+         </taggedRectangle>
+         <taggedRectangle height="14" width="18" x="852" y="585">
+            <tag>PUB</tag>
+         </taggedRectangle>
+         <taggedRectangle height="46" width="271" x="438" y="482">
+            <tag>PICKLES</tag>
+         </taggedRectangle>
+         <taggedRectangle height="48" width="126" x="720" y="479">
+            <tag>PUB</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

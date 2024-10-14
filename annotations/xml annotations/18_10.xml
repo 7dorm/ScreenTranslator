@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/18_10.jpg</imageName>
+      <address>? 200 Taylor Avenue North Seattle WA?</address>
+      <lex>BEST,WESTERN,EXECUTIVE,INN,SPACE,NEEDLE,FUN,HOUSE,TRAVELODGE,SEATTLE,CENTER,BRELLA,SCIENCE,FICTION,MUSEUM,RIDE,THE,DUCKS,CLUB,ONE3ONE,SPORT,RESTAURANT,BAR,QUALITY,SUITES,PHILLIPS,REAL,ESTATE,SERVICES,DONALD,EXPERIENCE,MUSIC,PROJECT,FISHER,PLAZA,FIVE,POINT,CAFE,HOLIDAY,EXPRESS,CITY,FAT</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="78" width="148" x="728" y="182">
+            <tag>BEST</tag>
+         </taggedRectangle>
+         <taggedRectangle height="64" width="232" x="691" y="363">
+            <tag>EXECUTIVE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="53" width="94" x="756" y="410">
+            <tag>INN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="95" width="253" x="681" y="235">
+            <tag>WESTERN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

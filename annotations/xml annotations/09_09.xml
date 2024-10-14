@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/09_09.jpg</imageName>
+      <address>605 East Market Street Indianapolis IN</address>
+      <lex>THERAPY,NIGHT,CLUB,LOUNGE,CIRCLE,CITY,PIZZA,OZZIE,BAR,GRILL,CHEESEBOUROUGH,BORUTA,FRAZIER,ASSOCIATES,FLANNER,AND,BUCHANAN,FUNERAL,CENTER,MARKET,SUN,KING,BREWING,LLC,ROSCOE,STOVALL,LAW,AXIS,ARCHITECTURE,INTERIORS,MILAGRO,INC,MAXINE,CHICKEN,WAFFLES,DILK,GARY,BROWN,TOMPKINS,LORY,SHIRT,PRINTING,INDIANAPOLIS,XTREME,GRAPHICS,CREMATION,INDIANA,PAYDAY,LOANS,COURTYARD,LANE,CHRISTOPHER,WEINLAND,THOMAS,MCMANUS,ASSOICATES,NORTHSIDE</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="21" width="43" x="596" y="405">
+            <tag>NIGHT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="45" width="150" x="587" y="368">
+            <tag>THERAPY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="17" width="51" x="679" y="410">
+            <tag>LOUNGE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

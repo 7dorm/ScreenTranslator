@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/00_06.jpg</imageName>
+      <address>125 East Ball Road Anaheim CA 92805-6308</address>
+      <lex>HAHM,MOTORSPORTS,ANAHEIM,SHOCK,RACING,ORANGE,COUNTY,SUZUKI,SHOCKS,SPORTS,BURGER,KING,SHOE,CITY,OUTLET,POLLO,LOCO,BUENA,PARK,HONDA,BELL,PIPE,SUPPLY,CALIFORNIA,CAREER,SCHOOL,CASH,BACK,QUIZNOS,ELEVEN,WESTERN,MEDICAL,CENTER,BROWNSON,TECHNICAL,KAWASAKI,ACCELERATED,TRAINING,NATEC,INTERNATIONAL,BROWN,YAMAHA</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="75" width="240" x="216" y="328">
+            <tag>HAHM</tag>
+         </taggedRectangle>
+         <taggedRectangle height="103" width="493" x="478" y="323">
+            <tag>MOTORSPORTS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="24" width="110" x="60" y="343">
+            <tag>MOTORSPORTS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="31" width="67" x="84" y="308">
+            <tag>HAHM</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

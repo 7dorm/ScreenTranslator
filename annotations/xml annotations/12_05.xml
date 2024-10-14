@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/12_05.jpg</imageName>
+      <address>700 Chestnut Street Philadelphia PA 19106</address>
+      <lex>JONES,MORIMOTO,RESTAURANT,LASCALA,SAFIAN,RUDOLPH,JEWELERS,CURTIS,DOUGLAS,LAS,VEGAS,LOUNGE,CAZADOREZ,INC,ATWATER,KENT,MUSEUM,UNION,TRUST,STEAKHOUSE,AQUA,MALAYSIAN,THAI,JAMES,TAMPOPO,JAPANESE,CHARTER,HIGH,SCHOOL,FOR,ARCHITECTURE,AND,DESIGN,ANGELINA,KIBITZ,THE,CITY,NATIONAL,PARK,SERVICES,ARTISTIC,HAIR,SALON,LIGHT,LIBERTY,SQUARE</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="106" width="578" x="369" y="208">
+            <tag>JONES</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

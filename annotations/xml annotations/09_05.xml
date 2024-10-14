@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/09_05.jpg</imageName>
+      <address>735 Massachusetts Avenue Indianapolis IN</address>
+      <lex>COMPLEXIONS,SPA,SALON,BOUTIQUE,SCHOLARS,INN,GOURMET,CAFE,CHATHAM,TAP,MASS,AVENUE,PUB,INC,FORTY,FIVE,DEGREES,COMEDYSPORTZ,INDIANAPOLIS,YATS,RESTAURANT,METRO,NITE,CLUB,STOP,SAGE,745,BAR,GRILL,PHOENIX,THEATRE,AGIO,LLC,FIRE,FIGHTERS,MSM,SAKURA,URBAN,STUDIO,GOULDING,AND,WOOD,RUMBA,ART,BANK,ARCH,PROFESSIONAL,CITY,MARION,COUNTY,AGENCIES,SURVIVE,ALIVE</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="32" width="181" x="516" y="367">
+            <tag>COMPLEXIONS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/04_17.jpg</imageName>
+      <address>336 South Glenoaks Boulevard Burbank CA 91502-1318</address>
+      <lex>PIZZA,MAN,BLOCKBUSTER,VIDEO,GERRO,MARSHA,GLENOAKS,PHARMACY,AND,MEDICAL,SUPPLY,RICO,JAS,GIFTS,RAMIREZ,LYNN,TER,POGHOSYAN,ZARINE,CAFE,COLOMBIA,KNOX,TIMOTHY,DDS,LILLY,PARK,HOME,THEATER,HAMOUI,MOBIL,MART,CLEANERS,SHIRVAN,REALTY,GROUP,TRAN,DEBBY,VANESSA,NAPA,AUTO,CARE,CENTER</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="47" width="222" x="570" y="528">
+            <tag>GIFTS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="36" width="144" x="609" y="494">
+            <tag>JAS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="34" width="109" x="87" y="504">
+            <tag>PIZZA</tag>
+         </taggedRectangle>
+         <taggedRectangle height="32" width="83" x="238" y="509">
+            <tag>MAN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

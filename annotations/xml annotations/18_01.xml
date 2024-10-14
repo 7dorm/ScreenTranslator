@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/18_01.jpg</imageName>
+      <address>? 216 Union Street Seattle WA</address>
+      <lex>THE,TRIPLE,DOOR,WILD,GINGER,ASIAN,RESTAURANT,GELATIAMO,SEATTLE,ART,MUSEUM,BENAROYA,HALL,POST,OFFICE,SYMPHONY,SHOWBOX,THE,MARKET,BYRNIE,UTZ,HATS,DOWNTOWN,EPICENTER,WASHINGTON,MUTUAL,INC,FINANCIAL,SERVICES,HARRIED,HUNGRY,CATERING,CAFE,ROSS,DRESS,FOR,LESS,REPUBLIC,PARKING,UNION,WILLIAM,TRAVER,GALLERY,MARCELLA,BOUTIQUE,SKINNER,BUILDING,BRUNO,MEXICAN,ITALIAN</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="79" width="186" x="539" y="349">
+            <tag>DOOR</tag>
+         </taggedRectangle>
+         <taggedRectangle height="38" width="71" x="614" y="633">
+            <tag>THE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="41" width="68" x="527" y="666">
+            <tag>THE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="86" width="189" x="462" y="257">
+            <tag>TRIPLE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="32" width="50" x="562" y="217">
+            <tag>THE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

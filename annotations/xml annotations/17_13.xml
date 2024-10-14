@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/17_13.jpg</imageName>
+      <address>555 Dana Avenue San Jose CA</address>
+      <lex>LINCOLN,HIGH,SCHOOL,TRACE,ELEMENTARY,CARRIE,SHULMAN,MUNICIPAL,ROSE,GARDEN,PLUS,ALTERNATIVE,HERBERT,HOOVER,MIDDLE,EGYPTIAN,MUSEUM,BRANCH,LIBRARY,CHILD,DEVELOPMENT,CENTER,HESTER,PARK,KAISAHAN,SAN,JOSE,DANCE,ANTONELLA,RISTORANTE,NATIONAL,ELECTRICAL,CONTRACTORS,BREATHE,CALIFORNIA,BAY,AREA,SECOND,HAND,SMOKE,ACADEMY,MOLD,LLC,BATCHA,DEBBIE,DDS,EUFRAZIA,BALLET,ANTONI,PAEZ,HAIR,GALLERY</lex>
+      <Resolution x="1280" y="882" />
+      <taggedRectangles>
+         <taggedRectangle height="49" width="150" x="743" y="272">
+            <tag>HIGH</tag>
+         </taggedRectangle>
+         <taggedRectangle height="58" width="259" x="447" y="284">
+            <tag>LINCOLN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="67" width="233" x="862" y="518">
+            <tag>SCHOOL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="61" width="279" x="931" y="245">
+            <tag>SCHOOL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="41" width="252" x="280" y="782">
+            <tag>CALIFORNIA</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/16_18.jpg</imageName>
+      <address>900 Hyde Street San Francisco CA</address>
+      <lex>BURN,CENTER,SAINT,FRANCIS,MEMORIAL,HOSPITAL,PRIETO,VICTOR,NOB,HILL,GRILLE,RESTAURANT,HOTEL,FOR,SPORTS,MEDICINE,NGUYEN,TRAM,MITHILA,SAN,FRANCISCO,VERTIGO,STEINHART,HOM,FRED,HYDE,OUT,CHW,BAY,AREA,OCCCUPATIONAL,HEALTH,NETWORK,SPINE,CALA,FOODS,GIANNINI,ABRAHAM,LITTLE,BROTHERS,FRIENDS,CABLE,CAR,COURT,TUNNELL,REHAB,RANDALL,WEIL,CHAPPLER,RONALD,COLOMBINI,BISTRO,PLUSH,ROOM,CABARET</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="58" width="193" x="224" y="355">
+            <tag>FRANCIS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="67" width="272" x="712" y="332">
+            <tag>HOSPITAL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="62" width="268" x="420" y="359">
+            <tag>MEMORIAL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="54" width="117" x="108" y="367">
+            <tag>SAINT</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

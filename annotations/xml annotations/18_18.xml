@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/18_18.jpg</imageName>
+      <address>400 23rd Ave Seattle WA</address>
+      <lex>GARFIELD,HIGH,SCHOOL,EZELL,FAMOUS,CHICKEN,FANTASTIC,WINDOWS,MEDGAR,EVERS,POOL,GOODYBAGG,ENTERTAINMENT,SAFECO,CORPORATION,JACKSON,STREET,CENTER,CAUSEY,LEARNING,COMMUNITY,SWEDISH,HEART,VASCULAR,INSTITUTE,URBAN,NANNY,BROKERS,INC,TAX,HELP,ASSOCIATES,SEVEN,STAR,WOMEN,KUNG,TWILIGHT,EXIT,LIVE,WORK,PLAY,MESKEL,ETHIOPIAN,RESTAURANT,BRAINCHILD,EDUCATION,ISLAMIC,SEATTLE,DAY,FOR,CHILDREN,INDOCHINA,CHINESE,REFUGEE,ASSOCIATION,BOWDITCH,MARINE</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="25" width="126" x="518" y="324">
+            <tag>GARFIELD</tag>
+         </taggedRectangle>
+         <taggedRectangle height="28" width="75" x="489" y="341">
+            <tag>HIGH</tag>
+         </taggedRectangle>
+         <taggedRectangle height="22" width="103" x="564" y="346">
+            <tag>SCHOOL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

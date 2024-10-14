@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/03_06.jpg</imageName>
+      <address>2100 28th Street Boulder CO</address>
+      <lex>BICYCLE,VILLAGE,WHOLE,FOODS,MARKET,ONLY,NATURAL,PET,STORE,POLISH,JENNY,CRAIG,WEIGHT,LOSS,CENTER,COOKIES,DESIGN,TURLEY,BARNES,NOBLE,BOOKSELLERS,CROSSROADS,COMMONS,YMCA,BOULDER,CAFE,LIFE,TARGET,PANDA,EXPRESS,PETS,MEINEKE,CAR,CARE,RUNNING,ROCK,CLUB,ACE,DISCOUNT,LIQUORS,SPORTS,GARAGE</lex>
+      <Resolution x="1920" y="902" />
+      <taggedRectangles>
+         <taggedRectangle height="96" width="254" x="563" y="258">
+            <tag>POLISH</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

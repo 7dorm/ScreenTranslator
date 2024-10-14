@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/13_01.jpg</imageName>
+      <address>Ste 250 502 East Monroe Street Phoenix AZ</address>
+      <lex>ARIZONA,STATE,UNIVERSITY,DOWNTOWN,CENTER,PROJECT,PRIME,COPPER,SQUARE,PHOENIX,ROSSON,HOUSE,PIZZERIA,BIANCO,MERCADO,SFAZ,MUSEUM,HISTORY,MERCURY,SCIENCE,HERITAGE,PARK,CONVENTION,CRAVE,SANDWICH,CAFE,AND,CATERING,FAR,ASU,MARY,BASILICA,SHERATON,HOTEL,ROMAN,CATHOLIC,DIOCESE,EXTENDED,EDUCATION,CLG,DOLL,TOY,ROSE,CROWN</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="69" width="258" x="522" y="194">
+            <tag>CENTER</tag>
+         </taggedRectangle>
+         <taggedRectangle height="62" width="351" x="151" y="219">
+            <tag>UNIVERSITY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="36" width="60" x="121" y="624">
+            <tag>ASU</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

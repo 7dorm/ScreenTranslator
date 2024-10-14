@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/04_13.jpg</imageName>
+      <address>922 South San Fernando Boulevard Burbank CA 91502-1535</address>
+      <lex>THE,BLUE,ROOM,BAR,BURBANK,TRADER,JOE,PHIL,IMPORTS,TAPATIO,RESTAURANT,DON,DIEGO,MEXICAN,GEFER,FARMS,MARKET,EAGLE,MEDICAL,SUPPLIES,CORNER,ARMEN,AMBARCHYAN,DDS,RAZZBERRIEZ,RALPHS,SHAOLIN,TAEKWONDO,STARBUCKS,ACCOUNTANCY,TAX,UNITED,PLUMBING,SERVICES,INC,DESIGN,GROUP,LOCKSMITH,SERVICE,PACIFIC,PROCESS,EQUIPMENT,CVS,PHARMACY,BELLA,CORPORATION</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="115" width="167" x="322" y="-2">
+            <tag>EAGLE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="75" width="200" x="394" y="475">
+            <tag>EAGLE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="70" width="250" x="600" y="481">
+            <tag>MEDICAL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="131" width="195" x="492" y="16">
+            <tag>MEDICAL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+</tagset>

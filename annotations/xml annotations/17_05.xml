@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/17_05.jpg</imageName>
+      <address>90 East San Carlos Street San Jose CA 95112-3607</address>
+      <lex>IGUANAS,TAQUERIA,VICTORIA,DONALD,BURRITOZILLA,HYDRATION,COFFEE,AND,TEA,CAFE,FEDEX,OFFICE,PRINT,SHIP,CENTER,BEN,JERRY,COMEDYSPORTZ,SAN,JOSE,HOGGIE,STEAK,OUT,HALLY,ONO,PIZZA,HEART,ORIGINAL,JOE,RESTAURANT,REPERTORY,THEATRE,COLONNADE,DONNA,BRAMMER,PHOTOGRAPHY,GREAT,CLIPS,JACK,THE,BOX,BETTER,WAY,MOVE,YWCA,SILICON,VALLEY,ANNO,DOMINI</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="61" width="269" x="378" y="449">
+            <tag>DONALD</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

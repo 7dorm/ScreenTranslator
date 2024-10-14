@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/04_16.jpg</imageName>
+      <address>324 South Glenoaks Boulevard Burbank CA 91502-1318</address>
+      <lex>BLOCKBUSTER,VIDEO,LAW,OFFICES,RAY,FOUNTAIN,CRIMINAL,DEFENSE,ATTORNEY,LAWYER,PIZZA,MAN,CAFE,COLOMBIA,GERRO,MARSHA,RICO,GLENOAKS,PHARMACY,AND,MEDICAL,SUPPLY,RAMIREZ,LYNN,TER,POGHOSYAN,ZARINE,JAS,GIFTS,KNOX,TIMOTHY,DDS,LILLY,PARK,HOME,THEATER,HAMOUI,MOBIL,MART,CLEANERS,TOKYO,YAKIDORI,SHIRVAN,REALTY,GROUP,NAPA,AUTO,CARE,CENTER,TRAN,DEBBY</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="61" width="281" x="467" y="497">
+            <tag>BLOCKBUSTER</tag>
+         </taggedRectangle>
+         <taggedRectangle height="58" width="114" x="750" y="497">
+            <tag>VIDEO</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+</tagset>

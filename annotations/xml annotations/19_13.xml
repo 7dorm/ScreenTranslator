@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/19_13.jpg</imageName>
+      <address>1743 L Street Northwest Washington DC 20036-5404</address>
+      <lex>SPEZIE,RESTAURANT,RENAISSANCE,MAYFLOWER,HOTEL,MORTON,THE,STEAKHOUSE,CHOCOLATE,MOOSE,GROOMING,LOUNGE,RITZ,CAMERA,IMAGE,FARRAGUT,NORTH,GAP,RIZIK,BROTHERS,INC,STATION,CIGARS,VERIZON,WIRELESS,PENN,18TH,STREET,GIBSON,DUNN,CRUTCHER,VICTORIA,SECRET,AMERICAN,BANKERS,ASSOCIATION,BON,PAIN,INTERNATIONAL,FOOD,INFO,COUNCI,MEN,WEARHOUSE,NATIONAL,GEOGRAPHIC,SOCIETY</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="64" width="232" x="489" y="492">
+            <tag>CHOCOLATE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="50" width="125" x="723" y="506">
+            <tag>MOOSE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="61" width="160" x="95" y="484">
+            <tag>LOUNGE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

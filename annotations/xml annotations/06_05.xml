@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/06_05.jpg</imageName>
+      <address>4812 Bryan Street Dallas TX</address>
+      <lex>MAI,VIETNAMESE,RESTAURANT,JIMMY,FOOD,STORE,JADE,GARDEN,CHINESE,FRENCH,SANDWICHES,DALLASITE,BILLIARDS,URBANO,CAFE,BINH,MINH,MARKET,DALLAS,COSMETIC,DENTIST,CRIMINAL,LAWYER,PINTIP,CHARUNMETHEE,DDS,NGUYEN,TRAN,ASSOCIATES,1410,THE,DALAT,ISAMARE,BEVERAGE,INC,BRYAN,PLACE,DENTAL,ALESSIO,RISTORANTE,LND,HAIR,STUDIO,ALLCARE,FAMILY,CLINIC,TOY,TRAINS,UNLIMITED,LIVE,OAK,ROOMING,HOUSE</lex>
+      <Resolution x="1680" y="1050" />
+      <taggedRectangles>
+         <taggedRectangle height="106" width="230" x="511" y="190">
+            <tag>MAI</tag>
+         </taggedRectangle>
+         <taggedRectangle height="67" width="257" x="867" y="224">
+            <tag>RESTAURANT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="47" width="325" x="693" y="292">
+            <tag>VIETNAMESE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

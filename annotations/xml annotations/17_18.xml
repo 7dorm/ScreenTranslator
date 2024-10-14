@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/17_18.jpg</imageName>
+      <address>420 South 1st Street San Jose CA 95112</address>
+      <lex>SOUTH,FIRST,BILLIARDS,CLUB,AND,LOUNGE,AGENDA,RESTAURANT,BAR,RAMADA,LIMITED,SAN,JOSE,WET,NIGHTCLUB,MOTIF,ANNO,DOMINI,EULIPIA,DOWNTOWN,YOGA,SHALA,WHIPSAW,INC,ZOE,SAINTE,CLAIRE,HOTEL,SCORES,SPORTS,GRILL,WORKS,SPY,MUSEUM,QUILTS,TEXTILES,MIAMI,BEACH,STAGE,COMPANY,CACTUS,ANGELS,DAI,THANH,SUPERMARKET</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="41" width="152" x="480" y="403">
+            <tag>BILLIARDS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="33" width="78" x="407" y="410">
+            <tag>FIRST</tag>
+         </taggedRectangle>
+         <taggedRectangle height="30" width="85" x="322" y="416">
+            <tag>SOUTH</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

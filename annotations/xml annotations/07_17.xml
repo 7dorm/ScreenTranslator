@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/07_17.jpg</imageName>
+      <address>440 East Colfax Avenue Denver CO</address>
+      <lex>CHEEKY,MONK,BELGIAN,BEER,CAFE,CATHEDRAL,IMMACULATE,CNCPTN,GREAT,WALL,CHINESE,RESTAURANT,DUMAN,CUSTOM,TAILOR,DONALD,TAKI,RED,ROOM,AND,BAR,WOLFE,BARBEQUE,DENVER,PRIVATE,INVESTIGATOR,MILE,HIGH,INVESTIGATIONS,COLORADO,STATE,CAPITOL,ROSLYNN,GRILL,ABEJA,NOB,HILL,INN,ATTORNEY,ZAK,MARKET,CITY,GRILLE,MOLLY,BROWN,HOUSE,MUSEUM,TATTOO,DRUG,LIQUOR,TOM,DINER</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="33" width="178" x="574" y="237">
+            <tag>CHINESE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="72" width="155" x="267" y="242">
+            <tag>GREAT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="83" width="136" x="431" y="236">
+            <tag>WALL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

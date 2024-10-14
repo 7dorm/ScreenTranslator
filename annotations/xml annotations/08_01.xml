@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/08_01.jpg</imageName>
+      <address>1200 Travis Street Houston TX</address>
+      <lex>COURTYARD,HOUSTON,DOWNTOWN,CONVENTION,CENTER,RESIDENCE,INN,POLICE,DEPARTMENT,HUMBLE,TOWER,APARTMENTS,GONZALEZ,STARBUCKS,MACYS,THE,TIPPING,POINT,JAMES,CONEY,ISLAND,HYATT,HOTELS,RESORTS,REGENCY,ZERO,SANDWICH,SHOP,LOUISIANA,PLACE,FIRST,UNITED,METHODIST,CHURCH,RELIANT,ENERGY,PLAZA,FOUNDATION,MCDONALD,EXPRESS,PASO,PRODUCTION,EDGE,PETROLEUM,CORPORATION</lex>
+      <Resolution x="1280" y="882" />
+      <taggedRectangles>
+         <taggedRectangle height="78" width="416" x="542" y="312">
+            <tag>DEPARTMENT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="39" width="195" x="133" y="382">
+            <tag>HOUSTON</tag>
+         </taggedRectangle>
+         <taggedRectangle height="50" width="186" x="342" y="357">
+            <tag>POLICE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

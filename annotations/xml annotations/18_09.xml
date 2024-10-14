@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/18_09.jpg</imageName>
+      <address>Pike &amp; Western Wine Merchants 1934 Pike Place Seattle WA?</address>
+      <lex>PIKE,WESTERN,WINE,MERCHANTS,STARBUCKS,THE,PINK,DOOR,KELLS,IRISH,RESTAURANT,PUB,TURKISH,DELIGHT,LISA,HARRIS,GALLERY,CUTTERS,BAY,HOUSE,VICTOR,STEINBRUECK,PARK,ETTA,SEAFOOD,PICHET,BAVARIAN,MEAT,EUROPEAN,DELI,PIROSHKY,PANIER,VERY,FRENCH,BAKERY,EMMETT,WATSON,OYSTER,BAR,STEWART,TASTING,ROOM,PENSIONE,NICHOLS,VIRGINIA,INN,PLACE,GROCERY,INC,POST</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="53" width="85" x="297" y="382">
+            <tag>PIKE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="63" width="189" x="470" y="366">
+            <tag>WESTERN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="58" width="136" x="662" y="363">
+            <tag>WINE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

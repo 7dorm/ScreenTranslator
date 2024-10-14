@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/11_05.jpg</imageName>
+      <address>203 North Primrose Drive Orlando FL?</address>
+      <lex>KYLE,BIKE,SHOP,SANDWICH,KING,SECRET,GARDEN,FLOWERS,INC,ELEVEN,BRANDTASTIC,MARKETING,COURTEOUS,COMMUNICATION,CORPORATION,MARRENS,DELI,RONALD,LANGA,BELL,ROPER,KOHLMYER,ANSWERING,SERVICES,TNF,CONSTRUCTION,MOBILE,AUTO,REPAIR,TCS,AKA,TRANSIT,CARE,SERVICE,PROVISION,INVESTIGATIVE,INSIGHT,ANSWER,ORLANDO,MELENDEZ,LAW,FIRM,DEVOE,VICTORIA,ANDERSON,ATTORNEY,MANUEL,HERNANDEZ,BIZHUB</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="129" width="205" x="470" y="267">
+            <tag>BIKE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="114" width="151" x="245" y="280">
+            <tag>KYLE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="164" width="314" x="689" y="243">
+            <tag>SHOP</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

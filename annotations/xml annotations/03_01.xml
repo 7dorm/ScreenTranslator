@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/03_01.jpg</imageName>
+      <address>2709 Spruce Street Boulder CO</address>
+      <lex>SPORTS,GARAGE,COLORADO,MULTISPORT,LARRY,BOOT,FITTING,BOULDER,RUNNING,TURLEY,COMMON,THREADS,FEDEX,OFFICE,PRINT,SHIP,CENTER,MEINEKE,CAR,CARE,ALPINE,BASE,EDGE,JOSEPH,KURTZ,NORRIS,GREGORY,DDS,TIRES,INC,ART,LIVING,WELLNESS,CAFE,LIFE,ACE,DISCOUNT,LIQUORS,WAHOO,FISH,TACO,LLC,IMPORTED,AUTO,PARTS,WHOLE,PETS,PEARLE,VISION,FOR,SOURCE,CONSERV</lex>
+      <Resolution x="1918" y="894" />
+      <taggedRectangles>
+         <taggedRectangle height="41" width="87" x="770" y="329">
+            <tag>BOOT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="49" width="133" x="746" y="363">
+            <tag>FITTING</tag>
+         </taggedRectangle>
+         <taggedRectangle height="65" width="105" x="754" y="276">
+            <tag>LARRY</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

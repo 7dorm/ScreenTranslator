@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/16_04.jpg</imageName>
+      <address>1075 Sutter Street San Francisco CA?</address>
+      <lex>HOTEL,CARLTON,ARABIC,FUSION,RESTAURANT,BRICK,FLY,BAR,HYDE,STREET,APARTMENTS,NOB,HILL,HARCOURT,TECHSAVIES,RAPHAEL,HOUSE,MITHILA,SAN,FRANCISCO,VERTIGO,TAPPE,AND,GRILL,SFPARTY,HEMLOCK,TAVERN,COLOMBINI,BISTRO,LARKIN,YOUTH,ABSOLUTE,AUTO,REPAIR,STEINHART,THAI,EXPRESS</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="67" width="272" x="645" y="331">
+            <tag>CARLTON</tag>
+         </taggedRectangle>
+         <taggedRectangle height="89" width="237" x="409" y="327">
+            <tag>HOTEL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

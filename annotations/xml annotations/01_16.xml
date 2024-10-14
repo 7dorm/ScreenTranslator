@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/01_16.jpg</imageName>
+      <address>? 267 Marietta Street Atlanta GA</address>
+      <lex>RUTH,CHRIS,STEAK,HOUSE,CENTENNIAL,PARK,EMBASSY,SUITES,HOTEL,ATLANTA,OLYMPIC,STATS,GEORGIA,AQUARIUM,HILTON,GARDEN,INN,DOWNTOWN,CITY,SEGWAY,TOURS,BED,AVENUE,DELI,MARKET,LEGAL,SEA,FOODS,RISE,SUSHI,LOUNGE,HELLO,WORLD,COCA,COLA,CNN,STUDIO,CARVEL,ICE,CREAM,BAKERY,MAXS,COAL,OVEN,PIZZERIA,OMNI,CNN,CENTER,ATLANTIC,STATES,BANK,CONGRESS,IMAGINE,THE,CHILDREN,MUSEUM</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="114" width="881" x="203" y="257">
+            <tag>EMBASSY</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

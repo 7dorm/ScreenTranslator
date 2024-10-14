@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/04_04.jpg</imageName>
+      <address>538 North Glenoaks Boulevard Burbank CA</address>
+      <lex>CAM,PHOTO,IMAGING,THRIFT,LUX,CLEANERS,LOTUS,CHINESE,GOURMET,MASTER,NAILS,CUTTING,EDGE,GLENOAK,SHOE,REPAIR,VIVALDI,FLORIST,GIFTS,GOOD,TIME,VIDEO,ELEVEN,GROWING,YEARS,KINGS,COMIX,FLAMINGO,INSURANCE,UNIVERSITY,TRAVEL,SERVICES,BLOCK,INCOME,TAX,PREPARATION,RISHA,ENGINEERING,GROUP,ASSOCIATES,BARDI,PET,HAVEN,LINA,BEAUTY,SALON,CARE,CONCEPTS,COLONY,THEATRE,DATA,LINE</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="55" width="175" x="506" y="494">
+            <tag>MASTER</tag>
+         </taggedRectangle>
+         <taggedRectangle height="50" width="120" x="680" y="492">
+            <tag>NAILS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="27" width="71" x="1032" y="622">
+            <tag>GLENOAK</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

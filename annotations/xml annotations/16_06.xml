@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/16_06.jpg</imageName>
+      <address>? 261 Columbus Avenue San Francisco CA?</address>
+      <lex>CITY,LIGHTS,BOOKSTORE,JACK,KEROUAC,ALLEY,VESUVIO,JAZZ,PEARL,CLOSED,TUTTO,QUA,BEAT,MUSEUM,CHINATOWN,SAN,FRANCISCO,TOSCA,CAFE,SPECS,TWELVE,ADLER,BRANDY,HUNAN,FOOD,THE,STINKING,ROSE,LARRY,FLYNT,HUSTLER,CLUB,PUBLISHING,ROMOLO,HOTEL,HOUSE,RESTAURANT,GARDEN,EDEN,ENRICO,SIDEWALK,GREEN,TORTOISE,HOSTEL,GIORDANO,BROTHERS</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="148" width="199" x="417" y="491">
+            <tag>BOOKSTORE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="64" width="215" x="172" y="305">
+            <tag>CITY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="91" width="104" x="182" y="570">
+            <tag>CITY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="66" width="327" x="445" y="296">
+            <tag>LIGHTS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="93" width="125" x="251" y="494">
+            <tag>LIGHTS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

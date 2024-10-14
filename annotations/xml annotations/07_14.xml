@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/07_14.jpg</imageName>
+      <address>321 17th Street Denver CO?</address>
+      <lex>THE,BROWN,PALACE,HOTEL,AND,SPA,SHIP,TAVERN,COMFORT,INN,DOWNTOWN,REPUBLIC,PLAZA,DENVER,WELLS,FARGO,BANK,ELLYNGTON,1600,GLENARM,PLACE,LUXURY,APARTMENTS,THE,CHURCHILL,BAR,AFTERNOON,TEA,STARBUCKS,TRINITY,GRILLE,WORLD,TRADE,CENTER,EDUCATIONAL,PARAMOUNT,THEATRE,EARLS,RESTAURANT,BAKER,HUGHES,16TH,STREET,MALL,ENCANA,OIL,GAS,USA,INC,1670,BROADWAY,DELECTABLE,EGG2</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="44" width="149" x="228" y="322">
+            <tag>BROWN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="47" width="124" x="532" y="322">
+            <tag>HOTEL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="38" width="149" x="379" y="326">
+            <tag>PALACE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="33" width="72" x="728" y="328">
+            <tag>SPA</tag>
+         </taggedRectangle>
+         <taggedRectangle height="33" width="67" x="659" y="328">
+            <tag>AND</tag>
+         </taggedRectangle>
+         <taggedRectangle height="21" width="62" x="133" y="389">
+            <tag>COMFORT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="29" width="84" x="17" y="462">
+            <tag>COMFORT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="21" width="39" x="101" y="468">
+            <tag>INN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="13" width="31" x="149" y="404">
+            <tag>INN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

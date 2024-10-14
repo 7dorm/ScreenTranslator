@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/19_06.jpg</imageName>
+      <address>2161 P Street Northwest Washington DC 20037-1010</address>
+      <lex>THE,BRICKSKELLER,DINING,HOUSE,DOWN,HOME,SALOON,MARRAKESH,PALACE,HOTEL,PALOMAR,WASHINGTON,FIREPLACE,RESTAURANT,LEGEND,WALSH,STABLE,WESTPARK,CLEANERS,URBANA,AND,WINE,BAR,UNI,SUSHI,PLACE,SOHO,TEA,COFFEE,APEX,SOCIETY,THE,CINCINNATI,AIOLI,MEDITALIAN,GOURMET,BOOKS,FOR,AMERICA,USED,BOOKSTORE,FRACTURED,PRUNE,FUTONS,FURNITURE,RESIDENCE,INN,DUPONT,CIRCLE,FAIRFAX,EMBASSY,ROW,CREPES,GOGO,STARS,BISTRO</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="34" width="171" x="637" y="455">
+            <tag>FIREPLACE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

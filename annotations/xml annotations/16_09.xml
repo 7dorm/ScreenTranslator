@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/16_09.jpg</imageName>
+      <address>49 Stevenson Street San Francisco CA?</address>
+      <lex>YANK,SING,RESTAURANTS,CHEVRON,TOWER,MORGAN,PRIVATE,BANK,LOUIE,BAR,AND,GRILL,GOLDEN,GATE,UNIVERSITY,SALT,HOUSE,ORGANIC,INC,SATORI,YOGA,STUDIO,BARE,ESCENTUALS,SEPHORA,USA,MIXT,GREENS,BBDO,WEST,STACEY,BOOKSTORE,ONE,BUSH,PLAZA,MILLENNIUM,SAN,FRANCISCO,CENTRAL,PARKING,SYSTEM,TRIBAL,DDB,CHIPOTLE,MEXICAN,GGU,STUDENT,CENTER,CAFE,REALITY,DIGITAL</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="62" width="178" x="523" y="393">
+            <tag>SING</tag>
+         </taggedRectangle>
+         <taggedRectangle height="53" width="167" x="525" y="349">
+            <tag>YANK</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

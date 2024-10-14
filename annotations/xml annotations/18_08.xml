@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/18_08.jpg</imageName>
+      <address>1130 Broadway Seattle WA</address>
+      <lex>GARAGE,SILVER,CLOUD,BACCHUS,SAKE,BAR,BISTRO,CAYENNE,RESTAURANT,NEUMOS,GILDA,CLUB,SEATTLE,GLADSTONE,LAURA,POLYCLINIC,SLEEP,MEDICINE,CENTER,TACO,GUAYMAS,VIA,TRIBUNALI,MERCURY,ATLAS,CLOTHING,SWEAT,BOX,YOGA,QFC,FREDERICK,LEAF,QUINN,PUB,FIRST,BAPTIST,CHURCH,PIKE,STREET,FISH,FRY,CAFFE,VITA,COMET,TAVERN</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="183" width="873" x="150" y="263">
+            <tag>GARAGE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

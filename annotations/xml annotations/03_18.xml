@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/03_18.jpg</imageName>
+      <address>2535 Pearl Street Boulder CO</address>
+      <lex>MIKE,CAMERA,INC,BARNSLEY,TIRE,SPORTIQUE,SCOOTERS,ARES,THRIFT,SHOP,KBCO,BEADS,GOOGLE,HOSHI,MOTORS,SALON,SABIHA,LLC,KEY,BANK,BOULDER,LIGHT,BULB,SALVAGGIO,ITALIAN,DELI,HAWLEY,BEAR,ALIGNMENT,SERVICE,GUIRY,CHAMBER,COMMERCE,BUREAU,CONFERENCE,SERVICES,IVAN,GERRITY,AGENCY,SPRUCE,INTERNAL,MEDICINE,BROWNE,HILLARY,PEARL,STREET,DENTAL</lex>
+      <Resolution x="1918" y="900" />
+      <taggedRectangles>
+         <taggedRectangle height="50" width="287" x="362" y="366">
+            <tag>BARNSLEY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="60" width="136" x="667" y="364">
+            <tag>TIRE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

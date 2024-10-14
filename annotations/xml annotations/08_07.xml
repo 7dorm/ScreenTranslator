@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/08_07.jpg</imageName>
+      <address>1100 Texas Street Houston TX</address>
+      <lex>HOUSTON,MAGNOLIA,HOTEL,CHRIST,CHURCH,CATHEDRAL,ALDEN,TREEBEARD,RESTAURANT,HUBCAB,GRILL,FEDERAL,DETENTION,CENTER,FLYING,SAUCER,CUBB,ANTHONY,CLUB,QUARTERS,ZULA,COUNTY,HARRIS,HUMAN,RESOURCES,LITTLE,NAPOLI,ITALIAN,RESTURANT,NEW,HOPE,HOUSING,INC,IRMA,SOUTHWEST,EPISCOPAL,DIOCESE,TEXAS,GARZA,ROBERTO,MOLLY,PUB,DISCOVER,TOURS,RESUMES,DESIGN</lex>
+      <Resolution x="1278" y="880" />
+      <taggedRectangles>
+         <taggedRectangle height="33" width="198" x="644" y="403">
+            <tag>MAGNOLIA</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/11_03.jpg</imageName>
+      <address>23 North Orange Blossom Trail Orlando FL</address>
+      <lex>ARMY,NAVY,STORE,CYCLE,ONE,MOTORSPORTS,JOSHUA,GENERATION,CLASSIC,MACHINE,SHOP,POPEYE,CHICKEN,BISCUITS,FLORIDA,OUTDOOR,SPORTS,NOVELTY,NAPA,AUTO,PARTS,GEM,SUPPLY,HAVANA,CAFE,TROPICAL,TIRE,AND,SERVICE,INC,REMANUFACTURED,TRANSMISSION,FACTORY,DIRECT,ALTAMONTE,RATED,WITH,BBB,GCR,CENTER,FLEA,MARKET,SAVE,BARGAIN,PANELING,HAMMOND,ELECTRONICS,LABOR,READY,PRECISION,REPAIR,MACHO,COLLISION,1957,HOLDINGS,FACTORY,DIRECT,TRANSMISSION,DOWNTOWN,ORLANDO,MAITLAND,COLLEGE,PARK</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="94" width="228" x="436" y="313">
+            <tag>ARMY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="100" width="292" x="675" y="305">
+            <tag>STORE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

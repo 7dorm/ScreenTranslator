@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/09_03.jpg</imageName>
+      <address>111 West Maryland Street Indianapolis IN</address>
+      <lex>HOULIHAN,CIRCLE,CENTRE,MALL,PALOMINO,STEAK,SHAKE,RAM,RESTAURANT,BREWERY,ELMO,HOUSE,RUTH,CHRIS,DOWNTOWN,INDIANAPOLIS,CANTERBURY,HOTEL,CHAMPPS,AMERICANA,THE,CHANG,CHINA,BISTRO,ALCATRAZ,BREWING,DENTIST,MIKADO,JAPANESE,NOODLES,HYATT,REGENCY,CONRAD,HOTEL,HARRY,IZZY,SOUTH,MERIDIAN,REGAL</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="42" width="167" x="564" y="348">
+            <tag>HOULIHAN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="48" width="216" x="463" y="250">
+            <tag>HOULIHAN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

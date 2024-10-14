@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/14_10.jpg</imageName>
+      <address>422 Northwest 8th Avenue Portland OR</address>
+      <lex>PARK,KITCHEN,511,FEDERAL,BUILDING,TIGER,BAR,KALISTA,SALON,AND,SPA,GILT,CLUB,PEEMKAEW,THAI,RESTAURANT,CRITERION,MUSEUM,CONTEMPORARY,CRAFT,HONEYMAN,HARDWARE,HARVEY,COMEDY,HIVE,MODERN,DESIGN,BLACKFISH,GALLERY,OGLE,INC,LUMEN,ESSENCE,LIGHTING,BOXER,NORTHWEST,PASSPORT,IMMIGRATION,PHOTOS,KOOPMAN,OSTBO,NATURALIZATION,ELIZABETH,LEACH,ECONO,LODGE,CONVENTION,CENTER</lex>
+      <Resolution x="1278" y="872" />
+      <taggedRectangles>
+         <taggedRectangle height="81" width="263" x="674" y="277">
+            <tag>KITCHEN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="82" width="155" x="524" y="282">
+            <tag>PARK</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

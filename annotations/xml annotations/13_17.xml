@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/13_17.jpg</imageName>
+      <address>201 East Jefferson Street Phoenix AZ</address>
+      <lex>AIRWAYS,ARENA,SUNS,LEGACY,PARTNERS,LLC,JACKSON,THIRD,ALICE,COOPER,TOWN,PHOENIX,PHX,ROADRUNNERS,TEAM,SHOPS,HIGHLAND,TRANSPORTATION,WHATABURGER,JOHN,KING,ASSOCIATES,LTD,TALKING,HANDS,PALAZZETTO,RESTAURANT,STOUDEMIRES,DOWNTOWN,JEFFERSON,STREET,BAR,GRILL,TOYOTA,CLUB,SUBWAY,LEAVY,RESTAURANTS,CIVIC,PLAZA,LEXUS,CENTER,ROAD,RUNNER,PRESSURE,CLEANING,LLC,CHALLENGER,INDUSTRIES</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="44" width="203" x="340" y="292">
+            <tag>AIRWAYS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="45" width="207" x="552" y="274">
+            <tag>CENTER</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

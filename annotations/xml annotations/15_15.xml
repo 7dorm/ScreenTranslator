@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/15_15.jpg</imageName>
+      <address>643 5th Avenue San Diego CA 92101-6915</address>
+      <lex>GHIRARDELLI,CHOCOLATE,GREYSTONE,THE,STEAKHOUSE,GASLAMP,QUARTER,ASSOCIATION,BORDERS,BOOKSTORE,BOOKS,MUSIC,MOVIES,HENRY,PUB,RESTAURANT,FIESTA,LOUNGE,BAR,HOSTELLING,INTERNATIONAL,USA,URBAN,OUTFITTERS,CHIANTI,WHISKEY,GIRL,HOSTELS,SAN,DIEGO,CHEESE,SHOP,TRATTORIA,STRADA,JIMMY,LOVE,ROCK,BOTTOM,BREWERY,BLUE,POINT,COASTAL,CUISINE,LIME,OSTERIA,PANEVINO,ASTI,RISTORANTE,FINE,DINING,SIDE</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="61" width="407" x="482" y="501">
+            <tag>CHOCOLATE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="98" width="731" x="177" y="354">
+            <tag>GHIRARDELLI</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/13_11.jpg</imageName>
+      <address>1636 South 7th Street Phoenix AZ</address>
+      <lex>MAGIC,AUTO,SALES,ENTERPRISE,RENT,CAR,FIESTA,MOTORS,CAMACHO,COMPLETE,SERVICES,TOM,LOS,ARCOS,RESTAURANT,BAR,TACO,BELL,SAMYRA,LEBANESE,CUISINE,MOTEL,MANNY,DISCOUNT,REPAIR,KENZIE,ASSET,MANAGEMENT,1601,SOUTH,7TH,STREET,LLC,LLANTERA,FAMOSOS,BEST,WESTERN,MOTOR,LALO,CANTINA,AND,DANCING,THOMAS,PIPE,SUPPLY,PEREZ,TRIM,SHOP,COYOTE,KITCHEN,DINER,DIAMOND,PLATE,SERVICE,WEST,DELIVERY,EXPRESS</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="34" width="106" x="474" y="452">
+            <tag>AUTO</tag>
+         </taggedRectangle>
+         <taggedRectangle height="31" width="120" x="351" y="455">
+            <tag>MAGIC</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

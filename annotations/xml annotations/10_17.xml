@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/10_17.jpg</imageName>
+      <address>30 Vesey Street New York NY USA</address>
+      <lex>PETER,CATHOLIC,CHURCH,MILLENIUM,HILTON,NEW,YORK,HOTEL,PAUL,CHAPEL,WORLD,TRADE,CENTER,PATH,STATION,STAGE,DOOR,DELI,III,WOOLWORTH,BUILDING,BARCLAY,TOWER,JEAN,LOUIS,DAVID,STAPLES,CLIPPER,CITY,TALL,SHIP,OPERATED,MANHATTAN,SAIL,SPORTS,CLUBS,COUNTY,LAWYERS,ASSOCIATION,LIB,KITCHEN,CENTURY,DEPARTMENT,STORE,AMBASSADORWAY,TRAVEL,SHOPPING,TENT,TRAILS,HALL,PARK,ROW,BANKRUPTCY,LAW,OFFICES,STEPHEN,KASS,CHAPTER</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="95" width="200" x="636" y="132">
+            <tag>DAVID</tag>
+         </taggedRectangle>
+         <taggedRectangle height="107" width="193" x="229" y="114">
+            <tag>JEAN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="112" width="220" x="420" y="115">
+            <tag>LOUIS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

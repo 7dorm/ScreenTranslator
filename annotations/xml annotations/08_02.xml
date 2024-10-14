@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/08_02.jpg</imageName>
+      <address>914 Dallas Street Houston TX</address>
+      <lex>COURTYARD,HOUSTON,DOWNTOWN,CONVENTION,CENTER,RESIDENCE,INN,HUMBLE,TOWER,APARTMENTS,THE,TIPPING,POINT,STARBUCKS,MACYS,POLICE,DEPARTMENT,FOREVER,GONZALEZ,FIRST,UNITED,METHODIST,CHURCH,RELIANT,ENERGY,PLAZA,BOOKS,MILLION,MCCORMICK,SCHMICK,EDGE,PETROLEUM,CORPORATION,JAMES,CONEY,ISLAND,BUFFALO,WILD,WINGS,FAX,YOUR,ORDER,HYATT,HOTELS,RESORTS,REGENCY,INNOVUS,INC,ZERO,SANDWICH,SHOP,SAMSON,RESOURCES</lex>
+      <Resolution x="1280" y="880" />
+      <taggedRectangles>
+         <taggedRectangle height="30" width="222" x="411" y="381">
+            <tag>STARBUCKS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

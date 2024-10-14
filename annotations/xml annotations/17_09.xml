@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/17_09.jpg</imageName>
+      <address>302 South Market Street San Jose CA 95113-2889</address>
+      <lex>SAINTE,CLAIRE,HOTEL,SAN,JOSE,MARRIOTT,FORNAIO,ORIGINAL,JOE,RESTAURANT,MOSAIC,MONTGOMERY,CONVENTION,CENTER,CIVIC,AUDITORIUM,THE,TECH,MUSEUM,MAGISTRATE,MCCORMICK,SCHMICK,SEAFOOD,EULIPIA,BAR,CAFFE,TRIESTE,FAIRMONT,LUXURY,JERSEYS,BLUE,CHIP,AGENDA,LOUNGE,ANNO,DOMINI,CASA,DEL,PUEBLO,ANDERSON,BRULE</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="67" width="240" x="625" y="363">
+            <tag>CLAIRE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="60" width="227" x="394" y="363">
+            <tag>SAINTE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="62" width="137" x="251" y="366">
+            <tag>THE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

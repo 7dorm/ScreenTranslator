@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/15_06.jpg</imageName>
+      <address>702 Ash Street San Diego CA 92101-3228</address>
+      <lex>CORTEZ,HOLIDAY,INN,EXPRESS,SAN,DIEGO,RODEWAY,SUITES,DOWNTOWN,SOLE,LUNA,CAFE,C13,SALON,PACIFIC,SHORES,CARPET,CARE,DAYS,QUALITY,HERITAGE,LITTLE,YOGA,STUDIO,SYMPHONY,ORCHESTRA,BEST,WESTERN,CABRILLO,GARDEN,SHERATON,HALL,CINEMAVIVA,ANTHONY,RANDALL,UPTOWN,CLEANERS,ABUNDANT,COATINGS,KIPP,ADELANTE,PREPARATORY,ACADEMY,MADE,MEXICO,INC,LONDON,GROUP,REALTY,ADVISORS</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="90" width="305" x="559" y="496">
+            <tag>CORTEZ</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

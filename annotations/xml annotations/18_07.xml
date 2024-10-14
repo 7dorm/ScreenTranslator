@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/18_07.jpg</imageName>
+      <address>1926 2nd Avenue Seattle WA?</address>
+      <lex>MOORE,HOTEL,SCHMANCY,BUENOS,AIRES,GRILL,WHISKY,BAR,IAN,NITE,LITE,RESTAURANT,SERIOUS,PIE,PICHET,FANCY,ZANADU,COMICS,JAPANESE,IZAKAYA,WANN,LONG,GREAT,JONES,HOMES,STEWART,PENSIONE,NICHOLS,BLARNEY,STONE,PUB,PETER,MILLER,CURRENT,DETAILS,POLITE,SOCIETY,JOSEPHINUM,CAFFE,ARTE</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="41" width="112" x="667" y="420">
+            <tag>HOTEL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="46" width="104" x="641" y="505">
+            <tag>HOTEL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="41" width="131" x="534" y="421">
+            <tag>MOORE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="39" width="127" x="509" y="502">
+            <tag>MOORE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

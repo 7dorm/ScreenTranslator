@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/07_12.jpg</imageName>
+      <address>110 16th Street Denver CO</address>
+      <lex>COLORADO,STATE,GOVERNMENT,COMMISSION,HIGHER,EDUCATION,WORLD,TRADE,CENTER,EDUCATIONAL,SHERATON,DENVER,DOWNTOWN,HOTEL,DAZBOG,COFFEE,JIMMY,JOHN,GOURMET,SANDWICHES,DONALD,POST,THE,CUSTOMER,SUBSCRIPTION,SERVICES,SUBWAY,CORPORATION,SHERIDAN,ROSS,NEWSPAPER,AGENCY,RTD,TEKJET,LLC,KATIE,MULLENS,LYMAN,HENN,INC,ROCKY,MOUNTAIN,NEWS,NAILS,CARE,SALON,VERACITY,CREDIT,CONSULTANTS,TECHNOLOGIES,1600,BROADWAY</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="143" width="470" x="156" y="214">
+            <tag>JIMMY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="105" width="277" x="634" y="253">
+            <tag>JOHN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

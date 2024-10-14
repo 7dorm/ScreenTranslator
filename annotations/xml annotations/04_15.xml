@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/04_15.jpg</imageName>
+      <address>149 South Glenoaks Boulevard Burbank CA 91502-1315</address>
+      <lex>CAFE,COLOMBIA,TOKYO,YAKIDORI,SOLAR,CENTRAL,PAK,MAIL,LAND,RECORDS,DONNA,FLORIST,GARIBYAN,MELANYA,THE,PEOPLE,FURNITURE,INC,MANSOOR,KARAMOOZ,DERMAPHIL,LASER,AND,SKIN,CARE,CENTER,BEAUTY,KISS,FLOOR,WINDOW,CLEANING,PLACE,ARTISTRY,ENTERTAINMENT,INTERNATIONAL,HOME,RUN,SPORTS,SCHOLASTIC,GARDENS,FAKHRIRAN,GHAHARI,BASE,CONSTRUCTION,SWORDS,FENCING,STUDIO,SODIUM</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="26" width="96" x="722" y="515">
+            <tag>GARIBYAN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="28" width="87" x="637" y="514">
+            <tag>MELANYA</tag>
+         </taggedRectangle>
+         <taggedRectangle height="46" width="132" x="907" y="488">
+            <tag>CLEANING</tag>
+         </taggedRectangle>
+         <taggedRectangle height="44" width="109" x="1036" y="492">
+            <tag>PLACE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

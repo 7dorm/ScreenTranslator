@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/16_16.jpg</imageName>
+      <address>1192 Market Street San Francisco CA?</address>
+      <lex>ORPHEUM,THEATRE,ART,INSTITUTES,CALIFORNIA,MAIN,LIBRARY,SAN,FRANCISCO,VISITORS,INFO,HEART,THE,CITY,FARMER,HOTEL,WHITCOMB,SOMA,TRINITY,PLAZA,CIVIC,CENTER,BART,ASIAN,MUSEUM,CARSHARE,STARBUCKS,MOONSTAR,RESTAURANT,RAMADA,INTERNATIONAL,HOLIDAY,INN,GYRO,KING,BURGER,MANAGEMENT,SERVICES,AIRPORT,MARKET,STREET,GRILL,KAISER,ROOFING</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="71" width="245" x="315" y="344">
+            <tag>ORPHEUM</tag>
+         </taggedRectangle>
+         <taggedRectangle height="80" width="253" x="581" y="305">
+            <tag>THEATRE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

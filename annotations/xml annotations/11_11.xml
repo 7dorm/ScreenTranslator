@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/11_11.jpg</imageName>
+      <address>401 West Livingston Street Orlando FL 32801</address>
+      <lex>BOB,CARR,PERFORMING,ARTS,CENTRE,ORLANDO,MARRIOTT,DOWNTOWN,CENTER,SPECTATORS,SPORTSBAR,CONVENTION,SERVICES,FACILITIES,AMWAY,ARENA,HERTZ,LOCAL,EDITION,LIVINGSTON,STREET,CAFE,LANIER,PARKING,SYSTEM,OFFICE,INC,CELESTIAL,TRAVEL,SOLUTIONS,LEGENDS,TICKETMASTER,ALPHA,BROADCASTING,FRINGE,FESTIVAL,ACCESS,LYNX,AVISPL,TECH,PETRONES,ITALIAN,RESTAURANT,SECUR,AMERICA</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="41" width="57" x="660" y="332">
+            <tag>ARTS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="38" width="55" x="645" y="294">
+            <tag>BOB</tag>
+         </taggedRectangle>
+         <taggedRectangle height="38" width="68" x="700" y="294">
+            <tag>CARR</tag>
+         </taggedRectangle>
+         <taggedRectangle height="41" width="95" x="722" y="332">
+            <tag>CENTER</tag>
+         </taggedRectangle>
+         <taggedRectangle height="36" width="131" x="528" y="331">
+            <tag>PERFORMING</tag>
+         </taggedRectangle>
+         <taggedRectangle height="23" width="67" x="521" y="391">
+            <tag>ORLANDO</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

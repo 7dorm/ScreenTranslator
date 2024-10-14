@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/11_15.jpg</imageName>
+      <address>634 North Mills Avenue Orlando FL</address>
+      <lex>COLONIAL,PHOTO,HOBBY,INC,ANH,HONG,RESTAURANT,DANDELION,COMMUNITEA,CAFE,ORGANIC,VEGETARIAN,TEAHOUSE,LITTLE,SAIGON,TIEN,HUNG,COMPLETE,ORIENTAL,RHINO,POWER,ORLANDO,CARPET,CLEANING,UPHOLSTERY,AVALON,ABC,BARTENDING,SCHOOL,LOLLICUP,COFFEE,TEA,PHO,NOODLE,RUG,AND,PAUL,MEDICAL,CLINIC,PHAM,HIEP,MING,BISTRO,LAZARUS,INVESTMENTS,WENK,SCOTT,DDS,RAUSCH,YVONNE,DMD,DAVIS,WILBUR,VIETNAM,TOWN,CHEN,PETER,MMSC,BUCHS,ANDRE</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="75" width="333" x="92" y="330">
+            <tag>COLONIAL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="77" width="260" x="746" y="322">
+            <tag>HOBBY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="64" width="131" x="1017" y="330">
+            <tag>INC</tag>
+         </taggedRectangle>
+         <taggedRectangle height="68" width="236" x="447" y="330">
+            <tag>PHOTO</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

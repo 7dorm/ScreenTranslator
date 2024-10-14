@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/03_16.jpg</imageName>
+      <address>2506 Spruce Street Boulder CO</address>
+      <lex>SPORTIQUE,SCOOTERS,ARES,THRIFT,SHOP,BOULDER,LIGHT,BULB,HOSHI,MOTORS,MIKE,CAMERA,INC,BARNSLEY,TIRE,HAWLEY,BEAR,ALIGNMENT,SERVICE,BUFFALO,MAINTENANCE,REPAIR,SALON,SABIHA,LLC,BEADS,SPRUCE,INTERNAL,MEDICINE,BROWNE,HILLARY,GOOGLE,KBCO,STREET,AUTO,4X4,CENTER,LING,SHEILA,MARY,LANGLOIS,SALVAGGIO,ITALIAN,DELI,ROCKY,MOUNTS,IVAN,GERRITY,AGENCY</lex>
+      <Resolution x="1918" y="898" />
+      <taggedRectangles>
+         <taggedRectangle height="72" width="309" x="780" y="394">
+            <tag>SCOOTERS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="118" width="389" x="725" y="237">
+            <tag>SPORTIQUE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="29" width="108" x="885" y="525">
+            <tag>SPRUCE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

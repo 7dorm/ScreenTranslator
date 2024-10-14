@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/14_07.jpg</imageName>
+      <address>425 Southwest Washington Street Portland OR</address>
+      <lex>GREEK,CUSINA,KELLY,OLYMPIAN,HOTEL,MONACO,PORTLAND,KIMPTON,EVEREST,COLLEGE,VEGANOPOLIS,FIFTH,AVENUE,SUITES,HUSH,CAFE,CITY,SPORTS,BAR,RESTAURANT,RIALTO,OTB,BETTING,PARLOR,GERALDI,ITALIAN,EATING,PLACE,BLUEPLATE,LUNCH,COUNTER,AND,SODA,FOUNTAIN,ANI,COLLECTIONS,ALDER,MEIER,FRANK,LUGGAGE,COMPANY,AROY,THAI,CUISINE,RED,STAR,TAVERN,HUBER,DEKUM,BUILDING,SPALDING</lex>
+      <Resolution x="1278" y="882" />
+      <taggedRectangles>
+         <taggedRectangle height="70" width="332" x="827" y="293">
+            <tag>COLLEGE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="68" width="323" x="479" y="288">
+            <tag>EVEREST</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/03_03.jpg</imageName>
+      <address>2610 Pearl Street Boulder CO</address>
+      <lex>GOOGLE,SALVAGGIO,ITALIAN,DELI,COLORADO,DAILY,SALON,SABIHA,LLC,ROCKY,MOUNTS,CIRCUIT,CITY,BOULDER,ARES,THRIFT,SHOP,SPICY,PICKLE,MIKE,CAMERA,INC,KEY,BANK,WAHOO,FISH,TACO,LLC,GOODTIMES,BABAEE,RUG,GALLERY,NOODLES,OLIVE,GARDEN,RUNNING,CASPIAN,GROCERY,IVAN,GERRITY,AGENCY,SPORTIQUE,SCOOTERS,PEARL,STREET,DENTAL</lex>
+      <Resolution x="1910" y="896" />
+      <taggedRectangles>
+         <taggedRectangle height="162" width="431" x="560" y="323">
+            <tag>COLORADO</tag>
+         </taggedRectangle>
+         <taggedRectangle height="133" width="199" x="987" y="368">
+            <tag>DAILY</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

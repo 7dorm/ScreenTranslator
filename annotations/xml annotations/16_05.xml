@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/16_05.jpg</imageName>
+      <address>121 7th Street San Francisco CA</address>
+      <lex>BEST,WESTERN,AMERICANIA,CUSTOM,BURGER,AND,LOUNGE,CARRIAGE,INN,GOOD,HOTEL,MOTELS,SAN,FRANCISCO,INC,FLAMINGO,FEDERAL,BUILDING,SOMA,RESIDENCES,GENERAL,BEAD,ART,GLASS,BUTTONS,TONY,BALONYS,PIZZA,CITY,PAINTS,ROXANNE,CAFE,MISSION,RESTAURANT,HEAVEN,DOG,PEPPERS,ROSY,HEELS,SOUTH,MARKET,HEALTH,CENTER,RAMADA,DOWNTOWN,INCREDIBLE,ADVENTURES</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="71" width="319" x="514" y="300">
+            <tag>AMERICANIA</tag>
+         </taggedRectangle>
+         <taggedRectangle height="44" width="86" x="367" y="352">
+            <tag>BEST</tag>
+         </taggedRectangle>
+         <taggedRectangle height="50" width="139" x="345" y="382">
+            <tag>WESTERN</tag>
+         </taggedRectangle>
+         <taggedRectangle height="66" width="188" x="580" y="371">
+            <tag>HOTEL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/18_06.jpg</imageName>
+      <address>? 911 Pine Street Seattle WA</address>
+      <lex>PARAMOUNT,THEATRE,TOWER,801,APARTMENTS,WORLDMARK,THE,CAMLIN,DEFINED,LTD,CAFE,LADRO,HOTEL,DRAGONFISH,ASIAN,CONSTRUCTION,INC,GRAND,HYATT,SEATTLE,WEST,COAST,CORPORATION,OLIVE,RUTH,CHRIS,STEAK,HOUSE,WASHINGTON,STATE,CONVENTION,CENTER,CYBER,DOGS,BAROQUE,ORCHESTRA,THEATER,GROUP,BAMBUZA,VIETNAMESE,BISTRO,ROOSEVELT</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="124" width="536" x="364" y="213">
+            <tag>PARAMOUNT</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

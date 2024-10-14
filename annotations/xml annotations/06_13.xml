@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/06_13.jpg</imageName>
+      <address>6312 La Vista Drive Dallas TX</address>
+      <lex>STARBUCKS,LAKEWOOD,THEATER,MATT,RANCHO,MARTINEZ,TEXAS,NEUROLOGY,CENTENNIAL,FINE,WINE,SPIRITS,ANGELO,ITALIAN,GRILL,BAR,COCK,BULL,NEIGHBORHOOD,PUB,WELLS,FARGO,BANK,LAEKWOOD,TAVERN,ROCKET,SCIENCE,SALON,DIXIE,HOUSE,RESTAURANT,SLATE,KELLI,DDS,SCHWARTZ,ROBT,BALCONY,CLUB,DENTAL,CENTER,AMERICA,JACK,THE,BOX,UPPER,PLACE</lex>
+      <Resolution x="1680" y="1050" />
+      <taggedRectangles>
+         <taggedRectangle height="102" width="510" x="387" y="336">
+            <tag>STARBUCKS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="67" width="135" x="51" y="465">
+            <tag>STARBUCKS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

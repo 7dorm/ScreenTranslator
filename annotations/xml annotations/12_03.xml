@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/12_03.jpg</imageName>
+      <address>131 Market Street Philadelphia PA 19107</address>
+      <lex>LOEWS,HOTELS,PHILADELPHIA,HARD,ROCK,CAFE,MARRIOTT,DOWNTOWN,READING,TERMINAL,MARKET,MAGGIANO,LITTLE,ITALY,ARAMARK,CORPORATION,SOLEFOOD,DOWN,HOME,DINER,13TH,JUNIPER,SEPTA,STATION,MELTING,POT,RESTAURANT,FIELD,HOUSE,SPICE,INC,FEDEX,OFFICE,PRINT,SHIP,CENTER,BASSETT,ICE,CREAM,WINE,SPIRITS,STORES,SEPTA,PHILA,CITY,COUNTY,CENTRALIZED,INTAKE,THIRTEEN,CHAMPIONS,THE,AMERICAN,SPORTS,BAR,HALL</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="41" width="79" x="238" y="538">
+            <tag>HARD</tag>
+         </taggedRectangle>
+         <taggedRectangle height="33" width="61" x="800" y="568">
+            <tag>HARD</tag>
+         </taggedRectangle>
+         <taggedRectangle height="38" width="70" x="323" y="548">
+            <tag>ROCK</tag>
+         </taggedRectangle>
+         <taggedRectangle height="38" width="69" x="858" y="566">
+            <tag>ROCK</tag>
+         </taggedRectangle>
+         <taggedRectangle height="13" width="32" x="859" y="598">
+            <tag>CAFE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="15" width="43" x="303" y="580">
+            <tag>CAFE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

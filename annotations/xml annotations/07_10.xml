@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/07_10.jpg</imageName>
+      <address>200 16th Street Denver CO?</address>
+      <lex>SHERATON,DENVER,DOWNTOWN,HOTEL,WORLD,TRADE,CENTER,EDUCATIONAL,DONALD,KATIE,MULLENS,COLORADO,STATE,GOVERNMENT,COMMISSION,HIGHER,EDUCATION,DAZBOG,COFFEE,QUIZNOS,JIMMY,JOHN,GOURMET,SANDWICHES,AGREN,BLANDO,COURT,REPORTING,VIDEO,INC,POST,CORPORATION,SYS,TEST,LABS,BRAVO,RISTORANTE,1600,BROADWAY,NAILS,CARE,SALON,NEWSPAPER,AGENCY,KEY,BANK,GLOBAL,CAREER,MANAGEMENT,ENERGY,SOLUTIONS,REPUBLIC,PLAZA,THE,CUSTOMER,SUBSCRIPTION,SERVICES</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="50" width="133" x="617" y="447">
+            <tag>DONALD</tag>
+         </taggedRectangle>
+         <taggedRectangle height="16" width="76" x="523" y="541">
+            <tag>DONALD</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

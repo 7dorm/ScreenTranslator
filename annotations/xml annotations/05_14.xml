@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/05_14.jpg</imageName>
+      <address>3455 South Wabash Avenue Chicago IL</address>
+      <lex>SALLE,ALUMNI,ASSOCIATION,CROWN,HALL,SHIMER,COLLEGE,CHICAGO,FIRE,DEPARTMENT,MOTHER,BUTTER,POPCORN,AND,CONFECTIONARY,STARBUCKS,ILLINOIS,INSTITUTE,TECH,POLICE,HEADQUARTERS,IIT,RESEARCH,ASPECT,RALLY,HAMBURGERS,MEDICAL,SECTION,INFORMATION,SERVICES,CHURCH,CHICKEN,CITY,CYBER,911,LUGENIA,BURNS,HOPE,CENTER,YOUTH,CONNECTIONS,CHARTER,SCHOOL,PERSONNEL,DIVISION,BOULEVARD,CARE</lex>
+      <Resolution x="1278" y="880" />
+      <taggedRectangles>
+         <taggedRectangle height="22" width="74" x="683" y="198">
+            <tag>SALLE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

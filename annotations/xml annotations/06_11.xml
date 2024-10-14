@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/06_11.jpg</imageName>
+      <address>6033 Oram Street Dallas TX</address>
+      <lex>BANGKOK,INN,CALLE,DOCE,REDENTA,GARDEN,GOLD,RUSH,CAFE,YORK,STREET,CONSIGNMENT,SOLUTION,BENNY,BAGELS,EAST,DALLAS,DEVELOPMENTAL,CENTER,XMAXGAMES,LLC,COFFEE,TIPPERARY,POUR,HOUSE,COUNSELING,EVANS,JOHN,BAKER,PHD,METRO,PAWS,ANIMAL,HOSPITAL,GENERAL,CHINA,RESTAURANT,PAPERBACKS,PLUS,BOULEVARD,REALTY,PETER,POHLS,WINE,THERAPIST,LAKEWOOD,LANDING,PIZZA,HUT</lex>
+      <Resolution x="1680" y="1050" />
+      <taggedRectangles>
+         <taggedRectangle height="124" width="682" x="365" y="212">
+            <tag>BANGKOK</tag>
+         </taggedRectangle>
+         <taggedRectangle height="104" width="192" x="1050" y="234">
+            <tag>INN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

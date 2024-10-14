@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/16_07.jpg</imageName>
+      <address>309 Clement Street San Francisco CA?</address>
+      <lex>BURMA,SUPERSTAR,RESTAURANT,BLUE,DANUBE,COFFEE,HOUSE,GENKI,CREPES,ROCKIT,ROOM,RESTAURANT,AND,WINE,BAR,CAFE,TROYA,KING,THAI,NOODLE,MURASAKI,SUSHI,BAR,PARK,LIFE,PHO,CLEMENT,TOY,BOAT,DESSERT,LEE,HOU,JAVA,SOURCE,STRESS,REDUCTION,CENTER,CITIKIDS,BABY,NEWS,STORE,BITTER,END,CHASE,BANK,ATM,MAI,VIETNAMESE</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="45" width="178" x="556" y="349">
+            <tag>BURMA</tag>
+         </taggedRectangle>
+         <taggedRectangle height="42" width="278" x="750" y="344">
+            <tag>SUPERSTAR</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

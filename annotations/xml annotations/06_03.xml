@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/06_03.jpg</imageName>
+      <address>2019 North Henderson Avenue Dallas TX</address>
+      <lex>FUJI,MASSAGE,CAFE,SAN,MIGUEL,ATORON,LOUIE,BARCADIA,LLC,BICH,HUONG,NGUYEN,INC,TAQUERIA,LUPITAS,TIJERA,SALON,GARZA,CHIROPRACTIC,BLUE,COLLAR,BAR,PEARL,CUP,LLC,THE,AGAIN,DESIGN,STUDIO,GEORGE,VALEDON,STEVENSON,LYDIA,JOSEPHA,PEREZ,LAW,OFFICE,AVALON,APARTMENTS,XEONIX,ALFREDO,ITALIAN,CUISINE,AND,SEAFOOD,RELOCATING,SANDY,LUPITA</lex>
+      <Resolution x="1680" y="1050" />
+      <taggedRectangles>
+         <taggedRectangle height="55" width="134" x="660" y="310">
+            <tag>FUJI</tag>
+         </taggedRectangle>
+         <taggedRectangle height="21" width="63" x="849" y="367">
+            <tag>MASSAGE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

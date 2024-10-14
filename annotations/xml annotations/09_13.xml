@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/09_13.jpg</imageName>
+      <address>624 South Missouri Street Indianapolis IN</address>
+      <lex>JOBSITE,SUPPLY,LUCAS,OIL,STADIUM,STAYBRIDGE,SUITES,INDIANAPOLIS,CITY,CENTRE,INDIANA,CONVENTION,CENTER,MEN,WORK,RELEASE,COMFORT,HOLIDAY,INN,EXPRESS,HOTEL,FULLEN,AUTO,TRUCK,ELECTRIC,YOUNG,SONS,INC,SPENCER,TAVERN,NAPA,PARTS,VANCOM,MUSSETT,NICHOLAS,ASSOCIATES,CHRISTIE,MACHINE,WORKS,BASEY,DOWNTOWN,GRILL,WELDING,WAYMIRES,DISCOUNT,TRAILER</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="36" width="183" x="528" y="341">
+            <tag>JOBSITE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="33" width="168" x="535" y="369">
+            <tag>SUPPLY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="23" width="56" x="683" y="411">
+            <tag>WORK</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

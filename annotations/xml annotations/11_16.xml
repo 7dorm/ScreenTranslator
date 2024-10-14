@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/11_16.jpg</imageName>
+      <address>1106 East Colonial Drive Orlando FL</address>
+      <lex>LITTLE,SAIGON,RESTAURANT,INC,ANH,HONG,RHINO,POWER,ORLANDO,CARPET,CLEANING,UPHOLSTERY,COLONIAL,PHOTO,HOBBY,TIEN,HUNG,COMPLETE,ORIENTAL,VIETNAM,TOWN,DANDELION,COMMUNITEA,CAFE,ORGANIC,VEGETARIAN,TEAHOUSE,PHO,NOODLE,ARTIC,PEST,CONTROL,ALL,CARE,MING,BISTRO,JEWELRY,ACE,RUBBER,STAMP,SIGN,ASIAN,MARKET,GINZA,JAPANESE,STEAK,HOUSE,CRUISES,ONLY,FLORIDA,INSURANCE,GROUP,LIBERTY,IMMIGRATION,SERVICES,LOLLICUP,COFFEE,TEA</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="108" width="317" x="239" y="344">
+            <tag>LITTLE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="122" width="458" x="550" y="338">
+            <tag>SAIGON</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

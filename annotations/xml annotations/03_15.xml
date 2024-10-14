@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/03_15.jpg</imageName>
+      <address>1135 13th St Boulder CO</address>
+      <lex>FOX,THEATRE,SINK,MAMACITAS,HAPA,THE,HILL,ALBUMS,BURNT,TOAST,RESTAURANT,HALF,FAST,SUBS,THE,BOULDER,INTERNATIONAL,HOSTEL,ESPRESSO,ROMA,ABO,PIZZA,LOLLICUP,SALVAGGIO,DELI,SOLE,SHOE,BOUTIQUE,BUCHANAN,COFFEE,PUB,ILLEGAL,PETES,FULL,CYCLE,WHICH,WICH,SUPERIOR,SANDWICH,JIMMY,JOHN,GOURMET,SANDWICHES,ART,FLOWER,UNIVERSITY,MARKET</lex>
+      <Resolution x="1916" y="900" />
+      <taggedRectangles>
+         <taggedRectangle height="154" width="320" x="1115" y="79">
+            <tag>FOX</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/05_12.jpg</imageName>
+      <address>2007 South Racine Avenue Chicago IL</address>
+      <lex>MAX,TOWING,MARIACHI,MEXICO,VIVO,RESURRECTION,PROJECT,KEVIN,SMITH,PHOTOGRAPHY,INTERNATIONAL,RECORDS,ILLINOIS,ENGINEERED,PRODUCTS,CASA,AZTLAN,ACORN,WIRE,IRON,WORKS,LLC,AEROTECHTURE,INC,MAY,STREET,CAFE,PONCE,BUILDERS,CHICAGO,BATHROOM,HOME,RENOVATION,AND,REMODELING,OPEN,KITCHENS,DVORAK,PARK,MASONRY,AND,CONCRETE,CONTRACTORS,PEREZ,PUBLIC,SCHOOL,MEALS,WHEELS,HONKY,TONK,BBQ,PILSEN,ALLIANCE,DENTIST,BROADWAY,COSTUMES</lex>
+      <Resolution x="1278" y="878" />
+      <taggedRectangles>
+         <taggedRectangle height="41" width="92" x="205" y="313">
+            <tag>MAX</tag>
+         </taggedRectangle>
+         <taggedRectangle height="52" width="117" x="333" y="315">
+            <tag>TOWING</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

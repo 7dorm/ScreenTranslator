@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/17_01.jpg</imageName>
+      <address>98 East San Salvador Street San Jose CA 95112-3689</address>
+      <lex>DAKAO,SANDWICH,CHINA,CHEN,IGUANAS,TAQUERIA,RAMADA,LIMITED,SAN,JOSE,DAI,THANH,SUPERMARKET,MILANO,RESTAURANT,YWCA,SILICON,VALLEY,BURRITOZILLA,AGENDA,BAR,LOUNGE,ANNO,DOMINI,VICTORIA,SOUTH,FIRST,BILLIARDS,CLUB,AND,WET,NIGHTCLUB,STUDIES,AMERICAN,LANGUAGE,TOWN,BICYCLE,EXPRESS,EULIPIA,BACH,BAKERY,METRO,GARDENS,APARTMENTS,MUSEUM,QUILTS,TEXTILES</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="80" width="151" x="450" y="470">
+            <tag>DAKAO</tag>
+         </taggedRectangle>
+         <taggedRectangle height="44" width="144" x="450" y="543">
+            <tag>RESTAURANT</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

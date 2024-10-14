@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/07_15.jpg</imageName>
+      <address>1364 Grant Street Denver CO</address>
+      <lex>TOKYO,JOE,BENDERS,TAVERN,BUFFALO,EXCHANGE,CITY,COREPOWER,YOGA,GRANT,CAPITOL,HEIGHTS,APARTMENTS,FIVE,STAR,CLEANERS,COLORADO,STATE,GOVERNMENT,LEGISLATURE,LEGISLATIVE,LEGAL,SERVICES,MOLLY,BROWN,HOUSE,MUSEUM,FIRST,BAPTIST,CHURCH,DENVER,WATERCOURSE,BAKERY,REVENUE,DEPARTMENT,SCOTTISH,RITE,FOUNDATIONS,CONSISTORY,WORKING,TOGETHER,PUBLIC,LIBRARY,PANDORA,JEWELRY,SUPREME,COURT,HISTORY</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="67" width="329" x="530" y="350">
+            <tag>CLEANERS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="37" width="55" x="417" y="390">
+            <tag>FIVE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="39" width="61" x="470" y="389">
+            <tag>STAR</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

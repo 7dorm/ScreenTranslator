@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/19_04.jpg</imageName>
+      <address>2026 P Street Northwest Washington DC 20036-6907</address>
+      <lex>SAKANA,JAPANESE,RESTAURANT,MARK,ORLANDO,ALTIRAMISU,ITALIAN,CAFE,JAPONE,OBELISK,TANGYSWEET,HOTEL,PALOMAR,WASHINGTON,SECOND,STORY,BOOKS,ANTIQUES,DUPONT,VETERINARY,CLINIC,EOLA,BANGKOK,THAI,DINING,RESTUARANT,PIZZERIA,PARADISO,PESCE,TRANQUIL,SPACE,SENTO,ALBERTO,PISA,RESIDENCE,INN,CIRCLE,URBANA,AND,WINE,BAR,STARBUCKS,HILTON,EMBASSY,ROW</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="20" width="93" x="585" y="486">
+            <tag>JAPANESE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="18" width="112" x="681" y="490">
+            <tag>RESTAURANT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="36" width="169" x="603" y="458">
+            <tag>SAKANA</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

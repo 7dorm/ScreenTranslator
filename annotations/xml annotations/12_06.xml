@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/12_06.jpg</imageName>
+      <address>119 South 13th Street Philadelphia PA 19107</address>
+      <lex>VEZ,CAPOGIRO,LLC,LOLITA,RESTAURANT,RAW,JAPANESE,LOUNGE,FERGIE,PUB,VINTAGE,BINDI,APO,BAR,ROBIN,BOOKSTORE,INC,GROCERY,MCGILLIN,OLDE,ALE,HOUSE,DUROSS,LANGEL,PAPER,PINE,TIME,HOLIDAY,INN,EXPRESS,HOTEL,PHILADELPHIA,MIDTOWN,OPEN,STORE,LUDWIG,AND,GARTEN,MATTHEW,IZZO,SAILOR,JERRY,CAPAGIRO,GELATI</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="87" width="484" x="250" y="358">
+            <tag>CAPOGIRO</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

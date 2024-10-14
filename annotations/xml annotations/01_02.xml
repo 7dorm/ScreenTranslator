@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/01_02.jpg</imageName>
+      <address>186 Courtland Street Northeast Atlanta GA?</address>
+      <lex>HOLIDAY,INN,ATLANTA,DOWNTOWN,WORLD,CONGRESS,CTR,SHERATON,HOTEL,UPTOWN,RESTAURANT,LOUNGE,MARRIOTT,MARQUIS,SOL,LIQUOR,HERTZ,LOCAL,EDITION,COURTLAND,STREET,165,GYRO,KING,PEACH,PACKAGE,GINGER,BAY,CAFE,TRADER,VIC,PEACHTREE,CENTER,ATHLETIC,CLUB,HILTON,MYSTERY,DINNER,THEATER,AGATHA,NIKOLAI,ROOF,UPS,STORE,AVIS,RENT,CAR,FLOOD,WATER,DAMAGE,AND,RESTORATION,COCA,COLA,WINGS</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="58" width="108" x="567" y="316">
+            <tag>SOL</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

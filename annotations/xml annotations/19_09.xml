@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/19_09.jpg</imageName>
+      <address>1417 22nd Street Northwest Washington DC 20037</address>
+      <lex>THE,BRICKSKELLER,DINING,HOUSE,DOWN,HOME,SALOON,MARRAKESH,PALACE,BOOKS,FOR,AMERICA,USED,BOOKSTORE,APEX,HOTEL,PALOMAR,WASHINGTON,WESTPARK,CLEANERS,FIREPLACE,RESTAURANT,UNI,SUSHI,PLACE,LEGEND,FUTONS,FURNITURE,WALSH,STABLE,URBANA,AND,WINE,BAR,SOHO,TEA,COFFEE,RESIDENCE,INN,DUPONT,CIRCLE,CREPES,GOGO,AIOLI,MEDITALIAN,GOURMET,SOCIETY,THE,CINCINNATI,FRACTURED,PRUNE,OMEGA,STARS,BISTRO</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="32" width="104" x="695" y="478">
+            <tag>AMERICA</tag>
+         </taggedRectangle>
+         <taggedRectangle height="16" width="61" x="481" y="606">
+            <tag>AMERICA</tag>
+         </taggedRectangle>
+         <taggedRectangle height="34" width="81" x="569" y="477">
+            <tag>BOOKS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="24" width="58" x="401" y="605">
+            <tag>BOOKS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="30" width="45" x="648" y="478">
+            <tag>FOR</tag>
+         </taggedRectangle>
+         <taggedRectangle height="28" width="33" x="450" y="600">
+            <tag>FOR</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

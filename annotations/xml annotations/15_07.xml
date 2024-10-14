@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/15_07.jpg</imageName>
+      <address>802 5th Avenue San Diego CA 92101-6108</address>
+      <lex>CROCE,RESTAURANT,BARS,TIKI,THE,KEATING,HOTEL,PININFARINA,MEDICI,RISTORANTE,ITALIANO,BITTER,END,MALONEY,TAVERN,USA,HOSTELS,SAN,DIEGO,STAR,INDIA,PATRICK,MERK,BISTRO,CAFE,LULU,MARTINI,RANCH,HARD,ROCK,XAVIER,BAR,GRILL,ASTI,FINE,DINING,RAMADA,GASLAMP,CONVENTION,CENTER,GRAPE,ONYX,ROOM,GEORGE,FIFTH,OLE,MADRID</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="97" width="193" x="153" y="303">
+            <tag>CROCE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="99" width="362" x="437" y="299">
+            <tag>RESTAURANT</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

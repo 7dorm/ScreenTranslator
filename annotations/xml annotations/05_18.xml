@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/05_18.jpg</imageName>
+      <address>1224 South Wabash Avenue Chicago IL</address>
+      <lex>JEWEL,OSCO,ROOSEVELT,WABASH,CTA,BONGO,ROOM,TAP,ZAPATISTA,SAM,WINE,SPIRITS,OPERA,GIOCO,YANG,ELEVEN,CITY,DINER,STATE,BASKIN,ROBBINS,TCF,BANK,SOUTH,LOOP,SCHOOL,VISION,STARBUCKS,EXPOSURE,TAPAS,SUPPER,CLUB,FITPLEX,DANCE,CENTER,COLUMBIA,COLLEGE</lex>
+      <Resolution x="1280" y="878" />
+      <taggedRectangles>
+         <taggedRectangle height="64" width="197" x="306" y="157">
+            <tag>JEWEL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="60" width="175" x="534" y="155">
+            <tag>OSCO</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

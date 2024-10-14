@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/07_16.jpg</imageName>
+      <address>638 East 13th Avenue Denver CO</address>
+      <lex>WAX,TRAX,RECORDS,MOLLY,BROWN,HOUSE,MUSEUM,BENNY,BLANCO,PIZZA,SNAKE,PIT,JOHN,CATHEDRAL,KILGORE,USED,BOOKS,AND,COMICS,FASHIONATION,KIRKLAND,FINE,DECORATIVE,ART,CHIPOTLE,PENN,CLOSED,STREET,PERK,DENVER,TED,510,RETRO,CAFE,NETHERWORLD,FOUNTAINHEAD,APARTMENTS,CUSTOM,CARE,CLEANERS,SHIRT,CONVENIENCE,STORE,KING,QUEEN,SCOOP,ICE,CREAM,BEAUTY,BAR,MOREY,MIDDLE,SCHOOL</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="39" width="85" x="595" y="436">
+            <tag>TRAX</tag>
+         </taggedRectangle>
+         <taggedRectangle height="37" width="72" x="517" y="437">
+            <tag>WAX</tag>
+         </taggedRectangle>
+         <taggedRectangle height="20" width="65" x="929" y="873">
+            <tag>RECORDS</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

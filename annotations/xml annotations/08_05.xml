@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/08_05.jpg</imageName>
+      <address>777 Walker Street Houston TX</address>
+      <lex>STARBUCKS,ESPERSON,BUILDINGS,LLC,SALATA,PENNZOIL,PLACE,BECKS,PRIME,TWO,SHELL,PLAZA,GARAGE,TEXAS,LAWYER,PASO,PRODUCTION,MANDARIN,HUNAN,RESTAURANT,OIL,HINES,WELLS,FARGO,BANK,BOB,LANIER,PUBLIC,WORKS,BUILDING,DONALD,KOLACHE,FACTORY,FEDEX,OFFICE,PRINT,SHIP,CENTER,BAKER,BOTTS,LLP,DUNE,ENERGY,INC,ALVAREZ,MARSAL,DROUBI,MEDITERRANEAN,GRILL</lex>
+      <Resolution x="1280" y="880" />
+      <taggedRectangles>
+         <taggedRectangle height="58" width="183" x="728" y="369">
+            <tag>PLAZA</tag>
+         </taggedRectangle>
+         <taggedRectangle height="39" width="142" x="578" y="386">
+            <tag>SHELL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="50" width="122" x="450" y="386">
+            <tag>TWO</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

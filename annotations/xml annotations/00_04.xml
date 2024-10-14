@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/00_04.jpg</imageName>
+      <address>843 South State College Boulevard Anaheim CA 92806</address>
+      <lex>AVANTE,GARDENS,FLORIST,GAUCHO,MEAT,MARKET,LUIGI,ITALIA,SOUTHERN,CALIFORNIA,SCHOOL,FLORAL,DESIGN,ANAHEIM,CARPET,AND,FLOORING,SALES,ALBERTSONS,FERNANDO,KITCHEN,DESIGN,MANDY,NAILS,SPA,HOPE,COMMUNITY,CHURCH,GOLD,STAR,CLEANERS,ALEXANDRA,BEAUTY,SALON,MONTY,HOUSE,THOMAS,DRUMMOND,ASSOCIATES,SAV,DRUGS,MARTHAS,DRAPERIES,BOUQUET,CONSTRUCTION,CAMINO,REAL,PEPPERONI,PIZZA,INC,BANK,AMERICA,ATM</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="29" width="73" x="485" y="234">
+            <tag>AVANTE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="95" width="213" x="443" y="250">
+            <tag>FLORIST</tag>
+         </taggedRectangle>
+         <taggedRectangle height="27" width="95" x="556" y="230">
+            <tag>GARDENS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="24" width="80" x="494" y="442">
+            <tag>SCHOOL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="25" width="61" x="488" y="466">
+            <tag>FLORAL</tag>
+         </taggedRectangle>
+         <taggedRectangle height="29" width="63" x="555" y="462">
+            <tag>DESIGN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

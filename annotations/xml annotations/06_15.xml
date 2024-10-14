@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/06_15.jpg</imageName>
+      <address>3930 Crutcher Street Dallas TX</address>
+      <lex>PHYSICIANS,DAY,SURGERY,CENTER,BAYLOR,SCHOOL,FOR,CHILDREN,CENTRAL,DALLAS,MINISTRIES,MEDCO,CONSTRUCTION,SURGICARE,TOM,LANDRY,FITNESS,FOSTER,LUNG,CARE,MILLARD,MARK,GERIATRICS,BAPTIST,GENERAL,CONVENTION,ORTHOPEDIC,ASSOCIATE,MOLLABASHY,ALLAADDIN,UNIVERSITY,NURSING,MARTHA,AKIRA,NUMAJIRI,THOMPSON,JOYCE,DONALD,KENNERLY,KRONENBERGER,MICHAEL,BROTHERS,SANDRA,ASSOCIATES,TEXAS,ALLERGY,POST,OFFICE</lex>
+      <Resolution x="1680" y="1050" />
+      <taggedRectangles>
+         <taggedRectangle height="35" width="59" x="753" y="460">
+            <tag>DAY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="44" width="179" x="751" y="419">
+            <tag>PHYSICIANS</tag>
+         </taggedRectangle>
+         <taggedRectangle height="40" width="142" x="806" y="456">
+            <tag>SURGERY</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

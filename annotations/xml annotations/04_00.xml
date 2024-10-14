@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/04_00.jpg</imageName>
+      <address>100 South San Fernando Boulevard Burbank CA</address>
+      <lex>BURBANK,BAR,GRILLE,GRANVILLE,CAFE,BACKSIDE,RECORDS,TOMO,SUSHI,GORDON,BIERSCH,BREWING,RESTAURANT,ALAMBRES,FRESH,MEXICAN,GRILL,WOKCANO,KNIGHT,RESTUARANT,GREEK,DELIVERY,ORGANIC,SPA,SEOUL,KOREAN,BBQ,NYPD,PIZZA,ROMANCING,THE,BEAN,HOLIDAY,INN,HOTEL,MEDIA,CENTER,GIO,BROOKLYN,BOXING,CLUB,RADIO,SHACK,ARROYO,KNAUF,INSURANCE,SERVICES,GREAT,CHINA,LEE,BEAUTY,BARBER,SUPPLY,FANTASIA,BILLIARD</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="44" width="114" x="569" y="495">
+            <tag>RADIO</tag>
+         </taggedRectangle>
+         <taggedRectangle height="47" width="108" x="675" y="500">
+            <tag>SHACK</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

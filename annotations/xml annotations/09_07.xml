@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/09_07.jpg</imageName>
+      <address>140 West Washington Street Indianapolis IN</address>
+      <lex>INDIANA,REPERTORY,THEATRE,HYATT,REGENCY,INDIANAPOLIS,STATE,ATTORNEY,GENERAL,GREG,ZOELLER,HOUSE,EMBASSY,SUITES,DOWNTOWN,ROOF,BALLROOM,HILTON,ARTS,GARDEN,EAGLE,NEST,RESTAURANT,WEBER,GRILL,TATA,CUBAN,CAFE,CONRAD,HOTEL,PATACHOU,THE,PARK,SIMON,PROPERTY,GROUP,BUCA,BEPPO,BLOCK,TEACHERS,CREDIT,UNION,CORMICK,SCHMICK,HEALTH,CARE,ASSOCIATION,AVIS,RENT,CAR</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="34" width="115" x="410" y="382">
+            <tag>INDIANA</tag>
+         </taggedRectangle>
+         <taggedRectangle height="33" width="153" x="523" y="374">
+            <tag>REPERTORY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="38" width="143" x="682" y="360">
+            <tag>THEATRE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="31" width="151" x="982" y="348">
+            <tag>INDIANA</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

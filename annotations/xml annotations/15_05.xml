@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/15_05.jpg</imageName>
+      <address>2080 Pan American Plaza San Diego CA 92101-1636</address>
+      <lex>AUTOMOTIVE,MUSEUM,SAN,DIEGO,SR71,AIR,SPACE,STARLIGHT,THEATRE,MARIE,HITCHCOCK,PUPPET,HALL,CHAMPIONS,MUNICIPAL,GYM,IATSE,LOCAL,122,INTERNATIONAL,SPORTS,COUNCIL,COMMISSION,UNITED,STATES,RUGBY,FOOTBALL,CIVIC,DANCE,ASSOCIATION,NATIONS,TIME,OUT,CAFE,SQUARE,BALBOA,PARK,CLUB,HOUSE,IRAN,MAN,GIFT,SHOP,KURTZ,BROADCASTING</lex>
+      <Resolution x="1024" y="768" />
+      <taggedRectangles>
+         <taggedRectangle height="91" width="388" x="335" y="328">
+            <tag>AUTOMOTIVE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="102" width="202" x="129" y="323">
+            <tag>DIEGO</tag>
+         </taggedRectangle>
+         <taggedRectangle height="81" width="294" x="732" y="326">
+            <tag>MUSEUM</tag>
+         </taggedRectangle>
+         <taggedRectangle height="80" width="102" x="20" y="325">
+            <tag>SAN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

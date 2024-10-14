@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/16_19.jpg</imageName>
+      <address>1855 Haight Street San Francisco CA</address>
+      <lex>AMOEBA,MUSIC,CHA,GIANT,ROBOT,SKATES,HAIGHT,MILK,STANYAN,PARK,HOTEL,KAN,ZAMAN,CAFE,ROCKIN,JAVA,JOHN,MURIO,TROPHY,ROOM,KEZAR,PUB,RESTAURANT,RED,VICTORIAN,MOVIE,HOUSE,ALEMBIC,THE,CITRUS,CLUB,DONALD,AVENUE,CYCLERY,BAR,ESCAPE,FROM,NEW,YORK,PIZZA,CHRISSY,BEE,ZONA,ROSA,YOGA,TREE</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="300" width="736" x="178" y="147">
+            <tag>AMOEBA</tag>
+         </taggedRectangle>
+         <taggedRectangle height="173" width="520" x="484" y="366">
+            <tag>MUSIC</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

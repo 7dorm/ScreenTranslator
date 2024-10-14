@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/16_13.jpg</imageName>
+      <address>123 2nd Street San Francisco CA</address>
+      <lex>111,MINNA,GALLERY,ANCHOR,AND,HOPE,EDDIE,RICKENBACKER,ROY,HAWAIIAN,FUSION,OSHA,THAI,RESTAURANT,PEET,COFFEE,TEA,TARA,THE,TOASTER,OVEN,SANDWICH,SHOP,CARTOON,ART,MUSEUM,ACADEMY,UNIVERSITY,SCHOOL,HENRY,HUNAN,MYSPACE,UTRECHT,SUPPLY,HARLOT,MORGAN,PRIVATE,BANK,SPECIALTY,CAFE,BAKERY,VARNISH,FINE,DADA,STUDIO,SIERRA,CLUB,FOUNDATION,LEE,DELI</lex>
+      <Resolution x="1280" y="800" />
+      <taggedRectangles>
+         <taggedRectangle height="33" width="208" x="534" y="483">
+            <tag>RESTAURANT</tag>
+         </taggedRectangle>
+         <taggedRectangle height="76" width="220" x="527" y="399">
+            <tag>TARA</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

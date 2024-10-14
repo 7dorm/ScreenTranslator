@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/05_13.jpg</imageName>
+      <address>1101 South Canal Street Chicago IL</address>
+      <lex>WHOLE,FOODS,MARKET,DSW,SHOE,WAREHOUSE,CHICAGO,PANERA,BREAD,STARBUCKS,WHITE,PALACE,GRILLS,MICHAEL,ARTS,CRAFTS,COST,PLUS,WORLD,GAMESTOP,SOUTHGATE,OFFICE,DEPOT,PETSMART,STANDARD,PARKING,BANFIELD,THE,PET,HOSPITAL,FITNESS,HIRSCH,SHELDON,NEW,MAXWELL,STREET,STAPLES,SOIFER,NEIL,NAJAFI,CHRISTOPHER</lex>
+      <Resolution x="1280" y="878" />
+      <taggedRectangles>
+         <taggedRectangle height="64" width="198" x="622" y="169">
+            <tag>GAMESTOP</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

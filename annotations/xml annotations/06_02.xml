@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/06_02.jpg</imageName>
+      <address>1924 North Henderson Avenue Dallas TX</address>
+      <lex>CAFE,SAN,MIGUEL,BARCADIA,LLC,LOUIE,BLUE,COLLAR,BAR,PEARL,CUP,LLC,THE,ALFREDO,ITALIAN,CUISINE,AND,SEAFOOD,RELOCATING,SANDY,AGAIN,DESIGN,STUDIO,GARZA,CHIROPRACTIC,ARE,1976,INC,TAQUERIA,LUPITA,BICH,HUONG,NGUYEN,SAVE,WAY,GROCERY,STORE,SPUTNIK,FUJI,MASSAGE,NEW,FLOWER,MARKET,POLE,DANCE,WORKOUTS,FITNESS,CLASSES,VERT,WELLNESS,CENTER,ATORON</lex>
+      <Resolution x="1680" y="1050" />
+      <taggedRectangles>
+         <taggedRectangle height="40" width="76" x="996" y="609">
+            <tag>BAR</tag>
+         </taggedRectangle>
+         <taggedRectangle height="138" width="292" x="448" y="478">
+            <tag>BLUE</tag>
+         </taggedRectangle>
+         <taggedRectangle height="165" width="397" x="734" y="459">
+            <tag>COLLAR</tag>
+         </taggedRectangle>
+         <taggedRectangle height="34" width="51" x="487" y="450">
+            <tag>THE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

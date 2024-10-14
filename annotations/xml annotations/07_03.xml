@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/07_03.jpg</imageName>
+      <address>1420 Logan Street Denver CO</address>
+      <lex>CATHEDRAL,IMMACULATE,CNCPTN,CHEEKY,MONK,BELGIAN,BEER,CAFE,MOLLY,BROWN,HOUSE,MUSEUM,DENVER,PRIVATE,INVESTIGATOR,MILE,HIGH,INVESTIGATIONS,OLIN,HOTEL,APARTMENTS,RED,ROOM,RESTAURANT,AND,BAR,ACACIA,COLORADO,STATE,CAPITOL,FIRST,CHURCH,GREAT,WALL,CHINESE,WOLFE,BARBEQUE,TAKI,HILL,BOOKS,CREDIT,UNION,CHARLINE,PLACE,CONDOMINIUMS,WALNUT,ATTORNEY,JERRY,RECORD,EXCHANGE,DRUG,LIQUOR,EMILIO</lex>
+      <Resolution x="1280" y="1024" />
+      <taggedRectangles>
+         <taggedRectangle height="74" width="211" x="478" y="381">
+            <tag>OLIN</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

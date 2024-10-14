@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/03_10.jpg</imageName>
+      <address>1900 29th Street Boulder CO</address>
+      <lex>MACY,CROSSROADS,MALL,BOULDER,DAPHNE,GREEK,CAFE,HARPO,SPORTS,GRILL,LENSCRAFTERS,SLEEP,NUMBER,STORE,SELECT,COMFORT,WALKING,DOCTOR,OPTOMETRY,STAPLES,JAMBA,JUICE,A123,IMMEDIATE,MINUTES,LOCKSMITH,FIREHOUSE,SUBS,CINGULAR,WIRELESS,29TH,BICE,THE,BUCKET,AND,ROADSIDE,TOWING,RECOVERY,PEI,WEI,ASIAN,DINER,TCI,TIRE,CENTER,MODMARKET</lex>
+      <Resolution x="1920" y="904" />
+      <taggedRectangles>
+         <taggedRectangle height="169" width="434" x="611" y="313">
+            <tag>MACY</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>

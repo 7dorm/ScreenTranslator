@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tagset><image>
+      <imageName>img/06_00.jpg</imageName>
+      <address>4901 Bryan Street Dallas TX</address>
+      <lex>JIMMY,FOOD,STORE,URBANO,CAFE,MAI,VIETNAMESE,RESTAURANT,1410,THE,ISAMARE,BEVERAGE,INC,BINH,MINH,MARKET,BLIMPIE,SUBS,SALADS,DALLASITE,BILLIARDS,JADE,GARDEN,CHINESE,PINTIP,CHARUNMETHEE,DDS,DALLAS,ESCORTS,NGUYEN,TRAN,ASSOCIATES,DALAT,BRYAN,PLACE,DENTAL,FRENCH,SANDWICHES,ALESSIO,RISTORANTE,LND,HAIR,STUDIO,ALLCARE,FAMILY,CLINIC,SHOP,HARRIS,EDDIE</lex>
+      <Resolution x="1680" y="1050" />
+      <taggedRectangles>
+         <taggedRectangle height="57" width="151" x="775" y="337">
+            <tag>FOOD</tag>
+         </taggedRectangle>
+         <taggedRectangle height="114" width="305" x="727" y="245">
+            <tag>JIMMY</tag>
+         </taggedRectangle>
+         <taggedRectangle height="64" width="171" x="932" y="343">
+            <tag>STORE</tag>
+         </taggedRectangle>
+      </taggedRectangles>
+   </image>
+   </tagset>
