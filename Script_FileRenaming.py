@@ -10,7 +10,7 @@ def rename_files(directory):
     # Переименовываем файлы
     for i, file_name in enumerate(files, start=1):
         # Создаем новое имя файла
-        new_name = f"TotalText_{i}{os.path.splitext(file_name)[1]}"
+        new_name = f"PART_OF_THE_NAME_{i}{os.path.splitext(file_name)[1]}"
         
         # Полные пути для старого и нового имен
         old_file_path = os.path.join(directory, file_name)
@@ -21,5 +21,5 @@ def rename_files(directory):
         print(f"Переименован: '{old_file_path}' -> '{new_file_path}'")
 
 # Укажи путь к директории, которую нужно обработать
-directory_path = 'C:\\Users\\lysko\\MyPAK\\ScreenTranslator\\Datasets\\dataset_TotalText\\annotations'
+directory_path = 'DIRECTORY_PATH'
 rename_files(directory_path)

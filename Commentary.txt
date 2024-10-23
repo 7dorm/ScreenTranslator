@@ -1,0 +1,5 @@
+Total number of elements: 229 + 350 + 579
+
+ICDAR2013 dataset: 229 elements
+
+The Street View Text dataset: 350 elements#
