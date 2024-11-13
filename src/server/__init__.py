@@ -1,10 +1,10 @@
 import http.server as hs
 import urllib.parse
 import os
-import uuid
+
 class RequestHandler(hs.BaseHTTPRequestHandler):
     def do_GET(self):
-        self.send_response(200) # Here is an implementation of get request (cant continue due to no files)
+        self.send_response(200)
         self.send_header('Content-type', 'text/plain')
         self.end_headers()
         self.wfile.write(b'Hello, World!')
@@ -19,17 +19,13 @@ class RequestHandler(hs.BaseHTTPRequestHandler):
             # Get image data from request body
             length = int(self.headers['Content-Length'])
             body = self.rfile.read(length)
-            image_name = uuid.uuid4()
-            image_type = content_type.split('/')[-1]
+
             # Save the received image to disk
-            with open(f'{image_name}.' + image_type, 'wb') as image_file:
+            with open('received_image.' + content_type.split('/')[-1], 'wb') as image_file:
                 image_file.write(body)
 
-            print(f"Image saved to {os.getcwd()}/{image_name}.{image_type}")
-            print(image_name)
+            print(f"Image saved to {os.getcwd()}/received_image.{content_type.split('/')[-1]}")
             self.send_response(200)
-            self.end_headers()
-            self.wfile.write(str(image_name).encode('utf-8'))
         else:
             self.send_response(400)  # Bad Request, we can't handle it
             self.end_headers()
