@@ -1,11 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h> // For the sleep function
 
 #define MAX_COMMAND_LENGTH 512
 #define MAX_INPUT_LENGTH 128
+#define MAX_URL_LENGTH 128
 
-// Функция для выполнения curl-запросов и получения ответа
+char url[MAX_URL_LENGTH];
+
+// Function to execute curl commands and check for errors
 void execute_command(char* command) {
     int result = system(command);
     if (result != 0) {
@@ -13,16 +17,44 @@ void execute_command(char* command) {
     }
 }
 
-// Функция для отправки изображения
-void send_image(char* type, char* path_to_file, char* uuid) {
+// Function to determine file type based on file extension
+void determine_file_type(const char* path_to_file, char* type) {
+    const char* extension = strrchr(path_to_file, '.');
+    if (extension != NULL) {
+        extension++; // Move past the '.'
+        if (strcmp(extension, "jpeg") == 0 || strcmp(extension, "jpg") == 0) {
+            strcpy(type, "jpeg");
+        }
+        else if (strcmp(extension, "png") == 0) {
+            strcpy(type, "png");
+        }
+        else if (strcmp(extension, "gif") == 0) {
+            strcpy(type, "gif");
+        }
+        else if (strcmp(extension, "bmp") == 0) {
+            strcpy(type, "bmp");
+        }
+        else {
+            strcpy(type, "octet-stream"); // Default to a generic binary stream
+        }
+    }
+    else {
+        strcpy(type, "octet-stream"); // Default if no extension is found
+    }
+}
+
+// Function to send an image
+void send_image(char* path_to_file, char* uuid) {
+    char type[MAX_INPUT_LENGTH];
+    determine_file_type(path_to_file, type);
 
     char command[MAX_COMMAND_LENGTH];
     snprintf(command, sizeof(command),
-        "curl -X POST -s http://localhost:8080/ -H 'Content-Type: images/%s' -T %s -o response.txt",
-        type, path_to_file);
+        "curl -X POST -s %s -H 'Content-Type: images/%s' -T %s -o response.txt",
+        url, type, path_to_file);
     execute_command(command);
 
-    // Чтение UUID из файла response.txt
+    // Reading UUID from the response file
     FILE* file = fopen("response.txt", "r");
     if (file) {
         fgets(uuid, MAX_INPUT_LENGTH, file);
@@ -34,58 +66,72 @@ void send_image(char* type, char* path_to_file, char* uuid) {
     }
 }
 
-// Функция для отправки отзыва
+// Function to send feedback
 void send_feedback(char* uuid, char* text) {
     char command[MAX_COMMAND_LENGTH];
     snprintf(command, sizeof(command),
-        "curl -X PUT -s http://localhost:8080/ -H 'Content-Type: application/json' -d '{\"uuid\":\"%s\", \"text\":\"%s\"}'",
-        uuid, text);
+        "curl -X PUT -s %s -H 'Content-Type: application/json' -d '{\"uuid\":\"%s\", \"text\":\"%s\"}'",
+        url, uuid, text);
     execute_command(command);
 }
 
-// Функция для отправки GET-запроса с сообщением
-void send_get_request(char* message) {
+// Function to send a GET request and check if data is received
+int send_get_request(char* uuid) {
     char command[MAX_COMMAND_LENGTH];
     snprintf(command, sizeof(command),
-        "curl -X GET -s 'http://localhost:8080/?message=%s' -H 'Content-Type: text/plain'",
-        message);
-    execute_command(command);// wait for responce
+        "curl -X GET -s '%s?uuid=%s' -H 'Content-Type: text/plain' -o response.txt",
+        url, uuid);
+    execute_command(command);
+
+    // Check if response contains data
+    FILE* file = fopen("response.txt", "r");
+    if (file) {
+        char response[MAX_INPUT_LENGTH];
+        if (fgets(response, sizeof(response), file) != NULL && strlen(response) > 0) {
+            printf("Server response: %s\n", response);
+            fclose(file);
+            return 1; // Data received
+        }
+        fclose(file);
+    }
+    return 0; // No data received
 }
 
 int main() {
-    char type[MAX_INPUT_LENGTH];
     char path_to_file[MAX_INPUT_LENGTH];
     char uuid[MAX_INPUT_LENGTH];
     char text[MAX_INPUT_LENGTH];
-    char message[MAX_INPUT_LENGTH];
 
-    // Запрос пути к изображению и типа
-    printf("Enter the file type of the image (e.g., jpeg, png): "); // remove this
-    fgets(type, sizeof(type), stdin);
-    type[strcspn(type, "\n")] = 0;
+	printf("Enter url: ");
+	fgets(url, sizeof(url), stdin);
+	url[strcspn(url, "\n")] = 0;
 
+    // Get the path to the image file from the user
     printf("Enter the path to the image file: ");
     fgets(path_to_file, sizeof(path_to_file), stdin);
     path_to_file[strcspn(path_to_file, "\n")] = 0;
 
-    // Отправка изображения и получение UUID
-    send_image(type, path_to_file, uuid);
+    while (access(path_to_file, F_OK) == -1) {
+        printf("File not excist. Try again: ");
+        fgets(path_to_file, sizeof(path_to_file), stdin);
+        path_to_file[strcspn(path_to_file, "\n")] = 0;
+    }
 
-    // Запрос отзыва
+    // Send the image and get the UUID
+    send_image(path_to_file, uuid);
+
+    // Continuously send GET requests until data is received
+    while (!send_get_request(uuid)) {
+        printf("No data received. Retrying...\n");
+        sleep(2); // Wait before retrying
+    }
+
+    // Get feedback from the user after a successful GET request
     printf("Enter feedback text: ");
     fgets(text, sizeof(text), stdin);
     text[strcspn(text, "\n")] = 0;
-
-    // Отправка отзыва с UUID
+    // Send feedback with the UUID
     send_feedback(uuid, text);
-
-    // Запрос сообщения для GET-запроса
-    printf("Enter a message for the GET request: ");
-    fgets(message, sizeof(message), stdin);
-    message[strcspn(message, "\n")] = 0;
-
-    // Отправка GET-запроса
-    send_get_request(message);
 
     printf("All requests completed.\n");
     return 0;
