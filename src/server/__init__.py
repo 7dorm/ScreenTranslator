@@ -3,7 +3,7 @@ import urllib.parse
 import uuid
 import os
 from tools import find_file_by_name
-
+from tools import detect
 
 class RequestHandler(hs.BaseHTTPRequestHandler):
     tmp = False
@@ -14,7 +14,7 @@ class RequestHandler(hs.BaseHTTPRequestHandler):
         return 0
 
     def do_GET(self):
-
+        
         if 'uuid' in self.path:
             self.curr_uuid = uuid.UUID(self.path[7:])
             if (self.ready(self.curr_uuid)):
@@ -51,6 +51,7 @@ class RequestHandler(hs.BaseHTTPRequestHandler):
 
             print(f"Image saved to {os.getcwd()}/{image_name}.{image_type}")
             print(image_name)
+            detect(f'{os.getcwd()}/{image_name}.{image_type}')
             self.send_response(200)
             self.end_headers()
             self.wfile.write(str(image_name).encode('utf-8'))
