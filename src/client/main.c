@@ -112,7 +112,7 @@ int main() {
     path_to_file[strcspn(path_to_file, "\n")] = 0;
 
     while (access(path_to_file, F_OK) == -1) {
-        printf("File not excist. Try again: ");
+        printf("File not exist. Try again: ");
         fgets(path_to_file, sizeof(path_to_file), stdin);
         path_to_file[strcspn(path_to_file, "\n")] = 0;
     }

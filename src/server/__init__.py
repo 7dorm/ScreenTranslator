@@ -14,21 +14,17 @@ class RequestHandler(hs.BaseHTTPRequestHandler):
         return 0
 
     def do_GET(self):
-        
         if 'uuid' in self.path:
             self.curr_uuid = uuid.UUID(self.path[7:])
-            if (self.ready(self.curr_uuid)):
-                image_type = 'image/'
-                if a := find_file_by_name(os.getcwd(), self.curr_uuid):
-                    image_type += a.splti('.')[-1]
-                    self.send_header('Content-type', image_type)
-                    self.end_headers()
-                    with open(a, "rb") as f:
+            self.send_header('Content-type', 'text/plain')
+            self.end_headers()
+            if a := find_file_by_name(os.getcwd() + '/runs', self.curr_uuid):
+                if b := find_file_by_name(a + '/labels', self.curr_uuid): 
+                    print(b)  
+                    with open(b, "rb") as f:
                         self.wfile.write(f.read())
-                self.send_response(200)
+                        self.send_response(200)
             else:
-                self.send_header('Content-type', 'text/plain')
-                self.end_headers()
                 self.send_response(201)
             self.wfile.write(b"Cunt!")
         self.wfile.write(b'Hello, World!')
