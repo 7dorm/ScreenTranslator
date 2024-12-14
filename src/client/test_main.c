@@ -23,9 +23,9 @@ void perform_request(const char *url, const char *method, const char *data) {
         if (strcmp(method, "POST") == 0) {
             curl_easy_setopt(curl, CURLOPT_POST, 1L);
             curl_easy_setopt(curl, CURLOPT_POSTFIELDS, data);
+			
         } else if (strcmp(method, "PUT") == 0) {
-            curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "PUT");
-            curl_easy_setopt(curl, CURLOPT_POSTFIELDS, data);
+        
         } else if (strcmp(method, "DELETE") == 0) {
             curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "DELETE");
         }
@@ -72,6 +72,6 @@ int main(void) {
 	    path_to_file[strcspn(path_to_file, "\n")] = 0;
 	}
 	
-	perform_request(url, "POST", )
+	perform_request(url, "POST", path_to_file);
     return 0;
 }

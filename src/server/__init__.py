@@ -15,6 +15,7 @@ class RequestHandler(hs.BaseHTTPRequestHandler):
 
     def do_GET(self):
         if 'uuid' in self.path:
+            print(self.path[7:])
             self.curr_uuid = uuid.UUID(self.path[7:])
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
@@ -59,11 +60,41 @@ class RequestHandler(hs.BaseHTTPRequestHandler):
 
 
     def do_PUT(self):
+        content_type = self.headers.get('Content-Type')
         print("Request headers:", dict(self.headers))
-        self.send_response(200)
+        if (content_type and 'images/' in content_type):  # This includes images, thus we proceed
+                    # Get image data from request body
+            length = int(self.headers['Content-Length'])
+            print(length)
+            body = self.rfile.read(length)
+            
+            image_name = uuid.uuid4()
+            image_type = content_type.split('/')[-1]
+                            # Save the received image to disk
+            with open(f'{image_name}.' + image_type, 'wb') as image_file:
+                image_file.write(body)
+        
+            print(f"Image saved to {os.getcwd()}/{image_name}.{image_type}")
+            print(image_name, "TESfudgak")
+            detect(f'{os.getcwd()}/{image_name}.{image_type}')
+            self.send_response(200)
+            self.end_headers()
+            self.wfile.write(str(image_name).encode('utf-8'))
+        else:
+            self.send_response(400)  # Bad Request, we can't handle it
+            self.end_headers()
         return
 
     def do_DELETE(self):
         self.tmp = True
         self.send_response(200)
         return
+
+import yaml
+
+# Load the YAML file
+with open('config.yaml', 'r') as file:
+    config = yaml.safe_load(file)
+    
+# Accessing data
+print(">", config['data'])
