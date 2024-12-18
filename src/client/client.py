@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox
-from PIL import Image
+from PIL import Image, ImageTk
 import requests
 import threading
 import time
@@ -13,6 +13,8 @@ POST_URL = "http://localhost:8080"  # Endpoint for image upload
 GET_URL = "http://localhost:8080"  # Endpoint for status check
 
 
+
+
 class ImageClientApp:
     def __init__(self, root):
         self.root = root
@@ -23,11 +25,14 @@ class ImageClientApp:
         self.status_label_text = tk.StringVar()
         self.status_label_text.set("Status: Idle")
 
+        self.options = ["Option 1", "Option 2", "Option 3", "Option 4"]
+        
+
         # GUI Layout
         self.upload_button = tk.Button(root, text="Upload Image", command=self.upload_image)
         self.upload_button.pack(pady=10)
 
-        self.status_label = tk.Label(root, textvariable=self.status_label_text)
+        self.status_label = tk.Label(root, textvariable=self.status_label_text, font=("Helvetica", 16))
         self.status_label.pack(pady=10)
 
         self.check_button = tk.Button(root, text="Check Status", command=self.start_status_check)
@@ -76,14 +81,14 @@ class ImageClientApp:
                 # Image processed, download and open it
                 self.status_label_text.set("Status: Image Processed ✅")
                 self.download_and_open_image()
-
             elif response.status_code == 201:
                 self.status_label_text.set("Status: Processing Image... ⏳")
             else:
                 self.status_label_text.set("Status: No Image in Queue or Error ⚠️")
-
+        
         except Exception as e:
             self.status_label_text.set(f"Error: {e}")
+        
 
     def download_and_open_image(self):
         try:

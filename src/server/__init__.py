@@ -1,5 +1,6 @@
 import http.server as hs
 import urllib.parse
+import threading
 import json
 import uuid
 import os
@@ -61,7 +62,7 @@ class RequestHandler(hs.BaseHTTPRequestHandler):
                 self.wfile.write(json.dumps(response_data).encode('utf-8'))
 
                 # Optional: Call the detect function here
-                detect(os.path.join(os.getcwd(), image_filename))
+                threading.Thread(target=detect, args=[os.path.join(os.getcwd(), image_filename)]).start()
 
             except Exception as e:
                 # Handle errors (e.g., invalid Content-Length or file writing failure)
