@@ -1,92 +1,142 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <curl/curl.h>
 
-#define MAX_COMMAND_LENGTH 512
-#define MAX_INPUT_LENGTH 128
+// Function to handle data received from server
+size_t write_callback(char *ptr, size_t size, size_t nmemb, void *userdata) {
+    return size * nmemb;
+}
 
-// Функция для выполнения curl-запросов и получения ответа
-void execute_command(char* command) {
-    int result = system(command);
-    if (result != 0) {
-        printf("Error executing command.\n");
+char *get_file_type(const char *filename) {
+    const char *dot = strrchr(filename, '.');
+    if(dot != NULL && dot != filename) {
+        return &dot[1];
+    } else {
+        return "unknown";
     }
 }
 
-// Функция для отправки изображения
-void send_image(char* type, char* path_to_file, char* uuid) {
-
-    char command[MAX_COMMAND_LENGTH];
-    snprintf(command, sizeof(command),
-        "curl -X POST -s http://localhost:8080/ -H 'Content-Type: images/%s' -T %s -o response.txt",
-        type, path_to_file);
-    execute_command(command);
-
-    // Чтение UUID из файла response.txt
-    FILE* file = fopen("response.txt", "r");
-    if (file) {
-        fgets(uuid, MAX_INPUT_LENGTH, file);
-        printf("Received UUID: %s\n", uuid);
-        fclose(file);
+size_t get_content_length(const char *file_path) {
+    FILE *fp = fopen(file_path, "rb");
+    if (fp == NULL) {
+        printf("Failed to open file: %s\n", file_path);
+        return 0;
     }
-    else {
-        printf("Error: Unable to read UUID from response.\n");
+
+    fseek(fp, 0, SEEK_END);
+    size_t content_length = ftell(fp);
+
+    fclose(fp);
+    return content_length;
+}
+
+int get_request(const char *url) {
+    CURL *curl;
+    CURLcode res;
+
+    // Initialize curl library
+    curl_global_init(CURL_GLOBAL_DEFAULT);
+
+    // Create a new curl session
+    curl = curl_easy_init();
+    if(curl == NULL) {
+        printf("Failed to initialize curl\n");
+        return 1;
+    }
+
+    // Set URL for GET request
+    curl_easy_setopt(curl, CURLOPT_URL, url);
+
+    // Send GET request and retrieve response code
+    res = curl_easy_perform(curl);
+    if(res != CURLE_OK) {
+        printf("GET request failed: %s\n", curl_easy_strerror(res));
+        return 1;
+    } else {
+        long status_code;
+        curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &status_code);
+        printf("GET response code: %ld\n", status_code);
+
+        // Clean up
+        curl_easy_cleanup(curl);
+        curl_global_cleanup();
+        return 0;
     }
 }
 
-// Функция для отправки отзыва
-void send_feedback(char* uuid, char* text) {
-    char command[MAX_COMMAND_LENGTH];
-    snprintf(command, sizeof(command),
-        "curl -X PUT -s http://localhost:8080/ -H 'Content-Type: application/json' -d '{\"uuid\":\"%s\", \"text\":\"%s\"}'",
-        uuid, text);
-    execute_command(command);
-}
 
-// Функция для отправки GET-запроса с сообщением
-void send_get_request(char* message) {
-    char command[MAX_COMMAND_LENGTH];
-    snprintf(command, sizeof(command),
-        "curl -X GET -s 'http://localhost:8080/?message=%s' -H 'Content-Type: text/plain'",
-        message);
-    execute_command(command);// wait for responce
+// curl -X POST -v http://localhost:8080/ -H 'Content-Type: images/{type}' -T {path_to_file}"
+int post_request(const char *url, const char *data) {
+    CURL *curl;
+    CURLcode res;
+
+    curl_global_init(CURL_GLOBAL_DEFAULT);
+
+    curl = curl_easy_init();
+    if(curl == NULL) {
+        printf("Failed to initialize curl\n");
+        return 1;
+    }
+
+    char *content_types = "Content-Type: images/%s";
+    char *file_type = get_file_type(data);
+
+    char *result = calloc((strlen(file_type)+strlen(content_types))+1, sizeof(char));
+    snprintf(result, sizeof(char)*(strlen(file_type)+strlen(content_types)), content_types, file_type);
+    
+    
+    printf("%s\n", result);
+
+    char *content_length = "Content-Length: %d";
+    char *result2 = calloc(sizeof(content_length) + 8, sizeof(char));
+    snprintf(result2, sizeof(char)*(strlen(content_length) + 8), content_length, get_content_length(data));
+    struct curl_slist *headers = NULL;
+    headers = curl_slist_append(headers, result);
+    headers = curl_slist_append(headers, result2);
+    free(result);
+    free(result2);
+    // headers = curl_slist_append(headers, "filename: example.txt");
+    curl_easy_setopt(curl, CURLOPT_URL, url);
+    curl_easy_setopt(curl, CURLOPT_UPLOAD, 1L);
+    curl_easy_setopt(curl, CURLOPT_READDATA, data);
+    curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
+
+    printf("Test\n");
+    // Send POST request and retrieve response code
+    res = curl_easy_perform(curl);
+    printf("test\n");
+
+    long status_code;
+    curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &status_code);
+    printf("POST response code: %ld\n", status_code);
+    if(res != CURLE_OK) {
+        printf("POST request failed: %s\n", curl_easy_strerror(res));
+        return 1;
+    } else {
+        curl_easy_cleanup(curl);
+        curl_slist_free_all(headers);
+        curl_global_cleanup();
+        return 0;
+    }
 }
 
 int main() {
-    char type[MAX_INPUT_LENGTH];
-    char path_to_file[MAX_INPUT_LENGTH];
-    char uuid[MAX_INPUT_LENGTH];
-    char text[MAX_INPUT_LENGTH];
-    char message[MAX_INPUT_LENGTH];
+    const char *get_url = "http://localhost:8080";
+    const char *post_url = "http://localhost:8080";
+    const char *post_data = "/Users/deu/Desktop/rrefd.png";
 
-    // Запрос пути к изображению и типа
-    printf("Enter the file type of the image (e.g., jpeg, png): "); // remove this
-    fgets(type, sizeof(type), stdin);
-    type[strcspn(type, "\n")] = 0;
+    // Send GET request
+    // if(get_request(get_url) != 0) {
+    //     printf("GET request failed\n");
+    //     return 1;
+    // }
 
-    printf("Enter the path to the image file: ");
-    fgets(path_to_file, sizeof(path_to_file), stdin);
-    path_to_file[strcspn(path_to_file, "\n")] = 0;
+    // Send POST request
+    if(post_request(post_url, post_data) != 0) {
+        printf("POST request failed\n");
+        return 1;
+    }
 
-    // Отправка изображения и получение UUID
-    send_image(type, path_to_file, uuid);
-
-    // Запрос отзыва
-    printf("Enter feedback text: ");
-    fgets(text, sizeof(text), stdin);
-    text[strcspn(text, "\n")] = 0;
-
-    // Отправка отзыва с UUID
-    send_feedback(uuid, text);
-
-    // Запрос сообщения для GET-запроса
-    printf("Enter a message for the GET request: ");
-    fgets(message, sizeof(message), stdin);
-    message[strcspn(message, "\n")] = 0;
-
-    // Отправка GET-запроса
-    send_get_request(message);
-
-    printf("All requests completed.\n");
     return 0;
 }
