@@ -1,14 +1,15 @@
 import pandas as pd
 import numpy as np
 
-def merger(d):
+def merger(file):
+    d = pd.read_csv(file, sep="\s+", header=0)
     # создали таблицу данных df
     df = pd.DataFrame(data=d)
     x1=df.columns[0]
     y1=df.columns[1]
     x2=df.columns[2]
     y2=df.columns[3]
-    letter=df.columns[4]
+    letter=df.columns[6]
 
     # Определяем среднюю ширину буквы
     avg_width = np.mean(df[x2] - df[x1])
@@ -37,7 +38,18 @@ def merger(d):
 
         for i in range(1, len(line_df)):
             if line_df.iloc[i][x1] - line_df.iloc[i - 1][x2] <= max_dist_x:
-                current_word += line_df.iloc[i][letter]
+                if line_df.iloc[i][letter] == 'dot':
+                    current_word += '.'
+                elif line_df.iloc[i][letter] == 'comma':
+                    current_word += ','
+                elif line_df.iloc[i][letter] == 'quest':
+                    current_word += '?'
+                elif line_df.iloc[i][letter] == 'excl':
+                    current_word += '!'
+                elif line_df.iloc[i][letter] == 'dog':
+                    current_word += '@'
+                else:
+                    current_word += line_df.iloc[i][letter]
             else:
                 words.append(current_word)
                 current_word = line_df.iloc[i][letter]
@@ -57,7 +69,8 @@ def main():
         (35, 70, 55, 110, 'А'),
         (60, 70, 80, 110, 'К')
     ], columns=['x1', 'y1', 'x2', 'y2', 'letter'])
-    merger(d)
+    #merger(d)
+    merger(filepath) # путь к файлу
 
 if __name__ == "__main__":
     main()
