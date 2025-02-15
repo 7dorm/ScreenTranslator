@@ -1,137 +1,182 @@
-import os
+from PIL import Image, ImageDraw, ImageFont
+import numpy as np
 import random
 import cv2
-import numpy as np
-from PIL import Image, ImageDraw, ImageFont
-
-# Папки для сохранения датасета
-OUTPUT_DIR = "dataset"
-IMAGE_DIR = os.path.join(OUTPUT_DIR, "images")
-LABEL_DIR = os.path.join(OUTPUT_DIR, "labels")
-os.makedirs(IMAGE_DIR, exist_ok=True)
-os.makedirs(LABEL_DIR, exist_ok=True)
-
-# Пути к шрифтам
-FONT_DIR = "fonts"
-FONT_PATHS = [os.path.join(FONT_DIR, f) for f in os.listdir(FONT_DIR) if f.endswith(".ttf")]
+import os
 
 # Параметры генерации
 IMAGE_SIZE = (640, 640)
 NUM_IMAGES = 3  # Количество изображений
 CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+FONT_DIR = "fonts"
+OUTPUT_DIR = "dataset"
+SYMBOLS_DIR = os.path.join(OUTPUT_DIR, "symbols")
+IMAGES_DIR = os.path.join(OUTPUT_DIR, "images")
+LABELS_DIR = os.path.join(OUTPUT_DIR, "labels")
+
+os.makedirs(SYMBOLS_DIR, exist_ok=True)
+os.makedirs(IMAGES_DIR, exist_ok=True)
+os.makedirs(LABELS_DIR, exist_ok=True)
+
+FONT_PATHS = [os.path.join(FONT_DIR, f) for f in os.listdir(FONT_DIR) if f.endswith(".ttf")]
 CHAR_TO_CLASS = {char: i for i, char in enumerate(CHARACTERS)}
 
 def random_color():
-    """Генерирует случайный цвет (RGB)."""
     return tuple(random.randint(0, 255) for _ in range(3))
 
-def is_overlapping(new_box, existing_boxes):
-    """Проверяет, пересекается ли новый bbox с уже существующими."""
-    x1_new, y1_new, x2_new, y2_new = new_box
-    for x1, y1, x2, y2 in existing_boxes:
-        if not (x2_new < x1 or x1_new > x2 or y2_new < y1 or y1_new > y2):
-            return True  # Есть пересечение
-    return False
+def sufficient_contrast(bg_color, text_color, threshold=50):
+    return all(abs(bg_color[i] - text_color[i]) > threshold for i in range(3))
 
-def ensure_contrast(fg_color, bg_color, min_diff=20):
-    """Обеспечивает различие цветов не менее чем на min_diff по каждому каналу."""
-    while all(abs(fg_color[i] - bg_color[i]) < min_diff for i in range(3)):
-        bg_color = random_color()
-    return bg_color
+def find_content_bounds(image, symbol_color):
+    """Находит границы символа по цвету."""
+    pixels = image.load()
+    width, height = image.size
 
-def apply_perspective_transform(image, bbox):
-    """Применяет перспективное преобразование к символу."""
-    x1, y1, x2, y2 = bbox
+    top, bottom, left, right = height, 0, width, 0
+    found = False
 
-    # Опорные точки bbox
-    src_pts = np.float32([[x1, y1], [x2, y1], [x2, y2], [x1, y2]])
+    for y in range(height):
+        for x in range(width):
+            r, g, b, a = pixels[x, y]  # Получаем цвет с учетом альфа-канала
+            if a > 0 and (r, g, b) == symbol_color:
+                found = True
+                top = min(top, y)
+                bottom = max(bottom, y)
+                left = min(left, x)
+                right = max(right, x)
 
-    # Смещение точек для искажения
-    max_offset = 20
-    dst_pts = src_pts + np.random.randint(-max_offset, max_offset, src_pts.shape).astype(np.float32)
+    if not found:
+        return None  # Нет содержимого
 
-    # Вычисляем матрицу трансформации
-    M = cv2.getPerspectiveTransform(src_pts, dst_pts)
+    # Добавляем отступы по 3 пикселя с каждой стороны
+    top = max(top - 3, 0)
+    bottom = min(bottom + 3, height - 1)
+    left = max(left - 3, 0)
+    right = min(right + 3, width - 1)
 
-    # Преобразуем PIL → OpenCV → Применяем трансформацию → OpenCV → PIL
-    image_cv = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
-    transformed = cv2.warpPerspective(image_cv, M, (IMAGE_SIZE[0], IMAGE_SIZE[1]))
-    transformed = cv2.cvtColor(transformed, cv2.COLOR_BGR2RGB)
+    return top, bottom, left, right
 
-    return Image.fromarray(transformed)
+def generate_transformed_character(char, font_path, font_size):
+    """Создаёт изображение буквы и применяет искажение."""
+    font = ImageFont.truetype(font_path, font_size)
+    text_color = random_color()
+    bg_color = random_color()
 
-def generate_image(idx):
-    """Генерирует изображение с буквами и разметку YOLO."""
-    image = Image.new("RGB", IMAGE_SIZE, random_color())
-    draw = ImageDraw.Draw(image)
-    
-    objects = []  # Разметка YOLO
-    existing_boxes = []  # Проверка пересечений
-
-    num_chars = random.randint(15, 30)  # Случайное количество символов
-    for _ in range(num_chars):
-        char = random.choice(CHARACTERS)
-        class_id = CHAR_TO_CLASS[char]  # ID символа
-        font_path = random.choice(FONT_PATHS)
-        font_size = random.randint(30, 100)
-        
-        try:
-            font = ImageFont.truetype(font_path, font_size)
-        except IOError:
-            font = ImageFont.load_default()
-
+    while not sufficient_contrast(bg_color, text_color):
         text_color = random_color()
-        bg_color = ensure_contrast(text_color, random_color())
 
-        # Генерация случайного положения буквы
-        for _ in range(10):  # Пробуем до 10 раз, чтобы избежать пересечений
-            x = random.randint(20, IMAGE_SIZE[0] - 120)
-            y = random.randint(20, IMAGE_SIZE[1] - 120)
+    # Определяем размер символа
+    temp_img = Image.new("RGB", (500, 500), bg_color)
+    temp_draw = ImageDraw.Draw(temp_img)
+    bbox = temp_draw.textbbox((0, 0), char, font=font)
+    char_w, char_h = bbox[2] - bbox[0], bbox[3] - bbox[1]
 
-            # Определяем bbox
-            bbox = draw.textbbox((x, y), char, font=font)
-            x_min, y_min, x_max, y_max = bbox
+    # Добавляем запас на искажение
+    max_distortion = int(max(char_w, char_h))
+    canvas_size = (char_w + max_distortion * 5, char_h + max_distortion * 5)
 
-            # Проверяем выход за границы
-            if x_min < 0 or y_min < 0 or x_max > IMAGE_SIZE[0] or y_max > IMAGE_SIZE[1]:
-                continue
+    char_img = Image.new("RGBA", canvas_size, bg_color + (255,))
+    draw = ImageDraw.Draw(char_img)
+    draw.text((max_distortion, max_distortion), char, font=font, fill=text_color)
 
-            if not is_overlapping((x_min, y_min, x_max, y_max), existing_boxes):
-                existing_boxes.append((x_min, y_min, x_max, y_max))
-                break
-        else:
-            continue  # Если не нашли свободное место, пропускаем символ
+    # Применяем искажение
+    char_img_cv = np.array(char_img)
+    transformed_img_cv = apply_perspective_transform(char_img_cv)
 
-        # Рисуем фон (контрастный прямоугольник)
-        draw.rectangle(bbox, fill=bg_color)
+    # Преобразуем обратно в PIL
+    transformed_img_pil = Image.fromarray(transformed_img_cv).convert("RGBA")
 
-        # Рисуем букву
-        draw.text((x, y), char, font=font, fill=text_color)
+    # Обрезаем символ по цвету
+    bounds = find_content_bounds(transformed_img_pil, text_color)
+    if bounds:
+        top, bottom, left, right = bounds
+        transformed_img_pil = transformed_img_pil.crop((left, top, right + 1, bottom + 1))
 
-        # Применяем перспективное искажение
-        #image = apply_perspective_transform(image, bbox)
+    # Сохраняем символ отдельно для отладки
+    char_img_pil = transformed_img_pil.copy()
+    char_img_pil.save(os.path.join(SYMBOLS_DIR, f"{char}.png"))
 
-        # YOLO формат (нормализованные координаты)
-        x_center = (x_min + x_max) / 2 / IMAGE_SIZE[0]
-        y_center = (y_min + y_max) / 2 / IMAGE_SIZE[1]
+    return transformed_img_pil
+
+def apply_perspective_transform(image):
+    """Применяет перспективное искажение."""
+    h, w = image.shape[:2]
+    src_pts = np.float32([[0, 0], [w - 1, 0], [w - 1, h - 1], [0, h - 1]])
+
+    max_offset = min(w, h) // 2.5
+    dst_pts = np.float32([
+        [random.randint(0, max_offset), random.randint(0, max_offset)],
+        [w - random.randint(0, max_offset), random.randint(0, max_offset)],
+        [w - random.randint(0, max_offset), h - random.randint(0, max_offset)],
+        [random.randint(0, max_offset), h - random.randint(0, max_offset)]
+    ])
+
+    M = cv2.getPerspectiveTransform(src_pts, dst_pts)
+    transformed = cv2.warpPerspective(image, M, (w, h))
+
+    return transformed
+
+def find_available_position(existing_boxes, bbox, img_size):
+    """Ищет место для вставки символа."""
+    x_min, y_min, x_max, y_max = bbox
+    w, h = x_max - x_min, y_max - y_min
+
+    for _ in range(20):  # Пробуем до 20 раз
+        x = random.randint(0, img_size[0] - w)
+        y = random.randint(0, img_size[1] - h)
+        new_bbox = (x, y, x + w, y + h)
+
+        if not any(is_overlapping(new_bbox, box) for box in existing_boxes):
+            return new_bbox
+
+    return None  # Не нашли место
+
+def is_overlapping(box1, box2):
+    """Проверяет пересечение bbox."""
+    x1, y1, x2, y2 = box1
+    a1, b1, a2, b2 = box2
+    return not (x2 < a1 or x1 > a2 or y2 < b1 or y1 > b2)
+
+def generate_image(image_id):
+    """Генерирует изображение с буквами и разметкой."""
+    image = Image.new("RGB", IMAGE_SIZE, random_color())
+    existing_boxes = []
+    annotations = []
+
+    for _ in range(random.randint(15, 30)):
+        char = random.choice(CHARACTERS)
+        font_path = random.choice(FONT_PATHS)
+        font_size = random.randint(50, 200)
+
+        char_img = generate_transformed_character(char, font_path, font_size)
+        w, h = char_img.size
+        bbox = (0, 0, w, h)
+
+        # Найти место для вставки
+        new_bbox = find_available_position(existing_boxes, bbox, IMAGE_SIZE)
+        if new_bbox is None:
+            continue  # Пропускаем символ, если нет места
+
+        # Вставляем символ
+        image.paste(char_img, (new_bbox[0], new_bbox[1]), char_img)
+
+        # Добавляем разметку
+        x_min, y_min, x_max, y_max = new_bbox
+        x_center = (x_min + x_max) / (2 * IMAGE_SIZE[0])
+        y_center = (y_min + y_max) / (2 * IMAGE_SIZE[1])
         width = (x_max - x_min) / IMAGE_SIZE[0]
         height = (y_max - y_min) / IMAGE_SIZE[1]
 
-        objects.append(f"{class_id} {x_center:.6f} {y_center:.6f} {width:.6f} {height:.6f}")
+        class_id = CHAR_TO_CLASS[char]
+        annotations.append(f"{class_id} {x_center:.6f} {y_center:.6f} {width:.6f} {height:.6f}")
 
-    # Сохраняем изображение
-    img_path = os.path.join(IMAGE_DIR, f"img_{idx}.png")
-    image.save(img_path)
+    # Сохранение изображений и разметок
+    image.save(os.path.join(IMAGES_DIR, f"image_{image_id}.png"))
+    with open(os.path.join(LABELS_DIR, f"image_{image_id}.txt"), "w") as f:
+        f.write("\n".join(annotations))
 
-    # Сохраняем разметку YOLO
-    label_path = os.path.join(LABEL_DIR, f"img_{idx}.txt")
-    with open(label_path, "w") as f:
-        f.write("\n".join(objects))
-
-    print(f"Saved {img_path} with {len(objects)} objects.")
-
-# Генерируем датасет
+# Генерация изображений
 for i in range(NUM_IMAGES):
     generate_image(i)
 
-print("Генерация завершена!")
+print(f"Сгенерировано {NUM_IMAGES} изображений и разметок в {OUTPUT_DIR}")
