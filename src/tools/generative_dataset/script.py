@@ -103,7 +103,7 @@ def apply_perspective_transform(image):
     h, w = image.shape[:2]
     src_pts = np.float32([[0, 0], [w - 1, 0], [w - 1, h - 1], [0, h - 1]])
 
-    max_offset = min(w, h) // 2.5
+    max_offset = min(w, h) // 2.5 # Тут константу подвигать полезно
     dst_pts = np.float32([
         [random.randint(0, max_offset), random.randint(0, max_offset)],
         [w - random.randint(0, max_offset), random.randint(0, max_offset)],
@@ -149,16 +149,25 @@ def generate_image(image_id):
         font_size = random.randint(50, 200)
 
         char_img = generate_transformed_character(char, font_path, font_size)
-        w, h = char_img.size
-        bbox = (0, 0, w, h)
 
-        # Найти место для вставки
+        # Применяем искажение и обрезку символа
+        transformed_img = generate_transformed_character(char, font_path, font_size)
+        bounds = find_content_bounds(transformed_img, random_color())
+        if bounds:
+            top, bottom, left, right = bounds
+            transformed_img = transformed_img.crop((left, top, right + 1, bottom + 1))
+
+        # Получаем новые размеры символа после обрезки и искажения
+        new_w, new_h = transformed_img.size
+        bbox = (0, 0, new_w, new_h)
+
+        # Найти место для вставки с учётом искажений
         new_bbox = find_available_position(existing_boxes, bbox, IMAGE_SIZE)
         if new_bbox is None:
             continue  # Пропускаем символ, если нет места
 
         # Вставляем символ
-        image.paste(char_img, (new_bbox[0], new_bbox[1]), char_img)
+        image.paste(transformed_img, (new_bbox[0], new_bbox[1]), transformed_img)
 
         # Добавляем разметку
         x_min, y_min, x_max, y_max = new_bbox
@@ -169,6 +178,9 @@ def generate_image(image_id):
 
         class_id = CHAR_TO_CLASS[char]
         annotations.append(f"{class_id} {x_center:.6f} {y_center:.6f} {width:.6f} {height:.6f}")
+
+        # Добавляем новый bounding box в список
+        existing_boxes.append(new_bbox)
 
     # Сохранение изображений и разметок
     image.save(os.path.join(IMAGES_DIR, f"image_{image_id}.png"))
