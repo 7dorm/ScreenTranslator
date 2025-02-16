@@ -7,14 +7,12 @@ import os
 # Параметры генерации
 IMAGE_SIZE = (640, 640)
 NUM_IMAGES = 3  # Количество изображений
-CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,?!@"
 FONT_DIR = "fonts"
 OUTPUT_DIR = "dataset"
-SYMBOLS_DIR = os.path.join(OUTPUT_DIR, "symbols")
 IMAGES_DIR = os.path.join(OUTPUT_DIR, "images")
 LABELS_DIR = os.path.join(OUTPUT_DIR, "labels")
 
-os.makedirs(SYMBOLS_DIR, exist_ok=True)
 os.makedirs(IMAGES_DIR, exist_ok=True)
 os.makedirs(LABELS_DIR, exist_ok=True)
 
@@ -94,7 +92,7 @@ def generate_transformed_character(char, font_path, font_size):
 
     # Сохраняем символ отдельно для отладки
     char_img_pil = transformed_img_pil.copy()
-    char_img_pil.save(os.path.join(SYMBOLS_DIR, f"{char}.png"))
+    #char_img_pil.save(os.path.join(SYMBOLS_DIR, f"{char}.png"))
 
     return transformed_img_pil
 
