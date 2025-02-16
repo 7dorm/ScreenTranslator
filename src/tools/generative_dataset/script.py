@@ -7,7 +7,17 @@ import os
 # Параметры генерации
 IMAGE_SIZE = (640, 640)
 NUM_IMAGES = 3  # Количество изображений
-CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,?!@"
+CHARACTER_MAP = {
+    'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7, 'I': 8, 'J': 9,
+    'K': 10, 'L': 11, 'M': 12, 'N': 13, 'O': 14, 'P': 15, 'Q': 16, 'R': 17, 'S': 18, 'T': 19,
+    'U': 20, 'V': 21, 'W': 22, 'X': 23, 'Y': 24, 'Z': 25,
+    'a': 0, 'b': 1, 'c': 2, 'd': 3, 'e': 4, 'f': 5, 'g': 6, 'h': 7, 'i': 8, 'j': 9,
+    'k': 10, 'l': 11, 'm': 12, 'n': 13, 'o': 14, 'p': 15, 'q': 16, 'r': 17, 's': 18, 't': 19,
+    'u': 20, 'v': 21, 'w': 22, 'x': 23, 'y': 24, 'z': 25,
+    '0': 26, '1': 27, '2': 28, '3': 29, '4': 30, '5': 31, '6': 32, '7': 33, '8': 34, '9': 35,
+    #   '.': 36, ',': 37, '?': 38, '!': 39, '@': 40
+}
+CHARACTERS = list(CHARACTER_MAP.keys())
 FONT_DIR = "fonts"
 OUTPUT_DIR = "dataset"
 IMAGES_DIR = os.path.join(OUTPUT_DIR, "images")
@@ -17,7 +27,6 @@ os.makedirs(IMAGES_DIR, exist_ok=True)
 os.makedirs(LABELS_DIR, exist_ok=True)
 
 FONT_PATHS = [os.path.join(FONT_DIR, f) for f in os.listdir(FONT_DIR) if f.endswith(".ttf")]
-CHAR_TO_CLASS = {char: i for i, char in enumerate(CHARACTERS)}
 
 def random_color():
     return tuple(random.randint(0, 255) for _ in range(3))
@@ -90,10 +99,6 @@ def generate_transformed_character(char, font_path, font_size):
         top, bottom, left, right = bounds
         transformed_img_pil = transformed_img_pil.crop((left, top, right + 1, bottom + 1))
 
-    # Сохраняем символ отдельно для отладки
-    char_img_pil = transformed_img_pil.copy()
-    #char_img_pil.save(os.path.join(SYMBOLS_DIR, f"{char}.png"))
-
     return transformed_img_pil
 
 def apply_perspective_transform(image):
@@ -146,8 +151,6 @@ def generate_image(image_id):
         font_path = random.choice(FONT_PATHS)
         font_size = random.randint(50, 200)
 
-        char_img = generate_transformed_character(char, font_path, font_size)
-
         # Применяем искажение и обрезку символа
         transformed_img = generate_transformed_character(char, font_path, font_size)
         bounds = find_content_bounds(transformed_img, random_color())
@@ -174,7 +177,7 @@ def generate_image(image_id):
         width = (x_max - x_min) / IMAGE_SIZE[0]
         height = (y_max - y_min) / IMAGE_SIZE[1]
 
-        class_id = CHAR_TO_CLASS[char]
+        class_id = CHARACTER_MAP[char]
         annotations.append(f"{class_id} {x_center:.6f} {y_center:.6f} {width:.6f} {height:.6f}")
 
         # Добавляем новый bounding box в список
