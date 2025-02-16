@@ -1,12 +1,12 @@
 from PIL import Image, ImageDraw, ImageFont
 import numpy as np
+import argparse
 import random
 import cv2
 import os
 
 # Параметры генерации
 IMAGE_SIZE = (640, 640)
-NUM_IMAGES = 3  # Количество изображений
 CHARACTER_MAP = {
     'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7, 'I': 8, 'J': 9,
     'K': 10, 'L': 11, 'M': 12, 'N': 13, 'O': 14, 'P': 15, 'Q': 16, 'R': 17, 'S': 18, 'T': 19,
@@ -106,7 +106,7 @@ def apply_perspective_transform(image):
     h, w = image.shape[:2]
     src_pts = np.float32([[0, 0], [w - 1, 0], [w - 1, h - 1], [0, h - 1]])
 
-    max_offset = min(w, h) // 2.5 # Тут константу подвигать полезно
+    max_offset = min(w, h) // 3 # Тут константу подвигать полезно
     dst_pts = np.float32([
         [random.randint(0, max_offset), random.randint(0, max_offset)],
         [w - random.randint(0, max_offset), random.randint(0, max_offset)],
@@ -188,8 +188,12 @@ def generate_image(image_id):
     with open(os.path.join(LABELS_DIR, f"image_{image_id}.txt"), "w") as f:
         f.write("\n".join(annotations))
 
+parser = argparse.ArgumentParser(description="Генерация изображений с символами")
+parser.add_argument("NUM_IMAGES", type=int, help="Количество изображений для генерации")
+args = parser.parse_args()
+
 # Генерация изображений
-for i in range(NUM_IMAGES):
+for i in range(args.NUM_IMAGES):
     generate_image(i)
 
-print(f"Сгенерировано {NUM_IMAGES} изображений и разметок в {OUTPUT_DIR}")
+print(f"Сгенерировано {args.NUM_IMAGES} изображений и разметок в {OUTPUT_DIR}")
