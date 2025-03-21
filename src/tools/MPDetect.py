@@ -4,8 +4,12 @@ import cv2
 import numpy as np
 from PIL import Image
 
-from src.tools import NNModel, CustomImage, CustomVideo, IMAGE_TYPES, VIDEO_TYPES, IncorrectFileTypeException, \
-    BaseDetection, Detections
+from src.tools.MPNNModel import NNModel
+from src.tools.MPCustom import CustomVideo, CustomImage
+from src.tools.base import BaseDetection
+from src.tools.constants import IMAGE_TYPES, VIDEO_TYPES
+from src.tools.exceptions import IncorrectFileTypeException
+from src.tools.models.common import Detections
 from src.tools.mutils import ImageUtils, WordUtils
 
 

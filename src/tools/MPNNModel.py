@@ -1,7 +1,8 @@
 import torch
 
 from typing import Union, Any
-from src.tools import AutoShape, Detections
+
+from src.tools.models.common import AutoShape, Detections
 
 
 class NNModel:
