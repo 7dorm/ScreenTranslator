@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5edf229-a28f-44b9-bc9d-c6e53f4ac596" name="Changes" comment="Restructured">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ScreenTranslator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/MPCustom.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/MPCustom.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/MPDetect.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/MPDetect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/MPNNModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/MPNNModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/Medipy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/best.pt" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/best.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/runs/detect/exp/521dec7d-91d4-4f40-9c73-e31e669e60f2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/runs/detect/exp2/521dec7d-91d4-4f40-9c73-e31e669e60f2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/runs/detect/exp3/test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/runs/detect/exp4/test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/runs/detect/exp5/test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/runs/detect/exp6/test.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
