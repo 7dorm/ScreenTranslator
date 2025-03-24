@@ -22,12 +22,22 @@ class Medipy:
 if __name__ == "__main__":
     obj = Medipy(show=True)
     obj.addModel('best.pt', 'en')
-    image: CustomImage= obj.process("/Users/deu/Documents/help.png")
+    image: CustomImage = obj.process("/Users/deu/Downloads/test1.jpg")
     print(image.result.text.keys())
-    # img: CustomImage = obj.process("/Users/deu/Desktop/test.png")
-    # img()
+    image: CustomImage = obj.process("/Users/deu/Downloads/test2.jpg")
+    print(image.result.text.keys())
+    image: CustomImage = obj.process("/Users/deu/Downloads/test3.jpg")
+    print(image.result.text.keys())
+    image: CustomImage = obj.process("/Users/deu/Downloads/test4.jpeg")
+    print(image.result.text.keys())
+    image: CustomImage = obj.process("/Users/deu/Downloads/test5.jpg")
+    print(image.result.text.keys())
+    image: CustomImage = obj.process("/Users/deu/Downloads/test6.jpg")
+    print(image.result.text.keys())
+    image: CustomImage = obj.process("/Users/deu/Downloads/test7.jpg")
+    print(image.result.text.keys())
 
-#
+
 #                       TODO: Modify this to Custom Video
 #
 # import mss

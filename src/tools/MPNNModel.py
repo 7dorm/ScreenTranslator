@@ -13,7 +13,7 @@ class NNModel:
     def __init__(self,
                  path: str,
                  language_code: str,
-                 half_precision: bool =False) -> None:
+                 half_precision: bool = False) -> None:
         """
         Initialize YOLOv5 model with optimizations.
 
@@ -25,20 +25,29 @@ class NNModel:
         """
 
         # Model initialization
-        self.model: AutoShape = torch.hub.load('ultralytics/yolov5', 'custom', path=path)
+        self.model: AutoShape = torch.hub.load('ultralytics/yolov5',
+                                               'custom',
+                                               path=path,
+                                               _verbose=False)
         self.lang: str = language_code
 
         # Optimizations
-        self.model.conf = 0.5  # Confidence threshold
-        self.model.iou = 0.45  # NMS IoU threshold
-        self.model.classes = None  # All classes
+        self.model.conf = 0.2  # Confidence threshold
+        # self.model.dmb = True  # NMS IoU threshold
+        # self.model.classes = None  # All classes
+        self.model.iou = 0.3  # NMS IoU threshold
+        self.model.agnostic = False  # NMS class-agnostic
+        self.model.multi_label = True  # NMS multiple labels per box
+        self.model.max_det = 3000  # maximum number of detections per image
+        self.model.amp = True  # Automatic Mixed Precision (AMP) inference
 
+        self.model.modules()
         self._USE_CUDA: bool = torch.cuda.is_available()
         self._USE_HALF_PRECISION: bool = half_precision
         if self._USE_CUDA:
             self.model.cuda()
-            if self._USE_HALF_PRECISION:
-                self.model.half()
+        if self._USE_HALF_PRECISION:
+            self.model.half()
 
     def __call__(self, data: Union[str, Any]) -> Detections:
-        return self.model(data)
+        return self.model(data, size=2080)

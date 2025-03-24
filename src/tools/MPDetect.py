@@ -11,6 +11,7 @@ from src.tools.constants import IMAGE_TYPES, VIDEO_TYPES
 from src.tools.exceptions import IncorrectFileTypeException
 from src.tools.models.common import Detections
 from src.tools.mutils import ImageUtils, WordUtils
+from src.tools.mutils.ImageUtils import convert_pil_to_cv, resize_image
 
 
 class Detection:
@@ -68,7 +69,7 @@ class Detection:
     def process_image(self, path: str) -> BaseDetection:
         result: Detections = self.select_model(path)
         if result.pandas().xyxyn[0].size:
-            bboxes: dict = WordUtils.merger(result.pandas().xyxyn[0])
+            bboxes: dict = WordUtils.merger(result.pandas().xyxyn[0], result.pandas().s[2:4:-1])
             return BaseDetection(
                 result.pandas().xyxyn[0],
                 ImageUtils.draw_bounding_boxes(Image.open(path), bboxes),
@@ -81,7 +82,7 @@ class Detection:
                 {}
             )
 
-    def select_model(self, frame: Union[Union[cv2.Mat, np.ndarray], str]) -> Union[Detections, None]:
+    def select_model(self, frame: Union[Union[cv2.Mat, np.ndarray], str], size: tuple[int, int] = None) -> Union[Detections, None]:
         result: Detections = None
         conf: int = 0
 

@@ -36,6 +36,14 @@ def convert_pil_to_cv(image: Image.Image, to_mat: bool = False) -> Union[cv2.Mat
     else:
         return image_np
 
+def resize_image(image: Image.Image, size: tuple[int, int] = None):
+    if size:
+        lsize = image.size
+        k = size[0] / lsize[0]
+        image = image.resize((round(lsize[0] * k), round(lsize[1] * k)))
+    print(image.size)
+    return image
+
 def write_text_on_image(image, text: str,
                         position: tuple = (10, 10), font_path: str = None,
                         font_size: int = 100, color: tuple = (255, 255, 255),

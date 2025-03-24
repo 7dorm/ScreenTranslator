@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-def merger(df: pd.DataFrame) -> dict:
+def merger(df: pd.DataFrame, image_size: tuple[int, int]) -> dict:
     x1=df.columns[0]
     y1=df.columns[1]
     x2=df.columns[2]
