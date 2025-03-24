@@ -8,7 +8,7 @@ def generate_ngrams(word, n):
     return [word[i:i + n] for i in range(len(word) - n + 1)]
 
 def build_ngram_index(n):
-    output_file = f"{n}_gramm_index.json"
+    output_file = f"mutils/{n}_gramm_index.json"
 
     if os.path.exists(output_file):
         print(f"Файл {output_file} уже существует. Пропускаем.")

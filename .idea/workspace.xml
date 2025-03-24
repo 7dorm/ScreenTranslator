@@ -5,27 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5edf229-a28f-44b9-bc9d-c6e53f4ac596" name="Changes" comment="Restructured">
+      <change afterPath="$PROJECT_DIR$/src/tools/mutils/CorrectingWordsByAPI.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tools/mutils/Correting words.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ScreenTranslator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/MPDetect.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/MPDetect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/Medipy.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/Medipy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/models/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/models/common.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/models/experimental.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/models/experimental.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/models/tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/models/tf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/models/yolo.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/models/yolo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/mutils/WordUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/mutils/WordUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/utils/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/utils/augmentations.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/utils/augmentations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/utils/autoanchor.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/utils/autoanchor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/utils/autobatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/utils/autobatch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/utils/dataloaders.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/utils/dataloaders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/utils/downloads.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/utils/downloads.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/utils/general.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/utils/general.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/utils/loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/utils/loss.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/utils/metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/utils/metrics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/utils/plots.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/utils/plots.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/utils/torch_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/utils/torch_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/ngramm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/ngramm.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,12 +33,12 @@
     &quot;assignee&quot;: &quot;7dorm&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/7dorm/ScreenTranslator.git&quot;,
-    &quot;accountId&quot;: &quot;bdae115b-43d9-4569-9aaa-37a27bd77d55&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:7dorm/ScreenTranslator.git",
+    "accountId": "971ff570-528c-4f60-afb8-cae1247a0bc8"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -63,26 +48,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.Medipy.executor&quot;: &quot;Run&quot;,
-    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
-    &quot;Python.base.executor&quot;: &quot;Run&quot;,
-    &quot;Python.merger.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test deep-translator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tst.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Correting words.executor": "Run",
+    "Python.Medipy.executor": "Run",
+    "Python.__init__.executor": "Run",
+    "Python.base.executor": "Run",
+    "Python.merger.executor": "Run",
+    "Python.ngramm.executor": "Run",
+    "Python.test deep-translator.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.tst.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "correcting__words",
+    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/tools/mutils" />
       <recent name="$PROJECT_DIR$/src/tools" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Medipy">
+  <component name="RunManager" selected="Python.Correting words">
+    <configuration name="Correting words" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ScreenTranslator" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/tools/mutils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tools/mutils/Correting words.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Medipy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ScreenTranslator" />
       <option name="ENV_FILES" value="" />
@@ -127,8 +138,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ngramm" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ScreenTranslator" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/tools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tools/ngramm.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Correting words" />
+        <item itemvalue="Python.ngramm" />
         <item itemvalue="Python.Medipy" />
         <item itemvalue="Python.__init__" />
       </list>
@@ -137,7 +172,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-fb887030ada0-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.21565.199" />
+        <option value="bundled-python-sdk-6a3326d57233-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.24807.21" />
       </set>
     </attachedChunks>
   </component>
