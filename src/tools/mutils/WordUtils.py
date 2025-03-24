@@ -75,3 +75,4 @@ def merger(df: pd.DataFrame, translated=True) -> dict:
     for word in words_with_bbox.keys():
         new_word = translate(correcting_text([word]))
         words_with_bbox_to_return[new_word] = words_with_bbox[word]
+    return words_with_bbox_to_return

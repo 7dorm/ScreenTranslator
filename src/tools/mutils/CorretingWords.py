@@ -107,36 +107,3 @@ def correcting_text(words):
 def translate(text):
     return GoogleTranslator(source='auto', target='ru').translate(text=" ".join(text))
 
-words1 = ["@pple", "34", "of", "exanpie", "1s", "g00d"]
-words2 = correcting_text(words1)
-print(" ".join(words2))
-print(translate(words2))
-
-words1 = ["need", "i", "s@y", "m0re"]
-words2 = correcting_text(words1)
-print(" ".join(words2))
-print(translate(words2))
-
-words1 = ["how", "eome"]
-words2 = correcting_text(words1)
-print(" ".join(words2))
-print(translate(words2))
-
-words1 = ['WHEN', 'YVOU', '9@ET', 'YELLED', 'AT', 'FOR', 'DELETING9', 'THE', 'COMPANY', 'D', 'E', 'DU', 'OWKKEY', 'JU', 'H', 'N', 'NTERN', '1P']
-words2 = correcting_text(words1)
-print(" ".join(words2))
-print(translate(words2))
-
-words1 = ['WHEN', 'YOU', '9E@T', 'YVELLED', 'ATF', 'FOR', 'DEILETIING9', 'THHE', 'COMPANY', 'D', 'BASSE', 'DUTYOU', 'RE', 'OWKEY', 'JU', 'H', 'UN', 'NTERN', '1', 'P']
-words2 = correcting_text(words1)
-print(" ".join(words2))
-print(translate(words2))
-
-words1 = ['WHEN', 'YOU', 'GET', 'YELLED', 'AT', 'FOR', 'DELETING', 'THE', 'COMPANY', 'DATAB', 'E', 'BUT', 'LOW', 'EY', 'JUST', 'CHIL', 'UN', 'A', 'D', 'NTE', 'N', '1']
-words2 = correcting_text(words1)
-print(" ".join(words2))
-print(translate(words2))
-#dict_file = open("3_gramm_index.json", "r")
-#dictionary = json.load(dict_file)
-#print(get_closest_words("yell", dictionary))
-#print(get_closest_word("yell", get_closest_words("yell", dictionary)))
