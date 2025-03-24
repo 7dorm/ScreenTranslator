@@ -1,7 +1,7 @@
 import os
 import json
 
-input_file = "words_alpha.txt"
+input_file = "en_US-large.txt"
 
 def generate_ngrams(word, n):
     """Разделяет слово на n-граммы"""

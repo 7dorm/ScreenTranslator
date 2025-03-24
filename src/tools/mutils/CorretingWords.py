@@ -25,6 +25,8 @@ def get_closest_words(word, dictionary):
     for ngramm in ngramms:
         if ngramm in dictionary:
             words = dictionary[ngramm]
+            if words and word in words:
+                return [word]
             for one_word in words:
                 if len(one_word) > len(word) + 1 or len(one_word) < len(word) - 1:
                     continue
