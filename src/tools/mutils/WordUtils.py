@@ -1,7 +1,9 @@
 import pandas as pd
 import numpy as np
+from CorretingWords import correcting_text, translate
 
-def merger(df: pd.DataFrame) -> dict:
+
+def merger(df: pd.DataFrame, translated=True) -> dict:
     x1=df.columns[0]
     y1=df.columns[1]
     x2=df.columns[2]
@@ -67,4 +69,10 @@ def merger(df: pd.DataFrame) -> dict:
                'y_max': float(cur_word_y_max)}
         words_with_bbox[current_word] = tmp
 
-    return words_with_bbox
+    if not translated:
+        return words_with_bbox
+    words_with_bbox_to_return = dict()
+    for word in words_with_bbox.keys():
+        new_word = translate(correcting_text([word]))
+        words_with_bbox_to_return[new_word] = words_with_bbox[word]
+    return words_with_bbox_to_return
