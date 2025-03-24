@@ -22,9 +22,8 @@ class Medipy:
 if __name__ == "__main__":
     obj = Medipy(show=True)
     obj.addModel('best.pt', 'en')
-    vid: CustomVideo = obj.process("/Users/deu/Desktop/test.mp4")
-    for i in vid:
-        print(i.xyxyn)
+    image: CustomImage= obj.process("/Users/deu/Documents/help.png")
+    print(image.result.text.keys())
     # img: CustomImage = obj.process("/Users/deu/Desktop/test.png")
     # img()
 

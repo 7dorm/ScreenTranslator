@@ -13,7 +13,7 @@ def merger(df: pd.DataFrame) -> dict:
     max_dist_x = avg_width * 0.2
     # Определяем среднюю высоту буквы
     avg_height = np.mean(df[y2] - df[y1])
-    max_dist_y= avg_height
+    max_dist_y= avg_height * 0.8
 
     # Разделяем буквы на строки текста
     df = df.sort_values(by=y1).reset_index(drop=True) # Отсортировали по возрастанию y
