@@ -6,6 +6,26 @@
   <component name="ChangeListManager">
     <list default="true" id="c5edf229-a28f-44b9-bc9d-c6e53f4ac596" name="Changes" comment="Restructured">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/MPDetect.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/MPDetect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/Medipy.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/Medipy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/models/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/models/common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/models/experimental.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/models/experimental.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/models/tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/models/tf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/models/yolo.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/models/yolo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/mutils/WordUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/mutils/WordUtils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/utils/augmentations.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/utils/augmentations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/utils/autoanchor.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/utils/autoanchor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/utils/autobatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/utils/autobatch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/utils/dataloaders.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/utils/dataloaders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/utils/downloads.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/utils/downloads.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/utils/general.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/utils/general.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/utils/loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/utils/loss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/utils/metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/utils/metrics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/utils/plots.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/utils/plots.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/utils/torch_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/utils/torch_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +65,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.Medipy.executor&quot;: &quot;Run&quot;,
     &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
     &quot;Python.base.executor&quot;: &quot;Run&quot;,
     &quot;Python.merger.executor&quot;: &quot;Run&quot;,
@@ -61,7 +82,7 @@
       <recent name="$PROJECT_DIR$/src/tools" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Medipy">
     <configuration name="Medipy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ScreenTranslator" />
       <option name="ENV_FILES" value="" />
@@ -84,9 +105,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ScreenTranslator" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/server" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/server/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Medipy" />
+        <item itemvalue="Python.__init__" />
       </list>
     </recent_temporary>
   </component>

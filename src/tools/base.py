@@ -6,9 +6,15 @@ from PIL import Image
 from typing import Union
 
 class BaseDetection:
-    def __init__(self, xyxyn: pandas.DataFrame, frame: Union[Union[cv2.Mat, np.ndarray], Image.Image]) -> None:
+    def __init__(self,
+                 xyxyn: pandas.DataFrame,
+                 frame: Union[Union[cv2.Mat, np.ndarray], Image.Image],
+                 text: dict = None) -> None:
+        if text is None:
+            text = {}
         self.xyxyn: pandas.DataFrame = xyxyn
         self.frame: Union[Union[cv2.Mat, np.ndarray], Image] = frame
+        self.text: dict = text
 
 
 

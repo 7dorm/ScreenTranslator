@@ -56,7 +56,8 @@ class Detection:
                         ImageUtils.convert_to_pil_image(frame),
                         WordUtils.merger(result.pandas().xyxyn[0])
                     )
-                )
+                ),
+                WordUtils.merger(result.pandas().xyxyn[0])
             )
         else:
             return BaseDetection(
@@ -66,11 +67,19 @@ class Detection:
 
     def process_image(self, path: str) -> BaseDetection:
         result: Detections = self.select_model(path)
-        bboxes: dict = WordUtils.merger(result.pandas().xyxyn[0])
-        return BaseDetection(
-            result.pandas().xyxyn[0],
-            ImageUtils.draw_bounding_boxes(Image.open(path), bboxes)
-        )
+        if result.pandas().xyxyn[0].size:
+            bboxes: dict = WordUtils.merger(result.pandas().xyxyn[0])
+            return BaseDetection(
+                result.pandas().xyxyn[0],
+                ImageUtils.draw_bounding_boxes(Image.open(path), bboxes),
+                bboxes
+            )
+        else:
+            return BaseDetection(
+                result.pandas().xyxyn[0],
+                ImageUtils.draw_bounding_boxes(Image.open(path), {}),
+                {}
+            )
 
     def select_model(self, frame: Union[Union[cv2.Mat, np.ndarray], str]) -> Union[Detections, None]:
         result: Detections = None
