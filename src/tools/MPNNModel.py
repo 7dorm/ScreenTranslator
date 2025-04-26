@@ -2,6 +2,8 @@ import torch
 
 from typing import Union, Any
 
+from torch.mps import device_count
+
 from src.tools.models.common import AutoShape, Detections
 
 
@@ -13,7 +15,7 @@ class NNModel:
     def __init__(self,
                  path: str,
                  language_code: str,
-                 half_precision: bool = False) -> None:
+                 half_precision: bool = True) -> None:
         """
         Initialize YOLOv5 model with optimizations.
 
@@ -28,7 +30,10 @@ class NNModel:
         self.model: AutoShape = torch.hub.load('ultralytics/yolov5',
                                                'custom',
                                                path=path,
-                                               _verbose=False)
+                                               _verbose=False,
+                                               device='mps')
+
+
         self.lang: str = language_code
 
         # Optimizations
@@ -36,8 +41,8 @@ class NNModel:
         # self.model.dmb = True  # NMS IoU threshold
         # self.model.classes = None  # All classes
         self.model.iou = 0.3  # NMS IoU threshold
-        self.model.agnostic = False  # NMS class-agnostic
-        self.model.multi_label = True  # NMS multiple labels per box
+        self.model.agnostic = True  # NMS class-agnostic
+        self.model.multi_label = False  # NMS multiple labels per box
         self.model.max_det = 3000  # maximum number of detections per image
         self.model.amp = True  # Automatic Mixed Precision (AMP) inference
 
@@ -49,5 +54,5 @@ class NNModel:
         if self._USE_HALF_PRECISION:
             self.model.half()
 
-    def __call__(self, data: Union[str, Any]) -> Detections:
-        return self.model(data, size=2080)
+    def __call__(self, data: Union[str, Any], size=1500) -> Detections:
+        return self.model(data, size=1650)

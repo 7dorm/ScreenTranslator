@@ -22,20 +22,15 @@ class Medipy:
 if __name__ == "__main__":
     obj = Medipy(show=True)
     obj.addModel('best.pt', 'en')
-    image: CustomImage = obj.process("/Users/deu/Downloads/test1.jpg")
-    print(image.result.text.keys())
-    image: CustomImage = obj.process("/Users/deu/Downloads/test2.jpg")
-    print(image.result.text.keys())
-    image: CustomImage = obj.process("/Users/deu/Downloads/test3.jpg")
-    print(image.result.text.keys())
-    image: CustomImage = obj.process("/Users/deu/Downloads/test4.jpeg")
-    print(image.result.text.keys())
-    image: CustomImage = obj.process("/Users/deu/Downloads/test5.jpg")
-    print(image.result.text.keys())
-    image: CustomImage = obj.process("/Users/deu/Downloads/test6.jpg")
-    print(image.result.text.keys())
-    image: CustomImage = obj.process("/Users/deu/Downloads/test7.jpg")
-    print(image.result.text.keys())
+    # image: CustomImage = obj.process("/Users/deu/Downloads/1.webp")
+    # print(image.result.text.keys())
+    # image: CustomImage = obj.process("/Users/deu/Downloads/test2.jpg")
+    # image: CustomImage = obj.process("/Users/deu/Downloads/test3.jpg")
+    image: CustomImage = obj.process("/Users/deu/large_image.bmp")
+    # image: CustomImage = obj.process("/Users/deu/Downloads/test5.jpg")
+    # image: CustomImage = obj.process("/Users/deu/Downloads/test6.jpg")
+    # image: CustomImage = obj.process("/Users/deu/Downloads/test7.jpg")
+
 
 
 #                       TODO: Modify this to Custom Video

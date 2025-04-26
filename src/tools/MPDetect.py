@@ -55,10 +55,10 @@ class Detection:
                 ImageUtils.convert_pil_to_cv(
                     ImageUtils.draw_bounding_boxes(
                         ImageUtils.convert_to_pil_image(frame),
-                        WordUtils.merger(result.pandas().xyxyn[0])
+                        WordUtils.merger(result.pandas().xyxyn[0], True)
                     )
                 ),
-                WordUtils.merger(result.pandas().xyxyn[0])
+                WordUtils.merger(result.pandas().xyxyn[0], True)
             )
         else:
             return BaseDetection(
@@ -66,10 +66,17 @@ class Detection:
                 np.squeeze(result.render())
             )
 
-    def process_image(self, path: str) -> BaseDetection:
+    def process_image(self, path: str, translated=True, only_text=False) -> BaseDetection:
         result: Detections = self.select_model(path)
         if result.pandas().xyxyn[0].size:
-            bboxes: dict = WordUtils.merger(result.pandas().xyxyn[0], result.pandas().s[2:4:-1])
+            bboxes: dict = WordUtils.merger(result.pandas().xyxyn[0], translated)
+            if only_text:
+                return BaseDetection(
+                    result.pandas().xyxyn[0],
+                    Image.open(path),
+                    bboxes
+                )
+
             return BaseDetection(
                 result.pandas().xyxyn[0],
                 ImageUtils.draw_bounding_boxes(Image.open(path), bboxes),
@@ -78,16 +85,16 @@ class Detection:
         else:
             return BaseDetection(
                 result.pandas().xyxyn[0],
-                ImageUtils.draw_bounding_boxes(Image.open(path), {}),
+                Image.open(path),
                 {}
             )
 
-    def select_model(self, frame: Union[Union[cv2.Mat, np.ndarray], str], size: tuple[int, int] = None) -> Union[Detections, None]:
+    def select_model(self, frame: Union[Union[cv2.Mat, np.ndarray], str], size: int = 1500) -> Union[Detections, None]:
         result: Detections = None
         conf: int = 0
 
         for model in self.models:
-            curr_result: Detections = model(frame)
+            curr_result: Detections = model(frame, size)
             curr_conf: int = curr_result.xyxy[0][:, 4].mean()
             if result == None or curr_conf > conf:
                 conf = curr_conf

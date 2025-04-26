@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from CorretingWords import correcting_text, translate
+from src.tools.mutils.CorretingWords import correcting_text, translate
 
 
 def merger(df: pd.DataFrame, translated=True) -> dict:
@@ -71,8 +71,8 @@ def merger(df: pd.DataFrame, translated=True) -> dict:
 
     if not translated:
         return words_with_bbox
-    words_with_bbox_to_return = dict()
-    for word in words_with_bbox.keys():
-        new_word = translate(correcting_text([word]))
-        words_with_bbox_to_return[new_word] = words_with_bbox[word]
-    return words_with_bbox_to_return
+    # new_words = []
+    # for word in words:
+    #     new_words.append(translate(correcting_text([word])))
+    print(translate(correcting_text(words)))
+    return words_with_bbox

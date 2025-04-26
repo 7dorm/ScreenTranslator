@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5edf229-a28f-44b9-bc9d-c6e53f4ac596" name="Changes" comment="Restructured">
-      <change afterPath="$PROJECT_DIR$/src/tools/mutils/CorrectingWordsByAPI.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tools/mutils/Correting words.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ScreenTranslator.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tools/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tools/mutils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tools/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/ngramm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/ngramm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/MPDetect.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/MPDetect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/MPNNModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/MPNNModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/Medipy.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/Medipy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/en_US-large.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/mutils/en_US-large.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/mutils/CorretingWords.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/mutils/CorretingWords.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/mutils/WordUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/mutils/WordUtils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/ngramm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/mutils/ngramm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/words_alpha.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/mutils/words_alpha.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,12 +40,12 @@
     &quot;assignee&quot;: &quot;7dorm&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:7dorm/ScreenTranslator.git",
-    "accountId": "971ff570-528c-4f60-afb8-cae1247a0bc8"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/7dorm/ScreenTranslator.git&quot;,
+    &quot;accountId&quot;: &quot;bdae115b-43d9-4569-9aaa-37a27bd77d55&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -48,30 +55,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Correting words.executor": "Run",
-    "Python.Medipy.executor": "Run",
-    "Python.__init__.executor": "Run",
-    "Python.base.executor": "Run",
-    "Python.merger.executor": "Run",
-    "Python.ngramm.executor": "Run",
-    "Python.test deep-translator.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.tst.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "correcting__words",
-    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Correting words.executor&quot;: &quot;Run&quot;,
+    &quot;Python.MPNNModel.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Medipy.executor&quot;: &quot;Run&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.base.executor&quot;: &quot;Run&quot;,
+    &quot;Python.merger.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ngramm.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test deep-translator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tst.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/tools/mutils" />
       <recent name="$PROJECT_DIR$/src/tools" />
+      <recent name="$PROJECT_DIR$/src/tools/mutils" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Correting words">
+  <component name="RunManager">
     <configuration name="Correting words" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ScreenTranslator" />
       <option name="ENV_FILES" value="" />
@@ -151,7 +159,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tools/ngramm.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tools/mutils/ngramm.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,9 +170,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Medipy" />
         <item itemvalue="Python.Correting words" />
         <item itemvalue="Python.ngramm" />
-        <item itemvalue="Python.Medipy" />
         <item itemvalue="Python.__init__" />
       </list>
     </recent_temporary>
@@ -172,7 +180,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-6a3326d57233-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.24807.21" />
+        <option value="bundled-python-sdk-fb887030ada0-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.21565.199" />
       </set>
     </attachedChunks>
   </component>
