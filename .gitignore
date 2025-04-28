@@ -1,1 +1,23 @@
-**/__pycache__/**
+# --- macOS ---
+.DS_Store
+
+# --- IDE ---
+.idea/
+.vscode/
+
+# --- Python ---
+# Кэш-файлы Python
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+
+# --- Временные файлы и папки ---
+src/server/static/processed
+src/server/static/uploads
+src/tools/mutils/3_gramm_index.json
+dist/
+build/
+.env/
+.venv/
+venv/
+env/
