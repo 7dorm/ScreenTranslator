@@ -55,4 +55,4 @@ class NNModel:
             self.model.half()
 
     def __call__(self, data: Union[str, Any], size=1500) -> Detections:
-        return self.model(data, size=1650)
+        return self.model(data, size)

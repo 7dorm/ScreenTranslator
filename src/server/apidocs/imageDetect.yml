@@ -1,0 +1,82 @@
+Распознавание текста на изображении
+---
+tags:
+  - Screen Translator API
+description:
+  "Загружает изображение и применяет модель для распознавания текста. 
+  
+  Возвращает результат в формате JSON с извлечённым текстом."
+
+consumes:
+  - multipart/form-data
+produces:
+  - application/json
+parameters:
+  - name: File
+    in: formData
+    type: file
+    required: true
+    description: Изображение, на котором нужно распознать текст
+    
+  - name: Params
+    in: formData
+    type: string
+    description: |
+      YOLO Параметры                                                      
+      <details>
+      <summary>Подробнее</summary>
+      ```
+      size                - Inference image size              (640 - 4096)
+      conf                - NMS confidence threshold          (0.1 - 0.9)
+      iou                 - NMS IoU threshold                 (0.1 - 0.9)
+      agnostic            - NMS class-agnostic                (True/False)
+      multi_label         - NMS multiple labels per box       (True/False)
+      max_det             - Max detections per image          (1 - 10000)
+      amp                 - Automatic Mixed Precision         (True/False)
+      half_precision      - Floating Point 16                 (True/False)
+      ```
+
+      Все параметры опциональны. Значение по умолчанию:
+      ```json
+      {
+        "size": 1500,
+        "conf": 0.2,
+        "iou": 0.3,
+        "agnostic": true,
+        "multi_label": false,
+        "max_det": 3000,
+        "amp": true,
+        "half_precision": true
+      }
+      ```
+      </details>
+
+
+responses:
+  200:
+    description: Успех
+    schema:
+      type: object
+      properties:
+        Detected text:
+          type: string
+          example: "Text recognized successfully"
+  400:
+    description: Ошибка на стороне клиента
+    schema:
+      type: object
+      properties:
+        Error:
+          type: string
+          example: "No file uploaded <or> Unsupported file format"
+  500:
+    description: Ошибка на стороне сервера
+    schema:
+      type: object
+      properties:
+        Error:
+          type: string
+          example: "Processing failed"
+        Error details:
+          type: string
+          example: "Error description here"

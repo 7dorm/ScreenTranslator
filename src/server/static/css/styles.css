@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.media-box {
+    width: 400px;
+    height: 280px;
+    border: 2px dashed #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+}
+
+.buttons {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.output {
+    margin-top: 10px;
+}
+
+.watermark {
+    width: 700px;
+    margin-top: 130px;
+    font-size: 24px;
+    font-weight: bold;
+    transform: translate(-50%, -50%) rotate(30deg);
+    color: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    user-select: none;
+}

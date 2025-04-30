@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScreenTranslator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div id="original-media" class="media-box">Исходный файл</div>
+        <div id="processed-media" class="media-box">Обработанный файл</div>
+    </div>
+    <div class="buttons">
+        <input type="file" id="upload" accept=".bmp,.jpeg,.jpg,.png,.mp4" style="display: none;">
+        <button onclick="window.open('/apidocs', '_blank')">Документация API</button>
+        <button onclick="document.getElementById('upload').click();">Загрузить исходный файл</button>
+        <button onclick="processMedia()">Обработать</button>
+        <button onclick="saveMedia()">Сохранить обработанный файл</button>
+        <div class="output">
+            <label>Распознанный текст:</label>
+            <input type="text" id="recognized-text" readonly>
+            <label>Переведённый текст:</label>
+            <input type="text" id="translated-text" readonly>
+        </div>
+        <div class="watermark">НАСТОЯЩИЙ ДИЗАЙН. Содержание превыше формы.</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
