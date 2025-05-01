@@ -96,7 +96,10 @@ def run_yolo(API_request: API_Request, API_response: API_Response):
             os.path.join(FOLDER_LABELS, f"{API_request.name}.txt")))
         
     else:
-        pass
+        # For testing
+        API_request.rough_text_recognition = True
+        API_response.boxed_url = f"/ScreenTranslatorAPI/boxed/{API_request.name}{API_request.ext}"
+        run_yolo(API_request, API_response)
 
 def parse_yolo_labels(file_path):
     names = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', ',', '?', '!', '@']

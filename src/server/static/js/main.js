@@ -3,11 +3,24 @@ let lastUploadedFile = null;
 document.getElementById('upload').addEventListener('change', function(event) {
     const file = event.target.files[0];
     if (!file) return;
+
+    const VIDEO_EXTENSIONS = [ 
+        "avi",  "mp4",  "mov",  "mkv",  "flv", 
+        "wmv",  "mpeg", "mpg",  "mpe",  "m4v",  
+        "3gp",  "3g2",  "asf",  "divx", "f4v", 
+        "m2ts", "m2v",  "m4p",  "mts",  "ogm", 
+        "ogv",  "qt",   "rm",   "vob",  "webm",
+        "xvid" 
+    ];
+    const IMAGE_EXTENSIONS = [
+        "bmp",  "dib",  "jpeg", "jpg",  "jpe", 
+        "jp2",  "png",  "pbm",  "pgm",  "ppm", 
+        "sr",   "ras",  "tiff", "tif",  "webp" 
+    ]
     
-    const allowedExtensions = ['bmp', 'jpeg', 'jpg', 'png', 'mp4'];
     const fileExtension = file.name.split('.').pop().toLowerCase();
-    if (!allowedExtensions.includes(fileExtension)) {
-        alert("Неверный формат файла! Поддерживаются: .bmp, .jpeg, .jpg, .png, .mp4");
+    if (!(VIDEO_EXTENSIONS.includes(fileExtension) || IMAGE_EXTENSIONS.includes(fileExtension))) {
+        alert("Неверный формат файла!");
         return;
     }
     
@@ -15,7 +28,7 @@ document.getElementById('upload').addEventListener('change', function(event) {
     const mediaBox = document.getElementById('original-media');
     mediaBox.innerHTML = '';
 
-    if (fileExtension === 'mp4') {
+    if (VIDEO_EXTENSIONS.includes(fileExtension)) {
         const video = document.createElement('video');
         video.src = URL.createObjectURL(file);
         video.controls = true;
@@ -31,77 +44,76 @@ document.getElementById('upload').addEventListener('change', function(event) {
     }
 });
 
-function processMedia() {
+
+async function processMedia() {
     if (!lastUploadedFile) {
         alert("Сначала загрузите файл!");
         return;
     }
     
     const formData = new FormData();
-    formData.append('file', lastUploadedFile);
+    formData.append('File', lastUploadedFile);
     
-    fetch('/ScreenTranslatorAPI/translate', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => {
-        if (!response.ok) throw new Error("Ошибка сервера");
-            return response.blob(); // Получаем zip как blob
-    })
-    .then(JSZip.loadAsync) // Распаковываем zip
-    .then(zip => {
+    try {
+        const response = await fetch('/ScreenTranslatorAPI/fileProcess', {
+            method: 'POST',
+            body: formData
+        });
+        
+        if (!response.ok) {
+            throw new Error("Ошибка сервера");
+        }
+        
+        const apiResponse = await response.json();
+        console.log("Ответ сервера:", apiResponse);
         const processedMedia = document.getElementById('processed-media');
         const recognizedText = document.getElementById('recognized-text');
         const translatedText = document.getElementById('translated-text');
         processedMedia.innerHTML = '';
-
-        // 1. Обработка распознанного текста
-        zip.file("recognized_text.txt")?.async("string").then(text => {
-            recognizedText.value = text;
-        });
-
-        // 2. Обработка переведённого текста
-        zip.file("translated_text.txt")?.async("string").then(text => {
-            translatedText.value = text;
-        });
-
-        // 3. Отображение изображения/видео с переводом
-        const tryDisplayFile = async (filename, isVideo = false) => {
-            const file = zip.file(filename);
-            if (file) {
-                const blob = await file.async("blob");
-                const url = URL.createObjectURL(blob);
-
-                if (isVideo || filename.endsWith(".mp4")) {
-                    const video = document.createElement('video');
-                    video.src = url;
-                    video.controls = true;
-                    video.style.maxWidth = '100%';
-                    video.style.maxHeight = '100%';
-                    processedMedia.appendChild(video);
-                } else {
-                    const img = document.createElement('img');
-                    img.src = url;
-                    img.style.maxWidth = '100%';
-                    img.style.maxHeight = '100%';
-                    processedMedia.appendChild(img);
-                }
+        
+        if (apiResponse['Recognized text'] && apiResponse['Recognized text'].length > 0) {
+            const isVideo = lastUploadedFile.name.toLowerCase().endsWith('.mp4');
+            recognizedText.value = isVideo 
+                ? apiResponse['Recognized text'].join('\n') 
+                : apiResponse['Recognized text'];
+        }
+        if (apiResponse['Translated text'] && apiResponse['Translated text'].length > 0) {
+            const isVideo = lastUploadedFile.name.toLowerCase().endsWith('.mp4');
+            translatedText.value = isVideo 
+                ? apiResponse['Translated text'].join('\n') 
+                : apiResponse['Translated text'];
+        }
+        
+        const mediaUrl = apiResponse['Boxed url'] || apiResponse['Translated url'];
+        if (mediaUrl) {
+            const mediaResponse = await fetch(mediaUrl);
+            if (!mediaResponse.ok) {
+                throw new Error("Не удалось загрузить обработанное медиа");
             }
-        };
-
-        // 4. Находим файл, начинающийся с "translated_output" и определяем его тип по расширению
-        (async () => {
-            for (const [filename, zipEntry] of Object.entries(zip.files)) {
-                if (filename.startsWith("translated_output")) {
-                    const lower = filename.toLowerCase();
-                    const isVideo = lower.endsWith(".mp4");
-                    await tryDisplayFile(filename, isVideo);
-                    break; // Показываем только первый найденный подходящий файл
-                }
+            
+            const mediaBlob = await mediaResponse.blob();
+            const mediaObjectUrl = URL.createObjectURL(mediaBlob);
+            const isVideo = mediaUrl.toLowerCase().endsWith('.mp4');
+            
+            if (isVideo) {
+                const video = document.createElement('video');
+                video.src = mediaObjectUrl;
+                video.controls = true;
+                video.style.maxWidth = '100%';
+                video.style.maxHeight = '100%';
+                processedMedia.appendChild(video);
+            } else {
+                const img = document.createElement('img');
+                img.src = mediaObjectUrl;
+                img.style.maxWidth = '100%';
+                img.style.maxHeight = '100%';
+                processedMedia.appendChild(img);
             }
-        })();
-    })
-    .catch(error => console.error("Ошибка:", error));
+        }
+    } catch (error) {
+        console.error("Ошибка:", error);
+        alert("Произошла ошибка при обработке файла: " + error.message);
+    }
 }
 
 function saveMedia() {
