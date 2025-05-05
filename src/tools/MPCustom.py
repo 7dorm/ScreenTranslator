@@ -8,9 +8,9 @@ import numpy as np
 from PIL import Image
 from vidgear.gears import WriteGear
 
-from src.tools.base import BaseDetection
-from src.tools.constants import FRAME_QUEUE_SIZE
-from src.tools.exceptions import VideoNotInitializedException
+from tools.base import BaseDetection
+from tools.constants import FRAME_QUEUE_SIZE
+from tools.exceptions import VideoNotInitializedException
 
 
 class Custom:

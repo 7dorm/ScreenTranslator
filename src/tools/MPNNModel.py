@@ -4,7 +4,7 @@ from typing import Union, Any
 
 from torch.mps import device_count
 
-from src.tools.models.common import AutoShape, Detections
+from tools.models.common import AutoShape, Detections
 
 
 class NNModel:

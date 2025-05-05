@@ -1,8 +1,8 @@
 from typing import List, Union
 
-from src.tools.MPCustom import CustomImage, CustomVideo
-from src.tools.MPDetect import Detection
-from src.tools.MPNNModel import NNModel
+from tools.MPCustom import CustomImage, CustomVideo
+from tools.MPDetect import Detection
+from tools.MPNNModel import NNModel
 
 
 class Medipy:

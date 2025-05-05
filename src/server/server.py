@@ -3,15 +3,13 @@ import uuid
 import json
 import logging
 from datetime import datetime, timedelta
-from werkzeug.utils import secure_filename
 from flask import Flask, request, jsonify, send_from_directory, render_template
 from flasgger import Swagger, swag_from
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
-from PIL import Image
-from src.tools.MPCustom import CustomImage, CustomVideo
-from src.tools.Medipy import Medipy
-from src.server.API import API_Request, API_Response
+from tools.MPCustom import CustomImage, CustomVideo
+from tools.Medipy import Medipy
+from server.API import API_Request, API_Response
 
 # Flask app setup
 app = Flask(__name__)
