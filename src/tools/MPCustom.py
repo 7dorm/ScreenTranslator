@@ -14,7 +14,7 @@ from src.tools.exceptions import VideoNotInitializedException
 
 
 class Custom:
-    def __init__(self, path, process_function, output_name: str = None, show = True):
+    def __init__(self, path, process_function, output_name: str = None, show = False):
         self.path = path
         self.process_function = process_function
         self.output_name = output_name
@@ -25,7 +25,7 @@ class CustomVideo(Custom):
     def __init__(self, path: Union[str, int],
                  process_function,
                  output_name: str = None,
-                 show: bool = True) -> None:
+                 show: bool = False) -> None:
         super().__init__(path, process_function, output_name, show)
 
         self.cap: cv2.VideoCapture = cv2.VideoCapture(self.path)
@@ -130,13 +130,13 @@ class CustomVideo(Custom):
 
 
 class CustomImage(Custom):
-    def __init__(self, path: str, process_function, output_name: str = None, show: bool = True) -> None:
+    def __init__(self, path: str, process_function, output_name: str = None, show: bool = False) -> None:
         super().__init__(path, process_function, output_name, show)
         self.result: BaseDetection = self.process_function(self.path)  # Directly process image path
         if self.show:
             self.result.frame.show()
         if self.output_name:
-            self.result.frame.save(self.output_name)
+            self.result.frame.save(output_name)
 
     def __call__(self) -> Image:
         return self.result.frame

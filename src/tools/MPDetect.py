@@ -20,7 +20,10 @@ class Detection:
 
     def __call__(self, path_to_media: str,
                  output_name: str = None,
-                 show: bool = True) -> Union[CustomImage, CustomVideo, None]:
+                 translated: bool = True,
+                 only_text: bool = False,
+                 size: int = None,
+                 show: bool = False) -> Union[CustomImage, CustomVideo, None]:
         """
         Method to process media files
         :param path_to_media: Path to media for processing
@@ -33,6 +36,9 @@ class Detection:
                 avi, mp4, mov, mkv, flv, wmv, mpeg, mpg, mpe, m4v, 3gp, 3g2, asf, divx, f4v, m2ts, m2v, m4p, mts, ogm, ogv, qt, rm, vob, webm, xvid
         """
 
+        self.translated = translated
+        self.only_text = only_text
+        self.size = size
         if path_to_media == 0:
             return CustomVideo(0, self.process_frame, output_name, show)
 
@@ -66,11 +72,11 @@ class Detection:
                 np.squeeze(result.render())
             )
 
-    def process_image(self, path: str, translated=True, only_text=False) -> BaseDetection:
+    def process_image(self, path: str) -> BaseDetection:
         result: Detections = self.select_model(path)
         if result.pandas().xyxyn[0].size:
-            bboxes: dict = WordUtils.merger(result.pandas().xyxyn[0], translated)
-            if only_text:
+            bboxes: dict = WordUtils.merger(result.pandas().xyxyn[0], self.translated)
+            if self.only_text:
                 return BaseDetection(
                     result.pandas().xyxyn[0],
                     Image.open(path),
@@ -89,12 +95,12 @@ class Detection:
                 {}
             )
 
-    def select_model(self, frame: Union[Union[cv2.Mat, np.ndarray], str], size: int = 1500) -> Union[Detections, None]:
+    def select_model(self, frame: Union[Union[cv2.Mat, np.ndarray], str]) -> Union[Detections, None]:
         result: Detections = None
         conf: int = 0
 
         for model in self.models:
-            curr_result: Detections = model(frame, size)
+            curr_result: Detections = model(frame, self.size)
             curr_conf: int = curr_result.xyxy[0][:, 4].mean()
             if result == None or curr_conf > conf:
                 conf = curr_conf

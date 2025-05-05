@@ -1,0 +1,27 @@
+/ScreenTranslatorAPI/translated/{filename}:
+  get:
+    summary: Download a translated file
+    description: Retrieves a translated file, such as an image with translated text overlays or a text file containing translations.
+    produces:
+      - image/jpeg
+      - image/png
+      - text/plain
+    parameters:
+      - name: filename
+        in: path
+        type: string
+        required: true
+        description: Name of the translated file (e.g., uuid.jpg or uuid.txt).
+    responses:
+      200:
+        description: Translated file
+        schema:
+          type: file
+      404:
+        description: File not found
+        schema:
+          type: object
+          properties:
+            error:
+              type: string
+              example: File not found

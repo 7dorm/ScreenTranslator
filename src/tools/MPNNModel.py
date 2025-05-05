@@ -31,7 +31,8 @@ class NNModel:
                                                'custom',
                                                path=path,
                                                _verbose=False,
-                                               device='mps')
+                                               device='mps',
+                                               force_reload=True)
 
 
         self.lang: str = language_code
@@ -55,4 +56,4 @@ class NNModel:
             self.model.half()
 
     def __call__(self, data: Union[str, Any], size=1500) -> Detections:
-        return self.model(data, size=1650)
+        return self.model(data, size)

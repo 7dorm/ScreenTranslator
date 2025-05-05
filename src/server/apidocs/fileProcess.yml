@@ -1,0 +1,107 @@
+/ScreenTranslatorAPI/process:
+  post:
+    summary: Process an image or video file for text recognition and translation
+    description: Uploads an image or video file and queues it for processing using a YOLO-based model for text recognition. Optional parameters can be provided to customize processing.
+    consumes:
+      - multipart/form-data
+    produces:
+      - application/json
+    parameters:
+      - name: File
+        in: formData
+        type: file
+        required: true
+        description: Image or video file to process. Supported formats: BMP, JPEG, PNG, MP4 (max 10MB).
+      - name: Params
+        in: formData
+        type: string
+        required: false
+        description: JSON string containing processing parameters. If omitted, default values are used.
+        schema:
+          type: object
+          properties:
+            size:
+              type: integer
+              default: 1500
+              minimum: 320
+              maximum: 3840
+              description: Input image size in pixels.
+            conf:
+              type: number
+              format: float
+              default: 0.2
+              minimum: 0
+              maximum: 1
+              description: Confidence threshold for detections.
+            iou:
+              type: number
+              format: float
+              default: 0.3
+              minimum: 0
+              maximum: 1
+              description: IoU threshold for non-maximum suppression.
+            agnostic:
+              type: boolean
+              default: true
+              description: Perform class-agnostic NMS.
+            multi_label:
+              type: boolean
+              default: false
+              description: Allow multiple labels per object.
+            max_det:
+              type: integer
+              default: 3000
+              minimum: 1
+              maximum: 10000
+              description: Maximum number of detections.
+            amp:
+              type: boolean
+              default: true
+              description: Enable automatic mixed precision.
+            half_precision:
+              type: boolean
+              default: true
+              description: Use half-precision (FP16) computations.
+            rough_text_recognition:
+              type: boolean
+              default: false
+              description: Enable faster but less accurate text recognition.
+    responses:
+      200:
+        description: File successfully queued for processing
+        schema:
+          type: object
+          properties:
+            status:
+              type: string
+              example: File queued for processing
+            message:
+              type: string
+              example: Check boxed/translated endpoints for results
+      400:
+        description: Invalid file or parameters
+        schema:
+          type: object
+          properties:
+            error:
+              type: string
+              example: Invalid file type or size
+      429:
+        description: Rate limit exceeded
+        schema:
+          type: object
+          properties:
+            error:
+              type: string
+              example: Too many requests
+      500:
+        description: Server error during processing
+        schema:
+          type: object
+          properties:
+            error:
+              type: string
+              example: Processing failed
+            details:
+              type: string
+              example: Detailed error message
