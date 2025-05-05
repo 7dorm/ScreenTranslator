@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import torch
 
-from src.tools.utils import TryExcept, threaded
+from tools.utils import TryExcept, threaded
 
 
 def fitness(x):

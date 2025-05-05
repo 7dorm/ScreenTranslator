@@ -35,9 +35,9 @@ except (ImportError, AssertionError):
 
 from ultralytics.utils.plotting import Annotator, colors, save_one_box
 
-from src.tools.utils import TryExcept
-from src.tools.utils.dataloaders import exif_transpose, letterbox
-from src.tools.utils.general import (
+from tools.utils import TryExcept
+from tools.utils.dataloaders import exif_transpose, letterbox
+from tools.utils.general import (
     LOGGER,
     ROOT,
     Profile,
@@ -54,7 +54,7 @@ from src.tools.utils.general import (
     xyxy2xywh,
     yaml_load,
 )
-from src.tools.utils.torch_utils import copy_attr, smart_inference_mode
+from tools.utils.torch_utils import copy_attr, smart_inference_mode
 
 
 def autopad(k, p=None, d=1):
