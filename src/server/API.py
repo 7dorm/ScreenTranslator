@@ -7,17 +7,17 @@ class API_Response:
         self,
         boxed_url: str = "",
         translated_url: str = "",
-        recognized_text: list[str] | None = None,
-        translated_text: list[str] | None = None,
+        recognized_text: list[str] = None,
+        translated_text: list[str] = None,
     ):
         self.boxed_url = boxed_url
         self.translated_url = translated_url
         self.recognized_text = recognized_text if recognized_text is not None else []
         self.translated_text = translated_text if translated_text is not None else []
 
-    def to_dict(self, rough_text_recognition: bool) -> dict:
-        if rough_text_recognition:
-            return {"Recognized text": self.recognized_text[0]}
+    def to_dict(self, ) -> dict:
+        # if rough_text_recognition:
+        #     return {"Recognized text": self.recognized_text[0]}
         return {
             "Boxed url": self.boxed_url,
             "Translated url": self.translated_url,
@@ -25,16 +25,16 @@ class API_Response:
             "Translated text": self.translated_text,
         }
 
-    def jsonify(self, rough_text_recognition: bool):
-        return jsonify(self.to_dict(rough_text_recognition))
+    def jsonify(self):
+        return jsonify(self.to_dict())
     
 
 class API_Request:
     def __init__(
         self,
-        rough_text_recognition: bool,
         filepath: str,
-        params_json: str
+        params_json: str,
+        rough_text_recognition: bool = False,
     ):
         self.rough_text_recognition = rough_text_recognition
         self.filepath = filepath

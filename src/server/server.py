@@ -1,143 +1,220 @@
-from flask import Flask, request, render_template, jsonify, send_from_directory
-from flasgger import Swagger, swag_from
-from API import API_Request, API_Response
 import os
-import shutil
-import subprocess
+import uuid
+import json
+import logging
+from datetime import datetime, timedelta
+from werkzeug.utils import secure_filename
+from flask import Flask, request, jsonify, send_from_directory, render_template
+from flasgger import Swagger, swag_from
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
+from PIL import Image
+from src.tools.MPCustom import CustomImage, CustomVideo
+from src.tools.Medipy import Medipy
+from src.server.API import API_Request, API_Response
 
+# Flask app setup
 app = Flask(__name__)
 swagger = Swagger(app)
 
-FOLDER_UPLOADS = os.path.join(app.root_path, "static", "uploads")
-FOLDER_PROCESSED = os.path.join(app.root_path, "static", "processed")
+# Rate limiting
+limiter = Limiter(app=app, key_func=get_remote_address, default_limits=["100000000 per day", "1000 per minute"])
+
+# Directory setup
+BASE_DIR = app.root_path
+FOLDER_UPLOADS = os.path.join(BASE_DIR, "static", "Uploads")
+FOLDER_PROCESSED = os.path.join(BASE_DIR, "static", "processed")
 FOLDER_BOXED = os.path.join(FOLDER_PROCESSED, "boxed")
 FOLDER_TRANSLATED = os.path.join(FOLDER_PROCESSED, "translated")
 FOLDER_LABELS = os.path.join(FOLDER_PROCESSED, "labels")
-CLEAN_UP_FILES = True
 
+# Ensure directories exist
+for folder in [FOLDER_UPLOADS, FOLDER_BOXED, FOLDER_TRANSLATED, FOLDER_LABELS]:
+    os.makedirs(folder, exist_ok=True)
 
-@app.route("/")
-def index():
-    return render_template("index.html")
+# File extensions
+ALLOWED_EXTENSIONS = {
+    'bmp', 'dib', 'jpeg', 'jpg', 'jpe', 'jp2', 'png', 'pbm', 'pgm', 'ppm', 'sr', 'ras', 'tiff', 'tif', 'webp',
+    'avi', 'mp4', 'mov', 'mkv', 'flv', 'wmv', 'mpeg', 'mpg', 'mpe', 'm4v', '3gp', '3g2', 'asf', 'divx', 'f4v',
+    'm2ts', 'm2v', 'm4p', 'mts', 'ogm', 'ogv', 'qt', 'rm', 'vob', 'webm', 'xvid'
+}
+MAX_FILE_SIZE = 10 * 1024 * 1024  # 10MB
 
+# Logging setup
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
-@app.route("/ScreenTranslatorAPI/boxed/<filename>")
-@swag_from("apidocs/downloadBoxed.yml")
-def downloadBoxed(filename):
-    path = os.path.join(FOLDER_BOXED, filename)
-    if not os.path.isfile(path):
-        return jsonify({"Error": "File not found"}), 404
-    return send_from_directory(FOLDER_BOXED, filename)
+# Medipy model setup
+model = Medipy(show=False)
+model.addModel('tools/best.pt', 'en')
 
+def validate_file(file):
+    """Validate uploaded file type and size."""
+    if not file or not file.filename:
+        return False
+    ext = file.filename.rsplit('.', 1)[1].lower() if '.' in file.filename else ''
+    if ext not in ALLOWED_EXTENSIONS:
+        return False
+    file.seek(0, os.SEEK_END)
+    if file.tell() > MAX_FILE_SIZE:
+        return False
+    file.seek(0)
+    return True
 
-@app.route("/ScreenTranslatorAPI/translated/<filename>")
-@swag_from("apidocs/downloadTranslated.yml")
-def downloadTranslated(filename):
-    path = os.path.join(FOLDER_TRANSLATED, filename)
-    if not os.path.isfile(path):
-        return jsonify({"Error": "File not found"}), 404    
-    return send_from_directory(FOLDER_TRANSLATED, filename)
-
-
-@app.route("/ScreenTranslatorAPI/fileProcess", methods=["POST"])
-@swag_from("apidocs/fileProcess.yml")
-def fileProcess(rough_text_recognition: bool = False):
-    if 'File' not in request.files or request.files['File'].filename == '':
-        return jsonify({'Error': 'No file uploaded'}), 400
-
-    file = request.files['File']
-    filepath = os.path.join(FOLDER_UPLOADS, file.filename)
-    file.save(filepath)
-
-    params_json = request.form.get('Params')
-    API_request = API_Request(rough_text_recognition, filepath, params_json)
-    API_response = API_Response()
-
-    try:
-        run_yolo(API_request, API_response)
-        return API_response.jsonify(API_request.rough_text_recognition)
-
-    except Exception as e:
-        return jsonify({'Error': 'Processing failed', 'Error details': str(e)}), 500
-
-
-@app.route("/ScreenTranslatorAPI/imageDetect", methods=["POST"])
-@swag_from("apidocs/imageDetect.yml")
-def imageDetect():
-    return fileProcess(rough_text_recognition=True)
-
-
-def run_yolo(API_request: API_Request, API_response: API_Response):
-    if (API_request.rough_text_recognition):
-        command = [
-            "python", "yolo/detect.py",
-            "--weights", "yolo/best.pt",
-            "--source", API_request.filepath,
-            "--line-thickness", "1",
-            "--img", str(API_request.size),
-            "--exist-ok",
-            "--save-txt",
-            "--save-conf",
-            "--name", FOLDER_BOXED,
-            "--project", "."
-        ]
-        subprocess.run(command, check=True)
-        
-        src_labels = os.path.join(FOLDER_BOXED, "labels")
-        if os.path.exists(src_labels):
-            for filename in os.listdir(src_labels):
-                if filename.endswith(".txt"):
-                    src = os.path.join(src_labels, filename)
-                    dst = os.path.join(FOLDER_LABELS, filename)
-                    os.rename(src, dst)
-            os.rmdir(src_labels)
-
-        API_response.recognized_text.append(parse_yolo_labels(
-            os.path.join(FOLDER_LABELS, f"{API_request.name}.txt")))
-        
-    else:
-        # For testing
-        API_request.rough_text_recognition = True
-        API_response.boxed_url = f"/ScreenTranslatorAPI/boxed/{API_request.name}{API_request.ext}"
-        run_yolo(API_request, API_response)
-
-def parse_yolo_labels(file_path):
-    names = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', ',', '?', '!', '@']
-    entries = []
-    with open(file_path, 'r') as file:
-        for line in file:
-            parts = line.strip().split()
-            class_id = int(float(parts[0]))
-            x_center = float(parts[1])
-            entries.append((x_center, class_id))
-    
-    entries.sort(key=lambda x: x[0])
-    return ''.join([names[class_id] for x_center, class_id in entries])
-
-
-def clean_directory(directory):
+def clean_old_files(directory, max_age_hours=24):
+    """Remove files older than max_age_hours from directory."""
+    cutoff = datetime.now() - timedelta(hours=max_age_hours)
     for filename in os.listdir(directory):
         file_path = os.path.join(directory, filename)
         try:
-            if os.path.isfile(file_path) or os.path.islink(file_path):
+            if os.path.isfile(file_path) and datetime.fromtimestamp(os.path.getmtime(file_path)) < cutoff:
                 os.unlink(file_path)
-            elif os.path.isdir(file_path):
-                shutil.rmtree(file_path)
+                logger.info(f"Deleted old file: {file_path}")
         except Exception as e:
-            print(f'Не удалось удалить {file_path}. Причина: {e}')
+            logger.error(f"Failed to delete {file_path}: {e}")
 
-def clean_up():
-    for folder in [FOLDER_UPLOADS, FOLDER_PROCESSED]:
-        clean_directory(folder)
+def parse_yolo_labels(file_path):
+    """Parse YOLO labels into text."""
+    names = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
+             'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', ',', '?', '!', '@']
+    entries = []
+    try:
+        with open(file_path, 'r') as file:
+            for line in file:
+                parts = line.strip().split()
+                if len(parts) < 2:
+                    continue
+                class_id = int(float(parts[0]))
+                x_center = float(parts[1])
+                entries.append((x_center, class_id))
+        entries.sort(key=lambda x: x[0])
+        return ''.join(names[class_id] for _, class_id in entries)
+    except Exception as e:
+        logger.error(f"Failed to parse YOLO labels: {e}")
+        return ""
 
+@app.route("/")
+def index():
+    """Render the main page."""
+    return render_template("index.html")
 
-if __name__ == "__main__":
-    if CLEAN_UP_FILES:
-        clean_up()
-    os.makedirs(FOLDER_UPLOADS, exist_ok=True)
-    os.makedirs(FOLDER_PROCESSED, exist_ok=True)
-    os.makedirs(FOLDER_BOXED, exist_ok=True)
-    os.makedirs(FOLDER_TRANSLATED, exist_ok=True)
-    os.makedirs(FOLDER_LABELS, exist_ok=True)
+@app.route("/ScreenTranslatorAPI/boxed/<filename>")
+@swag_from("apidocs/downloadBoxed.yml")
+def download_boxed(filename):
+    """Serve boxed image/video file."""
+    filename = secure_filename(filename)
+    file_path = os.path.join(FOLDER_BOXED, filename)
+    try:
+        if not os.path.isfile(file_path):
+            logger.error(f"File not found: {file_path}")
+            return jsonify({"error": "File not found"}), 404
+        if not os.access(file_path, os.R_OK):
+            logger.error(f"File not readable: {file_path}")
+            return jsonify({"error": "File access forbidden"}), 403
+        logger.info(f"Serving file: {file_path}")
+        return send_from_directory(FOLDER_BOXED, filename)
+    except Exception as e:
+        logger.error(f"Error serving file {file_path}: {e}")
+        return jsonify({"error": "Server error", "details": str(e)}), 500
 
-    app.run(host="0.0.0.0", port=5000, debug=True)
+@app.route("/ScreenTranslatorAPI/translated/<filename>")
+@swag_from("apidocs/downloadTranslated.yml")
+def download_translated(filename):
+    """Serve translated file."""
+    filename = secure_filename(filename)
+    file_path = os.path.join(FOLDER_TRANSLATED, filename)
+    try:
+        if not os.path.isfile(file_path):
+            logger.error(f"File not found: {file_path}")
+            return jsonify({"error": "File not found"}), 404
+        if not os.access(file_path, os.R_OK):
+            logger.error(f"File not readable: {file_path}")
+            return jsonify({"error": "File access forbidden"}), 403
+        logger.info(f"Serving file: {file_path}")
+        return send_from_directory(FOLDER_TRANSLATED, filename)
+    except Exception as e:
+        logger.error(f"Error serving file {file_path}: {e}")
+        return jsonify({"error": "Server error", "details": str(e)}), 500
+
+@app.route("/ScreenTranslatorAPI/process", methods=["POST"])
+@swag_from("apidocs/fileProcess.yml")
+@limiter.limit("10000 per minute")
+def process_file():
+    """Process uploaded image or video synchronously."""
+    if 'File' not in request.files:
+        return jsonify({"error": "No file uploaded"}), 400
+
+    file = request.files['File']
+    if not validate_file(file):
+        return jsonify({"error": "Invalid file type or size"}), 400
+
+    # Generate unique filename
+    ext = os.path.splitext(file.filename)[1].lower()
+    filename = f"{uuid.uuid4()}{ext}"
+    filepath = os.path.join(FOLDER_UPLOADS, filename)
+    file.save(filepath)
+    logger.info(f"Saved file: {filepath}")
+
+    # Process parameters
+    params_json = request.form.get('Params', '{}')
+    try:
+        params = json.loads(params_json)
+    except json.JSONDecodeError:
+        os.remove(filepath)
+        return jsonify({"error": "Invalid Params JSON"}), 400
+
+    # Process with Medipy
+    print(params_json)
+    API_request = API_Request(filepath, params_json)
+    API_response = API_Response()
+    try:
+        output_path = f"{FOLDER_BOXED}/{filename}"  # Use filename, not API_request.name
+        result = model.process(API_request.filepath, size=API_request.size)
+        if isinstance(result, CustomImage):
+            # Convert RGBA to RGB for JPEG
+            image = result.result.frame
+            if image.mode == 'RGBA' and ext in ['.jpg', '.jpeg', '.jpe']:
+                image = image.convert('RGB')
+            image.save(output_path)
+            API_response.boxed_url = f"/ScreenTranslatorAPI/boxed/{filename}"
+            API_response.recognized_text = str(result.result.text)
+        elif isinstance(result, CustomVideo):
+            # Assume video saving is handled by model.process
+            API_response.boxed_url = f"/ScreenTranslatorAPI/boxed/{filename}"
+            API_response.recognized_text = "Video processing complete"
+        else:
+            raise ValueError("Invalid result type from Medipy")
+
+        # Verify output file exists and is readable
+        if not os.path.isfile(output_path):
+            raise RuntimeError(f"Output file not saved: {output_path}")
+        if not os.access(output_path, os.R_OK):
+            raise RuntimeError(f"Output file not readable: {output_path}")
+        logger.info(f"Saved processed file: {output_path}")
+
+        # Save response for later retrieval
+        with open(os.path.join(FOLDER_PROCESSED, f"{filename}.json"), 'w') as f:
+            json.dump(API_response.to_dict(), f)
+
+        logger.info(f"Processed file: {filename}")
+        # Clean up uploaded file
+        os.remove(filepath)
+        return jsonify({
+            "status": "File processed",
+            "boxed_url": API_response.boxed_url,
+            "recognized_text": API_response.recognized_text,
+            "filename": filename
+        }), 200
+    except Exception as e:
+        logger.error(f"Processing failed for {filename}: {e}")
+        os.remove(filepath)
+        return jsonify({"error": "Processing failed", "details": str(e)}), 500
+
+def start_server():
+    for folder in [FOLDER_UPLOADS, FOLDER_PROCESSED, FOLDER_BOXED, FOLDER_TRANSLATED, FOLDER_LABELS]:
+        os.makedirs(folder, exist_ok=True)
+        clean_old_files(folder)
+        os.makedirs(folder, exist_ok=True)
+
+    # Run with WSGI in production
+    app.run(debug=True)  # host="0.0.0.0", port=5000

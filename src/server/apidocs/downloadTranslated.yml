@@ -1,31 +1,27 @@
-Скачать обработанный файл с наложенным переводом
----
-tags:
-  - Screen Translator API
-
-produces:
-  - application/octet-stream
-parameters:
-  - name: filename
-    in: path
-    required: true
-    description: Имя файла для скачивания
-    schema:
-      type: string
-
-responses:
-  200:
-    description: Успех
-    content:
-      application/octet-stream:
+/ScreenTranslatorAPI/translated/{filename}:
+  get:
+    summary: Download a translated file
+    description: Retrieves a translated file, such as an image with translated text overlays or a text file containing translations.
+    produces:
+      - image/jpeg
+      - image/png
+      - text/plain
+    parameters:
+      - name: filename
+        in: path
+        type: string
+        required: true
+        description: Name of the translated file (e.g., uuid.jpg or uuid.txt).
+    responses:
+      200:
+        description: Translated file
         schema:
-          type: string
-          format: binary
-  404:
-    description: Файл не найден
-    schema:
-      type: object
-      properties:
-        Error:
-          type: string
-          example: "File not found"
+          type: file
+      404:
+        description: File not found
+        schema:
+          type: object
+          properties:
+            error:
+              type: string
+              example: File not found

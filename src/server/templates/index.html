@@ -1,31 +1,110 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ScreenTranslator: Upload and process images or videos for text recognition and translation.">
     <title>ScreenTranslator</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <div class="container">
-        <div id="original-media" class="media-box">Исходный файл</div>
-        <div id="processed-media" class="media-box">Обработанный файл</div>
-    </div>
-    <div class="buttons">
-        <input type="file" id="upload" accept=".bmp,.jpeg,.jpg,.png,.mp4" style="display: none;">
-        <button onclick="window.open('/apidocs', '_blank')">Документация API</button>
-        <button onclick="document.getElementById('upload').click();">Загрузить исходный файл</button>
-        <button onclick="processMedia()">Обработать</button>
-        <button onclick="saveMedia()">Сохранить обработанный файл</button>
-        <div class="output">
-            <label>Распознанный текст:</label>
-            <input type="text" id="recognized-text" readonly>
-            <label>Переведённый текст:</label>
-            <input type="text" id="translated-text" readonly>
-        </div>
-        <div class="watermark">НАСТОЯЩИЙ ДИЗАЙН. Содержание превыше формы.</div>
-    </div>
-
+    <header>
+        <h1>ScreenTranslator</h1>
+        <p>Upload an image or video for text recognition and translation</p>
+    </header>
+    <main class="container">
+        <section class="media-section">
+            <div class="media-box" id="original-media" aria-label="Original file">
+                <p>Original File</p>
+                <img id="original-image" alt="Original image" style="display: none;">
+                <video id="original-video" controls style="display: none;" aria-label="Original video"></video>
+            </div>
+            <div class="media-box" id="processed-media" aria-label="Processed file">
+                <p>Processed File</p>
+                <img id="processed-image" alt="Processed image" style="display: none;">
+                <video id="processed-video" controls style="display: none;" aria-label="Processed video"></video>
+            </div>
+        </section>
+        <section class="controls">
+            <form id="upload-form" enctype="multipart/form-data">
+                <label for="upload" class="visually-hidden">Upload file</label>
+                <input type="file" id="upload" accept=".bmp,.jpeg,.jpg,.png,.mp4" aria-describedby="file-help">
+                <p id="file-help" class="help-text">Supported formats: BMP, JPEG, PNG, MP4 (max 10MB)</p>
+            </form>
+            <details class="params-section">
+                <summary>Processing Settings</summary>
+                <form id="params-form">
+                    <div class="param-group">
+                        <label for="size">Image Size (px):</label>
+                        <input type="number" id="size" name="size" value="1500" min="320" max="3840" step="10" aria-describedby="size-help">
+                        <p id="size-help" class="help-text">Input image size (320–3840)</p>
+                    </div>
+                    <div class="param-group">
+                        <label for="conf">Confidence Threshold:</label>
+                        <input type="number" id="conf" name="conf" value="0.2" min="0" max="1" step="0.01" aria-describedby="conf-help">
+                        <p id="conf-help" class="help-text">Minimum confidence for detections (0–1)</p>
+                    </div>
+                    <div class="param-group">
+                        <label for="iou">IoU Threshold:</label>
+                        <input type="number" id="iou" name="iou" value="0.3" min="0" max="1" step="0.01" aria-describedby="iou-help">
+                        <p id="iou-help" class="help-text">IoU threshold for NMS (0–1)</p>
+                    </div>
+                    <div class="param-group">
+                        <label for="max_det">Maximum Detections:</label>
+                        <input type="number" id="max_det" name="max_det" value="3000" min="1" max="10000" step="1" aria-describedby="max_det-help">
+                        <p id="max_det-help" class="help-text">Maximum number of objects (1–10000)</p>
+                    </div>
+                    <div class="param-checkbox">
+                        <input type="checkbox" id="agnostic" name="agnostic" checked>
+                        <label for="agnostic">Agnostic NMS</label>
+                        <p class="help-text">Merge boxes across all classes</p>
+                    </div>
+                    <div class="param-checkbox">
+                        <input type="checkbox" id="multi_label" name="multi_label">
+                        <label for="multi_label">Multi-Label</label>
+                        <p class="help-text">Allow multiple labels per object</p>
+                    </div>
+                    <div class="param-checkbox">
+                        <input type="checkbox" id="amp" name="amp" checked>
+                        <label for="amp">Automatic Mixed Precision</label>
+                        <p class="help-text">Use AMP for faster processing</p>
+                    </div>
+                    <div class="param-checkbox">
+                        <input type="checkbox" id="half_precision" name="half_precision" checked>
+                        <label for="half_precision">Half-Precision Computing</label>
+                        <p class="help-text">Use FP16 for faster processing</p>
+                    </div>
+                    <div class="param-checkbox">
+                        <input type="checkbox" id="rough_text_recognition" name="rough_text_recognition">
+                        <label for="rough_text_recognition">Rough Text Recognition</label>
+                        <p class="help-text">Faster but less accurate text recognition</p>
+                    </div>
+                </form>
+            </details>
+            <div class="button-group">
+                <button type="button" onclick="window.open('/apidocs', '_blank')">API Documentation</button>
+                <button type="button" id="upload-btn">Upload File</button>
+                <button type="button" id="process-btn" disabled>Process</button>
+                <button type="button" id="save-btn" disabled>Save</button>
+            </div>
+            <div class="output">
+                <div class="text-field">
+                    <label for="recognized-text">Recognized Text:</label>
+                    <textarea id="recognized-text" readonly aria-describedby="recognized-help"></textarea>
+                    <p id="recognized-help" class="help-text">Text extracted from the file</p>
+                </div>
+                <div class="text-field">
+                    <label for="translated-text">Translated Text:</label>
+                    <textarea id="translated-text" readonly aria-describedby="translated-help"></textarea>
+                    <p id="translated-help" class="help-text">Translated text (if available)</p>
+                </div>
+            </div>
+            <div id="status" class="status" role="status" aria-live="polite"></div>
+        </section>
+    </main>
+    <footer>
+        <p class="watermark">TRUE DESIGN. Content over form.</p>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>

@@ -6,7 +6,7 @@ from src.tools.MPNNModel import NNModel
 
 
 class Medipy:
-    def __init__(self, show: bool = True) -> None:
+    def __init__(self, show: bool = False) -> None:
         self.models: List[NNModel] = []
         self.detector: Detection = Detection(self.models)
         self.show: bool = show
@@ -15,12 +15,12 @@ class Medipy:
         self.models.append(NNModel(path, language_code, half_precision))
         self.detector = Detection(self.models)
 
-    def process(self, filepath: str, output_name: str = None) ->  Union[CustomImage, CustomVideo, None]:
-        return self.detector(filepath, output_name, self.show)
+    def process(self, filepath: str, output_name: str = None, size = None) ->  Union[CustomImage, CustomVideo, None]:
+        return self.detector(filepath, output_name, self.show, size = size)
 
 
 if __name__ == "__main__":
-    obj = Medipy(show=True)
+    obj = Medipy(show=False)
     obj.addModel('best.pt', 'en')
     # image: CustomImage = obj.process("/Users/deu/Downloads/1.webp")
     # print(image.result.text.keys())

@@ -31,7 +31,8 @@ class NNModel:
                                                'custom',
                                                path=path,
                                                _verbose=False,
-                                               device='mps')
+                                               device='mps',
+                                               force_reload=True)
 
 
         self.lang: str = language_code

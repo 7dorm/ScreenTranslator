@@ -1,132 +1,229 @@
-let lastUploadedFile = null;
+document.addEventListener('DOMContentLoaded', () => {
+    const uploadInput = document.getElementById('upload');
+    const uploadBtn = document.getElementById('upload-btn');
+    const processBtn = document.getElementById('process-btn');
+    const saveBtn = document.getElementById('save-btn');
+    const originalImage = document.getElementById('original-image');
+    const originalVideo = document.getElementById('original-video');
+    const processedImage = document.getElementById('processed-image');
+    const processedVideo = document.getElementById('processed-video');
+    const recognizedText = document.getElementById('recognized-text');
+    const translatedText = document.getElementById('translated-text');
+    const status = document.getElementById('status');
+    const paramsForm = document.getElementById('params-form');
 
-document.getElementById('upload').addEventListener('change', function(event) {
-    const file = event.target.files[0];
-    if (!file) return;
-
-    const VIDEO_EXTENSIONS = [ 
-        "avi",  "mp4",  "mov",  "mkv",  "flv", 
-        "wmv",  "mpeg", "mpg",  "mpe",  "m4v",  
-        "3gp",  "3g2",  "asf",  "divx", "f4v", 
-        "m2ts", "m2v",  "m4p",  "mts",  "ogm", 
-        "ogv",  "qt",   "rm",   "vob",  "webm",
-        "xvid" 
+    const VIDEO_EXTENSIONS = [
+        "avi", "mp4", "mov", "mkv", "flv",
+        "wmv", "mpeg", "mpg", "mpe", "m4v",
+        "3gp", "3g2", "asf", "divx", "f4v",
+        "m2ts", "m2v", "m4p", "mts", "ogm",
+        "ogv", "qt", "rm", "vob", "webm",
+        "xvid"
     ];
     const IMAGE_EXTENSIONS = [
-        "bmp",  "dib",  "jpeg", "jpg",  "jpe", 
-        "jp2",  "png",  "pbm",  "pgm",  "ppm", 
-        "sr",   "ras",  "tiff", "tif",  "webp" 
-    ]
-    
-    const fileExtension = file.name.split('.').pop().toLowerCase();
-    if (!(VIDEO_EXTENSIONS.includes(fileExtension) || IMAGE_EXTENSIONS.includes(fileExtension))) {
-        alert("Неверный формат файла!");
-        return;
-    }
-    
-    lastUploadedFile = file;
-    const mediaBox = document.getElementById('original-media');
-    mediaBox.innerHTML = '';
+        "bmp", "dib", "jpeg", "jpg", "jpe",
+        "jp2", "png", "pbm", "pgm", "ppm",
+        "sr", "ras", "tiff", "tif", "webp"
+    ];
+    const ALLOWED_EXTENSIONS = VIDEO_EXTENSIONS.concat(IMAGE_EXTENSIONS);
+    const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
 
-    if (VIDEO_EXTENSIONS.includes(fileExtension)) {
-        const video = document.createElement('video');
-        video.src = URL.createObjectURL(file);
-        video.controls = true;
-        video.style.maxWidth = '100%';
-        video.style.maxHeight = '100%';
-        mediaBox.appendChild(video);
-    } else {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            mediaBox.innerHTML = `<img src="${e.target.result}" style="max-width:100%; max-height:100%;">`;
+    let currentFile = null;
+    let processedFilename = null;
+
+    // Upload Button: Trigger file input and validate
+    uploadBtn.addEventListener('click', () => uploadInput.click());
+
+    uploadInput.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (!file) {
+            status.textContent = 'Error: No file selected.';
+            return;
+        }
+
+        // Validate file type and size
+        const ext = file.name.split('.').pop().toLowerCase();
+        if (!ALLOWED_EXTENSIONS.includes(ext)) {
+            status.textContent = `Error: Unsupported file type. Use ${IMAGE_EXTENSIONS.join(', ')} for images or ${VIDEO_EXTENSIONS.join(', ')} for videos.`;
+            uploadInput.value = '';
+            return;
+        }
+        if (file.size > MAX_FILE_SIZE) {
+            status.textContent = 'Error: File size exceeds 10MB.';
+            uploadInput.value = '';
+            return;
+        }
+
+        currentFile = file;
+        processBtn.disabled = false;
+        saveBtn.disabled = true;
+        status.textContent = 'File selected. Click "Process" to start.';
+
+        // Preview original media
+        const url = URL.createObjectURL(file);
+        if (IMAGE_EXTENSIONS.includes(ext)) {
+            originalImage.src = url;
+            originalImage.style.display = 'block';
+            originalVideo.style.display = 'none';
+        } else if (VIDEO_EXTENSIONS.includes(ext)) {
+            originalVideo.src = url;
+            originalVideo.style.display = 'block';
+            originalImage.style.display = 'none';
+        }
+    });
+
+    // Process Button: Send file and parameters to backend
+    processBtn.addEventListener('click', async () => {
+        if (!currentFile) {
+            status.textContent = 'Error: No file selected.';
+            return;
+        }
+
+        status.textContent = 'Processing...';
+        processBtn.disabled = true;
+        processedImage.style.display = 'none';
+        processedVideo.style.display = 'none';
+        recognizedText.value = '';
+        translatedText.value = '';
+
+        // Collect and validate parameters
+        const formData = new FormData(paramsForm);
+        const params = {
+            size: parseInt(formData.get('size')),
+            conf: parseFloat(formData.get('conf')),
+            iou: parseFloat(formData.get('iou')),
+            max_det: parseInt(formData.get('max_det')),
+            agnostic: formData.get('agnostic') === 'on',
+            multi_label: formData.get('multi_label') === 'on',
+            amp: formData.get('amp') === 'on',
+            half_precision: formData.get('half_precision') === 'on',
+            rough_text_recognition: formData.get('rough_text_recognition') === 'on',
         };
-        reader.readAsDataURL(file);
-    }
-});
 
+        // Client-side validation
+        if (params.size < 320 || params.size > 3840) {
+            status.textContent = 'Error: Image size must be between 320 and 3840.';
+            processBtn.disabled = false;
+            return;
+        }
+        if (params.conf < 0 || params.conf > 1) {
+            status.textContent = 'Error: Confidence threshold must be between 0 and 1.';
+            processBtn.disabled = false;
+            return;
+        }
+        if (params.iou < 0 || params.iou > 1) {
+            status.textContent = 'Error: IoU threshold must be between 0 and 1.';
+            processBtn.disabled = false;
+            return;
+        }
+        if (params.max_det < 1 || params.max_det > 10000) {
+            status.textContent = 'Error: Maximum detections must be between 1 and 10000.';
+            processBtn.disabled = false;
+            return;
+        }
 
-async function processMedia() {
-    if (!lastUploadedFile) {
-        alert("Сначала загрузите файл!");
-        return;
-    }
-    
-    const formData = new FormData();
-    formData.append('File', lastUploadedFile);
-    
-    try {
-        const response = await fetch('/ScreenTranslatorAPI/fileProcess', {
-            method: 'POST',
-            body: formData
-        });
-        
-        if (!response.ok) {
-            throw new Error("Ошибка сервера");
-        }
-        
-        const apiResponse = await response.json();
-        console.log("Ответ сервера:", apiResponse);
-        const processedMedia = document.getElementById('processed-media');
-        const recognizedText = document.getElementById('recognized-text');
-        const translatedText = document.getElementById('translated-text');
-        processedMedia.innerHTML = '';
-        
-        if (apiResponse['Recognized text'] && apiResponse['Recognized text'].length > 0) {
-            const isVideo = lastUploadedFile.name.toLowerCase().endsWith('.mp4');
-            recognizedText.value = isVideo 
-                ? apiResponse['Recognized text'].join('\n') 
-                : apiResponse['Recognized text'];
-        }
-        if (apiResponse['Translated text'] && apiResponse['Translated text'].length > 0) {
-            const isVideo = lastUploadedFile.name.toLowerCase().endsWith('.mp4');
-            translatedText.value = isVideo 
-                ? apiResponse['Translated text'].join('\n') 
-                : apiResponse['Translated text'];
-        }
-        
-        const mediaUrl = apiResponse['Boxed url'] || apiResponse['Translated url'];
-        if (mediaUrl) {
-            const mediaResponse = await fetch(mediaUrl);
-            if (!mediaResponse.ok) {
-                throw new Error("Не удалось загрузить обработанное медиа");
-            }
-            
-            const mediaBlob = await mediaResponse.blob();
-            const mediaObjectUrl = URL.createObjectURL(mediaBlob);
-            const isVideo = mediaUrl.toLowerCase().endsWith('.mp4');
-            
-            if (isVideo) {
-                const video = document.createElement('video');
-                video.src = mediaObjectUrl;
-                video.controls = true;
-                video.style.maxWidth = '100%';
-                video.style.maxHeight = '100%';
-                processedMedia.appendChild(video);
+        const uploadFormData = new FormData();
+        uploadFormData.append('File', currentFile);
+        uploadFormData.append('Params', JSON.stringify(params));
+
+        try {
+            const response = await fetch('/ScreenTranslatorAPI/process', {
+                method: 'POST',
+                body: uploadFormData,
+            });
+            const result = await response.json();
+            console.log('Process response:', result); // Debug log
+
+            if (response.ok) {
+                status.textContent = 'Processing complete.';
+                processedFilename = result.filename; // Use backend-provided filename
+                console.log('Using filename:', processedFilename); // Debug log
+                const url = result.boxed_url; // Use boxed_url from response
+                console.log('Fetching boxed_url:', url); // Debug log
+                const ext = processedFilename.split('.').pop().toLowerCase();
+                if (IMAGE_EXTENSIONS.includes(ext)) {
+                    processedImage.src = url;
+                    processedImage.style.display = 'block';
+                    processedVideo.style.display = 'none';
+                } else if (VIDEO_EXTENSIONS.includes(ext)) {
+                    processedVideo.src = url;
+                    processedVideo.style.display = 'block';
+                    processedImage.style.display = 'none';
+                }
+                recognizedText.value = result.recognized_text || '';
+                // Try fetching translated text (if available)
+                const textResponse = await fetch(`/ScreenTranslatorAPI/processed/${processedFilename}.json`);
+                if (textResponse.ok) {
+                    const data = await textResponse.json();
+                    translatedText.value = data.translated_text || '';
+                } else {
+                    console.warn('Translated text not available:', textResponse.status);
+                    status.textContent = 'Warning: Translated text not available.';
+                }
+                saveBtn.disabled = false;
             } else {
-                const img = document.createElement('img');
-                img.src = mediaObjectUrl;
-                img.style.maxWidth = '100%';
-                img.style.maxHeight = '100%';
-                processedMedia.appendChild(img);
+                status.textContent = `Error: ${result.error} - ${result.details || ''}`;
+                console.error('Process error:', result);
+                processBtn.disabled = false;
             }
+        } catch (error) {
+            status.textContent = `Error: ${error.message}`;
+            console.error('Fetch error:', error);
+            processBtn.disabled = false;
         }
-    } catch (error) {
-        console.error("Ошибка:", error);
-        alert("Произошла ошибка при обработке файла: " + error.message);
-    }
-}
+        processBtn.disabled = false;
+    });
 
-function saveMedia() {
-    const processedMedia = document.querySelector("#processed-media img, #processed-media video");
-    if (!processedMedia) {
-        alert("Нет обработанного файла для сохранения!");
-        return;
-    }
-    
-    const link = document.createElement("a");
-    link.href = processedMedia.src;
-    link.download = processedMedia.tagName === 'VIDEO' ? "processed_video.mp4" : "processed_image.png";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
+    // Save Button: Download processed file and text
+    saveBtn.addEventListener('click', async () => {
+        if (!processedFilename) {
+            status.textContent = 'Error: No processed file available.';
+            return;
+        }
+
+        try {
+            status.textContent = 'Preparing download...';
+            const zip = new JSZip();
+
+            // Add processed file
+            const boxedResponse = await fetch(`/ScreenTranslatorAPI/boxed/${processedFilename}`);
+            if (boxedResponse.ok) {
+                const blob = await boxedResponse.blob();
+                zip.file(processedFilename, blob);
+            } else {
+                status.textContent = `Error: Processed file not found (HTTP ${boxedResponse.status})`;
+                console.error('Boxed fetch error:', boxedResponse.statusText);
+                return;
+            }
+
+            // Add translated file (if available)
+            const translatedResponse = await fetch(`/ScreenTranslatorAPI/translated/${processedFilename}`);
+            if (translatedResponse.ok) {
+                const translatedBlob = await translatedResponse.blob();
+                zip.file(`translated-${processedFilename}`, translatedBlob);
+            } else {
+                console.warn('Translated file not available:', translatedResponse.status);
+            }
+
+            // Add text files for recognized and translated text
+            if (recognizedText.value) {
+                zip.file('recognized_text.txt', recognizedText.value);
+            }
+            if (translatedText.value) {
+                zip.file('translated_text.txt', translatedText.value);
+            }
+
+            const content = await zip.generateAsync({ type: 'blob' });
+            const url = URL.createObjectURL(content);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `screen_translator_output_${Date.now()}.zip`;
+            a.click();
+            URL.revokeObjectURL(url);
+            status.textContent = 'Files saved successfully.';
+        } catch (error) {
+            status.textContent = `Error saving files: ${error.message}`;
+            console.error('Save error:', error);
+        }
+    });
+});
