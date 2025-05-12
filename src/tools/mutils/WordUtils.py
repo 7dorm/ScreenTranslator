@@ -9,7 +9,7 @@ def merger(df: pd.DataFrame, translated=True) -> dict:
     x2=df.columns[2]
     y2=df.columns[3]
     letter=df.columns[6]
-
+    translated = True
     # Определяем среднюю ширину буквы
     avg_width = np.mean(df[x2] - df[x1])
     max_dist_x = avg_width * 0.2
@@ -69,10 +69,4 @@ def merger(df: pd.DataFrame, translated=True) -> dict:
                'y_max': float(cur_word_y_max)}
         words_with_bbox[current_word] = tmp
 
-    if not translated:
-        return words_with_bbox
-    # new_words = []
-    # for word in words:
-    #     new_words.append(translate(correcting_text([word])))
-    print(translate(correcting_text(words)))
-    return words_with_bbox
+    return [words_with_bbox, translate(correcting_text(words))]

@@ -6,17 +6,18 @@ from tools.MPNNModel import NNModel
 
 
 class Medipy:
-    def __init__(self, show: bool = False) -> None:
+    def __init__(self, show: bool = False, params = None) -> None:
         self.models: List[NNModel] = []
         self.detector: Detection = Detection(self.models)
         self.show: bool = show
+        self.params = params
 
-    def addModel(self, path: str, language_code: str, half_precision: bool = False) -> None:
-        self.models.append(NNModel(path, language_code, half_precision))
+    def addModel(self, path: str, language_code: str) -> None:
+        self.models.append(NNModel(path, language_code, self.params))
         self.detector = Detection(self.models)
 
     def process(self, filepath: str, output_name: str = None, size = None) ->  Union[CustomImage, CustomVideo, None]:
-        return self.detector(filepath, output_name, self.show, size = size)
+        return self.detector(filepath, output_name, self.show)
 
 
 if __name__ == "__main__":

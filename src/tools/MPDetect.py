@@ -22,7 +22,6 @@ class Detection:
                  output_name: str = None,
                  translated: bool = True,
                  only_text: bool = False,
-                 size: int = None,
                  show: bool = False) -> Union[CustomImage, CustomVideo, None]:
         """
         Method to process media files
@@ -38,7 +37,6 @@ class Detection:
 
         self.translated = translated
         self.only_text = only_text
-        self.size = size
         if path_to_media == 0:
             return CustomVideo(0, self.process_frame, output_name, show)
 
@@ -53,18 +51,20 @@ class Detection:
                 raise IncorrectFileTypeException(path_to_media.split('.')[-1])
 
     def process_frame(self, frame: Union[cv2.Mat, np.ndarray]) -> BaseDetection:
-        result: Detections = self.select_model(frame)
+        result, t_model = self.select_model(frame)
 
         if result.xyxyn[0].size().numel():
+            merge, translation = WordUtils.merger(result.pandas().xyxyn[0], True)
             return BaseDetection(
                 result.pandas().xyxyn[0],
                 ImageUtils.convert_pil_to_cv(
                     ImageUtils.draw_bounding_boxes(
                         ImageUtils.convert_to_pil_image(frame),
-                        WordUtils.merger(result.pandas().xyxyn[0], True)
+                        translation
                     )
                 ),
-                WordUtils.merger(result.pandas().xyxyn[0], True)
+                merge,
+                translation
             )
         else:
             return BaseDetection(
@@ -73,38 +73,52 @@ class Detection:
             )
 
     def process_image(self, path: str) -> BaseDetection:
-        result: Detections = self.select_model(path)
-        if result.pandas().xyxyn[0].size:
-            bboxes: dict = WordUtils.merger(result.pandas().xyxyn[0], self.translated)
-            if self.only_text:
-                return BaseDetection(
-                    result.pandas().xyxyn[0],
-                    Image.open(path),
-                    bboxes
-                )
+        result, t_model = self.select_model(path)
+        data = result.pandas().xyxyn[0]
+        if data.size:
+            bboxes, translated = WordUtils.merger(data, True)
 
+            if t_model.rough:
+                letters = list(data['name'])
+                letter_params = []
+                for i in range(len(data['name'])):
+                    letter_params.append([
+                        data['xmin'][i],
+                        data['ymin'][i],
+                        data['xmax'][i],
+                        data['ymax'][i]
+                    ])
+                return BaseDetection(
+                    data,
+                    Image.open(path),
+                    {i:{letters[i]: letter_params[i]} for i in range(len(letters))},
+                    {}
+                )
             return BaseDetection(
-                result.pandas().xyxyn[0],
+                data,
                 ImageUtils.draw_bounding_boxes(Image.open(path), bboxes),
-                bboxes
+                bboxes,
+                translated
             )
         else:
             return BaseDetection(
-                result.pandas().xyxyn[0],
+                data,
                 Image.open(path),
+                {},
                 {}
             )
 
     def select_model(self, frame: Union[Union[cv2.Mat, np.ndarray], str]) -> Union[Detections, None]:
         result: Detections = None
         conf: int = 0
+        best_model = None
 
         for model in self.models:
-            curr_result: Detections = model(frame, self.size)
+            curr_result: Detections = model(frame)
             curr_conf: int = curr_result.xyxy[0][:, 4].mean()
             if result == None or curr_conf > conf:
                 conf = curr_conf
                 result = curr_result
+                best_model = model
 
-
-        return result
+        return [result, best_model]

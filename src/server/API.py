@@ -33,10 +33,9 @@ class API_Request:
     def __init__(
         self,
         filepath: str,
-        params_json: str,
-        rough_text_recognition: bool = False,
-    ):
-        self.rough_text_recognition = rough_text_recognition
+        params_json: str):
+
+        self.rough_text_recognition = False
         self.filepath = filepath
         
         filename = os.path.basename(filepath)
@@ -60,7 +59,6 @@ class API_Request:
             params = json.loads(params_json)
             if not isinstance(params, dict):
                 raise ValueError("Params must be a JSON object")
-            
             if 'size' in params:
                 self.size = self._validate_int(params['size'], 640, 4096)
             if 'conf' in params:
@@ -77,6 +75,8 @@ class API_Request:
                 self.amp = self._validate_bool(params['amp'])
             if 'half_precision' in params:
                 self.half_precision = self._validate_bool(params['half_precision'])
+            if 'rough_text_recognition' in params:
+                self.rough_text_recognition = self._validate_bool(params['rough_text_recognition'])
                 
         except json.JSONDecodeError as e:
             raise ValueError(f"Invalid JSON in Params: {str(e)}")
