@@ -43,8 +43,6 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # Medipy model setup
-model = Medipy(show=False)
-model.addModel('tools/best.pt', 'en')
 
 def validate_file(file):
     """Validate uploaded file type and size."""
@@ -100,7 +98,7 @@ def index():
 @swag_from("apidocs/downloadBoxed.yml")
 def download_boxed(filename):
     """Serve boxed image/video file."""
-    filename = secure_filename(filename)
+    # filename = secure_filename(filename)
     file_path = os.path.join(FOLDER_BOXED, filename)
     try:
         if not os.path.isfile(file_path):
@@ -119,7 +117,7 @@ def download_boxed(filename):
 @swag_from("apidocs/downloadTranslated.yml")
 def download_translated(filename):
     """Serve translated file."""
-    filename = secure_filename(filename)
+    # filename = secure_filename(filename)
     file_path = os.path.join(FOLDER_TRANSLATED, filename)
     try:
         if not os.path.isfile(file_path):
@@ -141,7 +139,6 @@ def process_file():
     """Process uploaded image or video synchronously."""
     if 'File' not in request.files:
         return jsonify({"error": "No file uploaded"}), 400
-
     file = request.files['File']
     if not validate_file(file):
         return jsonify({"error": "Invalid file type or size"}), 400
@@ -162,20 +159,19 @@ def process_file():
         return jsonify({"error": "Invalid Params JSON"}), 400
 
     # Process with Medipy
-    print(params_json)
     API_request = API_Request(filepath, params_json)
     API_response = API_Response()
     try:
         output_path = f"{FOLDER_BOXED}/{filename}"  # Use filename, not API_request.name
-        result = model.process(API_request.filepath, size=API_request.size)
+        result = compute(API_request)
         if isinstance(result, CustomImage):
-            # Convert RGBA to RGB for JPEG
             image = result.result.frame
             if image.mode == 'RGBA' and ext in ['.jpg', '.jpeg', '.jpe']:
                 image = image.convert('RGB')
             image.save(output_path)
             API_response.boxed_url = f"/ScreenTranslatorAPI/boxed/{filename}"
             API_response.recognized_text = str(result.result.text)
+            API_response.translated_text = str(result.result.translated)
         elif isinstance(result, CustomVideo):
             # Assume video saving is handled by model.process
             API_response.boxed_url = f"/ScreenTranslatorAPI/boxed/{filename}"
@@ -201,12 +197,18 @@ def process_file():
             "status": "File processed",
             "boxed_url": API_response.boxed_url,
             "recognized_text": API_response.recognized_text,
+            "translated_text": API_response.translated_text,
             "filename": filename
         }), 200
     except Exception as e:
         logger.error(f"Processing failed for {filename}: {e}")
         os.remove(filepath)
         return jsonify({"error": "Processing failed", "details": str(e)}), 500
+
+def compute(API_request):
+    model = Medipy(show=False, params=API_request)
+    model.addModel('tools/best.pt', 'en')
+    return model.process(API_request.filepath)
 
 def start_server():
     for folder in [FOLDER_UPLOADS, FOLDER_PROCESSED, FOLDER_BOXED, FOLDER_TRANSLATED, FOLDER_LABELS]:
