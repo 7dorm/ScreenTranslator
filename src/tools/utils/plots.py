@@ -18,9 +18,9 @@ from PIL import Image, ImageDraw
 from scipy.ndimage.filters import gaussian_filter1d
 from ultralytics.utils.plotting import Annotator
 
-from src.tools.utils import TryExcept, threaded
-from src.tools.utils.general import LOGGER, clip_boxes, increment_path, xywh2xyxy, xyxy2xywh
-from src.tools.utils.metrics import fitness
+from tools.utils import TryExcept, threaded
+from tools.utils.general import LOGGER, clip_boxes, increment_path, xywh2xyxy, xyxy2xywh
+from tools.utils.metrics import fitness
 
 # Settings
 RANK = int(os.getenv("RANK", -1))
@@ -372,7 +372,7 @@ def plot_labels(labels, names=(), save_dir=Path("")):
 
 def imshow_cls(im, labels=None, pred=None, names=None, nmax=25, verbose=False, f=Path("images.jpg")):
     """Displays a grid of images with optional labels and predictions, saving to a file."""
-    from src.tools.utils.augmentations import denormalize
+    from tools.utils.augmentations import denormalize
 
     names = names or [f"class{i}" for i in range(1000)]
     blocks = torch.chunk(

@@ -25,7 +25,7 @@ if str(ROOT) not in sys.path:
 if platform.system() != "Windows":
     ROOT = Path(os.path.relpath(ROOT, Path.cwd()))  # relative
 
-from src.tools.models.common import (
+from tools.models.common import (
     C3,
     C3SPP,
     C3TR,
@@ -49,11 +49,11 @@ from src.tools.models.common import (
     GhostConv,
     Proto,
 )
-from src.tools.models.experimental import MixConv2d
-from src.tools.utils.autoanchor import check_anchor_order
-from src.tools.utils.general import LOGGER, check_version, check_yaml, colorstr, make_divisible, print_args
-from src.tools.utils.plots import feature_visualization
-from src.tools.utils.torch_utils import (
+from tools.models.experimental import MixConv2d
+from tools.utils.autoanchor import check_anchor_order
+from tools.utils.general import LOGGER, check_version, check_yaml, colorstr, make_divisible, print_args
+from tools.utils.plots import feature_visualization
+from tools.utils.torch_utils import (
     fuse_conv_and_bn,
     initialize_weights,
     model_info,

@@ -36,11 +36,11 @@ if str(ROOT) not in sys.path:
     sys.path.append(str(ROOT))  # add ROOT to PATH
 ROOT = Path(os.path.relpath(ROOT, Path.cwd()))  # relative
 
-from classify import val as validate
-from models.experimental import attempt_load
-from models.yolo import ClassificationModel, DetectionModel
-from utils.dataloaders import create_classification_dataloader
-from utils.general import (
+from tools.classify import val as validate
+from tools.models.experimental import attempt_load
+from tools.models.yolo import ClassificationModel, DetectionModel
+from tools.utils.dataloaders import create_classification_dataloader
+from tools.utils.general import (
     DATASETS_DIR,
     LOGGER,
     TQDM_BAR_FORMAT,
@@ -55,9 +55,9 @@ from utils.general import (
     print_args,
     yaml_save,
 )
-from utils.loggers import GenericLogger
-from utils.plots import imshow_cls
-from utils.torch_utils import (
+from tools.utils.loggers import GenericLogger
+from tools.utils.plots import imshow_cls
+from tools.utils.torch_utils import (
     ModelEMA,
     de_parallel,
     model_info,

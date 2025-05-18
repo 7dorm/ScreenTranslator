@@ -41,13 +41,13 @@ if str(ROOT) not in sys.path:
 ROOT = Path(os.path.relpath(ROOT, Path.cwd()))  # relative
 
 import segment.val as validate  # for end-of-epoch mAP
-from models.experimental import attempt_load
-from models.yolo import SegmentationModel
-from utils.autoanchor import check_anchors
-from utils.autobatch import check_train_batch_size
-from utils.callbacks import Callbacks
-from utils.downloads import attempt_download, is_url
-from utils.general import (
+from tools.models.experimental import attempt_load
+from tools.models.yolo import SegmentationModel
+from tools.utils.autoanchor import check_anchors
+from tools.utils.autobatch import check_train_batch_size
+from tools.utils.callbacks import Callbacks
+from tools.utils.downloads import attempt_download, is_url
+from tools.utils.general import (
     LOGGER,
     TQDM_BAR_FORMAT,
     check_amp,
@@ -72,13 +72,13 @@ from utils.general import (
     strip_optimizer,
     yaml_save,
 )
-from utils.loggers import GenericLogger
-from utils.plots import plot_evolve, plot_labels
-from utils.segment.dataloaders import create_dataloader
-from utils.segment.loss import ComputeLoss
-from utils.segment.metrics import KEYS, fitness
-from utils.segment.plots import plot_images_and_masks, plot_results_with_masks
-from utils.torch_utils import (
+from tools.utils.loggers import GenericLogger
+from tools.utils.plots import plot_evolve, plot_labels
+from tools.utils.segment.dataloaders import create_dataloader
+from tools.utils.segment.loss import ComputeLoss
+from tools.utils.segment.metrics import KEYS, fitness
+from tools.utils.segment.plots import plot_images_and_masks, plot_results_with_masks
+from tools.utils.torch_utils import (
     EarlyStopping,
     ModelEMA,
     de_parallel,

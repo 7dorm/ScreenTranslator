@@ -45,10 +45,10 @@ ROOT = Path(os.path.relpath(ROOT, Path.cwd()))  # relative
 
 from ultralytics.utils.plotting import Annotator
 
-from models.common import DetectMultiBackend
-from utils.augmentations import classify_transforms
-from utils.dataloaders import IMG_FORMATS, VID_FORMATS, LoadImages, LoadScreenshots, LoadStreams
-from utils.general import (
+from tools.models.common import DetectMultiBackend
+from tools.utils.augmentations import classify_transforms
+from tools.utils.dataloaders import IMG_FORMATS, VID_FORMATS, LoadImages, LoadScreenshots, LoadStreams
+from tools.utils.general import (
     LOGGER,
     Profile,
     check_file,
@@ -61,7 +61,7 @@ from utils.general import (
     print_args,
     strip_optimizer,
 )
-from utils.torch_utils import select_device, smart_inference_mode
+from tools.utils.torch_utils import select_device, smart_inference_mode
 
 
 @smart_inference_mode()

@@ -2,9 +2,11 @@ import torch
 
 from typing import Union, Any
 
+from PIL import Image
 from torch.mps import device_count
 
-from tools.models.common import AutoShape, Detections
+from tools.models.common import AutoShape, Detections, DetectMultiBackend
+from tools.mutils.ImageUtils import convert_pil_to_cv
 
 
 class NNModel:
@@ -15,7 +17,7 @@ class NNModel:
     def __init__(self,
                  path: str,
                  language_code: str,
-                 params) -> None:
+                 params = None) -> None:
         """
         Initialize YOLOv5 model with optimizations.
 
@@ -35,8 +37,8 @@ class NNModel:
 
 
         self.lang: str = language_code
-        self.rough = params.rough_text_recognition
         if params:
+            self.rough = params.rough_text_recognition
             self.size = params.size
             self.model.conf = params.conf
             self.model.iou = params.iou
@@ -44,6 +46,7 @@ class NNModel:
             self.model.multi_label = params.multi_label
             self.model.max_det = params.max_det
             self.model.amp = params.amp
+            self._USE_HALF_PRECISION: bool = params.half_precision
         else:
             self.size = 1500
             self.model.conf = 0.2  # Confidence threshold
@@ -54,10 +57,11 @@ class NNModel:
             self.model.multi_label = False  # NMS multiple labels per box
             self.model.max_det = 3000  # maximum number of detections per image
             self.model.amp = True  # Automatic Mixed Precision (AMP) inference
+            self._USE_HALF_PRECISION: bool = True
 
         self.model.modules()
         self._USE_CUDA: bool = torch.cuda.is_available()
-        self._USE_HALF_PRECISION: bool = params.half_precision
+
         if self._USE_CUDA:
             self.model.cuda()
         if self._USE_HALF_PRECISION:

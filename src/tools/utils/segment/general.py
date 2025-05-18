@@ -75,8 +75,10 @@ def process_mask_native(protos, masks_in, bboxes, shape):
 
     return: h, w, n
     """
-    c, mh, mw = protos.shape  # CHW
-    masks = (masks_in @ protos.float().view(c, -1)).sigmoid().view(-1, mh, mw)
+    print(protos.shape) #torch.Size([1, 3, 120, 160, 46])
+    _, c, mh, mw, d = protos.shape  # protos: [1, 3, 120, 160, 46]
+    protos = protos.squeeze(0)  # Remove batch dimension: [3, 120, 160, 46]
+    masks = (masks_in @ protos.float().view(-1, mh * mw).t()).sigmoid().view(-1, mh, mw)
     gain = min(mh / shape[0], mw / shape[1])  # gain  = old / new
     pad = (mw - shape[1] * gain) / 2, (mh - shape[0] * gain) / 2  # wh padding
     top, left = int(pad[1]), int(pad[0])  # y, x
