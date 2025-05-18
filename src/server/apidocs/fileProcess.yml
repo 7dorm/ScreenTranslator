@@ -1,107 +1,101 @@
-/ScreenTranslatorAPI/process:
-  post:
-    summary: Process an image or video file for text recognition and translation
-    description: Uploads an image or video file and queues it for processing using a YOLO-based model for text recognition. Optional parameters can be provided to customize processing.
-    consumes:
-      - multipart/form-data
-    produces:
-      - application/json
-    parameters:
-      - name: File
-        in: formData
-        type: file
-        required: true
-        description: Image or video file to process. Supported formats: BMP, JPEG, PNG, MP4 (max 10MB).
-      - name: Params
-        in: formData
-        type: string
-        required: false
-        description: JSON string containing processing parameters. If omitted, default values are used.
-        schema:
-          type: object
-          properties:
-            size:
-              type: integer
-              default: 1500
-              minimum: 320
-              maximum: 3840
-              description: Input image size in pixels.
-            conf:
-              type: number
-              format: float
-              default: 0.2
-              minimum: 0
-              maximum: 1
-              description: Confidence threshold for detections.
-            iou:
-              type: number
-              format: float
-              default: 0.3
-              minimum: 0
-              maximum: 1
-              description: IoU threshold for non-maximum suppression.
-            agnostic:
-              type: boolean
-              default: true
-              description: Perform class-agnostic NMS.
-            multi_label:
-              type: boolean
-              default: false
-              description: Allow multiple labels per object.
-            max_det:
-              type: integer
-              default: 3000
-              minimum: 1
-              maximum: 10000
-              description: Maximum number of detections.
-            amp:
-              type: boolean
-              default: true
-              description: Enable automatic mixed precision.
-            half_precision:
-              type: boolean
-              default: true
-              description: Use half-precision (FP16) computations.
-            rough_text_recognition:
-              type: boolean
-              default: false
-              description: Enable faster but less accurate text recognition.
-    responses:
-      200:
-        description: File successfully queued for processing
-        schema:
-          type: object
-          properties:
-            status:
-              type: string
-              example: File queued for processing
-            message:
-              type: string
-              example: Check boxed/translated endpoints for results
-      400:
-        description: Invalid file or parameters
-        schema:
-          type: object
-          properties:
-            error:
-              type: string
-              example: Invalid file type or size
-      429:
-        description: Rate limit exceeded
-        schema:
-          type: object
-          properties:
-            error:
-              type: string
-              example: Too many requests
-      500:
-        description: Server error during processing
-        schema:
-          type: object
-          properties:
-            error:
-              type: string
-              example: Processing failed
-            details:
-              type: string
-              example: Detailed error message
+Обработка изображения/видео
+---
+tags:
+  - Screen Translator API
+description: 
+  "Загружает изображение/видео и применяет модель для распознавания 
+  текста, переводит его и генерирует изображение/видео с bounding box, 
+  а также изображение/видео с наложенным переведённым текстом.
+      
+  Возвращает результат в формате JSON: массив покадрово распознанного текста, 
+  массив покадрово переведённого текста, а также URL ссылки на сгенерированные файлы.
+
+  Если передано изображение, массивы текстов состоят из одного элемента."
+
+consumes:
+  - multipart/form-data
+produces:
+  - application/json      
+parameters:
+  - name: File
+    in: formData
+    type: file
+    required: true
+    description: Изображение или видео для обработки
+
+  - name: Params
+    in: formData
+    type: string
+    description: |
+      YOLO Параметры                                                      
+      <details>
+      <summary>Подробнее</summary>
+      ```
+      size                - Inference image size              (640 - 4096)
+      conf                - NMS confidence threshold          (0.1 - 0.9)
+      iou                 - NMS IoU threshold                 (0.1 - 0.9)
+      agnostic            - NMS class-agnostic                (True/False)
+      multi_label         - NMS multiple labels per box       (True/False)
+      max_det             - Max detections per image          (1 - 10000)
+      amp                 - Automatic Mixed Precision         (True/False)
+      half_precision      - Floating Point 16                 (True/False)
+      ```
+
+      Все параметры опциональны. Значение по умолчанию:
+      ```json
+      {
+        "size": 1500,
+        "conf": 0.2,
+        "iou": 0.3,
+        "agnostic": true,
+        "multi_label": false,
+        "max_det": 3000,
+        "amp": true,
+        "half_precision": true
+      }
+      ```
+      </details>
+
+
+responses:
+  200:
+    description: Успех
+    schema:
+      type: object
+      properties:
+        Recognized text:
+          type: array
+          items:
+            type: string
+          example: ["Text from frame 1 (or just image)", "Text from frame 2"]
+        Translated text:
+          type: array
+          items:
+            type: string
+          example: ["Текст из кадра 1 (или просто изображения)", "Текст из кадра 2"]
+        Boxed url:
+          type: string
+          example: "/ScreenTranslatorAPI/boxed/<filename>"
+        Translated url:
+          type: string
+          example: "/ScreenTranslatorAPI/translated/<filename>"
+  400:
+    description: Ошибка на стороне клиента
+    schema:
+      type: object
+      properties:
+        Error:
+          type: string
+          example: "No file uploaded <or> Unsupported file format"
+  500:
+    description: Ошибка на стороне сервера
+    schema:
+      type: object
+      properties:
+        Error:
+          type: string
+          example: "Processing failed"
+        Error details:
+          type: string
+          example: "Error description here"
+          

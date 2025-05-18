@@ -1,27 +1,31 @@
-/ScreenTranslatorAPI/boxed/{filename}:
-  get:
-    summary: Download a processed (boxed) file
-    description: Retrieves a processed image or video file with bounding boxes drawn around detected text regions.
-    produces:
-      - image/jpeg
-      - image/png
-      - video/mp4
-    parameters:
-      - name: filename
-        in: path
-        type: string
-        required: true
-        description: Name of the processed file (e.g., uuid.jpg or uuid.mp4).
-    responses:
-      200:
-        description: Processed file
+Скачать обработанный файл с bounding boxes
+---
+tags:
+  - Screen Translator API
+
+produces:
+  - application/octet-stream
+parameters:
+  - name: filename
+    in: path
+    required: true
+    description: Имя файла для скачивания
+    schema:
+      type: string
+
+responses:
+  200:
+    description: Успех
+    content:
+      application/octet-stream:
         schema:
-          type: file
-      404:
-        description: File not found
-        schema:
-          type: object
-          properties:
-            error:
-              type: string
-              example: File not found
+          type: string
+          format: binary
+  404:
+    description: Файл не найден
+    schema:
+      type: object
+      properties:
+        Error:
+          type: string
+          example: "File not found"

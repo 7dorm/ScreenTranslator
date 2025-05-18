@@ -1,7 +1,9 @@
 import os
+import sys
 import uuid
 import json
 import logging
+import pathlib
 from datetime import datetime, timedelta
 from flask import Flask, request, jsonify, send_from_directory, render_template
 from flasgger import Swagger, swag_from
@@ -11,9 +13,16 @@ from tools.MPCustom import CustomImage, CustomVideo
 from tools.Medipy import Medipy
 from server.API import API_Request, API_Response
 
+# Windovod issue
+if sys.platform == "win32":
+    pathlib.PosixPath = pathlib.WindowsPath
+
 # Flask app setup
 app = Flask(__name__)
 swagger = Swagger(app)
+
+model = Medipy(show=False)
+model.addModel('tools/best.pt', 'en')
 
 # Rate limiting
 limiter = Limiter(app=app, key_func=get_remote_address, default_limits=["100000000 per day", "1000 per minute"])
@@ -133,16 +142,19 @@ def download_translated(filename):
         return jsonify({"error": "Server error", "details": str(e)}), 500
 
 @app.route("/ScreenTranslatorAPI/process", methods=["POST"])
-@swag_from("apidocs/fileProcess.yml")
 @limiter.limit("10000 per minute")
+@swag_from("apidocs/fileProcess.yml")
 def process_file():
+    print(request.files)
     """Process uploaded image or video synchronously."""
     if 'File' not in request.files:
+
         return jsonify({"error": "No file uploaded"}), 400
+
     file = request.files['File']
+
     if not validate_file(file):
         return jsonify({"error": "Invalid file type or size"}), 400
-
     # Generate unique filename
     ext = os.path.splitext(file.filename)[1].lower()
     filename = f"{uuid.uuid4()}{ext}"
@@ -206,8 +218,12 @@ def process_file():
         return jsonify({"error": "Processing failed", "details": str(e)}), 500
 
 def compute(API_request):
+<<<<<<< HEAD
+    model.setParams(API_request)
+=======
     model = Medipy(show=False, params=API_request)
-    model.addModel('tools/best.pt', 'en')
+    model.addModel('src/tools/best.pt', 'en')
+>>>>>>> 9dad34a (Web reorganization)
     return model.process(API_request.filepath)
 
 def start_server():

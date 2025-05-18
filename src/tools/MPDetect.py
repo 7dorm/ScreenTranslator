@@ -9,8 +9,8 @@ from tools.MPCustom import CustomVideo, CustomImage
 from tools.base import BaseDetection
 from tools.constants import IMAGE_TYPES, VIDEO_TYPES
 from tools.exceptions import IncorrectFileTypeException
-from tools.models.common import Detections
 from tools.mutils import ImageUtils, WordUtils
+from tools.mutils import translated_text_on_image
 from tools.mutils.ImageUtils import convert_pil_to_cv, resize_image
 
 
@@ -88,6 +88,7 @@ class Detection:
                         data['xmax'][i],
                         data['ymax'][i]
                     ])
+
                 return BaseDetection(
                     data,
                     Image.open(path),
@@ -96,7 +97,7 @@ class Detection:
                 )
             return BaseDetection(
                 data,
-                ImageUtils.draw_bounding_boxes(Image.open(path), bboxes),
+                translated_text_on_image.process_image(Image.open(path), translated, bboxes),
                 bboxes,
                 translated
             )
@@ -108,7 +109,7 @@ class Detection:
                 {}
             )
 
-    def select_model(self, frame: Union[Union[cv2.Mat, np.ndarray], str]) -> Union[Detections, None]:
+    def select_model(self, frame: Union[Union[cv2.Mat, np.ndarray], str]):
         result: Detections = None
         conf: int = 0
         best_model = None

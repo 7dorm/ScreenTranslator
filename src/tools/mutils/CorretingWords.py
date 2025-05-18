@@ -1,6 +1,6 @@
 import json
 import string
-from deep_translator import GoogleTranslator, single_detection
+from deep_translator import GoogleTranslator, single_detection, LingueeTranslator
 
 
 def change_same_symbols(word):
@@ -88,9 +88,11 @@ def correcting_text(words):
     dict_file = open("tools/mutils/3_gramm_index.json", "r")
     dictionary = json.load(dict_file)
     length = len(words)
+
     for i in range(0, length):
         word = words[i].lower()
-        if word.isnumeric():
+        if word.isnumeric() or word in ['.', ',', '?', '!', '@']:
+
             continue
         word = change_same_symbols(word)
         #print(word)
@@ -107,5 +109,11 @@ def correcting_text(words):
     return words
 
 def translate(text):
-    return GoogleTranslator(source='auto', target='ru').translate(text=" ".join(text))
-
+    print('test', ' '.join(text))
+    t =  GoogleTranslator(source='english', target='russian').translate(' '.join(text))
+    print(t)
+    return t
+    #obj.target = 'en'
+    # t = obj.translate(t)
+    # obj.target = 'ru'
+    # return obj.translate(t)

@@ -151,15 +151,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     processedImage.style.display = 'none';
                 }
                 recognizedText.value = result.recognized_text || '';
+
                 // Try fetching translated text (if available)
-                const textResponse = await fetch(`/ScreenTranslatorAPI/processed/${processedFilename}.json`);
-                if (textResponse.ok) {
-                    const data = await textResponse.json();
-                    translatedText.value = data.translated_text || '';
-                } else {
-                    console.warn('Translated text not available:', textResponse.status);
-                    status.textContent = 'Warning: Translated text not available.';
-                }
+                translatedText.value = result.translated_text || '';
                 saveBtn.disabled = false;
             } else {
                 status.textContent = `Error: ${result.error} - ${result.details || ''}`;
@@ -225,5 +219,9 @@ document.addEventListener('DOMContentLoaded', () => {
             status.textContent = `Error saving files: ${error.message}`;
             console.error('Save error:', error);
         }
+    });
+
+    document.getElementById('footer-text').addEventListener('click', () => {
+        window.open('/apidocs', '_blank');
     });
 });
