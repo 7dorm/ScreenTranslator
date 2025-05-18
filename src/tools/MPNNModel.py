@@ -55,6 +55,7 @@ class NNModel:
             self._USE_HALF_PRECISION: bool = True
         self.model.classes = list(range(0, 41))  # All classes
 
+
         self.model.modules()
         self._USE_CUDA: bool = torch.cuda.is_available()
 
