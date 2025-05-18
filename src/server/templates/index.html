@@ -486,7 +486,7 @@ footer {
         uploadFormData.append('Params', JSON.stringify(params));
 
         try {
-            const response = await fetch('/translator/ScreenTranslatorAPI/process', {
+            const response = await fetch('/ScreenTranslatorAPI/process', {
                 method: 'POST',
                 body: uploadFormData,
             });
@@ -539,7 +539,7 @@ footer {
             const zip = new JSZip();
 
             // Add processed file
-            const boxedResponse = await fetch(`/translator/ScreenTranslatorAPI/boxed/${processedFilename}`);
+            const boxedResponse = await fetch(`/ScreenTranslatorAPI/boxed/${processedFilename}`);
             if (boxedResponse.ok) {
                 const blob = await boxedResponse.blob();
                 zip.file(processedFilename, blob);
@@ -550,7 +550,7 @@ footer {
             }
 
             // Add translated file (if available)
-            const translatedResponse = await fetch(`/translator/ScreenTranslatorAPI/translated/${processedFilename}`);
+            const translatedResponse = await fetch(`/ScreenTranslatorAPI/translated/${processedFilename}`);
             if (translatedResponse.ok) {
                 const translatedBlob = await translatedResponse.blob();
                 zip.file(`translated-${processedFilename}`, translatedBlob);

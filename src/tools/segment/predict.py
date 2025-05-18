@@ -44,9 +44,9 @@ ROOT = Path(os.path.relpath(ROOT, Path.cwd()))  # relative
 
 from ultralytics.utils.plotting import Annotator, colors, save_one_box
 
-from models.common import DetectMultiBackend
-from utils.dataloaders import IMG_FORMATS, VID_FORMATS, LoadImages, LoadScreenshots, LoadStreams
-from utils.general import (
+from tools.models.common import DetectMultiBackend
+from tools.utils.dataloaders import IMG_FORMATS, VID_FORMATS, LoadImages, LoadScreenshots, LoadStreams
+from tools.utils.general import (
     LOGGER,
     Profile,
     check_file,
@@ -62,8 +62,8 @@ from utils.general import (
     scale_segments,
     strip_optimizer,
 )
-from utils.segment.general import masks2segments, process_mask, process_mask_native
-from utils.torch_utils import select_device, smart_inference_mode
+from tools.utils.segment.general import masks2segments, process_mask, process_mask_native
+from tools.utils.torch_utils import select_device, smart_inference_mode
 
 
 @smart_inference_mode()

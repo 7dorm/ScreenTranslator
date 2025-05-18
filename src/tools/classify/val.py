@@ -34,9 +34,9 @@ if str(ROOT) not in sys.path:
     sys.path.append(str(ROOT))  # add ROOT to PATH
 ROOT = Path(os.path.relpath(ROOT, Path.cwd()))  # relative
 
-from models.common import DetectMultiBackend
-from utils.dataloaders import create_classification_dataloader
-from utils.general import (
+from tools.models.common import DetectMultiBackend
+from tools.utils.dataloaders import create_classification_dataloader
+from tools.utils.general import (
     LOGGER,
     TQDM_BAR_FORMAT,
     Profile,
@@ -46,7 +46,7 @@ from utils.general import (
     increment_path,
     print_args,
 )
-from utils.torch_utils import select_device, smart_inference_mode
+from tools.utils.torch_utils import select_device, smart_inference_mode
 
 
 @smart_inference_mode()

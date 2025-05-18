@@ -40,10 +40,10 @@ ROOT = Path(os.path.relpath(ROOT, Path.cwd()))  # relative
 
 import torch.nn.functional as F
 
-from models.common import DetectMultiBackend
-from models.yolo import SegmentationModel
-from utils.callbacks import Callbacks
-from utils.general import (
+from tools.models.common import DetectMultiBackend
+from tools.models.yolo import SegmentationModel
+from tools.utils.callbacks import Callbacks
+from tools.utils.general import (
     LOGGER,
     NUM_THREADS,
     TQDM_BAR_FORMAT,
@@ -61,13 +61,13 @@ from utils.general import (
     xywh2xyxy,
     xyxy2xywh,
 )
-from utils.metrics import ConfusionMatrix, box_iou
-from utils.plots import output_to_target, plot_val_study
-from utils.segment.dataloaders import create_dataloader
-from utils.segment.general import mask_iou, process_mask, process_mask_native, scale_image
-from utils.segment.metrics import Metrics, ap_per_class_box_and_mask
-from utils.segment.plots import plot_images_and_masks
-from utils.torch_utils import de_parallel, select_device, smart_inference_mode
+from tools.utils.metrics import ConfusionMatrix, box_iou
+from tools.utils.plots import output_to_target, plot_val_study
+from tools.utils.segment.dataloaders import create_dataloader
+from tools.utils.segment.general import mask_iou, process_mask, process_mask_native, scale_image
+from tools.utils.segment.metrics import Metrics, ap_per_class_box_and_mask
+from tools.utils.segment.plots import plot_images_and_masks
+from tools.utils.torch_utils import de_parallel, select_device, smart_inference_mode
 
 
 def save_one_txt(predn, save_conf, shape, file):

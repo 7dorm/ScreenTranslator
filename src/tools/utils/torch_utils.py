@@ -68,7 +68,7 @@ def smart_DDP(model):
 
 def reshape_classifier_output(model, n=1000):
     """Reshapes last layer of model to match class count 'n', supporting Classify, Linear, Sequential types."""
-    from src.tools.models.common import Classify
+    from tools.models.common import Classify
 
     name, m = list((model.model if hasattr(model, "model") else model).named_children())[-1]  # last module
     if isinstance(m, Classify):  # YOLOv5 Classify() head
