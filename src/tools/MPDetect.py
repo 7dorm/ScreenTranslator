@@ -80,19 +80,28 @@ class Detection:
 
             if t_model.rough:
                 letters = list(data['name'])
-                letter_params = []
-                for i in range(len(data['name'])):
-                    letter_params.append([
-                        data['xmin'][i],
-                        data['ymin'][i],
-                        data['xmax'][i],
-                        data['ymax'][i]
-                    ])
+                letter_params = {
+                    letters[i]: {
+                        'x_min': float(data['xmin'][i]),
+                        'y_min': float(data['ymin'][i]),
+                        'x_max': float(data['xmax'][i]),
+                        'y_max': float(data['ymax'][i])
+                    } for i in range(len(letters))
+                }
+                letterr = {
+                    i: {
+                    letters[i]: {
+                        'x_min': float(data['xmin'][i]),
+                        'y_min': float(data['ymin'][i]),
+                        'x_max': float(data['xmax'][i]),
+                        'y_max': float(data['ymax'][i])
+                    } } for i in range(len(letters))
+                }
 
                 return BaseDetection(
                     data,
-                    Image.open(path),
-                    {i:{letters[i]: letter_params[i]} for i in range(len(letters))},
+                    ImageUtils.draw_bounding_boxes(Image.open(path), letter_params),
+                    letterr,
                     {}
                 )
             return BaseDetection(

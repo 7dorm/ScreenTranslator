@@ -27,7 +27,7 @@ class Medipy:
 
 if __name__ == "__main__":
     obj = Medipy(show=False)
-    obj.addModel('best.pt', 'en')
+    obj.addModel('cars.pt', 'en')
     # image: CustomImage = obj.process("/Users/deu/Downloads/1.webp")
     # print(image.result.text.keys())
     # image: CustomImage = obj.process("/Users/deu/Downloads/test2.jpg")

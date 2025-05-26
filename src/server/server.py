@@ -12,6 +12,8 @@ from flask_limiter.util import get_remote_address
 from tools.MPCustom import CustomImage, CustomVideo
 from tools.Medipy import Medipy
 from server.API import API_Request, API_Response
+from PIL import Image, ImageOps
+import pillow_heif
 
 # Windovod issue
 if sys.platform == "win32":
@@ -22,6 +24,7 @@ app = Flask(__name__)
 swagger = Swagger(app)
 
 model = Medipy(show=False)
+# model.addModel('tools/cars.pt', 'en')
 model.addModel('tools/best.pt', 'en')
 
 # Rate limiting
@@ -45,26 +48,13 @@ ALLOWED_EXTENSIONS = {
     'avi', 'mp4', 'mov', 'mkv', 'flv', 'wmv', 'mpeg', 'mpg', 'mpe', 'm4v', '3gp', '3g2', 'asf', 'divx', 'f4v',
     'm2ts', 'm2v', 'm4p', 'mts', 'ogm', 'ogv', 'qt', 'rm', 'vob', 'webm', 'xvid'
 }
-MAX_FILE_SIZE = 10 * 1024 * 1024  # 10MB
+MAX_FILE_SIZE = 100 * 1024 * 1024  # 10MB
 
 # Logging setup
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 # Medipy model setup
-
-def validate_file(file):
-    """Validate uploaded file type and size."""
-    if not file or not file.filename:
-        return False
-    ext = file.filename.rsplit('.', 1)[1].lower() if '.' in file.filename else ''
-    if ext not in ALLOWED_EXTENSIONS:
-        return False
-    file.seek(0, os.SEEK_END)
-    if file.tell() > MAX_FILE_SIZE:
-        return False
-    file.seek(0)
-    return True
 
 def clean_old_files(directory, max_age_hours=24):
     """Remove files older than max_age_hours from directory."""
@@ -141,26 +131,47 @@ def download_translated(filename):
         logger.error(f"Error serving file {file_path}: {e}")
         return jsonify({"error": "Server error", "details": str(e)}), 500
 
+def validate_file(file):
+    """Validate uploaded file type and size."""
+    if not file or not file.filename:
+        return False
+    ext = file.filename.rsplit('.', 1)[1].lower() if '.' in file.filename else ''
+    # Allow any image type supported by Pillow
+    file.seek(0, os.SEEK_END)
+    if file.tell() > MAX_FILE_SIZE:
+        return False
+    file.seek(0)
+    return True
+
 @app.route("/ScreenTranslatorAPI/process", methods=["POST"])
 @limiter.limit("10000 per minute")
 @swag_from("apidocs/fileProcess.yml")
 def process_file():
-    print(request.files)
     """Process uploaded image or video synchronously."""
     if 'File' not in request.files:
-
         return jsonify({"error": "No file uploaded"}), 400
 
     file = request.files['File']
-
     if not validate_file(file):
         return jsonify({"error": "Invalid file type or size"}), 400
+
     # Generate unique filename
-    ext = os.path.splitext(file.filename)[1].lower()
-    filename = f"{uuid.uuid4()}{ext}"
+    filename = f"{uuid.uuid4()}.jpg"  # Force .jpg extension
     filepath = os.path.join(FOLDER_UPLOADS, filename)
-    file.save(filepath)
-    logger.info(f"Saved file: {filepath}")
+
+    # Convert image to JPEG
+    try:
+        pillow_heif.register_heif_opener()  # Enable HEIC support
+        img = Image.open(file)
+        # Reset orientation based on EXIF data
+        img = ImageOps.exif_transpose(img)  # Corrects rotation
+        if img.mode == 'RGBA':
+            img = img.convert('RGB')  # Convert RGBA to RGB for JPEG
+        img.save(filepath, 'JPEG', quality=95)
+        logger.info(f"Converted and saved file: {filepath}")
+    except Exception as e:
+        logger.error(f"Image conversion failed: {e}")
+        return jsonify({"error": "Image conversion failed", "details": str(e)}), 400
 
     # Process parameters
     params_json = request.form.get('Params', '{}')
@@ -174,36 +185,32 @@ def process_file():
     API_request = API_Request(filepath, params_json)
     API_response = API_Response()
     try:
-        output_path = f"{FOLDER_BOXED}/{filename}"  # Use filename, not API_request.name
+        output_path = f"{FOLDER_BOXED}/{filename}"
         result = compute(API_request)
         if isinstance(result, CustomImage):
             image = result.result.frame
-            if image.mode == 'RGBA' and ext in ['.jpg', '.jpeg', '.jpe']:
+            if image.mode == 'RGBA':
                 image = image.convert('RGB')
-            image.save(output_path)
-            API_response.boxed_url = f"/ScreenTranslatorAPI/boxed/{filename}"
+            image.save(output_path, 'JPEG', quality=95)
+            API_response.boxed_url = f"/translator/ScreenTranslatorAPI/boxed/{filename}"
             API_response.recognized_text = str(result.result.text)
             API_response.translated_text = str(result.result.translated)
         elif isinstance(result, CustomVideo):
-            # Assume video saving is handled by model.process
-            API_response.boxed_url = f"/ScreenTranslatorAPI/boxed/{filename}"
+            API_response.boxed_url = f"/translator/ScreenTranslatorAPI/boxed/{filename}"
             API_response.recognized_text = "Video processing complete"
         else:
             raise ValueError("Invalid result type from Medipy")
 
-        # Verify output file exists and is readable
         if not os.path.isfile(output_path):
             raise RuntimeError(f"Output file not saved: {output_path}")
         if not os.access(output_path, os.R_OK):
             raise RuntimeError(f"Output file not readable: {output_path}")
         logger.info(f"Saved processed file: {output_path}")
 
-        # Save response for later retrieval
         with open(os.path.join(FOLDER_PROCESSED, f"{filename}.json"), 'w') as f:
             json.dump(API_response.to_dict(), f)
 
         logger.info(f"Processed file: {filename}")
-        # Clean up uploaded file
         os.remove(filepath)
         return jsonify({
             "status": "File processed",
@@ -218,12 +225,7 @@ def process_file():
         return jsonify({"error": "Processing failed", "details": str(e)}), 500
 
 def compute(API_request):
-<<<<<<< HEAD
     model.setParams(API_request)
-=======
-    model = Medipy(show=False, params=API_request)
-    model.addModel('src/tools/best.pt', 'en')
->>>>>>> 9dad34a (Web reorganization)
     return model.process(API_request.filepath)
 
 def start_server():
