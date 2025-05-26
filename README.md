@@ -1,15 +1,15 @@
 # Screen Translator
 
-A web-based application to detect, extract, and translate English text from images and videos, with a focus on extensibility and real-time processing.
+A web-based application to detect, extract, and translate English text from images, with a focus on extensibility and real-time processing.
 
 ## Features
-- **Text Detection**: Uses YOLOv5 to identify text regions in images/videos.
+- **Text Detection**: Uses YOLOv5 to identify text regions in images.
 - **Text Correction**: Corrects misrecognized text (e.g., "th3@pple" → "the apple") using local dictionaries or Datamuse API.
 - **Translation**: Translates detected English text to Russian via Google Translate (deep-translator).
 - **Web Interface**: Simple Flask-based UI for file uploads and result display.
 - **REST API**: Supports media processing with configurable parameters.
 - **Extensibility**: Modular architecture for adding new language models or detection modules.
-- **Video Processing**: Planned feature to process videos with bounding boxes and translations.
+- **Video Processing**: Planned feature to process with bounding boxes and translations.
 
 ## Installation
 
@@ -48,14 +48,14 @@ A web-based application to detect, extract, and translate English text from imag
 
 ### Web Interface
 1. Open `http://localhost:5000` in your browser.
-2. Upload an image or video file.
+2. Upload an image file.
 3. View processed results with bounding boxes and translated text.
 4. Download results as a ZIP file containing processed media and text.
 
 ### REST API
 - **Endpoint**: `POST /ScreenTranslatorAPI/process`
 - **Parameters**:
-  - `File`: Image/video file (e.g., JPEG, PNG, MP4).
+  - `File`: Image file (e.g., JPEG, PNG).
   - `Params` (optional JSON):
     ```json
     {
@@ -98,7 +98,7 @@ A web-based application to detect, extract, and translate English text from imag
   - `WordUtils.py`: Merges detected text into words.
 - **Plugin-based**:
   - `Medipy.py`: Core plugin manager.
-  - `MPDetect.py`: Detection plugin for images/videos.
+  - `MPDetect.py`: Detection plugin for images.
   - `MPCustom.py`: Custom image processing.
 - **Deployment**: Flask server with Nginx, GPU support for performance.
 
