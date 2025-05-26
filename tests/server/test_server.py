@@ -1,10 +1,12 @@
-import os
 import io
-import json
-import tempfile
 from PIL import Image
 import pytest
-from server import app
+
+import sys
+from pathlib import Path
+root_dir = Path(__file__).parent.parent.parent
+sys.path.insert(0, str(root_dir))
+from src.server.server import app
 
 @pytest.fixture
 def client():

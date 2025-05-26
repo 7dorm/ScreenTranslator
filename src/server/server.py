@@ -9,9 +9,9 @@ from flask import Flask, request, jsonify, send_from_directory, render_template
 from flasgger import Swagger, swag_from
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
-from tools.MPCustom import CustomImage, CustomVideo
-from tools.Medipy import Medipy
-from server.API import API_Request, API_Response
+from src.tools.MPCustom import CustomImage, CustomVideo
+from src.tools.Medipy import Medipy
+from src.server.API import API_Request, API_Response
 from PIL import Image, ImageOps
 import pillow_heif
 
@@ -135,12 +135,18 @@ def validate_file(file):
     """Validate uploaded file type and size."""
     if not file or not file.filename:
         return False
+    
+    # Check file extension
     ext = file.filename.rsplit('.', 1)[1].lower() if '.' in file.filename else ''
-    # Allow any image type supported by Pillow
+    if ext not in ALLOWED_EXTENSIONS:
+        return False
+    
+    # Check file size
     file.seek(0, os.SEEK_END)
     if file.tell() > MAX_FILE_SIZE:
         return False
     file.seek(0)
+    
     return True
 
 @app.route("/ScreenTranslatorAPI/process", methods=["POST"])

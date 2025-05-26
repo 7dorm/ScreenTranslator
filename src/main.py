@@ -1,4 +1,4 @@
-from server.server import start_server
+from src.server.server import start_server
 import os
 
 

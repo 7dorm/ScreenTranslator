@@ -4,14 +4,14 @@ import cv2
 import numpy as np
 from PIL import Image
 
-from tools.MPNNModel import NNModel
-from tools.MPCustom import CustomVideo, CustomImage
-from tools.base import BaseDetection
-from tools.constants import IMAGE_TYPES, VIDEO_TYPES
-from tools.exceptions import IncorrectFileTypeException
-from tools.mutils import ImageUtils, WordUtils
-from tools.mutils import translated_text_on_image
-from tools.mutils.ImageUtils import convert_pil_to_cv, resize_image
+from src.tools.MPNNModel import NNModel
+from src.tools.MPCustom import CustomVideo, CustomImage
+from src.tools.base import BaseDetection
+from src.tools.constants import IMAGE_TYPES, VIDEO_TYPES
+from src.tools.exceptions import IncorrectFileTypeException
+from src.tools.mutils import ImageUtils, WordUtils
+from src.tools.mutils import translated_text_on_image
+from src.tools.mutils.ImageUtils import convert_pil_to_cv, resize_image
 
 
 class Detection:
