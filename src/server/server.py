@@ -198,11 +198,11 @@ def process_file():
             if image.mode == 'RGBA':
                 image = image.convert('RGB')
             image.save(output_path, 'JPEG', quality=95)
-            API_response.boxed_url = f"/translator/ScreenTranslatorAPI/boxed/{filename}"
+            API_response.boxed_url = f"/ScreenTranslatorAPI/boxed/{filename}"
             API_response.recognized_text = str(result.result.text)
             API_response.translated_text = str(result.result.translated)
         elif isinstance(result, CustomVideo):
-            API_response.boxed_url = f"/translator/ScreenTranslatorAPI/boxed/{filename}"
+            API_response.boxed_url = f"/ScreenTranslatorAPI/boxed/{filename}"
             API_response.recognized_text = "Video processing complete"
         else:
             raise ValueError("Invalid result type from Medipy")
