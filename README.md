@@ -21,8 +21,8 @@ A web-based application to detect, extract, and translate English text from imag
 ### Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/screen-translator.git
-   cd screen-translator
+   git clone https://github.com/7dorm/ScreenTranslator.git
+   cd ScreenTranslator
    ```
 2. Install dependencies:
    ```bash
