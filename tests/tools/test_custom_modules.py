@@ -8,7 +8,7 @@ import cv2
 root_dir = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(root_dir))
 
-from src.tools.MPCustom import CustomImage, CustomVideo
+from ScreenTranslator.tools.MPCustom import CustomImage, CustomVideo
 
 def mock_process_function(input_data):
     result = MagicMock()

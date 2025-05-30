@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from src.tools.mutils.CorretingWords import correcting_text, translate
+from ScreenTranslator.tools.mutils.CorretingWords import correcting_text, translate
 
 
 def merger(df: pd.DataFrame, translated=True) -> dict:

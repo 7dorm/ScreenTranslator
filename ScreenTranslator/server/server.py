@@ -9,9 +9,9 @@ from flask import Flask, request, jsonify, send_from_directory, render_template
 from flasgger import Swagger, swag_from
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
-from src.tools.MPCustom import CustomImage, CustomVideo
-from src.tools.Medipy import Medipy
-from src.server.API import API_Request, API_Response
+from ScreenTranslator.tools.MPCustom import CustomImage, CustomVideo
+from ScreenTranslator.tools.Medipy import Medipy
+from ScreenTranslator.server.API import API_Request, API_Response
 from PIL import Image, ImageOps
 import pillow_heif
 
@@ -25,7 +25,7 @@ swagger = Swagger(app)
 
 model = Medipy(show=False)
 # model.addModel('tools/cars.pt', 'en')
-model.addModel('src/tools/best.pt', 'en')
+model.addModel('ScreenTranslator/tools/best.pt', 'en')
 
 # Rate limiting
 limiter = Limiter(app=app, key_func=get_remote_address, default_limits=["100000000 per day", "1000 per minute"])

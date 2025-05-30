@@ -85,7 +85,7 @@ def levenshtein_dp(s1, s2):
     return dp[m][n]
 
 def correcting_text(words):
-    dict_file = open("src/tools/mutils/3_gramm_index.json", "r")
+    dict_file = open("ScreenTranslator/tools/mutils/3_gramm_index.json", "r")
     dictionary = json.load(dict_file)
     length = len(words)
 

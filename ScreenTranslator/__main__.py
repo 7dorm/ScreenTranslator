@@ -1,4 +1,4 @@
-from src.server.server import start_server
+from ScreenTranslator.server.server import start_server
 import os
 
 
