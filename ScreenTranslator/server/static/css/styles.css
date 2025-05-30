@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #3498db;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.media-section {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.media-box {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: white;
+    text-align: center;
+}
+
+.media-box img, .media-box video {
+    max-width: 100%;
+    height: auto;
+}
+
+.controls {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.params-section {
+    margin-bottom: 20px;
+}
+
+.params-section summary {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#params-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.output {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.text-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-field label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.text-field textarea {
+    resize: vertical;
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.status {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.help-text {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+    margin: 5px 0 0 0;
+}
+
+.param-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.param-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.param-group input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 200px;
+}
+
+.param-checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.param-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.param-checkbox label {
+    font-weight: normal;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.watermark {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+    .media-section {
+        flex-direction: column;
+    }
+    .button-group {
+        flex-direction: column;
+    }
+    button {
+        width: 100%;
+    }
+    #params-form {
+        grid-template-columns: 1fr;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
