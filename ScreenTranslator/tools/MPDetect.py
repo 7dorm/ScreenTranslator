@@ -11,7 +11,6 @@ from ScreenTranslator.constants import IMAGE_TYPES, VIDEO_TYPES
 from ScreenTranslator.tools.exceptions import IncorrectFileTypeException
 from ScreenTranslator.tools.mutils import ImageUtils, WordUtils
 from ScreenTranslator.tools.mutils import translated_text_on_image
-from ScreenTranslator.tools.mutils.ImageUtils import convert_pil_to_cv, resize_image
 
 
 class Detection:

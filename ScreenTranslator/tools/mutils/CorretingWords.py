@@ -1,6 +1,6 @@
 import json
 import string
-from deep_translator import GoogleTranslator, single_detection, LingueeTranslator
+from deep_translator import GoogleTranslator
 
 
 def change_same_symbols(word):

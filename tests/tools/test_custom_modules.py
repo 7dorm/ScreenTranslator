@@ -3,7 +3,6 @@ from pathlib import Path
 from unittest.mock import MagicMock, patch
 import pytest
 import numpy as np
-import cv2
 
 root_dir = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(root_dir))

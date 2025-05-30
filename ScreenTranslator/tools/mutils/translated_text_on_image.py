@@ -1,8 +1,6 @@
 import numpy as np
-import pandas as pd
 from PIL import Image, ImageFilter, ImageDraw, ImageFont
 import collections
-import math
 
 def process_image(image: Image.Image, translation, lines) -> Image.Image:
     print(lines)
