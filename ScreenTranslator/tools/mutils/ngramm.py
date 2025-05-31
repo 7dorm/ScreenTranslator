@@ -1,14 +1,15 @@
 import os
 import json
+from ScreenTranslator.constants import RESOURCES_3_GRAMM_INDEX, RESOURCES_EN_US_LARGE
 
-input_file = "en_US-large.txt"
+input_file = RESOURCES_EN_US_LARGE
 
 def generate_ngrams(word, n):
     """Разделяет слово на n-граммы"""
     return [word[i:i + n] for i in range(len(word) - n + 1)]
 
 def build_ngram_index(n):
-    output_file = f"mutils/{n}_gramm_index.json"
+    output_file = RESOURCES_3_GRAMM_INDEX
 
     if os.path.exists(output_file):
         print(f"Файл {output_file} уже существует. Пропускаем.")

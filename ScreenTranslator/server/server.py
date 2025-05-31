@@ -12,6 +12,7 @@ from flask_limiter.util import get_remote_address
 from ScreenTranslator.tools.MPCustom import CustomImage, CustomVideo
 from ScreenTranslator.tools.Medipy import Medipy
 from ScreenTranslator.server.API import API_Request, API_Response
+from ScreenTranslator.constants import *
 from PIL import Image, ImageOps
 import pillow_heif
 
@@ -24,37 +25,19 @@ app = Flask(__name__)
 swagger = Swagger(app)
 
 model = Medipy(show=False)
-# model.addModel('tools/cars.pt', 'en')
-model.addModel('ScreenTranslator/tools/best.pt', 'en')
+for model_path in MODEL_PATHS:
+    model.addModel(model_path, 'en')
 
 # Rate limiting
 limiter = Limiter(app=app, key_func=get_remote_address, default_limits=["100000000 per day", "1000 per minute"])
-
-# Directory setup
-BASE_DIR = app.root_path
-FOLDER_UPLOADS = os.path.join(BASE_DIR, "static", "Uploads")
-FOLDER_PROCESSED = os.path.join(BASE_DIR, "static", "processed")
-FOLDER_BOXED = os.path.join(FOLDER_PROCESSED, "boxed")
-FOLDER_TRANSLATED = os.path.join(FOLDER_PROCESSED, "translated")
-FOLDER_LABELS = os.path.join(FOLDER_PROCESSED, "labels")
 
 # Ensure directories exist
 for folder in [FOLDER_UPLOADS, FOLDER_BOXED, FOLDER_TRANSLATED, FOLDER_LABELS]:
     os.makedirs(folder, exist_ok=True)
 
-# File extensions
-ALLOWED_EXTENSIONS = {
-    'bmp', 'dib', 'jpeg', 'jpg', 'jpe', 'jp2', 'png', 'pbm', 'pgm', 'ppm', 'sr', 'ras', 'tiff', 'tif', 'webp',
-    'avi', 'mp4', 'mov', 'mkv', 'flv', 'wmv', 'mpeg', 'mpg', 'mpe', 'm4v', '3gp', '3g2', 'asf', 'divx', 'f4v',
-    'm2ts', 'm2v', 'm4p', 'mts', 'ogm', 'ogv', 'qt', 'rm', 'vob', 'webm', 'xvid'
-}
-MAX_FILE_SIZE = 100 * 1024 * 1024  # 10MB
-
 # Logging setup
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
-
-# Medipy model setup
 
 def clean_old_files(directory, max_age_hours=24):
     """Remove files older than max_age_hours from directory."""
@@ -70,8 +53,6 @@ def clean_old_files(directory, max_age_hours=24):
 
 def parse_yolo_labels(file_path):
     """Parse YOLO labels into text."""
-    names = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
-             'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', ',', '?', '!', '@']
     entries = []
     try:
         with open(file_path, 'r') as file:
@@ -83,7 +64,7 @@ def parse_yolo_labels(file_path):
                 x_center = float(parts[1])
                 entries.append((x_center, class_id))
         entries.sort(key=lambda x: x[0])
-        return ''.join(names[class_id] for _, class_id in entries)
+        return ''.join(YOLO_LABES[class_id] for _, class_id in entries)
     except Exception as e:
         logger.error(f"Failed to parse YOLO labels: {e}")
         return ""
@@ -137,7 +118,7 @@ def validate_file(file):
         return False
     
     # Check file extension
-    ext = file.filename.rsplit('.', 1)[1].lower() if '.' in file.filename else ''
+    ext = f'.{file.filename.rsplit(".", 1)[1].lower()}' if '.' in file.filename else ''
     if ext not in ALLOWED_EXTENSIONS:
         return False
     

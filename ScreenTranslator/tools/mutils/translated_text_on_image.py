@@ -1,5 +1,6 @@
 import numpy as np
 from PIL import Image, ImageFilter, ImageDraw, ImageFont
+from ScreenTranslator.constants import RESOURCES_ARIAL
 import collections
 
 def process_image(image: Image.Image, translation, lines) -> Image.Image:
@@ -57,7 +58,7 @@ def process_image(image: Image.Image, translation, lines) -> Image.Image:
         draw = ImageDraw.Draw(image)
         font_size = int(crop_box[3] - crop_box[1])
         try:
-            font = ImageFont.truetype('tools/mutils/arialmt.ttf', font_size)
+            font = ImageFont.truetype(RESOURCES_ARIAL, font_size)
         except (OSError, IOError):
             print("Шрифт не найден, используется стандартный шрифт")
             font = ImageFont.load_default(font_size)
@@ -68,7 +69,7 @@ def process_image(image: Image.Image, translation, lines) -> Image.Image:
         if text_length > crop_box[2] - crop_box[0]:
             font_size = font_size * (crop_box[2] - crop_box[0]) / text_length
             try:
-                font = ImageFont.truetype('tools/mutils/arialmt.ttf', font_size)
+                font = ImageFont.truetype(RESOURCES_ARIAL, font_size)
             except (OSError, IOError):
                 print("Шрифт не найден, используется стандартный шрифт")
                 font = ImageFont.load_default(font_size)

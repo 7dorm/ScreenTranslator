@@ -1,11 +1,13 @@
 import json
 import string
+from itertools import product
 from deep_translator import GoogleTranslator
-
+from ScreenTranslator.constants import SIMILAR_SYMBOLS, RESOURCES_3_GRAMM_INDEX
 
 def change_same_symbols(word):
-    symbols = {"@": "a", "3": "e", "6": "b", "0": "o", "8": "B", "1": "i", "7": "t", "5": "s", "9": "g"}
-    return "".join(symbols.get(c, c) for c in word)
+    possible_chars = [SIMILAR_SYMBOLS.get(c, [c]) for c in word]
+    combinations = [''.join(combo) for combo in product(*possible_chars)]
+    return combinations
 
 def make_ngramms(word, n):
     length = len(word)
@@ -51,8 +53,6 @@ def get_closest_words(word, dictionary):
         return [word]
     max_value = max(sim_words.values())
     closest_words = [k for k, v in sim_words.items() if v >= max_value - 2]
-    #for i in closest_words:
-    #    print(i, sim_words[i])
     return closest_words
 
 def get_closest_word(word, sim_words):
@@ -61,11 +61,6 @@ def get_closest_word(word, sim_words):
     distances = dict()
     for one_word in sim_words:
         distances[one_word] = levenshtein_dp(word, one_word)
-    #print(distances)
-    min_value = min(distances.values())
-    #distances_n = [k for k, v in distances.items() if v == min_value]
-    #for i in distances_n:
-    #    print(i, distances[i])
     return min(distances, key=distances.get)
 
 def levenshtein_dp(s1, s2):
@@ -85,35 +80,46 @@ def levenshtein_dp(s1, s2):
     return dp[m][n]
 
 def correcting_text(words):
-    dict_file = open("ScreenTranslator/tools/mutils/3_gramm_index.json", "r")
+    dict_file = open(RESOURCES_3_GRAMM_INDEX, "r")
     dictionary = json.load(dict_file)
     length = len(words)
 
     for i in range(0, length):
         word = words[i].lower()
         if word.isnumeric() or word in ['.', ',', '?', '!', '@']:
-
             continue
-        word = change_same_symbols(word)
-        #print(word)
-        #word = checking_spaces(word, dictionary)
-        if " " in word:
-            left = word.split(" ")[0]
-            right = word.split(" ")[1]
-            left = get_closest_word(left, get_closest_words(left, dictionary))
-            right = get_closest_word(right, get_closest_words(right, dictionary))
-            word = f"{left} {right}"
-        else:
-            word = get_closest_word(word, get_closest_words(word, dictionary))
-        words[i] = word
+        
+        possible_words = change_same_symbols(word)
+        
+        best_word = word
+        min_distance = float('inf')
+        for candidate in possible_words:
+            candidate = checking_spaces(candidate, dictionary)
+            if " " in candidate:
+                left, right = candidate.split(" ")
+                left = get_closest_word(left, get_closest_words(left, dictionary))
+                right = get_closest_word(right, get_closest_words(right, dictionary))
+                candidate = f"{left} {right}"
+            else:
+                candidate_words = get_closest_words(candidate, dictionary)
+                candidate = get_closest_word(candidate, candidate_words)
+            
+            distance = levenshtein_dp(word, candidate)
+            if distance < min_distance:
+                min_distance = distance
+                best_word = candidate
+        
+        words[i] = best_word
     return words
 
 def translate(text):
     print('test', ' '.join(text))
-    t =  GoogleTranslator(source='english', target='russian').translate(' '.join(text))
+    t = GoogleTranslator(source='english', target='russian').translate(' '.join(text))
     print(t)
     return t
-    #obj.target = 'en'
-    # t = obj.translate(t)
-    # obj.target = 'ru'
-    # return obj.translate(t)
+
+
+if __name__ == "__main__":
+    words1 = ["1s", "h0m135", "t1gr1s", "10@d", "para11e1", "p1ate", "53nd 80085", "p111ow"]
+    words2 = correcting_text(words1)
+    print(" ".join(words2))
