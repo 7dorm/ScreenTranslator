@@ -1,4 +1,5 @@
 from typing import Union
+from ultralytics.utils.plotting import Annotator, colors
 
 import cv2
 import numpy as np
@@ -109,4 +110,25 @@ def draw_bounding_boxes(image, data, box_thickness=2, box_color="red"):
     for i in keys:
         image = draw_bounding_box(image, data[i], i, box_thickness=box_thickness, box_color=box_color)
     return image
+
+def draw_boxes_ultralytics(image: Image.Image, labels) -> Image.Image:
+    image_np = np.array(image)
+    annotator = Annotator(image_np, line_width=1, font_size=1)
+    palette_size = 50
+
+    for item in labels:
+        for label, box in item.items():
+            x1 = int(box['x_min'] * image.width)
+            y1 = int(box['y_min'] * image.height)
+            x2 = int(box['x_max'] * image.width)
+            y2 = int(box['y_max'] * image.height)
+            conf = box.get('confidence')
+            txt = f"{label} {conf:.2f}" if conf is not None else label
+
+            class_index = hash(label) % palette_size
+            color = colors(class_index, bgr=False)
+
+            annotator.box_label([x1, y1, x2, y2], txt, color=color)
+
+    return Image.fromarray(annotator.result())
 

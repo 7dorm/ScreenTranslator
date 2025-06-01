@@ -4,11 +4,8 @@ from ScreenTranslator.constants import RESOURCES_ARIAL
 import collections
 
 def process_image(image: Image.Image, translation, lines) -> Image.Image:
-    print(lines)
-
     width, height = image.size
     trans = partition_translation(lines, translation)
-    print(trans)
 
     for idx, entry in enumerate(lines):
         for line, box in entry.items():
@@ -100,7 +97,6 @@ def partition_translation(lines, translation):
     while i * words_in_line + j + tm <= translation_len:
         result[i].append(arr_translation[i * words_in_line + j + tm - 1])
         tm += 1
-    print(lines_len, translation_len,words_in_line,result)
     return result
 
 

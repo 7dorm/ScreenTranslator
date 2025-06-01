@@ -93,10 +93,8 @@ class Detection:
 
         return BaseDetection(
             data,
-            Image.open(path),
-            Image.open(path),
-            #ImageUtils.draw_bounding_boxes(Image.open(path), labels_symbols),
-            #ImageUtils.draw_bounding_boxes(Image.open(path), labels_words),
+            ImageUtils.draw_boxes_ultralytics(Image.open(path), labels_symbols),
+            ImageUtils.draw_boxes_ultralytics(Image.open(path), labels_words),
             translated_text_on_image.process_image(Image.open(path), text_rough_translated, labels_words),
             translated_text_on_image.process_image(Image.open(path), text_corrected_translated, labels_words),
             labels_symbols,
