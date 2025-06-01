@@ -7,7 +7,7 @@ from PIL import Image
 from ScreenTranslator.tools.MPNNModel import NNModel
 from ScreenTranslator.tools.MPCustom import CustomVideo, CustomImage
 from ScreenTranslator.tools.base import BaseDetection
-from ScreenTranslator.constants import IMAGE_TYPES, VIDEO_TYPES
+from ScreenTranslator.constants import IMAGE_TYPES, VIDEO_TYPES, PUNCTUATION_SYMBOLS
 from ScreenTranslator.tools.exceptions import IncorrectFileTypeException
 from ScreenTranslator.tools.mutils import ImageUtils, WordUtils
 from ScreenTranslator.tools.mutils import translated_text_on_image
@@ -74,41 +74,35 @@ class Detection:
     def process_image(self, path: str) -> BaseDetection:
         result, t_model = self.select_model(path)
         data = result.pandas().xyxyn[0]
-        if not data.size:
-            return BaseDetection(
-                data,
-                Image.open(path),
-                {},
-                {}
-            )
         
-        bboxes, text_rough_recognized, text_rough_translated, text_corrected_recognized, text_corrected_translated = WordUtils.merger(data)
+        data['name'] = data['name'].apply(lambda x: PUNCTUATION_SYMBOLS.get(x, x))
+        print(data)
+        
+        labels_words, text_rough_recognized, text_rough_translated, text_corrected_recognized, text_corrected_translated = WordUtils.merger(data)
+        
         letters = list(data['name'])
-        letter_params = {
+        labels_symbols = [{ 
             letters[i]: {
                 'x_min': float(data['xmin'][i]),
                 'y_min': float(data['ymin'][i]),
                 'x_max': float(data['xmax'][i]),
-                'y_max': float(data['ymax'][i])
-            } for i in range(len(letters))
-        }
-        letterr = {
-            i: {
-            letters[i]: {
-                'x_min': float(data['xmin'][i]),
-                'y_min': float(data['ymin'][i]),
-                'x_max': float(data['xmax'][i]),
-                'y_max': float(data['ymax'][i])
-            } } for i in range(len(letters))
-        }
+                'y_max': float(data['ymax'][i]),
+                'confidence': float(data['confidence'][i])
+            }} for i in range(len(letters))
+        ]
+
         return BaseDetection(
             data,
-            ImageUtils.draw_bounding_boxes(Image.open(path), letter_params), #wrong
-            ImageUtils.draw_bounding_boxes(Image.open(path), letter_params),
-            translated_text_on_image.process_image(Image.open(path), text_rough_translated, bboxes),
-            translated_text_on_image.process_image(Image.open(path), text_corrected_translated, bboxes),
-            letterr,
-            bboxes,
+            Image.open(path),
+            Image.open(path),
+            Image.open(path),
+            Image.open(path),
+            #ImageUtils.draw_bounding_boxes(Image.open(path), labels_symbols),
+            #ImageUtils.draw_bounding_boxes(Image.open(path), labels_words),
+            #translated_text_on_image.process_image(Image.open(path), text_rough_translated, labels_words),
+            #translated_text_on_image.process_image(Image.open(path), text_corrected_translated, labels_words),
+            labels_symbols,
+            labels_words,
             text_rough_recognized,
             text_rough_translated,
             text_corrected_recognized,
