@@ -1,6 +1,7 @@
 import requests
 from itertools import product
 from ScreenTranslator.constants import SIMILAR_SYMBOLS
+from ScreenTranslator.tools.mutils.CorrectingWords import translate
 
 def change_same_symbols(word):
     possible_chars = [SIMILAR_SYMBOLS.get(c, [c]) for c in word]
@@ -63,6 +64,8 @@ def correcting_text(words):
     return words
 
 if __name__ == "__main__":
-    words1 = ["1s", "h0m135", "t1gr1s", "10@d", "para11e1", "p1ate", "53nd 80085", "p111ow"]
-    words2 = correcting_text(words1)
-    print(" ".join(words2))
+    words = ["1S", "H0M135", "T1GER", "10@D", "PARA11E1", "PLATE", "53ND 80085", "P111OW", "P", "MOREP", "!", "th3@pple"]
+    print("Original: \t\t" + " ".join(words))
+    print("Original translated: \t" + translate(words.copy()))
+    print("Corrected: \t\t" + " ".join(correcting_text(words.copy())))
+    print("Corrected translated: \t" + translate(correcting_text(words.copy())))

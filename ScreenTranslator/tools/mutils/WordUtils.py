@@ -28,15 +28,16 @@ def merger(df: pd.DataFrame) -> dict:
             lines.append(pd.DataFrame(current_line))
             current_line = [df.iloc[i]]
     lines.append(pd.DataFrame(current_line))
+    
+    punto = {'dot': '.', 'comma': ',', 'quest': '?', 'excl': '!', 'dog': '@'}
 
     words = []
     words_with_bbox = {}
-    punto = {'dot': '.', 'comma': ',', 'quest': '?', 'excl': '!', 'dog': '@'}
-    print("\t" * 4, len(lines))
     for line_df in lines:
-        line_df = line_df.sort_values(by=x1).reset_index(drop=True)  # Сортируем по X
-        print(line_df)
+        line_df = line_df.sort_values(by=x1).reset_index(drop=True)
         current_word = line_df.iloc[0][letter]
+        # Заменяем сразу, если это пунктуация
+        current_word = punto.get(current_word, current_word)
         cur_word_x_min = line_df.iloc[0][x1]
         cur_word_y_min = line_df.iloc[0][y1]
         cur_word_x_max = line_df.iloc[0][x2]
@@ -44,48 +45,62 @@ def merger(df: pd.DataFrame) -> dict:
 
         for i in range(1, len(line_df)):
             if line_df.iloc[i][x1] - line_df.iloc[i - 1][x2] <= max_dist_x:
-                if line_df.iloc[i][letter] in punto.keys():
+                if line_df.iloc[i][letter] in punto:
                     words.append(current_word)
+                    # Обновляем bbox
                     cur_word_x_max = max(cur_word_x_max, line_df.iloc[i - 1][x2])
                     cur_word_y_max = max(cur_word_y_max, line_df.iloc[i - 1][y2])
                     cur_word_x_min = min(cur_word_x_min, line_df.iloc[i - 1][x1])
                     cur_word_y_min = min(cur_word_y_min, line_df.iloc[i - 1][y1])
-                    tmp = {'x_min': float(cur_word_x_min), 'y_min': float(cur_word_y_min),
-                           'x_max': float(cur_word_x_max), 'y_max': float(cur_word_y_max)}
+                    tmp = {
+                        'x_min': float(cur_word_x_min),
+                        'y_min': float(cur_word_y_min),
+                        'x_max': float(cur_word_x_max),
+                        'y_max': float(cur_word_y_max)
+                    }
                     words_with_bbox[current_word] = tmp
+                    # Заменяем пунктуацию
                     current_word = punto[line_df.iloc[i][letter]]
                     cur_word_x_min = line_df.iloc[i][x1]
                     cur_word_y_min = line_df.iloc[i][y1]
                     cur_word_x_max = line_df.iloc[i][x2]
                     cur_word_y_max = line_df.iloc[i][y2]
-                elif line_df.iloc[i - 1][letter] in punto.keys():
-                    current_word = line_df.iloc[i][letter]
+                elif line_df.iloc[i - 1][letter] in punto:
+                    current_word = punto.get(line_df.iloc[i][letter], line_df.iloc[i][letter])
                 else:
-                    current_word += line_df.iloc[i][letter]
+                    current_word += punto.get(line_df.iloc[i][letter], line_df.iloc[i][letter])
             else:
                 words.append(current_word)
+                # Обновляем bbox
                 cur_word_x_max = max(cur_word_x_max, line_df.iloc[i - 1][x2])
                 cur_word_y_max = max(cur_word_y_max, line_df.iloc[i - 1][y2])
                 cur_word_x_min = min(cur_word_x_min, line_df.iloc[i - 1][x1])
                 cur_word_y_min = min(cur_word_y_min, line_df.iloc[i - 1][y1])
-                tmp = {'x_min': float(cur_word_x_min), 'y_min': float(cur_word_y_min),
-                       'x_max': float(cur_word_x_max), 'y_max': float(cur_word_y_max)}
-                print(tmp)
+                tmp = {
+                    'x_min': float(cur_word_x_min),
+                    'y_min': float(cur_word_y_min),
+                    'x_max': float(cur_word_x_max),
+                    'y_max': float(cur_word_y_max)
+                }
                 words_with_bbox[current_word] = tmp
-                current_word = line_df.iloc[i][letter]
+                current_word = punto.get(line_df.iloc[i][letter], line_df.iloc[i][letter])
                 cur_word_x_min = line_df.iloc[i][x1]
                 cur_word_y_min = line_df.iloc[i][y1]
                 cur_word_x_max = line_df.iloc[i][x2]
                 cur_word_y_max = line_df.iloc[i][y2]
         words.append(current_word)
+        # Обновляем bbox для последнего слова в строке
         cur_word_x_max = max(cur_word_x_max, line_df.iloc[len(line_df) - 1][x2])
         cur_word_y_max = max(cur_word_y_max, line_df.iloc[len(line_df) - 1][y2])
         cur_word_x_min = min(cur_word_x_min, line_df.iloc[len(line_df) - 1][x1])
         cur_word_y_min = min(cur_word_y_min, line_df.iloc[len(line_df) - 1][y1])
-        tmp = {'x_min': float(cur_word_x_min), 'y_min': float(cur_word_y_min), 'x_max': float(cur_word_x_max),
-               'y_max': float(cur_word_y_max)}
+        tmp = {
+            'x_min': float(cur_word_x_min),
+            'y_min': float(cur_word_y_min),
+            'x_max': float(cur_word_x_max),
+            'y_max': float(cur_word_y_max)
+        }
         words_with_bbox[current_word] = tmp
-        print(words_with_bbox)
 
     # Сохраняем оригинальные слова до коррекции
     original_words = words.copy()

@@ -6,7 +6,7 @@ from ScreenTranslator.constants import SIMILAR_SYMBOLS, RESOURCES_3_GRAMM_INDEX
 
 def change_same_symbols(word):
     possible_chars = [SIMILAR_SYMBOLS.get(c, [c]) for c in word]
-    combinations = [''.join(combo) for combo in product(*possible_chars)]
+    combinations = [''.join(combo).lower() for combo in product(*possible_chars)]
     return combinations
 
 def make_ngramms(word, n):
@@ -85,11 +85,9 @@ def correcting_text(words):
     length = len(words)
 
     for i in range(0, length):
-        word = words[i].lower()
-        if word.isnumeric() or word in ['.', ',', '?', '!', '@']:
-            continue
-        
+        word = words[i]
         possible_words = change_same_symbols(word)
+        word = word.lower()
         
         best_word = word
         min_distance = float('inf')
@@ -105,7 +103,7 @@ def correcting_text(words):
                 candidate = get_closest_word(candidate, candidate_words)
             
             distance = levenshtein_dp(word, candidate)
-            if distance < min_distance:
+            if distance <= min_distance:
                 min_distance = distance
                 best_word = candidate
         
@@ -113,13 +111,12 @@ def correcting_text(words):
     return words
 
 def translate(text):
-    print('test', ' '.join(text))
-    t = GoogleTranslator(source='english', target='russian').translate(' '.join(text))
-    print(t)
-    return t
+    return GoogleTranslator(source='english', target='russian').translate(' '.join(text))
 
 
 if __name__ == "__main__":
-    words1 = ["1s", "h0m135", "t1gr1s", "10@d", "para11e1", "p1ate", "53nd 80085", "p111ow"]
-    words2 = correcting_text(words1)
-    print(" ".join(words2))
+    words = ["1S", "H0M135", "T1GER", "10@D", "PARA11E1", "PLATE", "53ND 80085", "P111OW", "P", "MOREP", "!", "th3@pple"]
+    print("Original: \t\t" + " ".join(words))
+    print("Original translated: \t" + translate(words.copy()))
+    print("Corrected: \t\t" + " ".join(correcting_text(words.copy())))
+    print("Corrected translated: \t" + translate(correcting_text(words.copy())))
