@@ -74,48 +74,47 @@ class Detection:
     def process_image(self, path: str) -> BaseDetection:
         result, t_model = self.select_model(path)
         data = result.pandas().xyxyn[0]
-        if data.size:
-            bboxes, translated = WordUtils.merger(data, True)
-
-            if t_model.rough:
-                letters = list(data['name'])
-                letter_params = {
-                    letters[i]: {
-                        'x_min': float(data['xmin'][i]),
-                        'y_min': float(data['ymin'][i]),
-                        'x_max': float(data['xmax'][i]),
-                        'y_max': float(data['ymax'][i])
-                    } for i in range(len(letters))
-                }
-                letterr = {
-                    i: {
-                    letters[i]: {
-                        'x_min': float(data['xmin'][i]),
-                        'y_min': float(data['ymin'][i]),
-                        'x_max': float(data['xmax'][i]),
-                        'y_max': float(data['ymax'][i])
-                    } } for i in range(len(letters))
-                }
-
-                return BaseDetection(
-                    data,
-                    ImageUtils.draw_bounding_boxes(Image.open(path), letter_params),
-                    letterr,
-                    {}
-                )
-            return BaseDetection(
-                data,
-                translated_text_on_image.process_image(Image.open(path), translated, bboxes),
-                bboxes,
-                translated
-            )
-        else:
+        if not data.size:
             return BaseDetection(
                 data,
                 Image.open(path),
                 {},
                 {}
             )
+        
+        bboxes, text_rough_recognized, text_rough_translated, text_corrected_recognized, text_corrected_translated = WordUtils.merger(data)
+        letters = list(data['name'])
+        letter_params = {
+            letters[i]: {
+                'x_min': float(data['xmin'][i]),
+                'y_min': float(data['ymin'][i]),
+                'x_max': float(data['xmax'][i]),
+                'y_max': float(data['ymax'][i])
+            } for i in range(len(letters))
+        }
+        letterr = {
+            i: {
+            letters[i]: {
+                'x_min': float(data['xmin'][i]),
+                'y_min': float(data['ymin'][i]),
+                'x_max': float(data['xmax'][i]),
+                'y_max': float(data['ymax'][i])
+            } } for i in range(len(letters))
+        }
+        return BaseDetection(
+            data,
+            ImageUtils.draw_bounding_boxes(Image.open(path), letter_params), #wrong
+            ImageUtils.draw_bounding_boxes(Image.open(path), letter_params),
+            translated_text_on_image.process_image(Image.open(path), text_rough_translated, bboxes),
+            translated_text_on_image.process_image(Image.open(path), text_corrected_translated, bboxes),
+            letterr,
+            bboxes,
+            text_rough_recognized,
+            text_rough_translated,
+            text_corrected_recognized,
+            text_corrected_translated
+        )
+            
 
     def select_model(self, frame: Union[Union[cv2.Mat, np.ndarray], str]):
         result: Detections = None

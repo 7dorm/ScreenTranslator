@@ -8,15 +8,28 @@ from typing import Union
 class BaseDetection:
     def __init__(self,
                  xyxyn: pandas.DataFrame,
-                 frame: Union[Union[cv2.Mat, np.ndarray], Image.Image],
-                 text: dict = None,
-                 translated: dict = None) -> None:
-        if text is None:
-            text = {}
+                 image_boxed_symbols: Union[Union[cv2.Mat, np.ndarray], Image.Image],
+                 image_boxed_words: Union[Union[cv2.Mat, np.ndarray], Image.Image],
+                 image_translated_rough: Union[Union[cv2.Mat, np.ndarray], Image.Image],
+                 image_translated_corrected: Union[Union[cv2.Mat, np.ndarray], Image.Image],
+                 labels_symbols: dict = {},
+                 labels_words: dict = {},
+                 text_rough_recognized: dict = {},
+                 text_rough_translated: dict = {},
+                 text_corrected_recognized: dict = {},
+                 text_corrected_translated: dict = {}) -> None:
+        
         self.xyxyn: pandas.DataFrame = xyxyn
-        self.frame: Union[Union[cv2.Mat, np.ndarray], Image] = frame
-        self.text: dict = text
-        self.translated: dict = translated
+        self.image_boxed_symbols: Union[Union[cv2.Mat, np.ndarray], Image] = image_boxed_symbols
+        self.image_boxed_words: Union[Union[cv2.Mat, np.ndarray], Image] = image_boxed_words
+        self.image_translated_rough: Union[Union[cv2.Mat, np.ndarray], Image] = image_translated_rough
+        self.image_translated_corrected: Union[Union[cv2.Mat, np.ndarray], Image] = image_translated_corrected
+        self.labels_symbols: dict = labels_symbols
+        self.labels_words: dict = labels_words
+        self.text_rough_recognized: dict = text_rough_recognized
+        self.text_rough_translated: dict = text_rough_translated
+        self.text_corrected_recognized: dict = text_corrected_recognized
+        self.text_corrected_translated: dict = text_corrected_translated
 
 
 

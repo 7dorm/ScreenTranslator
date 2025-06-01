@@ -3,19 +3,19 @@ import numpy as np
 from ScreenTranslator.tools.mutils.CorrectingWords import correcting_text, translate
 
 
-def merger(df: pd.DataFrame, translated=True) -> dict:
-    x1=df.columns[0]
-    y1=df.columns[1]
-    x2=df.columns[2]
-    y2=df.columns[3]
-    letter=df.columns[6]
-    translated = True
+def merger(df: pd.DataFrame) -> dict:
+    x1 = df.columns[0]
+    y1 = df.columns[1]
+    x2 = df.columns[2]
+    y2 = df.columns[3]
+    letter = df.columns[6]
+    
     # Определяем среднюю ширину буквы
     avg_width = np.mean(df[x2] - df[x1])
     max_dist_x = avg_width * 0.3
     # Определяем среднюю высоту буквы
     avg_height = np.mean(df[y2] - df[y1])
-    max_dist_y= avg_height * 0.8
+    max_dist_y = avg_height * 0.8
 
     # Разделяем буквы на строки текста
     df = df.sort_values(by=y1).reset_index(drop=True) # Отсортировали по возрастанию y
@@ -34,7 +34,6 @@ def merger(df: pd.DataFrame, translated=True) -> dict:
     punto = {'dot': '.', 'comma': ',', 'quest': '?', 'excl': '!', 'dog': '@'}
     print("\t" * 4, len(lines))
     for line_df in lines:
-
         line_df = line_df.sort_values(by=x1).reset_index(drop=True)  # Сортируем по X
         print(line_df)
         current_word = line_df.iloc[0][letter]
@@ -87,4 +86,19 @@ def merger(df: pd.DataFrame, translated=True) -> dict:
                'y_max': float(cur_word_y_max)}
         words_with_bbox[current_word] = tmp
         print(words_with_bbox)
-    return [words_with_bbox, translate(correcting_text(words))]
+
+    # Сохраняем оригинальные слова до коррекции
+    original_words = words.copy()
+    original_translation = translate(original_words.copy())  # Используем копию, чтобы избежать изменений
+    
+    # Получаем скорректированные слова
+    corrected_words = correcting_text(words.copy())  # Используем копию оригинальных слов
+    corrected_translation = translate(corrected_words.copy())
+    
+    return [
+        words_with_bbox,
+        original_words,
+        original_translation,
+        corrected_words,
+        corrected_translation
+    ]

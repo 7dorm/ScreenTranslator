@@ -34,7 +34,6 @@ class NNModel:
 
         self.lang: str = language_code
         if params:
-            self.rough = params.rough_text_recognition
             self.size = params.size
             self.model.conf = params.conf
             self.model.iou = params.iou
@@ -68,7 +67,6 @@ class NNModel:
         return self.model(data, self.size)
 
     def setParams(self, params):
-        self.rough = params.rough_text_recognition
         self.size = params.size
         self.model.conf = params.conf
         self.model.iou = params.iou

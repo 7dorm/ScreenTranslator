@@ -2,6 +2,7 @@ from typing import Union
 
 import cv2
 import numpy as np
+import os
 from PIL import Image, ImageFont
 from PIL import ImageDraw
 
@@ -94,6 +95,7 @@ def draw_bounding_box(image1, data, text,
         # Draw the bounding box
         draw.rectangle(bounding_box, outline=box_color, width=box_thickness)
         image = write_text_on_image(image, text, (x_min, y_max + 20))
+        
         return image
     except FileNotFoundError:
         print(f"Error: The file {image} was not found.")
