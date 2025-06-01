@@ -9,85 +9,79 @@ def process_image(image: Image.Image, translation, lines) -> Image.Image:
     width, height = image.size
     trans = partition_translation(lines, translation)
     print(trans)
-    count = 0
 
+    for idx, entry in enumerate(lines):
+        for line, box in entry.items():
+            crop_box = (
+                int(box['x_min'] * width),
+                int(box['y_min'] * height),
+                int(box['x_max'] * width),
+                int(box['y_max'] * height)
+            )
 
-    for line in lines.keys():
-        crop_box = (
-            int(lines[line]['x_min'] * width),
-            int(lines[line]['y_min'] * height),
-            int(lines[line]['x_max'] * width),
-            int(lines[line]['y_max'] * height)
-        )
-        # Добавляем отступ для плавного перехода
-        # padding = int((crop_box[3] - crop_box[1]) * 0.05)
-        padding = 0
-        padded_crop_box = (
-            max(0, crop_box[0] - padding),
-            max(0, crop_box[1] - padding),
-            min(width, crop_box[2] + padding),
-            min(height, crop_box[3] + padding)
-        )
-        cropped_region = image.crop(padded_crop_box)
-        blurred_region = cropped_region.filter(ImageFilter.GaussianBlur(radius=40))
-        mask = Image.new('L', cropped_region.size, 0)  # 'L' — градации серого
-        draw = ImageDraw.Draw(mask)
-        # Рисуем прямоугольник без отступов
-        rect_coords = (
-            int(padding / 2),
-            int(padding / 2),
-            cropped_region.size[0] - int(padding / 2),
-            cropped_region.size[1] - int(padding / 2)
-        )
-        draw.rectangle(rect_coords, fill=255)
-        # Применяем размытие к маске для плавного перехода
-        mask = mask.filter(ImageFilter.GaussianBlur(radius=25))
-        image.paste(blurred_region, (padded_crop_box[0], padded_crop_box[1]), mask)
+            # Padding (можно включить при необходимости)
+            padding = 0
+            padded_crop_box = (
+                max(0, crop_box[0] - padding),
+                max(0, crop_box[1] - padding),
+                min(width, crop_box[2] + padding),
+                min(height, crop_box[3] + padding)
+            )
+            cropped_region = image.crop(padded_crop_box)
+            blurred_region = cropped_region.filter(ImageFilter.GaussianBlur(radius=40))
 
-        # подбираем цвет для текста
-        new_cropped_region = image.crop(crop_box)
-        cropped_region_rgb = new_cropped_region.convert('RGB')
-        pixels = np.array(cropped_region_rgb)
-        average_color = np.mean(pixels, axis=(0, 1)).astype(int)
-        pixels1 = list(cropped_region_rgb.getdata())
-        color_counts = collections.Counter(pixels1)
-        most_common_color = color_counts.most_common(1)[0][0]
-        # print(f'Средний цвет (RGB): {tuple(average_color)}')
+            # Маска для размытия
+            mask = Image.new('L', cropped_region.size, 0)
+            draw = ImageDraw.Draw(mask)
+            rect_coords = (
+                int(padding / 2),
+                int(padding / 2),
+                cropped_region.size[0] - int(padding / 2),
+                cropped_region.size[1] - int(padding / 2)
+            )
+            draw.rectangle(rect_coords, fill=255)
+            mask = mask.filter(ImageFilter.GaussianBlur(radius=25))
+            image.paste(blurred_region, (padded_crop_box[0], padded_crop_box[1]), mask)
 
-        # Накладываем текст
-        draw = ImageDraw.Draw(image)
-        font_size = int(crop_box[3] - crop_box[1])
-        try:
-            font = ImageFont.truetype(RESOURCES_ARIAL, font_size)
-        except (OSError, IOError):
-            print("Шрифт не найден, используется стандартный шрифт")
-            font = ImageFont.load_default(font_size)
+            # Анализ цвета
+            new_cropped_region = image.crop(crop_box)
+            cropped_region_rgb = new_cropped_region.convert('RGB')
+            pixels = np.array(cropped_region_rgb)
+            average_color = np.mean(pixels, axis=(0, 1)).astype(int)
+            pixels1 = list(cropped_region_rgb.getdata())
+            color_counts = collections.Counter(pixels1)
+            most_common_color = color_counts.most_common(1)[0][0]
+            inverted_color = tuple(c ^ 255 for c in most_common_color)
 
-        text = ' '.join(trans[count])
-
-        text_length = draw.textlength(text, font=font)
-        if text_length > crop_box[2] - crop_box[0]:
-            font_size = font_size * (crop_box[2] - crop_box[0]) / text_length
+            # Отрисовка текста
+            draw = ImageDraw.Draw(image)
+            font_size = int(crop_box[3] - crop_box[1])
             try:
                 font = ImageFont.truetype(RESOURCES_ARIAL, font_size)
             except (OSError, IOError):
-                print("Шрифт не найден, используется стандартный шрифт")
-                font = ImageFont.load_default(font_size)
-        text_length = draw.textlength(text, font=font)
+                print("Шрифт не найден, используется стандартный")
+                font = ImageFont.load_default()
 
-        text_position = list(map(int, (
-            crop_box[0] + (crop_box[2] - crop_box[0] - text_length) // 2,
-            crop_box[1] + (crop_box[3] - crop_box[1] - font_size) // 2
-        )))
+            text = ' '.join(trans[idx])
+            text_length = draw.textlength(text, font=font)
+            if text_length > crop_box[2] - crop_box[0]:
+                font_size = int(font_size * (crop_box[2] - crop_box[0]) / text_length)
+                try:
+                    font = ImageFont.truetype(RESOURCES_ARIAL, font_size)
+                except (OSError, IOError):
+                    font = ImageFont.load_default()
 
-        most_common_color = (most_common_color[0] ^ 255, most_common_color[1] ^ 255, most_common_color[2] ^ 255)
+            text_length = draw.textlength(text, font=font)
+            text_position = (
+                int(crop_box[0] + (crop_box[2] - crop_box[0] - text_length) / 2),
+                int(crop_box[1] + (crop_box[3] - crop_box[1] - font_size) / 2)
+            )
 
-        # Рисуем текст с чёрным контуром
-        draw.text(text_position, text, font=font, fill=(0, 0, 0), stroke_width=2, stroke_fill=(0, 0, 0))
-        draw.text(text_position, text, font=font, fill=tuple(most_common_color))
-        count += 1
+            draw.text(text_position, text, font=font, fill=(0, 0, 0), stroke_width=2, stroke_fill=(0, 0, 0))
+            draw.text(text_position, text, font=font, fill=inverted_color)
 
     return image
+
 
 def partition_translation(lines, translation):
     lines_len = len(lines)
