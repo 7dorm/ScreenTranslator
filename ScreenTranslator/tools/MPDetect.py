@@ -77,6 +77,14 @@ class Detection:
         
         data['name'] = data['name'].apply(lambda x: PUNCTUATION_SYMBOLS.get(x, x))
         print(data)
+
+        if data.empty:
+            return BaseDetection(data, 
+                                 Image.open(path), 
+                                 Image.open(path), 
+                                 Image.open(path), 
+                                 Image.open(path),
+                                 [], [], "", "", "", "")
         
         labels_words, text_rough_recognized, text_rough_translated, text_corrected_recognized, text_corrected_translated = WordUtils.merger(data)
         

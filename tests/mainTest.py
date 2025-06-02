@@ -11,7 +11,7 @@ if sys.platform == "win32":
 FOLDER_RESOURCES = os.path.join(Path(__file__).resolve().parent, "resources")
 
 def test_API():
-    request = API_Request(os.path.join(FOLDER_RESOURCES, "cat.jpg"))
+    request = API_Request(os.path.join(FOLDER_RESOURCES, "no_text.jpeg"))
     response = API_Process(request)
     print("\n\n!!!!!!!!!!!!!!!!!!!!!\n\n")
     print(json.dumps(response.to_dict(), ensure_ascii=False, indent=4))
