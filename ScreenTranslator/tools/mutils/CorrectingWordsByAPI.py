@@ -66,6 +66,6 @@ def correcting_text(words):
 if __name__ == "__main__":
     words = ["1S", "H0M135", "T1GER", "10@D", "PARA11E1", "PLATE", "53ND 80085", "P111OW", "P", "MOREP", "!", "th3@pple"]
     print("Original: \t\t" + " ".join(words))
-    print("Original translated: \t" + translate(words.copy()))
+    print("Original translated: \t" + translate(" ".join(words)))
     print("Corrected: \t\t" + " ".join(correcting_text(words.copy())))
-    print("Corrected translated: \t" + translate(correcting_text(words.copy())))
+    print("Corrected translated: \t" + translate(" ".join(correcting_text(words.copy()))))

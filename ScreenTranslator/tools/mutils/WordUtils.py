@@ -70,10 +70,10 @@ def merger(df: pd.DataFrame) -> list:
             }
         })
 
-    original_words = words.copy()
-    original_translation = translate(original_words.copy())
-    corrected_words = correcting_text(words.copy())
-    corrected_translation = translate(corrected_words.copy())
+    original_words = " ".join(words)
+    original_translation = translate(original_words)
+    corrected_words = " ".join(correcting_text(words))
+    corrected_translation = translate(corrected_words)
 
     return [
         words_with_bbox,
