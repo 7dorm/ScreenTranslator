@@ -52,7 +52,7 @@ def process_image(image: Image.Image, translation, lines) -> Image.Image:
 
             # Отрисовка текста
             draw = ImageDraw.Draw(image)
-            font_size = int(crop_box[3] - crop_box[1])
+            font_size = max(int(crop_box[3] - crop_box[1]), 1)
             try:
                 font = ImageFont.truetype(RESOURCES_ARIAL, font_size)
             except (OSError, IOError):
@@ -62,7 +62,7 @@ def process_image(image: Image.Image, translation, lines) -> Image.Image:
             text = ' '.join(trans[idx])
             text_length = draw.textlength(text, font=font)
             if text_length > crop_box[2] - crop_box[0]:
-                font_size = int(font_size * (crop_box[2] - crop_box[0]) / text_length)
+                font_size = max(int(font_size * (crop_box[2] - crop_box[0]) / text_length), 1)
                 try:
                     font = ImageFont.truetype(RESOURCES_ARIAL, font_size)
                 except (OSError, IOError):
