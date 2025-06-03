@@ -85,10 +85,10 @@ class Detection:
                                  Image.open(path), 
                                  Image.open(path))
         
-        labels_words, text_rough_recognized, text_rough_translated, text_corrected_recognized, text_corrected_translated = WordUtils.merger(data)
+        bounding_boxes_words, text_rough_recognized, text_rough_translated, text_corrected_recognized, text_corrected_translated = WordUtils.merger(data)
         
         letters = list(data['name'])
-        labels_symbols = [{ 
+        bounding_boxes_symbols = [{ 
             letters[i]: {
                 'x_min': float(data['xmin'][i]),
                 'y_min': float(data['ymin'][i]),
@@ -100,12 +100,12 @@ class Detection:
 
         return BaseDetection(
             data,
-            ImageUtils.draw_boxes_ultralytics(Image.open(path), labels_symbols),
-            ImageUtils.draw_boxes_ultralytics(Image.open(path), labels_words),
-            translated_text_on_image.process_image(Image.open(path), text_rough_translated, labels_words),
-            translated_text_on_image.process_image(Image.open(path), text_corrected_translated, labels_words),
-            labels_symbols,
-            labels_words,
+            ImageUtils.draw_boxes_ultralytics(Image.open(path), bounding_boxes_symbols),
+            ImageUtils.draw_boxes_ultralytics(Image.open(path), bounding_boxes_words),
+            translated_text_on_image.process_image(Image.open(path), text_rough_translated, bounding_boxes_symbols),
+            translated_text_on_image.process_image(Image.open(path), text_corrected_translated, bounding_boxes_words),
+            bounding_boxes_symbols,
+            bounding_boxes_words,
             text_rough_recognized,
             text_rough_translated,
             text_corrected_recognized,

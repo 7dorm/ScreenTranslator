@@ -11,8 +11,8 @@ class API_Response:
         image_boxed_words_url: str = "",
         image_translated_rough_url: str = "",
         image_translated_corrected_url: str = "",
-        labels_symbols: list[str] = None,
-        labels_words: list[str] = None,
+        bounding_boxes_symbols: list[str] = None,
+        bounding_boxes_words: list[str] = None,
         text_rough_recognized: list[str] = None,
         text_rough_translated: list[str] = None,
         text_corrected_recognized: list[str] = None,
@@ -22,8 +22,8 @@ class API_Response:
         self.image_boxed_words_url = image_boxed_words_url
         self.image_translated_rough_url = image_translated_rough_url
         self.image_translated_corrected_url = image_translated_corrected_url
-        self.labels_symbols = labels_symbols if labels_symbols is not None else []
-        self.labels_words = labels_words if labels_words is not None else []
+        self.bounding_boxes_symbols = bounding_boxes_symbols if bounding_boxes_symbols is not None else []
+        self.bounding_boxes_words = bounding_boxes_words if bounding_boxes_words is not None else []
         self.text_rough_recognized = text_rough_recognized if text_rough_recognized is not None else []
         self.text_rough_translated = text_rough_translated if text_rough_translated is not None else []
         self.text_corrected_recognized = text_corrected_recognized if text_corrected_recognized is not None else []
@@ -35,8 +35,8 @@ class API_Response:
             "Image boxed words url": self.image_boxed_words_url,
             "Image translated rough url": self.image_translated_rough_url,
             "Image translated corrected url": self.image_translated_corrected_url,
-            "Labels symbols": self.labels_symbols,
-            "Labels words": self.labels_words,
+            "Bounding boxes symbols": self.bounding_boxes_symbols,
+            "Bounding boxes words": self.bounding_boxes_words,
             "Text rough recognized": self.text_rough_recognized,
             "Text rough translated": self.text_rough_translated,
             "Text corrected recognized": self.text_corrected_recognized,
@@ -162,18 +162,18 @@ def API_Process(request: API_Request, model: Medipy = None) -> API_Response:
         image_translated_corrected.save(os.path.join(FOLDER_IMAGE_TRANSLATED_CORRECTED, request.filename))
 
         with open(os.path.join(FOLDER_LABELS_SYMBOLS, f"{request.name}.json"), "w", encoding="utf-8") as f:
-            json.dump(result.result.labels_symbols, f, ensure_ascii=False, indent=4)
+            json.dump(result.result.bounding_boxes_symbols, f, ensure_ascii=False, indent=4)
 
         with open(os.path.join(FOLDER_LABELS_WORDS, f"{request.name}.json"), "w", encoding="utf-8") as f:
-            json.dump(result.result.labels_words, f, ensure_ascii=False, indent=4)
+            json.dump(result.result.bounding_boxes_words, f, ensure_ascii=False, indent=4)
 
 
         response.image_boxed_symbols_url = f"/ScreenTranslatorAPI/boxed/symbols/{request.filename}"
         response.image_boxed_words_url = f"/ScreenTranslatorAPI/boxed/words/{request.filename}"
         response.image_translated_rough_url = f"/ScreenTranslatorAPI/translated/rough/{request.filename}"
         response.image_translated_corrected_url = f"/ScreenTranslatorAPI/translated/corrected/{request.filename}"
-        response.labels_symbols = str(result.result.labels_symbols)
-        response.labels_words = str(result.result.labels_words)
+        response.bounding_boxes_symbols = str(result.result.bounding_boxes_symbols)
+        response.bounding_boxes_words = str(result.result.bounding_boxes_words)
         response.text_rough_recognized = str(result.result.text_rough_recognized)
         response.text_rough_translated = str(result.result.text_rough_translated)
         response.text_corrected_recognized = str(result.result.text_corrected_recognized)
