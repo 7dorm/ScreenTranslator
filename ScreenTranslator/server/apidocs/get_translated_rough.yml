@@ -1,0 +1,31 @@
+Скачать обработанный файл с bounding boxes
+---
+tags:
+  - Screen Translator API
+
+produces:
+  - application/octet-stream
+parameters:
+  - name: filename
+    in: path
+    required: true
+    description: Имя файла для скачивания
+    schema:
+      type: string
+
+responses:
+  200:
+    description: Успех
+    content:
+      application/octet-stream:
+        schema:
+          type: string
+          format: binary
+  404:
+    description: Файл не найден
+    schema:
+      type: object
+      properties:
+        Error:
+          type: string
+          example: "File not found"

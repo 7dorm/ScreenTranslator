@@ -125,15 +125,17 @@ class API_Request:
         raise ValueError(f"Must be boolean, got {type(value).__name__}")
     
 
-def API_Process(request: API_Request) -> API_Response:
+def API_Process(request: API_Request, model: Medipy = None) -> API_Response:
     for folder in TEMP_FOLDERS:
         os.makedirs(folder, exist_ok=True)
-    shutil.copy(request.filepath, os.path.join(FOLDER_UPLOADS, request.filename))
-    request.filepath = os.path.join(FOLDER_UPLOADS, request.filename)
+    if not request.filepath == os.path.join(FOLDER_UPLOADS, request.filename):
+        shutil.copy(request.filepath, os.path.join(FOLDER_UPLOADS, request.filename))
+        request.filepath = os.path.join(FOLDER_UPLOADS, request.filename)
 
-    model = Medipy()
-    for model_path in MODEL_PATHS:
-        model.addModel(model_path, 'en')
+    if model is None:
+        model = Medipy()
+        for model_path in MODEL_PATHS:
+            model.addModel(model_path, 'en')
     model.setParams(request)
     result = model.process(request.filepath)
 
@@ -183,3 +185,10 @@ def API_Process(request: API_Request) -> API_Response:
 
     
     return response
+
+
+def reset_temp_folders():
+    shutil.rmtree(FOLDER_PROCESSED)
+    shutil.rmtree(FOLDER_UPLOADS)
+    for folder in TEMP_FOLDERS:
+        os.makedirs(folder, exist_ok=True)

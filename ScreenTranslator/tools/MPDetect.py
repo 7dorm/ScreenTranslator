@@ -83,8 +83,7 @@ class Detection:
                                  Image.open(path), 
                                  Image.open(path), 
                                  Image.open(path), 
-                                 Image.open(path),
-                                 [], [], "", "", "", "")
+                                 Image.open(path))
         
         labels_words, text_rough_recognized, text_rough_translated, text_corrected_recognized, text_corrected_translated = WordUtils.merger(data)
         

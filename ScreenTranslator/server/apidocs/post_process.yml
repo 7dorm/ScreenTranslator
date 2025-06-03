@@ -86,7 +86,34 @@ responses:
       properties:
         Error:
           type: string
-          example: "No file uploaded <or> Unsupported file format"
+          example: "No file uploaded"
+  400:
+    description: Ошибка на стороне клиента
+    schema:
+      type: object
+      properties:
+        Error:
+          type: string
+          example: "Invalid file type"
+  400:
+    description: Ошибка на стороне клиента
+    schema:
+      type: object
+      properties:
+        Error:
+          type: string
+          example: "Invalid file size"
+  400:
+    description: Ошибка на стороне клиента
+    schema:
+      type: object
+      properties:
+        Error:
+          type: string
+          example: "Invalid params JSON"
+        Error details:
+          type: string
+          example: "Error description here"
   500:
     description: Ошибка на стороне сервера
     schema:
