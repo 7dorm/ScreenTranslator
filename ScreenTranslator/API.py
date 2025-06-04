@@ -7,6 +7,7 @@ import os, shutil, json
 class API_Response:
     def __init__(
         self,
+        json_model_params: str = "",
         image_boxed_characters_url: str = "",
         image_boxed_words_url: str = "",
         image_translated_rough_url: str = "",
@@ -18,23 +19,25 @@ class API_Response:
         text_corrected_recognized: list[str] = None,
         text_corrected_translated: list[str] = None
     ):
+        self.json_model_params = json_model_params
         self.image_boxed_characters_url = image_boxed_characters_url 
         self.image_boxed_words_url = image_boxed_words_url
         self.image_translated_rough_url = image_translated_rough_url
         self.image_translated_corrected_url = image_translated_corrected_url
-        self.json_characters = json_characters if json_characters is not None else []
-        self.json_words = json_words if json_words is not None else []
+        self.json_characters = json_characters if json_characters is not None else [[]]
+        self.json_words = json_words if json_words is not None else [[]]
         self.text_rough_recognized = text_rough_recognized if text_rough_recognized is not None else []
         self.text_rough_translated = text_rough_translated if text_rough_translated is not None else []
         self.text_corrected_recognized = text_corrected_recognized if text_corrected_recognized is not None else []
         self.text_corrected_translated = text_corrected_translated if text_corrected_translated is not None else []
 
-    def to_dict(self, ) -> dict:
+    def to_dict(self) -> dict:
         return {
             "Image boxed characters url": self.image_boxed_characters_url,
             "Image boxed words url": self.image_boxed_words_url,
             "Image translated rough url": self.image_translated_rough_url,
             "Image translated corrected url": self.image_translated_corrected_url,
+            "JSON model params": self.json_model_params,
             "JSON characters": self.json_characters,
             "JSON words": self.json_words,
             "Text rough recognized": self.text_rough_recognized,
@@ -59,14 +62,14 @@ class API_Request:
         self.name, self.ext = os.path.splitext(self.filename)
         self.ext = self.ext.lower()
 
-        self.size = 1500
-        self.conf = 0.2
-        self.iou = 0.3
-        self.agnostic = True
-        self.multi_label = False
-        self.max_det = 3000
-        self.amp = True
-        self.half_precision = True
+        self.size               = DEFAULT_SIZE
+        self.conf               = DEFAULT_CONF
+        self.iou                = DEFAULT_IOU
+        self.agnostic           = DEFAULT_AGNOSTIC
+        self.multi_label        = DEFAULT_MULTILABEL
+        self.max_det            = DEFAULT_MAXDET
+        self.amp                = DEFAULT_AMP
+        self.half_precision     = DEFAULT_HALFPRECISION
 
         if params_json is not None and params_json.strip():
             self._apply_params(params_json)
@@ -77,17 +80,17 @@ class API_Request:
             if not isinstance(params, dict):
                 raise ValueError("Params must be a JSON object")
             if 'size' in params:
-                self.size = self._validate_int(params['size'], 640, 4096)
+                self.size = self._validate_int(params['size'], SIZE_MIN, SIZE_MAX)
             if 'conf' in params:
-                self.conf = self._validate_float(params['conf'], 0.1, 0.9)
+                self.conf = self._validate_float(params['conf'], CONF_MIN, CONF_MAX)
             if 'iou' in params:
-                self.iou = self._validate_float(params['iou'], 0.1, 0.9)
+                self.iou = self._validate_float(params['iou'], IOU_MIN, IOU_MAX)
             if 'agnostic' in params:
                 self.agnostic = self._validate_bool(params['agnostic'])
             if 'multi_label' in params:
                 self.multi_label = self._validate_bool(params['multi_label'])
             if 'max_det' in params:
-                self.max_det = self._validate_int(params['max_det'], 1, 10000)
+                self.max_det = self._validate_int(params['max_det'], MAXDET_MIN, MAXDET_MAX)
             if 'amp' in params:
                 self.amp = self._validate_bool(params['amp'])
             if 'half_precision' in params:
@@ -162,10 +165,10 @@ def API_Process(request: API_Request, model: Medipy = None) -> API_Response:
         image_translated_corrected.save(os.path.join(FOLDER_IMAGE_TRANSLATED_CORRECTED, request.filename))
 
         with open(os.path.join(FOLDER_LABELS_CHARACTERS, f"{request.name}.json"), "w", encoding="utf-8") as f:
-            f.write(result.result.json_characters)
+            f.write(str(result.result.json_characters))
 
         with open(os.path.join(FOLDER_LABELS_WORDS, f"{request.name}.json"), "w", encoding="utf-8") as f:
-            f.write(result.result.json_words)
+            f.write(str(result.result.json_words))
 
 
         response.image_boxed_characters_url = f"/ScreenTranslatorAPI/boxed/characters/{request.filename}"

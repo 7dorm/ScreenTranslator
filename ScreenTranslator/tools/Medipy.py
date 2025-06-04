@@ -6,14 +6,13 @@ from ScreenTranslator.tools.MPNNModel import NNModel
 
 
 class Medipy:
-    def __init__(self, show: bool = False, params = None) -> None:
+    def __init__(self, show: bool = False) -> None:
         self.models: List[NNModel] = []
         self.detector: Detection = Detection(self.models)
         self.show: bool = show
-        self.params = params
 
     def addModel(self, path: str, language_code: str) -> None:
-        self.models.append(NNModel(path, language_code, self.params))
+        self.models.append(NNModel(path, language_code))
         self.detector = Detection(self.models)
 
     def setParams(self, params):

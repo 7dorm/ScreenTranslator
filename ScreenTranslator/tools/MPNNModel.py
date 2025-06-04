@@ -1,9 +1,7 @@
 import torch
 
 from typing import Union, Any
-
-from PIL import Image
-
+from ScreenTranslator.constants import *
 
 class NNModel:
     """
@@ -33,25 +31,15 @@ class NNModel:
 
 
         self.lang: str = language_code
-        if params:
-            self.size = params.size
-            self.model.conf = params.conf
-            self.model.iou = params.iou
-            self.model.agnostic = params.agnostic
-            self.model.multi_label = params.multi_label
-            self.model.max_det = params.max_det
-            self.model.amp = params.amp
-            self._USE_HALF_PRECISION: bool = params.half_precision
-        else:
-            self.size = 1500
-            self.model.conf = 0.2  # Confidence threshold
-            # self.model.dmb = True  # NMS IoU threshold
-            self.model.iou = 0.3  # NMS IoU threshold
-            self.model.agnostic = True  # NMS class-agnostic
-            self.model.multi_label = False  # NMS multiple labels per box
-            self.model.max_det = 3000  # maximum number of detections per image
-            self.model.amp = True  # Automatic Mixed Precision (AMP) inference
-            self._USE_HALF_PRECISION: bool = True
+        self.size                       = DEFAULT_SIZE
+        self.model.conf                 = DEFAULT_CONF
+        # self.model.dmb = True  # NMS IoU threshold
+        self.model.iou                  = DEFAULT_IOU
+        self.model.agnostic             = DEFAULT_AGNOSTIC
+        self.model.multi_label          = DEFAULT_MULTILABEL
+        self.model.max_det              = DEFAULT_MAXDET
+        self.model.amp                  = DEFAULT_AMP
+        self._USE_HALF_PRECISION        = DEFAULT_HALFPRECISION
         self.model.classes = list(range(0, 41))  # All classes
 
 

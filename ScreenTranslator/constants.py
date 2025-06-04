@@ -5,6 +5,7 @@ FOLDER_SCREENTRANSLATOR = Path(__file__).resolve().parent
 FOLDER_RESOURCES = os.path.join(FOLDER_SCREENTRANSLATOR, "resources")
 FOLDER_UPLOADS = os.path.join(FOLDER_SCREENTRANSLATOR, "server", "static", "uploads")
 FOLDER_PROCESSED = os.path.join(FOLDER_SCREENTRANSLATOR, "server", "static", "processed")
+FOLDER_PARAMS = os.path.join(FOLDER_PROCESSED, "params")
 FOLDER_IMAGE_BOXED = os.path.join(FOLDER_PROCESSED, "image_boxed")
 FOLDER_IMAGE_BOXED_CHARACTERS = os.path.join(FOLDER_IMAGE_BOXED, "characters")
 FOLDER_IMAGE_BOXED_WORDS = os.path.join(FOLDER_IMAGE_BOXED, "words")
@@ -16,6 +17,7 @@ FOLDER_IMAGE_TRANSLATED_ROUGH = os.path.join(FOLDER_IMAGE_TRANSLATED, "rough")
 FOLDER_IMAGE_TRANSLATED_CORRECTED = os.path.join(FOLDER_IMAGE_TRANSLATED, "corrected")
 TEMP_FOLDERS = [ 
     FOLDER_UPLOADS, FOLDER_PROCESSED,
+    FOLDER_PARAMS,
     FOLDER_IMAGE_BOXED, FOLDER_IMAGE_BOXED_CHARACTERS, FOLDER_IMAGE_BOXED_WORDS, 
     FOLDER_LABELS, FOLDER_LABELS_CHARACTERS, FOLDER_LABELS_WORDS,
     FOLDER_IMAGE_TRANSLATED, FOLDER_IMAGE_TRANSLATED_ROUGH, FOLDER_IMAGE_TRANSLATED_CORRECTED
@@ -51,7 +53,26 @@ SIMILAR_CHARACTERS = {
     }
 
 FRAME_QUEUE_SIZE = 2
-MAX_FILE_SIZE = 100 * 1024 * 1024  # 10MB
+MAX_FILE_SIZE = 10 * 1024 * 1024  # 10MB
+
+DEFAULT_SIZE = 1500             # Inference image size          (256 - 4096)
+DEFAULT_CONF = 0.2              # NMS confidence threshold      (0 - 1)
+DEFAULT_IOU = 0.3               # NMS IoU threshold             (0 - 1)
+DEFAULT_AGNOSTIC = True         # NMS class-agnostic            (True/False)
+DEFAULT_MULTILABEL = False      # NMS multiple labels per box   (True/False)
+DEFAULT_MAXDET = 3000           # Max detections per image      (0 - 10000)
+DEFAULT_AMP = True              # Automatic Mixed Precision     (True/False)
+DEFAULT_HALFPRECISION = True    # Floating Point 16             (True/False)
+
+SIZE_MIN = 256
+SIZE_MAX = 4096
+CONF_MIN = 0
+CONF_MAX = 1
+IOU_MIN = 0
+IOU_MAX = 1
+MAXDET_MIN = 0
+MAXDET_MAX = 10000
+
 IMAGE_TYPES = [
     ".bmp",     # Bitmap Image
     ".dib",     # Device-Independent Bitmap
