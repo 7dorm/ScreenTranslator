@@ -102,7 +102,7 @@ class Detection:
             data,
             ImageUtils.draw_boxes_ultralytics(Image.open(path), bounding_boxes_symbols),
             ImageUtils.draw_boxes_ultralytics(Image.open(path), bounding_boxes_words),
-            translated_text_on_image.process_image(Image.open(path), text_rough_translated, bounding_boxes_symbols),
+            translated_text_on_image.process_image(Image.open(path), text_rough_translated, bounding_boxes_words),
             translated_text_on_image.process_image(Image.open(path), text_corrected_translated, bounding_boxes_words),
             bounding_boxes_symbols,
             bounding_boxes_words,
