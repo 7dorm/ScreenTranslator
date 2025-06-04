@@ -6,18 +6,18 @@ FOLDER_RESOURCES = os.path.join(FOLDER_SCREENTRANSLATOR, "resources")
 FOLDER_UPLOADS = os.path.join(FOLDER_SCREENTRANSLATOR, "server", "static", "uploads")
 FOLDER_PROCESSED = os.path.join(FOLDER_SCREENTRANSLATOR, "server", "static", "processed")
 FOLDER_IMAGE_BOXED = os.path.join(FOLDER_PROCESSED, "image_boxed")
-FOLDER_IMAGE_BOXED_SYMBOLS = os.path.join(FOLDER_IMAGE_BOXED, "symbols")
+FOLDER_IMAGE_BOXED_CHARACTERS = os.path.join(FOLDER_IMAGE_BOXED, "characters")
 FOLDER_IMAGE_BOXED_WORDS = os.path.join(FOLDER_IMAGE_BOXED, "words")
 FOLDER_LABELS = os.path.join(FOLDER_PROCESSED, "labels")
-FOLDER_LABELS_SYMBOLS = os.path.join(FOLDER_LABELS, "symbols")
+FOLDER_LABELS_CHARACTERS = os.path.join(FOLDER_LABELS, "characters")
 FOLDER_LABELS_WORDS = os.path.join(FOLDER_LABELS, "words")
 FOLDER_IMAGE_TRANSLATED = os.path.join(FOLDER_PROCESSED, "image_translated")
 FOLDER_IMAGE_TRANSLATED_ROUGH = os.path.join(FOLDER_IMAGE_TRANSLATED, "rough")
 FOLDER_IMAGE_TRANSLATED_CORRECTED = os.path.join(FOLDER_IMAGE_TRANSLATED, "corrected")
 TEMP_FOLDERS = [ 
     FOLDER_UPLOADS, FOLDER_PROCESSED,
-    FOLDER_IMAGE_BOXED, FOLDER_IMAGE_BOXED_SYMBOLS, FOLDER_IMAGE_BOXED_WORDS, 
-    FOLDER_LABELS, FOLDER_LABELS_SYMBOLS, FOLDER_LABELS_WORDS,
+    FOLDER_IMAGE_BOXED, FOLDER_IMAGE_BOXED_CHARACTERS, FOLDER_IMAGE_BOXED_WORDS, 
+    FOLDER_LABELS, FOLDER_LABELS_CHARACTERS, FOLDER_LABELS_WORDS,
     FOLDER_IMAGE_TRANSLATED, FOLDER_IMAGE_TRANSLATED_ROUGH, FOLDER_IMAGE_TRANSLATED_CORRECTED
 ]
 
@@ -34,10 +34,10 @@ YOLO_LABES =  [ 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
                 'U', 'V', 'W', 'X', 'Y', 'Z', 
                 '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 
                 '.', ',', '?', '!', '@' ]
-PUNCTUATION_SYMBOLS = {
+PUNCTUATION_CHARACTERS = {
     'dot': '.', 'comma': ',', 'quest': '?', 'excl': '!', 'dog': '@'
 }
-SIMILAR_SYMBOLS = {
+SIMILAR_CHARACTERS = {
         "@": ["a"],
         "!": ["i"],
         "0": ["o"],

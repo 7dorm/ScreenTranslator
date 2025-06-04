@@ -7,23 +7,23 @@ import os, shutil, json
 class API_Response:
     def __init__(
         self,
-        image_boxed_symbols_url: str = "",
+        image_boxed_characters_url: str = "",
         image_boxed_words_url: str = "",
         image_translated_rough_url: str = "",
         image_translated_corrected_url: str = "",
-        bounding_boxes_symbols: list[str] = None,
-        bounding_boxes_words: list[str] = None,
+        json_characters: list[str] = None,
+        json_words: list[str] = None,
         text_rough_recognized: list[str] = None,
         text_rough_translated: list[str] = None,
         text_corrected_recognized: list[str] = None,
         text_corrected_translated: list[str] = None
     ):
-        self.image_boxed_symbols_url = image_boxed_symbols_url 
+        self.image_boxed_characters_url = image_boxed_characters_url 
         self.image_boxed_words_url = image_boxed_words_url
         self.image_translated_rough_url = image_translated_rough_url
         self.image_translated_corrected_url = image_translated_corrected_url
-        self.bounding_boxes_symbols = bounding_boxes_symbols if bounding_boxes_symbols is not None else []
-        self.bounding_boxes_words = bounding_boxes_words if bounding_boxes_words is not None else []
+        self.json_characters = json_characters if json_characters is not None else []
+        self.json_words = json_words if json_words is not None else []
         self.text_rough_recognized = text_rough_recognized if text_rough_recognized is not None else []
         self.text_rough_translated = text_rough_translated if text_rough_translated is not None else []
         self.text_corrected_recognized = text_corrected_recognized if text_corrected_recognized is not None else []
@@ -31,12 +31,12 @@ class API_Response:
 
     def to_dict(self, ) -> dict:
         return {
-            "Image boxed symbols url": self.image_boxed_symbols_url,
+            "Image boxed characters url": self.image_boxed_characters_url,
             "Image boxed words url": self.image_boxed_words_url,
             "Image translated rough url": self.image_translated_rough_url,
             "Image translated corrected url": self.image_translated_corrected_url,
-            "Bounding boxes symbols": self.bounding_boxes_symbols,
-            "Bounding boxes words": self.bounding_boxes_words,
+            "JSON characters": self.json_characters,
+            "JSON words": self.json_words,
             "Text rough recognized": self.text_rough_recognized,
             "Text rough translated": self.text_rough_translated,
             "Text corrected recognized": self.text_corrected_recognized,
@@ -141,10 +141,10 @@ def API_Process(request: API_Request, model: Medipy = None) -> API_Response:
 
     response = API_Response()
     if isinstance(result, CustomImage):
-        image_boxed_symbols = result.result.image_boxed_symbols
-        if image_boxed_symbols.mode == 'RGBA':
-            image_boxed_symbols = image_boxed_symbols.convert('RGB')
-        image_boxed_symbols.save(os.path.join(FOLDER_IMAGE_BOXED_SYMBOLS, request.filename))
+        image_boxed_characters = result.result.image_boxed_characters
+        if image_boxed_characters.mode == 'RGBA':
+            image_boxed_characters = image_boxed_characters.convert('RGB')
+        image_boxed_characters.save(os.path.join(FOLDER_IMAGE_BOXED_CHARACTERS, request.filename))
 
         image_boxed_words = result.result.image_boxed_words
         if image_boxed_words.mode == 'RGBA':
@@ -161,19 +161,19 @@ def API_Process(request: API_Request, model: Medipy = None) -> API_Response:
             image_translated_corrected = image_translated_corrected.convert('RGB')
         image_translated_corrected.save(os.path.join(FOLDER_IMAGE_TRANSLATED_CORRECTED, request.filename))
 
-        with open(os.path.join(FOLDER_LABELS_SYMBOLS, f"{request.name}.json"), "w", encoding="utf-8") as f:
-            json.dump(result.result.bounding_boxes_symbols, f, ensure_ascii=False, indent=4)
+        with open(os.path.join(FOLDER_LABELS_CHARACTERS, f"{request.name}.json"), "w", encoding="utf-8") as f:
+            f.write(result.result.json_characters)
 
         with open(os.path.join(FOLDER_LABELS_WORDS, f"{request.name}.json"), "w", encoding="utf-8") as f:
-            json.dump(result.result.bounding_boxes_words, f, ensure_ascii=False, indent=4)
+            f.write(result.result.json_words)
 
 
-        response.image_boxed_symbols_url = f"/ScreenTranslatorAPI/boxed/symbols/{request.filename}"
+        response.image_boxed_characters_url = f"/ScreenTranslatorAPI/boxed/characters/{request.filename}"
         response.image_boxed_words_url = f"/ScreenTranslatorAPI/boxed/words/{request.filename}"
         response.image_translated_rough_url = f"/ScreenTranslatorAPI/translated/rough/{request.filename}"
         response.image_translated_corrected_url = f"/ScreenTranslatorAPI/translated/corrected/{request.filename}"
-        response.bounding_boxes_symbols = str(result.result.bounding_boxes_symbols)
-        response.bounding_boxes_words = str(result.result.bounding_boxes_words)
+        response.json_characters = str(result.result.json_characters)
+        response.json_words = str(result.result.json_words)
         response.text_rough_recognized = str(result.result.text_rough_recognized)
         response.text_rough_translated = str(result.result.text_rough_translated)
         response.text_corrected_recognized = str(result.result.text_corrected_recognized)

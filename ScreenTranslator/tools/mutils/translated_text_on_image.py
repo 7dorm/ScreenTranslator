@@ -3,17 +3,17 @@ from PIL import Image, ImageFilter, ImageDraw, ImageFont
 from ScreenTranslator.constants import RESOURCES_ARIAL
 import collections
 
-def process_image(image: Image.Image, translation, lines) -> Image.Image:
+def process_image(image: Image.Image, translation: str, lines: str) -> Image.Image:
     width, height = image.size
     trans = partition_translation(lines, translation)
 
     for idx, entry in enumerate(lines):
         for line, box in entry.items():
             crop_box = (
-                int(box['x_min'] * width),
-                int(box['y_min'] * height),
-                int(box['x_max'] * width),
-                int(box['y_max'] * height)
+                int(box["x_min"] * width),
+                int(box["y_min"] * height),
+                int(box["x_max"] * width),
+                int(box["y_max"] * height)
             )
 
             # Padding (можно включить при необходимости)

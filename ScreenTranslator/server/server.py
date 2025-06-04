@@ -36,13 +36,13 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/ScreenTranslatorAPI/boxed/symbols/<filename>", methods=["GET"])
-@swag_from("apidocs/get_boxed_symbols.yml")
-def get_boxed_symbols(filename):
-    path = os.path.join(FOLDER_IMAGE_BOXED_SYMBOLS, filename)
+@app.route("/ScreenTranslatorAPI/boxed/characters/<filename>", methods=["GET"])
+@swag_from("apidocs/get_boxed_characters.yml")
+def get_boxed_characters(filename):
+    path = os.path.join(FOLDER_IMAGE_BOXED_CHARACTERS, filename)
     if not os.path.isfile(path):
         return jsonify({"Error": "File not found"}), 404
-    return send_from_directory(FOLDER_IMAGE_BOXED_SYMBOLS, filename)
+    return send_from_directory(FOLDER_IMAGE_BOXED_CHARACTERS, filename)
 
 @app.route("/ScreenTranslatorAPI/boxed/words/<filename>", methods=["GET"])
 @swag_from("apidocs/get_boxed_words.yml")

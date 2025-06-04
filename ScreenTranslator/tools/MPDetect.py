@@ -1,13 +1,14 @@
 from typing import List, Union
 
 import cv2
+import json
 import numpy as np
 from PIL import Image
 
 from ScreenTranslator.tools.MPNNModel import NNModel
 from ScreenTranslator.tools.MPCustom import CustomVideo, CustomImage
 from ScreenTranslator.tools.base import BaseDetection
-from ScreenTranslator.constants import IMAGE_TYPES, VIDEO_TYPES, PUNCTUATION_SYMBOLS
+from ScreenTranslator.constants import IMAGE_TYPES, VIDEO_TYPES, PUNCTUATION_CHARACTERS
 from ScreenTranslator.tools.exceptions import IncorrectFileTypeException
 from ScreenTranslator.tools.mutils import ImageUtils, WordUtils
 from ScreenTranslator.tools.mutils import translated_text_on_image
@@ -75,7 +76,7 @@ class Detection:
         result, t_model = self.select_model(path)
         data = result.pandas().xyxyn[0]
         
-        data['name'] = data['name'].apply(lambda x: PUNCTUATION_SYMBOLS.get(x, x))
+        data['name'] = data['name'].apply(lambda x: PUNCTUATION_CHARACTERS.get(x, x))
         print(data)
 
         if data.empty:
@@ -85,27 +86,28 @@ class Detection:
                                  Image.open(path), 
                                  Image.open(path))
         
-        bounding_boxes_words, text_rough_recognized, text_rough_translated, text_corrected_recognized, text_corrected_translated = WordUtils.merger(data)
+        json_words, text_rough_recognized, text_rough_translated, text_corrected_recognized, text_corrected_translated = WordUtils.merger(data)
         
         letters = list(data['name'])
-        bounding_boxes_symbols = [{ 
+        json_characters = [{ 
             letters[i]: {
-                'x_min': float(data['xmin'][i]),
-                'y_min': float(data['ymin'][i]),
-                'x_max': float(data['xmax'][i]),
-                'y_max': float(data['ymax'][i]),
-                'confidence': float(data['confidence'][i])
+                "x_min": float(data["xmin"][i]),
+                "y_min": float(data["ymin"][i]),
+                "x_max": float(data["xmax"][i]),
+                "y_max": float(data["ymax"][i]),
+                "confidence": float(data["confidence"][i])
             }} for i in range(len(letters))
         ]
+        json_characters = json.dumps(json_characters, ensure_ascii=False, indent=4)
 
         return BaseDetection(
             data,
-            ImageUtils.draw_boxes_ultralytics(Image.open(path), bounding_boxes_symbols),
-            ImageUtils.draw_boxes_ultralytics(Image.open(path), bounding_boxes_words),
-            translated_text_on_image.process_image(Image.open(path), text_rough_translated, bounding_boxes_words),
-            translated_text_on_image.process_image(Image.open(path), text_corrected_translated, bounding_boxes_words),
-            bounding_boxes_symbols,
-            bounding_boxes_words,
+            ImageUtils.draw_boxes_ultralytics(Image.open(path), json.loads(json_characters)),
+            ImageUtils.draw_boxes_ultralytics(Image.open(path), json.loads(json_words)),
+            translated_text_on_image.process_image(Image.open(path), text_rough_translated, json.loads(json_words)),
+            translated_text_on_image.process_image(Image.open(path), text_corrected_translated, json.loads(json_words)),
+            json_characters,
+            json_words,
             text_rough_recognized,
             text_rough_translated,
             text_corrected_recognized,

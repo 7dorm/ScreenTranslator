@@ -1,10 +1,10 @@
 import requests
 from itertools import product
-from ScreenTranslator.constants import SIMILAR_SYMBOLS
+from ScreenTranslator.constants import SIMILAR_CHARACTERS
 from ScreenTranslator.tools.mutils.CorrectingWords import translate
 
-def change_same_symbols(word):
-    possible_chars = [SIMILAR_SYMBOLS.get(c, [c]) for c in word]
+def change_same_characters(word):
+    possible_chars = [SIMILAR_CHARACTERS.get(c, [c]) for c in word]
     combinations = [''.join(combo) for combo in product(*possible_chars)]
     return combinations
 
@@ -41,7 +41,7 @@ def correcting_text(words):
         if word.isnumeric():
             continue
         
-        possible_words = change_same_symbols(word)
+        possible_words = change_same_characters(word)
         
         best_word = word
         best_score = 0

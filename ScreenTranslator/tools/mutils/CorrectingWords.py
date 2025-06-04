@@ -2,10 +2,10 @@ import json
 import string
 from itertools import product
 from deep_translator import GoogleTranslator
-from ScreenTranslator.constants import SIMILAR_SYMBOLS, RESOURCES_3_GRAMM_INDEX
+from ScreenTranslator.constants import SIMILAR_CHARACTERS, RESOURCES_3_GRAMM_INDEX
 
-def change_same_symbols(word):
-    possible_chars = [SIMILAR_SYMBOLS.get(c, [c]) for c in word]
+def change_same_characters(word):
+    possible_chars = [SIMILAR_CHARACTERS.get(c, [c]) for c in word]
     combinations = [''.join(combo).lower() for combo in product(*possible_chars)]
     return combinations
 
@@ -86,7 +86,7 @@ def correcting_text(words):
 
     for i in range(0, length):
         word = words[i]
-        possible_words = change_same_symbols(word)
+        possible_words = change_same_characters(word)
         word = word.lower()
         
         best_word = word

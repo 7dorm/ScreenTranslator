@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import json
 from ScreenTranslator.tools.mutils.CorrectingWords import correcting_text, translate
 
 def merger(df: pd.DataFrame) -> list:
@@ -48,10 +49,10 @@ def merger(df: pd.DataFrame) -> list:
                 words.append(current_word)
                 words_with_bbox.append({
                     current_word: {
-                        'x_min': float(cur_word_x_min),
-                        'y_min': float(cur_word_y_min),
-                        'x_max': float(cur_word_x_max),
-                        'y_max': float(cur_word_y_max)
+                        "x_min": float(cur_word_x_min),
+                        "y_min": float(cur_word_y_min),
+                        "x_max": float(cur_word_x_max),
+                        "y_max": float(cur_word_y_max)
                     }
                 })
                 current_word = str(line_df.iloc[i][letter])
@@ -63,10 +64,10 @@ def merger(df: pd.DataFrame) -> list:
         words.append(current_word)
         words_with_bbox.append({
             current_word: {
-                'x_min': float(cur_word_x_min),
-                'y_min': float(cur_word_y_min),
-                'x_max': float(cur_word_x_max),
-                'y_max': float(cur_word_y_max)
+                "x_min": float(cur_word_x_min),
+                "y_min": float(cur_word_y_min),
+                "x_max": float(cur_word_x_max),
+                "y_max": float(cur_word_y_max)
             }
         })
 
@@ -76,7 +77,7 @@ def merger(df: pd.DataFrame) -> list:
     corrected_translation = translate(corrected_words)
 
     return [
-        words_with_bbox,
+        json.dumps(words_with_bbox, ensure_ascii=False, indent=4),
         original_words,
         original_translation,
         corrected_words,

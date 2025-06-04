@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 text2Hint = 'Rough translated text will appear here';
                 break;
             case 'text-bboxes':
-                text1Hint = 'Character bounding boxes data will appear here';
-                text2Hint = 'Word bounding boxes data will appear here';
+                text1Hint = 'Character bounding boxes JSON will appear here';
+                text2Hint = 'Word bounding boxes JSON will appear here';
                 break;
         }
         
@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 processedImage.src = processedData['Image translated rough url'];
                 break;
             case 'char-bb':
-                processedImage.src = processedData['Image boxed symbols url'];
+                processedImage.src = processedData['Image boxed characters url'];
                 break;
             case 'word-bb':
                 processedImage.src = processedData['Image boxed words url'];
@@ -205,8 +205,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 text2.value = processedData['Text rough translated'] || '';
                 break;
             case 'text-bboxes':
-                text1.value = processedData['Bounding boxes symbols'] || '';
-                text2.value = processedData['Bounding boxes words'] || '';
+                text1.value = processedData['JSON characters'] || '';
+                text2.value = processedData['JSON words'] || '';
                 break;
             default:
                 text1.value = '';
@@ -289,12 +289,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (response.ok) {
                 status.textContent = 'Processing complete.';
                 processedData = {
-                    'Image boxed symbols url': result['Image boxed symbols url'],
+                    'Image boxed characters url': result['Image boxed characters url'],
                     'Image boxed words url': result['Image boxed words url'],
                     'Image translated rough url': result['Image translated rough url'],
                     'Image translated corrected url': result['Image translated corrected url'],
-                    'Bounding boxes symbols': result['Bounding boxes symbols'],
-                    'Bounding boxes words': result['Bounding boxes words'],
+                    'JSON characters': result['JSON characters'],
+                    'JSON words': result['JSON words'],
                     'Text rough recognized': result['Text rough recognized'],
                     'Text rough translated': result['Text rough translated'],
                     'Text corrected recognized': result['Text corrected recognized'],
@@ -329,7 +329,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const zip = new JSZip();
 
             // Получаем имя файла и расширение (если они есть)
-            const originalUrl = processedData['Image boxed symbols url'] || 
+            const originalUrl = processedData['Image boxed characters url'] || 
                                processedData['Image boxed words url'] || 
                                processedData['Image translated rough url'] || 
                                processedData['Image translated corrected url'];
@@ -345,7 +345,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Добавляем изображения
             const imageUrls = {
-                'image_boxed_symbols': processedData['Image boxed symbols url'],
+                'image_boxed_characters': processedData['Image boxed characters url'],
                 'image_boxed_words': processedData['Image boxed words url'],
                 'image_translated_rough': processedData['Image translated rough url'],
                 'image_translated_corrected': processedData['Image translated corrected url']
@@ -378,8 +378,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Добавляем JSON с bounding boxes
             const boundingBoxes = {
-                'bounding_boxes_symbols': processedData['Bounding boxes symbols'],
-                'bounding_boxes_words': processedData['Bounding boxes words']
+                'json_characters': processedData['JSON characters'],
+                'json_words': processedData['JSON words']
             };
 
             for (const [key, content] of Object.entries(boundingBoxes)) {
