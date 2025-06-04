@@ -8,10 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const originalVideo = document.getElementById('original-video');
     const processedImage = document.getElementById('processed-image');
     const processedVideo = document.getElementById('processed-video');
-    const recognizedText = document.getElementById('recognized-text');
-    const translatedText = document.getElementById('translated-text');
+    const text1 = document.getElementById('text1');
+    const text2 = document.getElementById('text2');
     const status = document.getElementById('status');
     const paramsForm = document.getElementById('params-form');
+    const displayRadios = document.getElementsByName('processed-file');
+    const textRadios = document.getElementsByName('text-display');
     const VIDEO_EXTENSIONS = [
         "avi", "mp4", "mov", "mkv", "flv",
         "wmv", "mpeg", "mpg", "mpe", "m4v",
@@ -28,9 +30,81 @@ document.addEventListener('DOMContentLoaded', () => {
     const ALLOWED_EXTENSIONS = VIDEO_EXTENSIONS.concat(IMAGE_EXTENSIONS);
     const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
     let currentFile = null;
-    let processedFilename = null;
+    let processedData = null;
+
+    function updateHints() {
+        const textDisplayValue = document.querySelector('input[name="text-display"]:checked').value;
+        let text1Hint, text2Hint;
+        
+        switch(textDisplayValue) {
+            case 'text-corrected':
+                text1Hint = 'Corrected recognized text will appear here';
+                text2Hint = 'Corrected translated text will appear here';
+                break;
+            case 'text-rough':
+                text1Hint = 'Rough recognized text will appear here';
+                text2Hint = 'Rough translated text will appear here';
+                break;
+            case 'text-bboxes':
+                text1Hint = 'Character bounding boxes data will appear here';
+                text2Hint = 'Word bounding boxes data will appear here';
+                break;
+        }
+        
+        document.getElementById('text1-hint').textContent = text1Hint;
+        document.getElementById('text2-hint').textContent = text2Hint;
+        const processedFileValue = document.querySelector('input[name="processed-file"]:checked').value;
+        let processedHint;
+        
+        switch(processedFileValue) {
+            case 'corrected':
+                processedHint = 'Corrected text with translation overlay will appear here';
+                break;
+            case 'rough':
+                processedHint = 'Rough text with translation overlay will appear here';
+                break;
+            case 'char-bb':
+                processedHint = 'Character bounding boxes will appear here';
+                break;
+            case 'word-bb':
+                processedHint = 'Word bounding boxes will appear here';
+                break;
+        }
+        
+        document.getElementById('processed-hint').textContent = processedHint;
+        const hint1 = text1.previousElementSibling;
+        hint1.style.display = text1.value ? 'none' : 'block';
+        const hint2 = text2.previousElementSibling;
+        hint2.style.display = text2.value ? 'none' : 'block';
+    }
+    
+    // Для медиа-элементов
+    const mediaBoxes = document.querySelectorAll('.media-box');
+    mediaBoxes.forEach(box => {
+        const observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.attributeName === 'style') {
+                    const img = box.querySelector('img');
+                    const video = box.querySelector('video');
+                    const hint = box.querySelector('.hint');
+                    
+                    if ((img && !img.style.display.includes('none')) || 
+                        (video && !video.style.display.includes('none'))) {
+                        hint.style.display = 'none';
+                    } else {
+                        hint.style.display = 'block';
+                    }
+                }
+            });
+        });
+        
+        observer.observe(box, { attributes: true, subtree: true });
+    });
+
     apidocsBtn.addEventListener('click', () => window.open('/apidocs', '_blank'));
+
     uploadBtn.addEventListener('click', () => uploadInput.click());
+
     uploadInput.addEventListener('change', async (e) => {
         const file = e.target.files[0];
         if (!file) {
@@ -91,6 +165,65 @@ document.addEventListener('DOMContentLoaded', () => {
             originalImage.style.display = 'none';
         }
     });
+
+    // Update displayed image based on radiobutton selection
+    const updateDisplayedImage = () => {
+        if (!processedData) return;
+        const selectedDisplay = Array.from(displayRadios).find(radio => radio.checked)?.value;
+        processedImage.style.display = 'block';
+        processedVideo.style.display = 'none';
+        switch (selectedDisplay) {
+            case 'corrected':
+                processedImage.src = processedData['Image translated corrected url'];
+                break;
+            case 'rough':
+                processedImage.src = processedData['Image translated rough url'];
+                break;
+            case 'char-bb':
+                processedImage.src = processedData['Image boxed symbols url'];
+                break;
+            case 'word-bb':
+                processedImage.src = processedData['Image boxed words url'];
+                break;
+            default:
+                processedImage.src = '';
+                processedImage.style.display = 'none';
+        }
+    };
+
+    // Update displayed text based on radiobutton selection
+    const updateDisplayedText = () => {
+        if (!processedData) return;
+        const selectedText = Array.from(textRadios).find(radio => radio.checked)?.value;
+        switch (selectedText) {
+            case 'text-corrected':
+                text1.value = processedData['Text corrected recognized'] || '';
+                text2.value = processedData['Text corrected translated'] || '';
+                break;
+            case 'text-rough':
+                text1.value = processedData['Text rough recognized'] || '';
+                text2.value = processedData['Text rough translated'] || '';
+                break;
+            case 'text-bboxes':
+                text1.value = processedData['Bounding boxes symbols'] || '';
+                text2.value = processedData['Bounding boxes words'] || '';
+                break;
+            default:
+                text1.value = '';
+                text2.value = '';
+        }
+    };
+
+    // Add event listeners to radiobuttons
+    displayRadios.forEach(radio => {
+        radio.addEventListener('change', updateDisplayedImage)
+        radio.addEventListener('change', updateHints)
+    });
+    textRadios.forEach(radio => {
+        radio.addEventListener('change', updateDisplayedText)
+        radio.addEventListener('change', updateHints)
+    });
+
     // Process Button: Send file and parameters to backend
     processBtn.addEventListener('click', async () => {
         if (!currentFile) {
@@ -101,8 +234,9 @@ document.addEventListener('DOMContentLoaded', () => {
         processBtn.disabled = true;
         processedImage.style.display = 'none';
         processedVideo.style.display = 'none';
-        recognizedText.value = '';
-        translatedText.value = '';
+        text1.value = '';
+        text2.value = '';
+        updateHints();
         // Collect and validate parameters
         const formData = new FormData(paramsForm);
         const params = {
@@ -114,7 +248,6 @@ document.addEventListener('DOMContentLoaded', () => {
             multi_label: formData.get('multi_label') === 'on',
             amp: formData.get('amp') === 'on',
             half_precision: formData.get('half_precision') === 'on',
-            rough_text_recognition: formData.get('rough_text_recognition') === 'on',
         };
         // Client-side validation
         if (params.size < 320 || params.size > 3840) {
@@ -155,23 +288,24 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Process response:', result);
             if (response.ok) {
                 status.textContent = 'Processing complete.';
-                processedFilename = result.filename;
-                const url = result.boxed_url;
-                const ext = processedFilename.split('.').pop().toLowerCase();
-                if (IMAGE_EXTENSIONS.includes(ext)) {
-                    processedImage.src = url;
-                    processedImage.style.display = 'block';
-                    processedVideo.style.display = 'none';
-                } else if (VIDEO_EXTENSIONS.includes(ext)) {
-                    processedVideo.src = url;
-                    processedVideo.style.display = 'block';
-                    processedImage.style.display = 'none';
-                }
-                recognizedText.value = result.recognized_text || '';
-                translatedText.value = result.translated_text || '';
+                processedData = {
+                    'Image boxed symbols url': result['Image boxed symbols url'],
+                    'Image boxed words url': result['Image boxed words url'],
+                    'Image translated rough url': result['Image translated rough url'],
+                    'Image translated corrected url': result['Image translated corrected url'],
+                    'Bounding boxes symbols': result['Bounding boxes symbols'],
+                    'Bounding boxes words': result['Bounding boxes words'],
+                    'Text rough recognized': result['Text rough recognized'],
+                    'Text rough translated': result['Text rough translated'],
+                    'Text corrected recognized': result['Text corrected recognized'],
+                    'Text corrected translated': result['Text corrected translated']
+                };
+                updateDisplayedText();
+                updateDisplayedImage();
+                updateHints();
                 saveBtn.disabled = false;
             } else {
-                status.textContent = `Error: ${result.error} - ${result.details || ''}`;
+                status.textContent = `Error: ${result.Error} - ${result['Error details'] || ''}`;
                 console.error('Process error:', result);
                 processBtn.disabled = false;
             }
@@ -182,47 +316,87 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         processBtn.disabled = false;
     });
-    // Save Button: Download processed file and text
+
+    // Save Button: Download processed files and text
     saveBtn.addEventListener('click', async () => {
-        if (!processedFilename) {
-            status.textContent = 'Error: No processed file available.';
+        if (!processedData) {
+            status.textContent = 'Error: No processed data available.';
             return;
         }
+
         try {
             status.textContent = 'Preparing download...';
             const zip = new JSZip();
-            // Add processed file
-            const boxedResponse = await fetch(`/ScreenTranslatorAPI/boxed/${processedFilename}`);
-            if (boxedResponse.ok) {
-                const blob = await boxedResponse.blob();
-                zip.file(processedFilename, blob);
-            } else {
-                status.textContent = `Error: Processed file not found (HTTP ${boxedResponse.status})`;
-                console.error('Boxed fetch error:', boxedResponse.statusText);
-                return;
+
+            // Получаем имя файла и расширение (если они есть)
+            const originalUrl = processedData['Image boxed symbols url'] || 
+                               processedData['Image boxed words url'] || 
+                               processedData['Image translated rough url'] || 
+                               processedData['Image translated corrected url'];
+
+            let name = 'output'; // значение по умолчанию
+            let ext = 'png';     // значение по умолчанию (можно изменить)
+
+            if (originalUrl) {
+                const urlParts = originalUrl.split('/').pop().split('.');
+                name = urlParts.slice(0, -1).join('.'); // имя без расширения
+                ext = urlParts.pop();                   // расширение
             }
-            // Add translated file (if available)
-            const translatedResponse = await fetch(`/ScreenTranslatorAPI/translated/${processedFilename}`);
-            if (translatedResponse.ok) {
-                const translatedBlob = await translatedResponse.blob();
-                zip.file(`translated-${processedFilename}`, translatedBlob);
-            } else {
-                console.warn('Translated file not available:', translatedResponse.status);
+
+            // Добавляем изображения
+            const imageUrls = {
+                'image_boxed_symbols': processedData['Image boxed symbols url'],
+                'image_boxed_words': processedData['Image boxed words url'],
+                'image_translated_rough': processedData['Image translated rough url'],
+                'image_translated_corrected': processedData['Image translated corrected url']
+            };
+
+            for (const [key, url] of Object.entries(imageUrls)) {
+                if (!url) continue; // пропускаем, если URL нет
+                const response = await fetch(url);
+                if (response.ok) {
+                    const blob = await response.blob();
+                    zip.file(`${name}_${key}.${ext}`, blob);
+                } else {
+                    console.warn(`Failed to fetch ${key} image: HTTP ${response.status}`);
+                }
             }
-            // Add text files for recognized and translated text
-            if (recognizedText.value) {
-                zip.file('recognized_text.txt', recognizedText.value);
+
+            // Добавляем текстовые файлы и JSON
+            const textFiles = {
+                'text_rough_recognized': processedData['Text rough recognized'],
+                'text_rough_translated': processedData['Text rough translated'],
+                'text_corrected_recognized': processedData['Text corrected recognized'],
+                'text_corrected_translated': processedData['Text corrected translated']
+            };
+
+            for (const [key, content] of Object.entries(textFiles)) {
+                if (content) {
+                    zip.file(`${name}_${key}.txt`, content);
+                }
             }
-            if (translatedText.value) {
-                zip.file('translated_text.txt', translatedText.value);
+
+            // Добавляем JSON с bounding boxes
+            const boundingBoxes = {
+                'bounding_boxes_symbols': processedData['Bounding boxes symbols'],
+                'bounding_boxes_words': processedData['Bounding boxes words']
+            };
+
+            for (const [key, content] of Object.entries(boundingBoxes)) {
+                if (content) {
+                    zip.file(`${name}_${key}.json`, content);
+                }
             }
-            const content = await zip.generateAsync({ type: 'blob' });
-            const url = URL.createObjectURL(content);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `screen_translator_output_${Date.now()}.zip`;
-            a.click();
-            URL.revokeObjectURL(url);
+
+            // Генерируем и скачиваем ZIP
+            const zipContent = await zip.generateAsync({ type: 'blob' });
+            const zipUrl = URL.createObjectURL(zipContent);
+            const downloadLink = document.createElement('a');
+            downloadLink.href = zipUrl;
+            downloadLink.download = `ScreenTranslator_${name}.zip`;
+            downloadLink.click();
+            URL.revokeObjectURL(zipUrl);
+
             status.textContent = 'Files saved successfully.';
         } catch (error) {
             status.textContent = `Error saving files: ${error.message}`;
