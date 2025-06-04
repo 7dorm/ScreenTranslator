@@ -147,6 +147,8 @@ button:disabled {
     flex-grow: 1;
     resize: none;
     min-height: 80px;
+    max-height: 400px;
+    height: auto;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;

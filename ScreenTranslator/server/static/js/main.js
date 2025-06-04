@@ -76,6 +76,11 @@ document.addEventListener('DOMContentLoaded', () => {
         hint1.style.display = text1.value ? 'none' : 'block';
         const hint2 = text2.previousElementSibling;
         hint2.style.display = text2.value ? 'none' : 'block';
+
+        text1.style.height = 'auto';
+        text2.style.height = 'auto';
+        text1.style.height = Math.max(text1.scrollHeight, text2.scrollHeight) + 'px';
+        text2.style.height = Math.max(text1.scrollHeight, text2.scrollHeight) + 'px';
     }
     
     // Для медиа-элементов
@@ -250,23 +255,23 @@ document.addEventListener('DOMContentLoaded', () => {
             half_precision: formData.get('half_precision') === 'on',
         };
         // Client-side validation
-        if (params.size < 320 || params.size > 3840) {
-            status.textContent = 'Error: Image size must be between 320 and 3840.';
+        if (params.size < 256 || params.size > 4096) {
+            status.textContent = 'Error: Image size must be (256 - 4096).';
             processBtn.disabled = false;
             return;
         }
         if (params.conf < 0 || params.conf > 1) {
-            status.textContent = 'Error: Confidence threshold must be between 0 and 1.';
+            status.textContent = 'Error: Confidence threshold must be (0 - 1).';
             processBtn.disabled = false;
             return;
         }
         if (params.iou < 0 || params.iou > 1) {
-            status.textContent = 'Error: IoU threshold must be between 0 and 1.';
+            status.textContent = 'Error: IoU threshold must be (0 - 1).';
             processBtn.disabled = false;
             return;
         }
-        if (params.max_det < 1 || params.max_det > 10000) {
-            status.textContent = 'Error: Maximum detections must be between 1 and 10000.';
+        if (params.max_det < 0 || params.max_det > 10000) {
+            status.textContent = 'Error: Maximum detections must be (0 - 10000).';
             processBtn.disabled = false;
             return;
         }

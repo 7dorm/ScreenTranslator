@@ -31,12 +31,12 @@ parameters:
       <details>
       <summary>Подробнее</summary>
       ```
-      size                - Inference image size              (640 - 4096)
-      conf                - NMS confidence threshold          (0.1 - 0.9)
-      iou                 - NMS IoU threshold                 (0.1 - 0.9)
+      size                - Inference image size              (256 - 4096)
+      conf                - NMS confidence threshold          (0 - 1)
+      iou                 - NMS IoU threshold                 (0 - 1)
       agnostic            - NMS class-agnostic                (True/False)
       multi_label         - NMS multiple labels per box       (True/False)
-      max_det             - Max detections per image          (1 - 10000)
+      max_det             - Max detections per image          (0 - 10000)
       amp                 - Automatic Mixed Precision         (True/False)
       half_precision      - Floating Point 16                 (True/False)
       ```
