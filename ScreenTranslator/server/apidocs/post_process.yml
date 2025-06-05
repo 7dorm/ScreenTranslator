@@ -1,16 +1,10 @@
-Обработка изображения/видео
+Image/video processing
 ---
 tags:
   - Screen Translator API
-description: 
-  "Загружает изображение/видео и применяет модель для распознавания 
-  текста, переводит его и генерирует изображение/видео с bounding box, 
-  а также изображение/видео с наложенным переведённым текстом.
-      
-  Возвращает результат в формате JSON: массив покадрово распознанного текста, 
-  массив покадрово переведённого текста, а также URL ссылки на сгенерированные файлы.
-
-  Если передано изображение, массивы текстов состоят из одного элемента."
+description: |
+  Loads a file and applies the model to recognize the text, translates it and generates files with bounding boxes, as well as files with the overlaying translated text. 
+  Returns the result in JSON format: model params, an array of frame-by-frame recognized and translated text, and URL links to generated files.
 
 consumes:
   - multipart/form-data
@@ -21,15 +15,15 @@ parameters:
     in: formData
     type: file
     required: true
-    description: Изображение или видео для обработки
+    description: Image or video for processing
 
   - name: Params
     in: formData
     type: string
     description: |
-      YOLO Параметры                                                      
+      YOLO Params                                                      
       <details>
-      <summary>Подробнее</summary>
+      <summary>Read more</summary>
       ```
       size                - Inference image size              (256 - 4096)
       conf                - NMS confidence threshold          (0 - 1)
@@ -41,7 +35,7 @@ parameters:
       half_precision      - Floating Point 16                 (True/False)
       ```
 
-      Все параметры опциональны. Значение по умолчанию:
+      All parameters are optional. Default value:
       ```json
       {
         "size": 1500,
@@ -59,10 +53,22 @@ parameters:
 
 responses:
   200:
-    description: Успех
+    description: Success
     schema:
       type: object
       properties:
+        Image boxed characters url:
+          type: string
+          example: /ScreenTranslatorAPI/boxed/characters/<filename>
+        Image boxed words url:
+          type: string
+          example: /ScreenTranslatorAPI/boxed/words/<filename>
+        Image translated rough url:
+          type: string
+          example: /ScreenTranslatorAPI/translated/rough/<filename>
+        Image translated corrected url:
+          type: string
+          example: /ScreenTranslatorAPI/translated/corrected/<filename>
         Recognized text:
           type: array
           items:

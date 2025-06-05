@@ -14,6 +14,7 @@ __pycache__/
 # --- Временные файлы и папки ---
 ScreenTranslator/server/static/processed
 ScreenTranslator/server/static/uploads
+ScreenTranslator.egg-info/
 dist/
 build/
 .env/

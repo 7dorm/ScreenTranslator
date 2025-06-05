@@ -2,7 +2,7 @@ from flask import jsonify
 from typing import Any
 from ScreenTranslator.tools.Medipy import *
 from ScreenTranslator.constants import *
-import os, shutil, json
+import os, zipfile, shutil, json
 
 class API_Response:
     def __init__(
@@ -191,7 +191,32 @@ def API_Process(request: API_Request, model: Medipy = None) -> API_Response:
 
 
 def reset_temp_folders():
+    for folder in TEMP_FOLDERS:
+        os.makedirs(folder, exist_ok=True)
     shutil.rmtree(FOLDER_PROCESSED)
     shutil.rmtree(FOLDER_UPLOADS)
     for folder in TEMP_FOLDERS:
         os.makedirs(folder, exist_ok=True)
+        
+
+def runScreenTranslator(filePath: str, destinationPath: str = None, request: API_Request = None):
+    if destinationPath is None:
+        destinationPath = os.path.dirname(filePath)
+    if request is None:
+        request = API_Request(filePath)
+
+    response = API_Process(request)
+    filename, name, ext = request.filename, request.name, request.ext
+    zip_name = os.path.join(destinationPath, f"ScreenTranslator_{name}.zip")
+
+    with zipfile.ZipFile(zip_name, 'w', zipfile.ZIP_DEFLATED) as zipf:
+        zipf.write(os.path.join(FOLDER_IMAGE_TRANSLATED_CORRECTED, filename), f"{name}_image_translated_corrected{ext}")
+        zipf.write(os.path.join(FOLDER_IMAGE_TRANSLATED_ROUGH, filename), f"{name}_image_translated_rough{ext}")
+        zipf.write(os.path.join(FOLDER_IMAGE_BOXED_WORDS, filename), f"{name}_image_boxed_words{ext}")
+        zipf.write(os.path.join(FOLDER_IMAGE_BOXED_CHARACTERS, filename), f"{name}_image_boxed_characters{ext}")
+        zipf.write(os.path.join(FOLDER_LABELS_WORDS, f"{name}.json"), f"{name}_json_words.json")
+        zipf.write(os.path.join(FOLDER_LABELS_CHARACTERS, f"{name}.json"), f"{name}_json_characters.json")
+        zipf.writestr(f"{name}_text_corrected_recognized.txt", response.text_corrected_recognized)
+        zipf.writestr(f"{name}_text_corrected_translated.txt", response.text_corrected_translated)
+        zipf.writestr(f"{name}_text_rough_recognized.txt", response.text_rough_recognized)
+        zipf.writestr(f"{name}_text_rough_translated.txt", response.text_rough_translated)

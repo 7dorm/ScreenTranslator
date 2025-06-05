@@ -18,7 +18,7 @@ A web-based application to detect, extract, and translate English text from imag
 - Operating System: Windows 10/11, UNIX-based systems
 - GPU (NVIDIA with CUDA 10.2+ recommended for performance)
 
-### Setup
+### From source
 1. Clone the repository:
    ```bash
    git clone https://github.com/7dorm/ScreenTranslator.git
@@ -28,10 +28,25 @@ A web-based application to detect, extract, and translate English text from imag
    ```bash
    pip install -r requirements.txt
    ```
-3. Start the server:
+3. Run as a module:
    ```bash
-   cd src
-   python main.py
+   python -m ScreenTranslator run path/to/input.jpg
+   python -m ScreenTranslator server
+   ```
+
+### As a package
+1. Install locally:
+   ```bash
+   pip install ScreenTranslator
+   ```
+2. Use via command-line:
+   ```bash
+   # Start server
+   ScreenTranslator server
+    
+   # Run translation on a file
+   ScreenTranslator run path/to/input.jpg
+   ScreenTranslator run path/to/input.jpg path/to/output/folder
    ```
 
 ### Dependencies
